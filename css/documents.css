@@ -1,0 +1,85 @@
+.documents{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.documents__title{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  width: 1632px;
+  height: 44px;
+}
+
+.accordion-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0px;
+  gap: 16px;
+  width: 1920px;
+  background: #21385F;
+}
+
+.accordion-box__details{
+  text-align: center; 
+}
+
+.accordion-box__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0px;
+  gap: 24px;
+
+  width: 1920px;
+  /* height: 160px; */
+
+  /* Сапфировый/100 */
+  background: #21385F;
+}
+
+.accordion-box__text{
+  width: 1086px;
+  text-align: left;
+  
+}
+
+@media (max-width: 375px) {
+  .documents{
+    width: 375px;
+  }
+
+  .documents__title{
+    width: 359px;
+    
+
+  }
+
+  .accordion-box{
+    width: 375px;
+    }
+
+  .accordion-box__content{
+    width:auto;
+  }
+
+  .accordion-box__text{
+    width:auto;
+    margin: 0px 20px;
+  }
+
+}
+
+@media (min-width:376px) {
+
+
+
+
+}

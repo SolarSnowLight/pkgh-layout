@@ -1,0 +1,102 @@
+
+.box-1{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.box-2{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 48px;
+
+}
+
+.box-3{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+}
+
+.title{
+  font-size: 24px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.line{
+  width: 371px;
+  height: 0px;
+  /* Золотой/100 */
+  border: 1px solid #C4AD83;
+}
+
+.menue{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  width: 278px;
+  height: 240px;
+}
+
+.menue__item{
+  /* body */
+font-size: 16px;
+line-height: 144%;
+/* identical to box height, or 23px */
+/* Графит/70 */
+color: #686868;
+}
+
+.image{
+  background: url(../img/content1-news-tabs-info__three.png) no-repeat;
+  width: 371px;
+  height: 307px;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
+.image__blur{
+  display: flex;
+  flex-direction: row;
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(32px);
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 84px;
+}
+
+.image__title{
+  font-size: 24px;
+  line-height: 26px;
+  color: #EDE6D9;
+}
+
+
+.image__date{
+  font-size: 14px;
+  line-height: 17px;
+  color: #F8F6F2;
+}
+
+.photo-1{
+  width: 498.43px;
+  height: 278.72px;
+
+  background: url(../img/photo-1.png);
+}
+
+.photo-2{
+  width: 498.43px;
+  height: 278.72px;
+
+  background: url(../img/photo-2.png);
+}

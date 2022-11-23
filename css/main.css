@@ -1,0 +1,249 @@
+/* TODO: комментарии в коде */
+/* NOTE:  */
+
+.wrapper {
+  display: flex;
+  min-height: 100%;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.content {
+  margin: 0px 0px;
+  padding: 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.H{
+  font-family: 'Forum';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 44px;
+}
+
+.H1{
+  font-family: 'Forum';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35px;
+}
+
+.H3{
+  font-family: 'Forum';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.body_thin{
+  font-family: 'Museo Sans 300 Light';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 144%;
+}
+
+.body_bold{
+  /* bodyBold */
+  font-family: 'Museo Sans 500';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.line{
+  height: 0px;
+  border: 1px solid #C4AD83;
+  align-self: stretch;
+}
+
+.forum_400{
+  font-family: 'Forum';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.museo-sans_300{
+  font-family: 'Museo Sans 300 Light';
+  font-style: normal;
+  font-weight: 300;
+}
+
+.link, .link_spec{
+  text-decoration: none;
+}
+
+.link:visited, .link_spec:visited{
+  color: #686868;
+}
+
+.link:active, .link_spec:active{
+  color: #686868;
+}
+
+.link:hover, .link_spec:hover{
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.link-sapphire_30 {
+  color: #BBC2CE;
+  text-decoration: none;
+}
+
+.link-sapphire_30:visited{
+  color: #BBC2CE;
+}
+
+.link-sapphire_30:active{
+  color: #BBC2CE;
+}
+
+.link-sapphire_30:hover{
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.link_white{
+  text-decoration: none;
+}
+
+.link_white:visited{
+  color: #E9ECF2;
+}
+
+.link_white:active{
+  color: #E9ECF2;
+}
+
+.link_gold_30{
+  text-decoration: none;
+}
+
+.link_gold_30:visited{
+  color: #EDE6D9;
+}
+
+.link_gold_30:active{
+  color: #EDE6D9;
+}
+
+.color_cobalt{
+  color: #294985;
+}
+
+.color-cobalt_70{
+  color: #294985;
+}
+
+.color_white{
+  color: #FFFFFF;
+}
+
+.color_graphite_10{
+  color: #E9E9E9;
+}
+
+.color_graphite_70{
+  color: #686868;
+}
+
+.color_gold_70{
+  color: #697FA9;
+}
+
+.color-sapphire_10{
+  color: #E8EAEE;
+}
+
+.color-sapphire_30{
+  color: #BBC2CE;
+}
+
+.color-sapphire_100{
+  color: #21385F;
+}
+
+.text_span span{
+  text-align: center;
+  color: #EDE6D9;
+}
+
+.font_size-24{
+  font-size: 24px;
+}
+
+.font_height-26{
+  line-height: 26px;
+}
+
+.font_size-24_height-26{
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.font_size-32_height-35{
+  font-size: 32px;
+  line-height: 35px;
+}
+
+.font_size-16_height-144{
+  font-size: 16px;
+  line-height: 144%;
+}
+
+.button{
+  /* Кобальтовый/100 */
+  background: #294985;
+  /* Золотой/100 */
+  height: 39px;
+  box-sizing: border-box;
+/* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text_pointer{
+  cursor: pointer;
+}
+
+.flex-box_row{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-box_column{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.gap_8{
+  gap: 8px;
+}
+
+.gap_15{
+  gap: 16px;
+}
+
+.gap_15{
+  gap: 16px;
+}
+
+.gap_24{
+  gap: 24px;
+}
+
+.gap_40{
+  gap: 40px;
+}
+

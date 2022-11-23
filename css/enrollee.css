@@ -1,0 +1,239 @@
+.enrollee{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 145px;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.enrollee-left{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+
+}
+
+.enrollee-right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+
+.enrollee-left__item{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+
+.enrollee-left__title{
+}
+
+.enrollee-left__text{
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 48px 32px;
+  gap: 8px;
+  isolation: isolate;
+  width: 539px;
+  height: 144px;
+  /* Золотой/100 */
+  border: 1px solid #C4AD83;
+  border-radius: 2px;
+
+  font-family: 'Museo Sans 300 Light';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 144%;
+
+}
+
+.enrollee-right__title{
+  width: 187px;
+  height: 35px;
+  /* H1 */
+  font-size: 32px;
+  line-height: 35px;
+  /* Графит/100 */
+  color: #282828;
+}
+
+.enrollee-right__contener{
+  width: 949.43px;
+  height: 575px;
+  /* Inside auto layout */
+  position: relative;
+  /* flex: none;
+  order: 1;
+  flex-grow: 0; */
+}
+
+.enrollee-right__item-one{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 537.57px;
+  height: 415.1px;
+  left: 0px;
+  top: 0px;
+  /* вм */
+  background: url(../img/enrollee/enrollee-right__item-one.png);
+  /* Золотой/100 */
+  border: 1px solid #C4AD83;
+  border-radius: 2px;
+}
+
+.enrollee-right__item-two{
+  box-sizing: border-box;
+  position: absolute;
+  width: 537.57px;
+  height: 343.6px;
+  left: 411.43px;
+  top: 223px;
+
+  /* 44 */
+
+  background: url(../img/enrollee/enrollee-right__item-two.png);
+  /* Золотой/100 */
+
+  border: 1px solid #C4AD83;
+  border-radius: 2px;
+}
+
+.enrollee-right-compact{
+
+}
+
+.enrollee-right-compact__item-one{
+  box-sizing: border-box;
+  width: 359px;
+  height: 277px;
+  left: 0px;
+  top: 0px;
+  /* вм */
+  background: url(../img/enrollee/enrollee-right-compact__item-one.png);
+  /* Золотой/100 */
+  border: 1px solid #C4AD83;
+  border-radius: 2px;
+}
+
+.enrollee-right-compact__item-two{
+  box-sizing: border-box;
+  width: 359px;
+  height: 230px;
+  left: 411.43px;
+  top: 223px;
+  /* 44 */
+  background: url(../img/enrollee/enrollee-right-compact__item-two.png);
+  /* Золотой/100 */
+  border: 1px solid #C4AD83;
+  border-radius: 2px;
+}
+
+.enrollee-right__blur{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 10px;
+
+  position: absolute;
+  width: 503px;
+  height: 36px;
+  left: 2px;
+  bottom: 0px;
+
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(32px);
+}
+
+.enrollee-button__one{
+  position: absolute;
+  left: 427px;
+  bottom: 0px;
+  border: 1px solid #C4AD83;
+  border-radius: 2px;
+  padding: 8px 32px;
+}
+
+.enrollee-button__two{
+  position: absolute;
+  left: 383px;
+  bottom: 0px;
+
+  /* top: 148px; */
+  border: 1px solid #C4AD83;
+  border-radius: 2px;
+  padding: 8px 32px;
+}
+
+.enrollee-button__three{
+  position: absolute;
+  left: 384px;
+  bottom: 0px;
+  /* top: 148px; */
+  border: 1px solid #C4AD83;
+  border-radius: 2px;
+  padding: 8px 32px;
+}
+
+
+/* Для мобильной версии сайта */
+@media (max-width: 375px) {
+
+  .enrollee{
+    gap: 25px;
+  }
+
+  .enrollee-left__text{
+    width: 359px;
+    height: 126px;
+  }
+
+  .enrollee-button__one{
+    left: 247px;
+  }
+
+  .enrollee-button__two{
+    left: 203px;
+  }
+
+  .enrollee-button__three{
+    left: 204px;
+  }
+
+  .enrollee-left__text{
+    padding: 15px 13px;
+  }
+
+  .enrollee-right__contener{
+    display: none;
+  }
+
+  .enrollee-right{
+
+  }
+}
+
+@media (min-width:376px) {
+
+  .enrollee-right-compact{
+    display: none;
+  }
+
+}
+
+/* Для мобильной версии сайта конец */

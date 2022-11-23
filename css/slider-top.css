@@ -1,0 +1,199 @@
+.slider-top{
+
+}
+
+.mySlides-top{
+  width: 1920px;
+  height: 633px;
+}
+
+#mySlides-top__slider { /*положение слайдера*/
+  position: relative;
+  text-align: center;
+  top: 10px;
+}
+
+#mySlides-top__slider{ /*центровка слайдера*/
+  margin: 0 auto;
+}
+
+#mySlides-top__slides article{ /*все изображения справа друг от доруга*/
+  width: 20%;
+  float: left;
+}
+
+#mySlides-top__slides .mySlides-top__image{ /*устанавливает общий размер блока с изображениями*/
+  width: 500%;
+  line-height: 0;
+}
+
+#mySlides-top__overflow{ /*сркывает все, что находится за пределами этого блока*/
+  width: 100%;
+  overflow: hidden;
+}
+
+.mySlides-top__article img{ /*размер изображений слайдера*/
+  width: 100%;
+}
+
+.mySlides-top-article__one{
+  background: url('../img/Frame\ 37.png') no-repeat; /*заливка фона картинкой без повторений*/
+
+}
+
+#mySlides-top__desktop:checked ~ #mySlides-top__slider{ /*размер всего слайдера*/
+  max-width: 1902px; /*максимальнная длинна*/
+}
+
+/*настройка переключения и положения для левой стрелки*/
+/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
+#mySlides-top__switch1:checked ~ #mySlides-top__controls .mySlides-top__label:nth-child(5), 
+#mySlides-top__switch2:checked ~ #mySlides-top__controls .mySlides-top__label:nth-child(1),
+#mySlides-top__switch3:checked ~ #mySlides-top__controls .mySlides-top__label:nth-child(2),
+#mySlides-top__switch4:checked ~ #mySlides-top__controls .mySlides-top__label:nth-child(3),
+#mySlides-top__switch5:checked ~ #mySlides-top__controls .mySlides-top__label:nth-child(4){
+  background: url('../img/prev.png') no-repeat; /*заливка фона картинкой без повторений*/
+  float: left;
+  margin: 0px 0px 0 70px;
+  display: block;
+  height: 68px;
+  width: 68px;
+  position: relative;
+}
+
+/*настройка переключения и положения для правой стрелки*/
+#mySlides-top__switch1:checked ~ #mySlides-top__controls .mySlides-top__label:nth-child(2), 
+#mySlides-top__switch2:checked ~ #mySlides-top__controls .mySlides-top__label:nth-child(3),
+#mySlides-top__switch3:checked ~ #mySlides-top__controls .mySlides-top__label:nth-child(4),
+#mySlides-top__switch4:checked ~ #mySlides-top__controls .mySlides-top__label:nth-child(5),
+#mySlides-top__switch5:checked ~ #mySlides-top__controls .mySlides-top__label:nth-child(1){
+  background: url('../img/next.png') no-repeat; /*заливка фона картинкой без повторений*/
+  float: right;
+  margin: 0 70px 0 0;
+  display: block;
+  height: 68px;
+  width: 68px;
+  position: relative;
+}
+
+.mySlides-top__label a{ /*при наведении на стрелки или переключатели - курсор изменится*/
+  cursor: pointer;
+}
+
+.mySlides-top input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
+  display: none;
+}
+
+/*позиция изображения при активации переключателя*/
+#mySlides-top__switch1:checked ~ #mySlides-top__slides .mySlides-top__image{
+  margin-left: 0;
+}
+
+#mySlides-top__switch2:checked ~ #mySlides-top__slides .mySlides-top__image{
+  margin-left: -100%;
+}
+
+#mySlides-top__switch3:checked ~ #mySlides-top__slides .mySlides-top__image{
+  margin-left: -200%;
+}
+
+#mySlides-top__switch4:checked ~ #mySlides-top__slides .mySlides-top__image{
+  margin-left: -300%;
+}
+
+#mySlides-top__switch5:checked ~ #mySlides-top__slides .mySlides-top__image{
+  margin-left: -400%;
+}
+
+#mySlides-top__controls{ /*положение блока всех управляющих элементов*/
+  margin: -350px 0 0 0;
+  width: 100%;
+  height: 50px;
+}
+
+
+#mySlides-top__slides .mySlides-top__image{ /*анимация пролистывания изображений*/
+  transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+#mySlides-top__controls .mySlides-top__label:hover{ /*прозрачность стрелок при наведении*/
+  opacity: 0.6;
+}
+
+#mySlides-top__controls .mySlides-top__label{ /*прозрачность стрелок при отводе курсора*/
+  transition: opacity 0.2s ease-out;
+}
+
+/* содержимое слайдера one*/
+
+.mySlides-top__box{
+  width:491px; 
+  height:605px;
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(32px);
+}
+
+.mySlides-top__info{
+  position: relative;
+  width: 290px;
+  height: 256px;
+  left: 185px;
+  top: 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mySlides-top__title{
+  font-size: 32px;
+  line-height: 35px;
+  color: #F8F6F2;
+}
+
+.mySlides-top__text{
+  color: #E9ECF2;
+  font-size: 16px;
+  line-height: 144%;
+}
+
+.mySlides-top__button{
+  width: 290px;
+  height: 39px;
+  background: #294985;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mySlides-top__more{
+  color: #E9ECF2;
+  font-size: 16px;
+  line-height: 144%;
+}
+/* Конец содержимое слайдера one*/
+
+
+/* Для мобильной версии сайта */
+
+.mySlides-top-compact__slider{
+
+}
+
+@media (max-width: 375px) {
+  .mySlides-top{
+    display: none;
+  }
+
+
+}
+
+@media (min-width: 376px) {
+  .mySlides-top-compact{
+    display: none;
+  }
+
+}
+
+/* Для мобильной версии сайта конец */

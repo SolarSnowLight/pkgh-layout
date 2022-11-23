@@ -1,0 +1,110 @@
+.search {
+
+}
+.search-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 259px;
+    width: 1556px;
+    height: 884px;
+
+}
+.search-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+}
+
+.search-rectangle-condition {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+}
+
+.search-rectangle-condition_title {
+
+}
+
+.search-rectangle-condition__input {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 24px;
+}
+
+.search-rectangle-condition__elements {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+}
+
+.search-rectangle-condition__radios {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+}
+
+.search-rectangle-condition__checkboxes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+}
+
+.search-rectangle-condition__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.search-rectangle-result_title {
+
+}
+
+.search-rectangle-result {
+
+}
+
+.search-rectangle-categories {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.search-rectangle-categories__title {
+
+}
+
+.search-rectangle-categories__news{
+    padding: 0px 0px 0px 24px;
+}
+
+.search-rectangle-calendar {
+
+}
+
+.search-rectangle-calendar__title {
+
+}
+
+.line{
+    width: 909.9px;
+    height: 0px;
+    border: 1px solid #BEBEBE;
+}

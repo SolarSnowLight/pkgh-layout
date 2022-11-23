@@ -1,0 +1,90 @@
+.Museo-Sans-font-weight-300{
+  font-family: 'Museo Sans 300 Light';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 144%;
+}
+
+.introduction{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  filter: drop-shadow(0px 1px 7px rgba(190, 200, 218, 0.15));
+}
+
+.introduction-box-one{
+  text-align: center;
+}
+
+.introduction__title{
+  font-family: 'Forum';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 53px;
+  color: #21385F;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.introduction-box-two{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  justify-content: center;
+
+}
+
+.introduction__box-item{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 16px;
+  gap: 16px;
+  width: 402px;
+  height: 172px;
+  background: #BEC8DA;
+  border-radius: 2px;
+
+  font-size: 16px;
+  line-height: 144%;
+}
+
+/* Для мобильной версии сайта */
+@media (max-width: 375px) {
+  .introduction__title{
+    width: 353.56px;
+    height: 130px;
+
+    /* H3 */
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+
+    /* Кобальтовый/100 */
+    color: #294985;
+  }
+
+  .introduction-box-one {
+    width: 382px;
+  }
+  .introduction__box-item{
+    width: 359px;
+  }
+
+}
+
+@media (min-width:376px) {
+
+}
+
+/* Для мобильной версии сайта конец */

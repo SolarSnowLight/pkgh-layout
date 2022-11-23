@@ -1,0 +1,114 @@
+.login-block {
+    width: 40%;
+    background: #697FA9;
+    backdrop-filter: blur(32px);
+    border-radius: 2px;
+    padding: 64px 0;
+    margin: 40px 0;
+}
+
+.login-block__main {
+    width: 45%;
+}
+
+.login-block-main__button {
+    margin-top: 36px;
+}
+
+.login-block-main__button button {
+    width: 100%;
+    color: #E9ECF2;
+    background: #294985;
+    border-radius: 2px;
+}
+
+.login-block__header {
+    font-size: 32px;
+    font-family: 'Forum';
+    font-weight: 400;
+    color: #E9ECF2;
+    margin-bottom: 32px;
+}
+
+.login-block__input-block {
+    margin-bottom: 32px;
+}
+
+.login-block__input-block-border {
+    border-bottom: 1px solid #E9E9E9;
+}
+
+.login-block__input-block:nth-child(2) {
+    margin-bottom: 36px;
+}
+
+.login-block__input-block .row {
+    width: 100%;
+}
+
+.login-block__input-block img {
+    height: 100%;
+    width: auto;
+}
+
+.login-block__input-block input {
+    background: none !important;
+    border: none !important;
+    outline: none;
+    margin-left: 0;
+    transition: none;
+    color: #E9E9E9;
+}
+
+.login-block__input-block input::placeholder {
+    font-size: 16px;
+    color: #E9E9E9;
+    font-family: 'Museo Sans';
+}
+
+.login-block__input-block input:focus {
+    color: #E9E9E9;
+    background: none !important;
+    border: none !important;
+    outline: none;
+    box-shadow: none;
+}
+
+.login-block-main__reset-pass {
+    margin-top: 16px;
+    color: #294985;
+    font-family: 'Museo Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 144%;
+}
+
+.login-block-main__reset-pass a{
+    color: #294985;
+}
+
+.login-block__remember input{
+    height: 100%;
+    width: auto;
+}
+
+.login-block form {
+    color: #E9E9E9;
+    font-family: 'Museo Sans';
+    font-size: 16px;
+}
+
+a, a:hover, a:active
+{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .login-block {
+        width: 100%;
+    }
+    .login-block__main {
+        width: 80%;
+    }
+}

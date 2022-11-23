@@ -1,0 +1,97 @@
+.about-us{
+  display:flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.about-us-header{
+  display: flex;  
+  flex-direction: column;
+}
+
+.about-us-header__title {
+  align-self: flex-start;
+}
+
+.about-us-header__image{
+  position: relative;
+  width: 1632px;
+  height: 598px;
+  background: url(../img/about-us/about-us-header__image.png);
+}
+
+.about-us-header__blur{
+  display: flex;
+  position: absolute;
+  background: rgba(233, 236, 242, 0.1);
+  backdrop-filter: blur(37px);
+  width: 1632px;
+  height: 204px;
+  top: 243.16px;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.about-us-info__box-1{
+  display: flex;
+  width: 1632px;
+  height: 454px;
+  justify-content: space-evenly;
+}
+
+.about-us-info__box-image{
+  width: 812px;
+  height: 454px;
+}
+
+.about-us-info__box-text{
+  width: 552px;
+  height: 400px;
+  align-self: center;
+}
+
+@media (max-width: 375px) {
+
+  .about-us-info__box-compact{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    }
+    
+  .about-us{
+    gap: 10px;
+  }
+
+  .about-us-header__image{
+    width: 359px;
+    height: 250px;
+    background: url(../img/about-us/about-us-header__image-compact.png);
+    position: relative;
+  }
+  .about-us-header__blur{
+    position: absolute;
+    width: 359px;
+    height: 124px;
+    left: 0px;
+    top: 63px;
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(32px);
+    font-size: 16px;
+    line-height: 18px;
+    gap: 15px;
+  }
+
+  .about-us-info__box-1{
+    display: none;
+  }
+
+}
+
+@media (min-width:376px) {
+  .about-us-info__box-compact{
+    display: none;
+  }
+
+}
+
+/* Для мобильной версии сайта конец */

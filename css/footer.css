@@ -1,0 +1,158 @@
+.footer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 144px;
+  gap: 64px;
+  background: #21385F;
+  border-top: 1px solid #C4AD83;
+}
+
+.footer-content{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+}
+
+.footer-content__logo{
+  box-sizing: border-box;
+  border: 1px solid #C4AD83;
+}
+
+.footer-content__contact{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+}
+
+.footer-content__education{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+}
+
+.footer-content_menue{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+}
+
+.footer-content__contact-item{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  font-family: 'Museo Sans 300 Light';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 144%;
+  color: #E9E9E9;
+}
+
+.footer-content__title{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+ 
+  font-family: 'Forum';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35px;
+  color: #E9E9E9;
+}
+
+.footer-content__education-item{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  font-size: 16px;
+  line-height: 144%;
+  color: #F8F6F2;
+}
+
+.footer-content__nav{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+}
+
+.footer-content__menue-item{
+  font-size: 16px;
+  line-height: 144%;
+}
+
+.footer-line{
+  border: 1px solid rgba(196, 173, 131, 0.5);
+  width: 100%;
+}
+
+.copyright{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+}
+
+.copyright__item{
+  font-size: 16px;
+  line-height: 144%;
+  color: #697FA9;
+}
+
+.footer-content__social{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 192px;
+}
+
+.footer-link{
+  color: #E8EAEE;
+  text-decoration: none;
+}
+
+.footer-link:visited {
+  color: #E8EAEE;
+
+}
+
+.footer-link:active{
+  color: #E8EAEE;
+}
+
+.footer-link:hover{
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Для мобильной версии сайта */
+@media (max-width: 375px) {
+  .footer-content{
+    flex-direction: column;
+  }
+}
+
+@media (min-width:376px) {
+}
+
+/* Для мобильной версии сайта конец */
