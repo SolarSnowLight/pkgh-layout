@@ -52,7 +52,7 @@
 #mySlides-top__switch3:checked ~ #mySlides-top__controls .mySlides-top__label:nth-child(2),
 #mySlides-top__switch4:checked ~ #mySlides-top__controls .mySlides-top__label:nth-child(3),
 #mySlides-top__switch5:checked ~ #mySlides-top__controls .mySlides-top__label:nth-child(4){
-  background: url('../img/prev.png') no-repeat; /*заливка фона картинкой без повторений*/
+  background: url('../img/slider-top/prev.png') no-repeat; /*заливка фона картинкой без повторений*/
   float: left;
   margin: 0px 0px 0 70px;
   display: block;
@@ -67,7 +67,7 @@
 #mySlides-top__switch3:checked ~ #mySlides-top__controls .mySlides-top__label:nth-child(4),
 #mySlides-top__switch4:checked ~ #mySlides-top__controls .mySlides-top__label:nth-child(5),
 #mySlides-top__switch5:checked ~ #mySlides-top__controls .mySlides-top__label:nth-child(1){
-  background: url('../img/next.png') no-repeat; /*заливка фона картинкой без повторений*/
+  background: url('../img/slider-top/next.png') no-repeat; /*заливка фона картинкой без повторений*/
   float: right;
   margin: 0 70px 0 0;
   display: block;
@@ -127,7 +127,7 @@
 /* содержимое слайдера one*/
 
 .mySlides-top__box{
-  width:491px; 
+  width:515px; 
   height:605px;
   background: rgba(255, 255, 255, 0.01);
   backdrop-filter: blur(32px);
@@ -177,13 +177,196 @@
 
 /* Для мобильной версии сайта */
 
-.mySlides-top-compact__slider{
+
+.mySlides-top-compact{
+  width: 375px;
+  height: 198px;
+}
+
+#mySlides-top__slider-compact { /*положение слайдера*/
+position: relative;
+text-align: center;
+top: 10px;
+}
+
+#mySlides-top__slider-compact{ /*центровка слайдера*/
+margin: 0 auto;
+}
+
+#mySlides-top__slides-compact article{ /*все изображения справа друг от доруга*/
+width: 20%;
+float: left;
+}
+
+#mySlides-top__slides-compact .mySlides-top__image-compact{ /*устанавливает общий размер блока с изображениями*/
+width: 500%;
+line-height: 0;
+}
+
+#mySlides-top__overflow-compact{ /*сркывает все, что находится за пределами этого блока*/
+width: 100%;
+overflow: hidden;
+}
+
+.mySlides-top__article-compact img{ /*размер изображений слайдера*/
+width: 100%;
+}
+
+.mySlides-top-article__one-compact{
+  background: #21385F;
+}
+
+#mySlides-top__desktop-compact:checked ~ #mySlides-top__slider-compact{ /*размер всего слайдера*/
+  max-width: 375px; /*максимальнная длинна*/
+}
+
+/*настройка переключения и положения для левой стрелки*/
+/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
+#mySlides-top__switch1-compact:checked ~ #mySlides-top__controls-compact .mySlides-top__label-compact:nth-child(5), 
+#mySlides-top__switch2-compact:checked ~ #mySlides-top__controls-compact .mySlides-top__label-compact:nth-child(1),
+#mySlides-top__switch3-compact:checked ~ #mySlides-top__controls-compact .mySlides-top__label-compact:nth-child(2),
+#mySlides-top__switch4-compact:checked ~ #mySlides-top__controls-compact .mySlides-top__label-compact:nth-child(3),
+#mySlides-top__switch5-compact:checked ~ #mySlides-top__controls-compact .mySlides-top__label-compact:nth-child(4){
+background: url('../img/slider-top/prevc.png') no-repeat; /*заливка фона картинкой без повторений*/
+float: left;
+margin: 0px 10px 0px;
+display: block;
+height: 68px;
+width: 68px;
+position: relative;
+}
+
+/*настройка переключения и положения для правой стрелки*/
+#mySlides-top__switch1-compact:checked ~ #mySlides-top__controls-compact .mySlides-top__label-compact:nth-child(2), 
+#mySlides-top__switch2-compact:checked ~ #mySlides-top__controls-compact .mySlides-top__label-compact:nth-child(3),
+#mySlides-top__switch3-compact:checked ~ #mySlides-top__controls-compact .mySlides-top__label-compact:nth-child(4),
+#mySlides-top__switch4-compact:checked ~ #mySlides-top__controls-compact .mySlides-top__label-compact:nth-child(5),
+#mySlides-top__switch5-compact:checked ~ #mySlides-top__controls-compact .mySlides-top__label-compact:nth-child(1){
+background: url('../img/slider-top/nextc.png') no-repeat; /*заливка фона картинкой без повторений*/
+float: right;
+margin: 0px -30px 0px 0px;
+  display: block;
+height: 68px;
+width: 68px;
+position: relative;
+}
+
+.mySlides-top__label-compact a{ /*при наведении на стрелки или переключатели - курсор изменится*/
+cursor: pointer;
+}
+
+.mySlides-top-compact input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
+display: none;
+}
+
+/*позиция изображения при активации переключателя*/
+#mySlides-top__switch1-compact:checked ~ #mySlides-top__slides-compact .mySlides-top__image-compact{
+margin-left: 0;
+}
+
+#mySlides-top__switch2-compact:checked ~ #mySlides-top__slides-compact .mySlides-top__image-compact{
+margin-left: -100%;
+}
+
+#mySlides-top__switch3-compact:checked ~ #mySlides-top__slides-compact .mySlides-top__image-compact{
+margin-left: -200%;
+}
+
+#mySlides-top__switch4-compact:checked ~ #mySlides-top__slides-compact .mySlides-top__image-compact{
+margin-left: -300%;
+}
+
+#mySlides-top__switch5-compact:checked ~ #mySlides-top__slides-compact .mySlides-top__image-compact{
+margin-left: -400%;
+}
+
+#mySlides-top__controls-compact{ /*положение блока всех управляющих элементов*/
+  margin: -125px 0px 0px 0px;  width: 100%;
+height: 50px;
+}
+
+
+#mySlides-top__slides-compact .mySlides-top__image-compact{ /*анимация пролистывания изображений*/
+transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+#mySlides-top__controls-compact .mySlides-top__label-compact:hover{ /*прозрачность стрелок при наведении*/
+opacity: 0.6;
+}
+
+#mySlides-top__controls-compact .mySlides-top__label-compact{ /*прозрачность стрелок при отводе курсора*/
+transition: opacity 0.2s ease-out;
+}
+
+/* содержимое слайдера one*/
+
+.mySlides-top__box-compact{
+  width: 375px;
+  height: 198px;
 
 }
+
+.mySlides-top__info-compact{
+position: relative;
+width: 375px;
+height: 160px;
+  /* left: 185px; */
+top: 20px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+
+.mySlides-top__title-compact{
+font-size: 21px;
+line-height: 26px;
+color: #F8F6F2;
+}
+
+.mySlides-top__text-compact{
+color: #E9ECF2;
+font-size: 14px;
+line-height: 17px;
+}
+
+.mySlides-top__button-compact{
+width: 290px;
+height: 39px;
+background: #294985;
+border-radius: 2px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.mySlides-top__more-compact{
+color: #E9ECF2;
+font-size: 16px;
+line-height: 144%;
+}
+/* Конец содержимое слайдера one*/
+
+
+/* Для мобильной версии сайта */
+
 
 @media (max-width: 375px) {
   .mySlides-top{
     display: none;
+  }
+
+  .footer-content__img{
+    width: 203.9px;
+    height: 141.71px;
+  }
+
+  .mySlides-top-compact-box{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin-bottom: 20px;
   }
 
 
@@ -193,6 +376,12 @@
   .mySlides-top-compact{
     display: none;
   }
+
+  .mySlides-top-compact-box__image{
+    display: none;
+  }
+
+
 
 }
 
