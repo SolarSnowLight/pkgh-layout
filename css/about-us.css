@@ -20,7 +20,7 @@
   background: url(../img/about-us/about-us-header__image.png);
 }
 
-.about-us-header__blur{
+.about-us-header-blur{
   display: flex;
   position: absolute;
   background: rgba(233, 236, 242, 0.1);
@@ -31,6 +31,18 @@
   flex-direction: column;
   gap: 45px;
 }
+
+.about-us-header-blur__text-one{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.about-us-header-blur__text-two{
+  margin-left: 20px;
+  color: #686868;
+}
+
+
 
 .about-us-info__box-1{
   display: flex;
