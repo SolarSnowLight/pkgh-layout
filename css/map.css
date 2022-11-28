@@ -1,0 +1,81 @@
+.map{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 1632px;
+
+}
+.map-container{
+    width: 1632px;
+    display: flex;
+    flex-direction: column;
+}
+
+.map-container__title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.map-container__text{
+    display: flex;
+    flex-direction: column;
+}
+
+.indent__0px{
+    padding-left: 0px;    
+    margin-top: 0; /* Отступ сверху */
+    margin-bottom: 0;
+}
+
+.decoration__none{
+    list-style-type:none;
+}
+
+.Proxima_Soft_Bold{
+    font-family: 'Proxima Soft Bold';
+    font-style: normal;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.Proxima_Soft_Regular{
+    font-family: 'Proxima Soft Regular';
+    font-style: normal;
+}
+
+.map-container__box{
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+
+.map-container__logo{
+    display: flex;
+    align-items: center;
+}
+
+.create-by{
+    display: flex;
+    justify-content: space-around;
+}
+
+.link-map{
+    text-decoration: none;
+    color: #282828;
+}
+
+.link-map:hover{
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.link-map:visited{
+    text-decoration: none;
+    color: #282828;
+}
+
+
+

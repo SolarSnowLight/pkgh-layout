@@ -53,3 +53,21 @@
     font-style: normal; 
     font-weight: 700;
 } 
+
+@font-face {
+    font-family: 'Proxima Soft Bold';
+    src: url('../fonts/ProximaSoft-Bold.woff2') format('woff2'),
+        url('../fonts/ProximaSoft-Bold.woff') format('woff'),
+        url('../fonts/ProximaSoft-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Soft Regular';
+    src: url('../fonts/ProximaSoft-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaSoft-Regular.woff') format('woff'),
+        url('../fonts/ProximaSoft-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
