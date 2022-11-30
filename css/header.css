@@ -199,6 +199,8 @@
 .dropdown:hover .dropbtn {background-color: #3e8e41;} */
 
 .show {display: flex;}
+.show-spec {display: flex;}
+
 
 /* выподающие меню */
 

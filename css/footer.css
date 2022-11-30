@@ -7,6 +7,7 @@
   gap: 64px;
   background: #21385F;
   border-top: 1px solid #C4AD83;
+  width: 1920px;
 }
 
 .footer-content{
@@ -149,6 +150,15 @@
 @media (max-width: 375px) {
   .footer-content{
     flex-direction: column;
+  }
+  .footer {
+    width:auto;
+  }
+
+
+  .footer-content__img{
+    width: 203.9px;
+    height: 141.71px;
   }
 }
 

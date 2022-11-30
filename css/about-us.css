@@ -97,12 +97,33 @@
     display: none;
   }
 
+  .about-us-header-blur{
+    width: 359px;
+    height: 124px;
+    left: 0px;
+    top: 63px;
+
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    gap: 20px;
+  }
+
+  .about-us-header-blur__text-one{
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
 }
 
 @media (min-width:376px) {
   .about-us-info__box-compact{
     display: none;
   }
+
+
 
 }
 

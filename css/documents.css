@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  /* gap: 20px; */
+  
 }
 
 .documents__title{
@@ -10,8 +11,7 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  gap: 8px;
-
+  margin: 20px 0px;
   width: 1632px;
   height: 44px;
 }
@@ -25,6 +25,7 @@
   gap: 16px;
   width: 1920px;
   background: #21385F;
+  margin-bottom: 20px;
 }
 
 .accordion-box__details{
