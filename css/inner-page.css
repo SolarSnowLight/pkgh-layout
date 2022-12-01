@@ -74,6 +74,7 @@ color: #686868;
   justify-content: space-between;
   flex-wrap: wrap;
   height: 84px;
+  padding: 10px;
 }
 
 .image__title{
@@ -89,16 +90,34 @@ color: #686868;
   color: #F8F6F2;
 }
 
-.photo-1{
+.inner-photo{
   width: 498.43px;
   height: 278.72px;
-
-  background: url(../img/photo-1.png);
 }
 
-.photo-2{
-  width: 498.43px;
-  height: 278.72px;
+/* Для мобильной версии сайта */
 
-  background: url(../img/photo-2.png);
+.inner-photo-compact{
+  width: 359px;
+  height: 200.75px;
 }
+
+.gap_0{
+  gap: 0px;
+}
+
+
+@media (max-width: 375px) {
+  .box-1{
+    display: none;
+  }
+
+}
+
+@media (min-width:376px) {
+  .box-1-compact{
+    display: none;
+  }
+}
+
+/* Для мобильной версии сайта конец */
