@@ -157,11 +157,15 @@
   height: 144px;
 }
 
+
+
 .feed-back_textarea{
   width: 265px;
   height: 144px;
+  resize:none;
   border-radius: 2px;
 }
+
 
 .accordion-box{
   display: flex;
@@ -197,3 +201,106 @@
   text-align: left;
 }
 
+/* Для мобильной версии сайта */
+.contacts-compact{
+  width: 375px;
+}
+
+.feed-back{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 64px;
+  gap: 10px;
+
+  width: 543px;
+  height: 681px;
+
+  /* Кобальтовый/70 */
+  background: #697FA9;
+  backdrop-filter: blur(32px);
+
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 2px;
+}
+
+.contacts-box_feed-back{
+
+}
+
+.contacts-map-compact__blur{
+  position: absolute;
+  width: 375px;
+  height: 444px;
+  left: 0px;
+  top: 0px;
+  background: rgba(33, 56, 95, 0.1);
+  backdrop-filter: blur(32px);
+}
+
+.contacts-map-compact__find-us{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  position: absolute;
+  width: auto;
+  height: 256px;
+  left: 0px;
+  top: 64px;
+}
+
+.accordion-box-compact{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 10px;
+  width: 375px;
+  background: #21385F;
+}
+
+.accordion-box-compact__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0px;
+  gap: 24px;
+  width: 375px;
+  /* Сапфировый/100 */
+  background: #21385F;
+}
+
+.accordion-box-compact__text{
+  width: 375px;
+  text-align: left;
+}
+
+@media (max-width: 375px) {
+  .contacts{
+    display: none;
+  }
+  .contacts-map__line{
+    width: auto;
+  }
+
+  .feed-back{
+    width: auto;
+  }
+
+  .contacts-box-2{
+    padding: 10px;
+    width: auto;
+  }
+}
+
+@media (min-width:376px) {
+  .contacts-compact{
+    display: none;
+  }
+}
+
+/* Для мобильной версии сайта конец */
