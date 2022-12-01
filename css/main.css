@@ -232,6 +232,7 @@
   align-items: flex-start;
 }
 
+/* использую на страницы search */
 .gap_8{
   gap: 8px;
 }

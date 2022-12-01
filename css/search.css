@@ -1,6 +1,3 @@
-.search {
-
-}
 .search-container {
     display: flex;
     flex-direction: row;
@@ -17,7 +14,6 @@
     align-items: flex-start;
     padding: 0px;
     gap: 40px;
-
 }
 
 .search-rectangle-condition {
@@ -26,11 +22,6 @@
     align-items: flex-start;
     padding: 0px;
     gap: 40px;
-
-}
-
-.search-rectangle-condition_title {
-
 }
 
 .search-rectangle-condition__input {
@@ -72,35 +63,14 @@
     padding: 0px;
 }
 
-.search-rectangle-result_title {
-
-}
-
-.search-rectangle-result {
-
-}
-
 .search-rectangle-categories {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
-}
-
-.search-rectangle-categories__title {
-
 }
 
 .search-rectangle-categories__news{
     padding: 0px 0px 0px 24px;
-}
-
-.search-rectangle-calendar {
-
-}
-
-.search-rectangle-calendar__title {
-
 }
 
 .line{
@@ -108,3 +78,63 @@
     height: 0px;
     border: 1px solid #BEBEBE;
 }
+
+
+/* Ссылки для разбиения на страницы */
+.search-pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+  /* Стиль активной/текущей ссылки */
+  .search-pagination a.active {
+    background-color:#294985;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  /* Добавить серый цвет фона при наведении курсора мыши */
+  .search-pagination a:hover:not(.active) {background-color: #ddd;} 
+
+
+  @media (max-width: 375px) {
+    .search-container{
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .search-rectangle-condition__input{
+        flex-wrap: wrap;
+    }
+
+    .search-rectangle-condition__elements{
+        flex-wrap: wrap;
+        width: 301px;
+    }
+
+    /* .flex-box-one{
+        width: 375px;
+    } */
+    .H3{
+        text-align: start;
+    }
+
+    .line{
+        width: auto;
+    }
+
+    .search-pagination{
+        display: none;
+    }
+
+
+  }
+  
+  @media (min-width:376px) {
+
+
+  }
