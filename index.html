@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="css/enrollee.css">
   <link rel="stylesheet" href="css/slider-major.css">
   <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
   <div class="wrapper">
@@ -23,6 +22,10 @@
 <!-- header -->
       <header class="header-info">
         <script src="script/header-nav.js"></script>
+        <script src="script/header-nav-two.js"></script>
+
+        <!-- <script src="script/nav.js"></script> -->
+
         <div class="heade-info-box">
           <div class="header-info-title">
             <div class="header-info-logo">
@@ -34,16 +37,9 @@
             </div>
               <div class="header-info-service">
                 <div class="header-info-service__search">
-                  <div class="row login-block__input-block justify-content-md-center login-block__input-block-border">
-                    <div class="input-group align-items-center">
-                  <div class="input-group align-items-center">
-                  <div class="col-2">
+
                     <img src="img/header/ic_search_48px.png" alt="people_icon">
-                </div>
-                  <input class="form-control col" type="text" placeholder="поиск по сайту">
-                </div>
-              </div>
-              </div>
+                    <input class="form-control col" type="text" placeholder="поиск по сайту">
                 </div>
               <div class="header-info-service__language">
                 <img src="img/header/header-info-service__language.png" alt="">
@@ -67,12 +63,15 @@
                 </div>
 
               </div>
-              <span class="header-menu__item"><a class="link" href="#">Профориентация</a></span>
+              <div id="nav">
+              <span class="header-menu__item "><a class="link" href="#">Профориентация</a></span>
+            </div>
+              
               <div class="header-menu__item"><a class="link_spec" onclick="myFunctionSpec()" href="#">Специальность</a>
                 <div id="myDropdownSpec" class="dropdown-content-spec">
                   <div class="dropdown">
-                    <a class="link" href="#">09.02.06	Сетевое и системное администрирование</a>
-                    <a class="link" href="#">09.02.07	Информационные системы и программирование</a>
+                    <div><a class="link" href="#">09.02.06	Сетевое и системное администрирование</a></div>
+                    <div><a class="link" href="#">09.02.07	Информационные системы и программирование</a></div>
                     <a class="link" href="#">11.02.01	Радио аппаратостроение</a>
                     <a class="link" href="#">15.02.08	Технология машиностроения</a>
                     <a class="link" href="#">27.02.07	Управление качеством продукции, процессов и услуг</a>
@@ -607,7 +606,6 @@
 <!--footer-->
       
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </div>
 </body>
 </html>

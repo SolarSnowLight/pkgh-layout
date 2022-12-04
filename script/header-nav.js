@@ -1,3 +1,21 @@
+function myFunctionSpec() {
+  document.getElementById("myDropdownSpec").classList.toggle("show-spec");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.link_spec')) {
+  let dropdownsSpec = document.getElementsByClassName("dropdown-content-spec");
+  let i;
+  for (i = 0; i < dropdownsSpec.length; i++) {
+    let openDropdownSpec = dropdownsSpec[i];
+    if (openDropdownSpec.classList.contains('show-spec')) {
+      openDropdownSpec.classList.remove('show-spec');
+    }
+  }
+}
+}
+
 function myFunctionMain() {
   document.getElementById("myDropdownMain").classList.toggle("show");
 }
@@ -15,27 +33,3 @@ if (!event.target.matches('.header-main-link')) {
   }
 }
 }
-
-
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-
-function myFunctionSpec() {
-    document.getElementById("myDropdownSpec").classList.toggle("show-spec");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.link_spec')) {
-    let dropdownsSpec = document.getElementsByClassName("dropdown-content-spec");
-    let i;
-    for (i = 0; i < dropdownsSpec.length; i++) {
-      let openDropdownSpec = dropdownsSpec[i];
-      if (openDropdownSpec.classList.contains('show-spec')) {
-        openDropdownSpec.classList.remove('show-spec');
-      }
-    }
-  }
-}
-
-
