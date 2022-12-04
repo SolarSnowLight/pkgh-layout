@@ -1,0 +1,263 @@
+.mygrid{
+  display: grid;
+  grid-template-columns: 326px 326px 326px 326px 326px;
+  grid-template-rows: 136px 377px 354px 423px;
+}
+
+.post-1{
+  padding: 10px;
+  grid-column: 1; 
+  grid-row: 1;
+  background: #294985;
+  font-family: 'Forum';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  /* Кобальтовый/10 */
+  color: #E9ECF2;
+}
+
+.post-2{
+  padding: 10px;
+  grid-column: 2; 
+  grid-row: 1;
+  background: #294985;
+  font-family: 'Forum';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  /* Кобальтовый/10 */
+  color: #E9ECF2;
+}
+
+.post-3{
+  padding: 10px;
+  grid-column: 3; 
+  grid-row: 1;
+  background: #294985;
+  font-family: 'Forum';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  /* Кобальтовый/10 */
+  color: #E9ECF2;
+}
+
+.post-4{
+  padding: 10px;
+  grid-column: 4; 
+  grid-row: 1;
+  background: #294985;
+  font-family: 'Forum';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  /* Кобальтовый/10 */
+  color: #E9ECF2;
+}
+
+.post-5{
+  padding: 10px;
+  grid-column: 5; 
+  grid-row: 1;
+  background: #294985;
+  font-family: 'Forum';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  /* Кобальтовый/10 */
+  color: #E9ECF2;
+}
+
+.post-6{
+  padding: 10px;
+  grid-column: 1; 
+  grid-row: 2;
+  background: #294985;
+  font-family: 'Museo Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 144%;
+  /* Кобальтовый/10 */
+  background: #E9ECF2;
+}
+
+.post-7{
+  padding: 10px;
+  grid-column: 2; 
+  grid-row: 2;
+  font-family: 'Museo Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 144%;
+  background: #E9ECF2;
+}
+
+.post-8{
+  padding: 10px;
+  grid-column: 3; 
+  grid-row: 2;
+  font-family: 'Museo Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 144%;
+  background: #E9ECF2;
+}
+
+.post-9{
+  padding: 10px;
+  grid-column: 4; 
+  grid-row: 2;
+  font-family: 'Museo Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 144%;
+  background: #E9ECF2;
+}
+
+.post-10{
+  padding: 10px;
+  grid-column: 5; 
+  grid-row: 2;
+  font-family: 'Museo Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 144%;
+  background: #E9ECF2;
+}
+
+.post-11{
+  padding: 10px;
+  grid-column: 1; 
+  grid-row: 3;
+  font-family: 'Museo Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 144%;
+  /* Кобальтовый/10 */
+  background: #BEC8DA;}
+
+.post-12{
+  padding: 10px;
+  grid-column: 2; 
+  grid-row: 3;
+  font-family: 'Museo Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 144%;
+  background: #BEC8DA;
+}
+
+
+.post-13{
+  padding: 10px;
+  grid-column: 3; 
+  grid-row: 3;
+  font-family: 'Museo Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 144%;
+  background: #BEC8DA;
+}
+
+
+.post-14{
+  padding: 10px;
+  grid-column: 4; 
+  grid-row: 3;
+  font-family: 'Museo Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 144%;
+  background: #BEC8DA;
+}
+
+
+.post-15{
+  padding: 10px;
+  grid-column: 5; 
+  grid-row: 3;
+  font-family: 'Museo Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 144%;
+  background: #BEC8DA;
+}
+
+
+.post-16{
+  padding: 10px;
+  grid-column: 1; 
+  grid-row: 4;
+  background: #294985;
+  font-family: 'Museo Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 144%;
+  /* Кобальтовый/10 */
+  background: #E9ECF2;
+}
+
+.post-17{
+  padding: 10px;
+  grid-column: 2; 
+  grid-row: 4;
+  font-family: 'Museo Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 144%;
+  background: #E9ECF2;
+}
+
+.post-18{
+  padding: 10px;
+  grid-column: 3; 
+  grid-row: 4;
+  font-family: 'Museo Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 144%;
+  background: #E9ECF2;
+}
+
+.post-19{
+  padding: 10px;
+  grid-column: 4; 
+  grid-row: 4;
+  font-family: 'Museo Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 144%;
+  background: #E9ECF2;
+}
+
+.post-20{
+  padding: 10px;
+  grid-column: 5; 
+  grid-row: 4;
+  font-family: 'Museo Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 144%;
+  background: #E9ECF2;
+}
