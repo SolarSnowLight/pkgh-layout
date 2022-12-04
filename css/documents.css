@@ -16,6 +16,10 @@
   height: 44px;
 }
 
+.documents__text{
+  margin:20px auto;
+}
+
 .accordion-box{
   display: flex;
   flex-direction: row;
