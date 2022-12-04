@@ -1,0 +1,46 @@
+.drop__button {
+  background-color: inherit;
+  font-family: "Museo Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #686868;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.drop-down__element {
+  position: relative;
+  display: inline-block;
+}
+
+.drop-down__content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.drop-down__content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.drop-down__content a:hover {
+  background-color: #f1f1f1;
+}
+
+.drop-down__element:hover .drop-down__content {
+  display: block;
+}
+
+.drop-down__element:hover .drop__button {
+  background-color: #294985;
+  color: #f1f1f1;
+}

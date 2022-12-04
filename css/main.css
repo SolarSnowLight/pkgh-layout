@@ -16,24 +16,24 @@
   align-items: center;
 }
 
-.H{
-  font-family: 'Forum';
+.H {
+  font-family: "Forum";
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 44px;
 }
 
-.H1{
-  font-family: 'Forum';
+.H1 {
+  font-family: "Forum";
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 35px;
 }
 
-.H3{
-  font-family: 'Forum';
+.H3 {
+  font-family: "Forum";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -41,215 +41,227 @@
   text-align: center;
 }
 
-.body_thin{
-  font-family: 'Museo Sans 300 Light';
+.body_thin {
+  font-family: "Museo Sans 300 Light";
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 144%;
 }
 
-.body_bold{
+.body_bold {
   /* bodyBold */
-  font-family: 'Museo Sans 500';
+  font-family: "Museo Sans 500";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
 }
 
-.line{
+.line {
   height: 0px;
-  border: 1px solid #C4AD83;
+  border: 1px solid #c4ad83;
   align-self: stretch;
 }
 
-.forum_400{
-  font-family: 'Forum';
+.forum_400 {
+  font-family: "Forum";
   font-style: normal;
   font-weight: 400;
 }
 
-.museo-sans_300{
-  font-family: 'Museo Sans 300 Light';
+.museo-sans_300 {
+  font-family: "Museo Sans 300 Light";
   font-style: normal;
   font-weight: 300;
 }
 
-.link, .link_spec{
-  text-decoration: none;
+.link,
+.link_spec {
+  text-decoration: none !important;
+  font-family: "Museo Sans" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 22px !important;
 }
 
-.link:visited, .link_spec:visited{
+.link:visited,
+.link_spec:visited {
   color: #686868;
 }
 
-.link:active, .link_spec:active{
+.link:active,
+.link_spec:active {
   color: #686868;
 }
 
-.link:hover, .link_spec:hover{
-  color: #0056b3;
+.link:hover,
+.link_spec:hover {
+  color: #294985;
+  font-family: "Museo Sans" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 22px !important;
   text-decoration: underline;
 }
 
 .link-sapphire_30 {
-  color: #BBC2CE;
+  color: #bbc2ce;
   text-decoration: none;
 }
 
-.link-sapphire_30:visited{
-  color: #BBC2CE;
+.link-sapphire_30:visited {
+  color: #bbc2ce;
 }
 
-.link-sapphire_30:active{
-  color: #BBC2CE;
+.link-sapphire_30:active {
+  color: #bbc2ce;
 }
 
-.link-sapphire_30:hover{
+.link-sapphire_30:hover {
   color: #0056b3;
   text-decoration: underline;
 }
 
-.link_white{
+.link_white {
   text-decoration: none;
 }
 
-.link_white:visited{
-  color: #E9ECF2;
+.link_white:visited {
+  color: #e9ecf2;
 }
 
-.link_white:active{
-  color: #E9ECF2;
+.link_white:active {
+  color: #e9ecf2;
 }
 
-.link_gold_30{
+.link_gold_30 {
   text-decoration: none;
 }
 
-.link_gold_30:visited{
-  color: #EDE6D9;
+.link_gold_30:visited {
+  color: #ede6d9;
 }
 
-.link_gold_30:active{
-  color: #EDE6D9;
+.link_gold_30:active {
+  color: #ede6d9;
 }
 
-.color_cobalt{
+.color_cobalt {
   color: #294985;
 }
 
-.color-cobalt_70{
+.color-cobalt_70 {
   color: #294985;
 }
 
-.color_white{
-  color: #FFFFFF;
+.color_white {
+  color: #ffffff;
 }
 
-.color_graphite_10{
-  color: #E9E9E9;
+.color_graphite_10 {
+  color: #e9e9e9;
 }
 
-.color_graphite_70{
+.color_graphite_70 {
   color: #686868;
 }
 
-.color_graphite_30{
-  color: #BEBEBE;
+.color_graphite_30 {
+  color: #bebebe;
 }
 
-
-.color_gold_70{
-  color: #697FA9;
+.color_gold_70 {
+  color: #697fa9;
 }
 
-.color-sapphire_10{
-  color: #E8EAEE;
+.color-sapphire_10 {
+  color: #e8eaee;
 }
 
-.color-sapphire_30{
-  color: #BBC2CE;
+.color-sapphire_30 {
+  color: #bbc2ce;
 }
 
-.color-sapphire_100{
-  color: #21385F;
+.color-sapphire_100 {
+  color: #21385f;
 }
 
-.text_span span{
+.text_span span {
   text-align: center;
-  color: #EDE6D9;
+  color: #ede6d9;
 }
 
-.font_size-24{
+.font_size-24 {
   font-size: 24px;
 }
 
-.font_height-26{
+.font_height-26 {
   line-height: 26px;
 }
 
-.font_size-24_height-26{
+.font_size-24_height-26 {
   font-size: 24px;
   line-height: 26px;
 }
 
-.font_size-32_height-35{
+.font_size-32_height-35 {
   font-size: 32px;
   line-height: 35px;
 }
 
-.font_size-16_height-144{
+.font_size-16_height-144 {
   font-size: 16px;
   line-height: 144%;
 }
 
-.button{
+.button {
   /* Кобальтовый/100 */
   background: #294985;
   /* Золотой/100 */
   height: 39px;
   box-sizing: border-box;
-/* Auto layout */
+  /* Auto layout */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.text_pointer{
+.text_pointer {
   cursor: pointer;
 }
 
-.flex-box_row{
+.flex-box_row {
   display: flex;
   flex-direction: row;
 }
 
-.flex-box_column{
+.flex-box_column {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
 /* использую на страницы search */
-.gap_8{
+.gap_8 {
   gap: 8px;
 }
 
-.gap_15{
+.gap_15 {
   gap: 16px;
 }
 
-.gap_15{
+.gap_15 {
   gap: 16px;
 }
 
-.gap_24{
+.gap_24 {
   gap: 24px;
 }
 
-.gap_40{
+.gap_40 {
   gap: 40px;
 }
-

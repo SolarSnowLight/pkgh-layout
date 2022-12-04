@@ -65,34 +65,13 @@
 
 .header-menu{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 24px;
-  width: 1628px;
-  height: 68px;
-}
-
-.header-menu__one {
-  display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: start;
   padding: 0px;
-  gap: 38px;
-  width: 1628px;
-  height: 22px;
-}
-
-.header-menu__item-main{
-  font-family: 'Museo Sans 300 Light';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
-  text-decoration: underline;
-  color: #294985;
+  gap: 32px;
+  width: 100%;
+  height: max-content;
 }
 
 .header-menu__item{
@@ -102,16 +81,6 @@
   font-size: 16px;
   line-height: 22px;
   color: #686868;
-}
-
-.header-menu__two{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 38px;
-  width: 1628px;
-  height: 22px;
 }
 
 .header-main-link{
