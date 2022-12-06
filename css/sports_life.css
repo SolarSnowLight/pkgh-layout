@@ -1,0 +1,280 @@
+/* Глобальный стиль тела страницы "Спортивная жизнь" */
+.sport-life__body {
+  width: 90%;
+  margin-top: 32px;
+  text-align: center;
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Дочерний элемент .sport-life__body */
+.sport-life__item {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+/* Дочерний элемент .sport-life__item */
+.sport-life__subitem {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.sport-life__img-block {
+  width: 300px;
+  height: 300px;
+}
+
+/* Стиль таблицы изображений */
+.sport-life__table-img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.sport-life__subitem > span:not(:first-child) {
+  margin-top: 16px;
+}
+
+.sport-life__item-link {
+  cursor: pointer;
+}
+
+.structure-table__first-row {
+  background-color: #294985 !important;
+  color: #e9ecf2;
+  font-family: "Forum";
+  font-size: 24px;
+}
+
+.structure-table__main tr:nth-child(odd) {
+  background-color: #bec8da;
+}
+
+.structure-table__main td {
+  font-family: "Museo Sans";
+  font-size: 16px;
+}
+
+.structure-table__main tr:nth-child(even) {
+  background-color: #e9ecf2;
+}
+
+.structure-table__main {
+  margin-bottom: 32px;
+}
+
+.structure-table-mobile {
+  display: none;
+}
+
+.structure-table-mobile__block {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.structure-table-mobile__block td {
+  font-size: 14px;
+  border: 1px solid #64748f;
+}
+
+.structure-table-mobile__block:nth-of-type(odd) {
+  background-color: #e9ecf2;
+}
+
+.structure-table-mobile__block:nth-of-type(even) {
+  background-color: #bec8da;
+}
+
+@media screen and (max-width: 1000px) {
+  .sport-life__item {
+    flex-wrap: wrap;
+  }
+
+  .structure-table__main {
+    display: none;
+  }
+
+  .structure-table-mobile {
+    display: block;
+  }
+
+  .structure-table__header p {
+    font-size: calc(24px + 16 * (100vw / 1000));
+  }
+}
+
+/* Для документов*/
+.documents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 20px; */
+}
+
+.documents__title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  margin: 20px 0px;
+  width: 1632px;
+  height: 44px;
+}
+
+.documents__text {
+  margin: 20px auto;
+}
+
+.accordion-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0px;
+  gap: 16px;
+  width: 1920px;
+  background: #21385f;
+  margin-bottom: 20px;
+}
+
+.accordion-box__details {
+  text-align: center;
+}
+
+.accordion-box__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0px;
+  gap: 24px;
+
+  width: 1920px;
+  /* height: 160px; */
+
+  /* Сапфировый/100 */
+  background: #21385f;
+}
+
+.accordion-box__text {
+  width: 1086px;
+  text-align: left;
+}
+
+@media (max-width: 375px) {
+  .documents {
+    width: 375px;
+  }
+
+  .documents__title {
+    width: 359px;
+  }
+
+  .accordion-box {
+    width: 375px;
+  }
+
+  .accordion-box__content {
+    width: auto;
+  }
+
+  .accordion-box__text {
+    width: auto;
+    margin: 0px 20px;
+  }
+}
+
+@media (min-width: 376px) {
+}
+
+/* Стили для слайдера */
+/* Position the image slider-container (needed to position the left and right arslider__rows) */
+.slider-container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.slider-container__slide {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.slider-container__cursor {
+  cursor: pointer;
+}
+
+/* Next & slider-prev__btnious buttons */
+.slider-prev__btn,
+.slider-next__btn {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "slider-next__btn button" to the right */
+.slider-next__btn {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.slider-prev__btn:hover,
+.slider-next__btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.slider-num__text {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-slider-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.slider__row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six slider__columns side by side */
+.slider__column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.slider-demo {
+  opacity: 0.6;
+}
+
+.slider-active,
+.slider-demo:hover {
+  opacity: 1;
+}

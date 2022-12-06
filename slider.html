@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    /* Position the image slider-container (needed to position the left and right arslider__rows) */
+    .slider-container {
+      position: relative;
+    }
+
+    /* Hide the images by default */
+    .slider-container__slide {
+      display: none;
+    }
+
+    /* Add a pointer when hovering over the thumbnail images */
+    .slider-container__cursor {
+      cursor: pointer;
+    }
+
+    /* Next & slider-prev__btnious buttons */
+    .slider-prev__btn,
+    .slider-next__btn {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* Position the "slider-next__btn button" to the right */
+    .slider-next__btn {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .slider-prev__btn:hover,
+    .slider-next__btn:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Number text (1/3 etc) */
+    .slider-num__text {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* Container for image text */
+    .caption-slider-container {
+      text-align: center;
+      background-color: #222;
+      padding: 2px 16px;
+      color: white;
+    }
+
+    .slider__row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Six slider__columns side by side */
+    .slider__column {
+      float: left;
+      width: 16.66%;
+    }
+
+    /* Add a transparency effect for thumnbail images */
+    .slider-demo {
+      opacity: 0.6;
+    }
+
+    .slider-active,
+    .slider-demo:hover {
+      opacity: 1;
+    }
+  </style>
+  <body>
+    <h2 style="text-align: center">Slideshow Gallery</h2>
+
+    <div class="slider-container">
+      <div class="slider-container__slide">
+        <div class="slider-num__text">1 / 6</div>
+        <img src="img/empty_img.png" style="width: 50%" />
+      </div>
+
+      <div class="slider-container__slide">
+        <div class="slider-num__text">2 / 6</div>
+        <img src="img/empty_img.png" style="width: 50%" />
+      </div>
+
+      <div class="slider-container__slide">
+        <div class="slider-num__text">3 / 6</div>
+        <img src="img/empty_img.png" style="width: 50%" />
+      </div>
+
+      <div class="slider-container__slide">
+        <div class="slider-num__text">4 / 6</div>
+        <img src="img/empty_img.png" style="width: 50%" />
+      </div>
+
+      <div class="slider-container__slide">
+        <div class="slider-num__text">5 / 6</div>
+        <img src="img/empty_img.png" style="width: 50%" />
+      </div>
+
+      <div class="slider-container__slide">
+        <div class="slider-num__text">6 / 6</div>
+        <img src="img/empty_img.png" style="width: 50%" />
+      </div>
+
+      <a class="slider-prev__btn" onclick="slidesAdd(-1)">❮</a>
+      <a class="slider-next__btn" onclick="slidesAdd(1)">❯</a>
+
+      <div class="caption-slider-container">
+        <p id="caption"></p>
+      </div>
+
+      <div class="slider__row">
+        <div class="slider__column">
+          <img
+            class="slider-demo slider-container__cursor"
+            src="img/empty_img.png"
+            style="width: 100%"
+            onclick="getCurrentSlide(1)"
+            alt="The Woods"
+          />
+        </div>
+        <div class="slider__column">
+          <img
+            class="slider-demo slider-container__cursor"
+            src="img/empty_img.png"
+            style="width: 100%"
+            onclick="getCurrentSlide(2)"
+            alt="Cinque Terre"
+          />
+        </div>
+        <div class="slider__column">
+          <img
+            class="slider-demo slider-container__cursor"
+            src="img/empty_img.png"
+            style="width: 100%"
+            onclick="getCurrentSlide(3)"
+            alt="Mountains and fjords"
+          />
+        </div>
+        <div class="slider__column">
+          <img
+            class="slider-demo slider-container__cursor"
+            src="img/empty_img.png"
+            style="width: 100%"
+            onclick="getCurrentSlide(4)"
+            alt="Northern Lights"
+          />
+        </div>
+        <div class="slider__column">
+          <img
+            class="slider-demo slider-container__cursor"
+            src="img/empty_img.png"
+            style="width: 100%"
+            onclick="getCurrentSlide(5)"
+            alt="Nature and sunrise"
+          />
+        </div>
+        <div class="slider__column">
+          <img
+            class="slider-demo slider-container__cursor"
+            src="img/empty_img.png"
+            style="width: 100%"
+            onclick="getCurrentSlide(6)"
+            alt="Snowy Mountains"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function slidesAdd(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function getCurrentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slider-container__slide");
+        let dots = document.getElementsByClassName("slider-demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" slider-active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " slider-active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
+  </body>
+</html>
