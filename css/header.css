@@ -1,28 +1,16 @@
-.heade-info-box{
-  display: flex;
-  flex-direction: column;
-  padding: 24px 144px;
-  gap: 32px;
-  background: #FFFFFF;
+.header-info-box{
+  padding: 24px 0;
   box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.08);
 }
 
 .header-info-title{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px;
-  gap: 74px;
-  width: 1628px;
-  height: 93.84px;
+  padding: 0 15px;
 }
 
-.header-info-text{
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  right: 110px;
+.header-info-logo {
+  max-width: 125px;
+  width: 100%;
+  min-width: 60px;
 }
 
 .header-info-text__one{
@@ -30,6 +18,7 @@
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
+  max-font-size: 14px;
   line-height: 17px;
   color: #64748F;
 }
@@ -38,7 +27,7 @@
   font-family: 'Forum';
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
+  font-size: calc(20px + (32 - 20) * (100vw - 375px) / (1920 - 375));
   line-height: 35px;
   color: #64748F;
 }
@@ -64,6 +53,7 @@
 }
 
 .header-menu{
+  margin-top: 32px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -190,19 +180,33 @@
 }
 
 .heade-info-box-compact__hamburger{
-
+  display: none;
 }
 
-@media (max-width: 375px) {
-  .heade-info-box{
-    display: none;
+@media (max-width: 768px) {
+  .header-info-title .col-3 {
+    padding-right: 2px;
   }
-  
-}
+  .header-info-text {
+    padding-left: 2px !important;
+  }
 
-@media (min-width: 376px) {
-  .heade-info-box-compact{
-    display: none;
+  .header-info-text-row {
+    display: none !important;
+  }
+
+  .header-info-text__two {
+    line-height: 22px;
+    color: #294985;
+  }
+
+  .header-info-title {
+    margin-top: 32px;
+  }
+
+  .heade-info-box-compact__hamburger {
+    display: inline-block;
+    padding-left: 0 !important;
   }
 }
 
