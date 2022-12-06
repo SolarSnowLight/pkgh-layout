@@ -1,0 +1,11 @@
+.management-table__header-info {
+    margin-bottom: 32px;
+    text-align: left;
+    color: #64748F;
+    font-family: 'Forum';
+    font-size: 24px;
+}
+
+.management-table__content {
+    padding: 0 16px;
+}

@@ -23,7 +23,7 @@
     font-size: 24px;
 }
 
-.structure-table__main tr:nth-child(odd) {
+.structure-table__main tr:nth-child(even) {
     background-color: #BEC8DA;
 }
 
@@ -32,7 +32,7 @@
     font-size: 16px;
 }
 
-.structure-table__main tr:nth-child(even) {
+.structure-table__main tr:nth-child(odd) {
     background-color: #E9ECF2;
 }
 
