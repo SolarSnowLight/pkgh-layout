@@ -6,6 +6,25 @@
     font-size: 24px;
 }
 
-.management-table__content {
-    padding: 0 16px;
+.accordion-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0px;
+    gap: 16px;
+    width: 100%;
+    background: #21385F;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+details {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .management-table {
+        display: none;
+    }
 }
