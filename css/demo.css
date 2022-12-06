@@ -1,0 +1,81 @@
+.demo{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.demo__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 31px;
+    gap: 32px;
+    align-self: center;
+    width: 936.29px;
+    height: 456.41px;
+
+    /* Кобальтовый/70 */
+    background: #697FA9;
+    backdrop-filter: blur(32px);
+
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 2px;
+    margin-bottom: 30px;
+
+}
+
+.demo__title{
+    color: #21385F;
+    width: 1688px;
+    margin: 20px auto;
+}
+
+.demo__text-1{
+    color: #E9ECF2;
+    text-align: center;
+    max-width: 530px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.demo__text-2{
+    color: #BEC8DA;}
+
+
+.accordion-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0px;
+    gap: 16px;
+    width: 1920px;
+    background: #21385F;
+    margin-bottom: 20px;
+}
+
+.accordion-box__details{
+    text-align: center; 
+}
+
+.accordion-box__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0px;
+    gap: 24px;
+
+    width: 1920px;
+/* height: 160px; */
+
+/* Сапфировый/100 */
+    background: #21385F;
+}
+
+.accordion-box__text{
+    width: 1086px;
+    text-align: left;
+
+}
