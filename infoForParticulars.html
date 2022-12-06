@@ -265,7 +265,7 @@
 
         <div class="swiper">
           <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper mb-5">
             <!-- Slides -->
             <div class="swiper-slide">
               <div class="row p-0 m-0 justify-content-center">
@@ -303,7 +303,9 @@
                 </iv>
               </div>
             </div>
-
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
       </section>
 </body>
 
@@ -390,7 +392,11 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script>
-  const swiper = new Swiper('.swiper');
+  const swiper = new Swiper('.swiper', {
+    pagination: {
+      el: ".swiper-pagination",
+    }
+  });
 </script>
 </body>
 

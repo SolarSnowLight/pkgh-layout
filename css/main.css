@@ -4,6 +4,7 @@
 :root {
   --saphire-100: #21385f;
   --graphite-100: #282828;
+  --cobalt-100: #294985;
 }
 
 /* Общий стиль для всех заголовков страницы между NavBar и Footer*/
@@ -301,4 +302,17 @@
   .row {
     padding: 0 !important;
   }
+}
+
+
+/* slider swiper.js pagination style */
+
+.swiper-pagination-bullets>.swiper-pagination-bullet {
+  border-radius: 2px;
+  background-color: #fff;
+  border: 1px solid var(--cobalt-100)
+}
+
+.swiper-pagination-bullets>.swiper-pagination-bullet-active {
+  background-color: var(--cobalt-100);
 }
