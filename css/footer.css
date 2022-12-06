@@ -7,7 +7,7 @@
   gap: 64px;
   background: #21385F;
   border-top: 1px solid #C4AD83;
-  width: 1920px;
+  width: 100%;
 }
 
 .footer-content{
@@ -71,7 +71,7 @@
   font-family: 'Forum';
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
+  font-size: calc(24px + (32 - 24) * (100vw - 375px) / (1920 - 375));
   line-height: 35px;
   color: #E9E9E9;
 }
@@ -118,6 +118,7 @@
   font-size: 16px;
   line-height: 144%;
   color: #697FA9;
+  text-align: center;
 }
 
 .footer-content__social{
@@ -147,22 +148,18 @@
 }
 
 /* Для мобильной версии сайта */
-@media (max-width: 375px) {
-  .footer-content{
+
+@media (max-width: 1024px) {
+  .footer-content {
     flex-direction: column;
+    vertical-align: center;
+    margin-top: 12px;
   }
+
   .footer {
-    width:auto;
+    padding: 0;
   }
-
-
-  .footer-content__img{
-    width: 203.9px;
-    height: 141.71px;
-  }
-}
-
-@media (min-width:376px) {
 }
 
 /* Для мобильной версии сайта конец */
+

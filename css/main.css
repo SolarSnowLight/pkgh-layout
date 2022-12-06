@@ -275,5 +275,19 @@
 }
 
 .gap_40 {
-  gap: 40px;
+  gap: 42px;
+}
+
+.container-fluid {
+  width: 87% !important;
+}
+
+@media (max-width: 576px) {
+  .container-fluid {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .row {
+    padding: 0 !important;
+  }
 }
