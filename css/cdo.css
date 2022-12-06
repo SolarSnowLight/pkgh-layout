@@ -1,0 +1,34 @@
+/* List */
+.list-decoration__dash {
+  list-style-type: '-';
+}
+
+.list-decoration__numeric {
+  list-style-type: decimal;
+}
+
+.list-decoration__default {
+  list-style-type: disc;
+}
+
+
+.list-decoration--item {
+  padding-left: 1em;
+}
+
+.list-decoration__none {
+  padding: 0;
+  list-style-type: none;
+}
+
+.cdo-list-download-links li span {
+  padding-left: 10px
+}
+
+.cdo-list-download-links>li {
+  margin: 10px 0;
+}
+
+.gallery img {
+  border-radius: 5px;
+}
