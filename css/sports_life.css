@@ -15,6 +15,10 @@
   gap: 16px;
 }
 
+.sport-life__item-slider {
+    background-color: #21385f;
+}
+
 /* Дочерний элемент .sport-life__item */
 .sport-life__subitem {
   width: 50%;
@@ -233,6 +237,11 @@
   right: 0;
   border-radius: 3px 0 0 3px;
 }
+
+.slider-prev__btn {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
 
 /* On hover, add a black background color with a little bit see-through */
 .slider-prev__btn:hover,
