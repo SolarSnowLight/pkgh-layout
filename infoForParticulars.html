@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/dropdown.css">
   <link rel="stylesheet" href="css/separator.css">
+  <link rel="stylesheet" href="css/infoForPartiulars.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
@@ -262,23 +263,48 @@
           СПЕЦИАЛЬНОСТИ
         </h3>
 
-        <gallery class="row p-0 mb-2">
-          <img class="col-4 pl-0 pr-2" src="img/infoForParticulars/placeholder_1.png" alt="">
-          <gallery class="row col">
-            <img class="col-3 pl-0 pb-3 pr-2" src="img/infoForParticulars/placeholder_2.png" alt="">
-            <img class="col-3 pl-0 pb-3 pr-2" src="img/infoForParticulars/placeholder_3.png" alt="">
-            <img class="col-3 pl-0 pb-3 pr-2" src="img/infoForParticulars/placeholder_3.png" alt="">
-            <img class="col-3 pl-0 pb-3 pr-0" src="img/infoForParticulars/placeholder_3.png" alt="">
-            <img class="col-3 pl-0 pr-2" src="img/infoForParticulars/placeholder_3.png" alt="">
-            <img class="col-3 pl-0 pr-2" src="img/infoForParticulars/placeholder_3.png" alt="">
-            <img class="col-3 pl-0 pr-2" src="img/infoForParticulars/placeholder_3.png" alt="">
-            <img class="col-3 pl-0 pr-0" src="img/infoForParticulars/placeholder_3.png" alt="">
-          </gallery>
-        </gallery>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="row p-0 m-0 justify-content-center">
+                <img class="col-lg-4 col-12 p-0 pb-2" src="img/infoForParticulars/placeholder_1.png" alt="">
+                <gallery class="row col-12 col-lg-8 p-0 pl-0 pl-lg-4">
+                  <img class="col-lg-3 col-6 pl-0 pb-2 pr-2" src="img/infoForParticulars/placeholder_2.png" alt="">
+                  <img class="col-lg-3 col-6 pl-0 pb-2 pr-lg-2 pr-0" src="img/infoForParticulars/placeholder_3.png"
+                    alt="">
+                  <img class="col-lg-3 col-6 pl-0 pb-2 pr-2" src="img/infoForParticulars/placeholder_3.png" alt="">
+                  <img class="col-lg-3 col-6 pl-0 pb-2 pr-0" src="img/infoForParticulars/placeholder_3.png" alt="">
+                  <img class="col-lg-3 col-6 pl-0 pb-2 pr-2" src="img/infoForParticulars/placeholder_3.png" alt="">
+                  <img class="col-lg-3 col-6 pl-0 pb-2 pr-lg-2 pr-0" src="img/infoForParticulars/placeholder_3.png"
+                    alt="">
+                  <img class="col-lg-3 col-6 pl-0 pb-2 pr-2" src="img/infoForParticulars/placeholder_3.png" alt="">
+                  <img class="col-lg-3 col-6 pl-0 pb-2 pr-0" src="img/infoForParticulars/placeholder_3.png" alt="">
+                </gallery>
+              </div>
 
-        <!-- GALLERY ONE ROW(first big) -> TWO SMALL right from first (col-3) -->
+            </div>
+            <div class="swiper-slide ">
+              <div class="row p-0 m-0 justify-content-center">
+                <img class="col-lg-4 col-12 p-0 pb-2" src="img/infoForParticulars/placeholder_1.png" alt="">
+                <gallery class="row col-12 col-lg-8 p-0 pl-0 pl-lg-4">
+                  <img class="col-lg-3 col-6 pl-0 pb-2 pr-2" src="img/infoForParticulars/placeholder_2.png" alt="">
+                  <img class="col-lg-3 col-6 pl-0 pb-2 pr-lg-2 pr-0" src="img/infoForParticulars/placeholder_3.png"
+                    alt="">
+                  <img class="col-lg-3 col-6 pl-0 pb-2 pr-2" src="img/infoForParticulars/placeholder_3.png" alt="">
+                  <img class="col-lg-3 col-6 pl-0 pb-2 pr-0" src="img/infoForParticulars/placeholder_3.png" alt="">
+                  <img class="col-lg-3 col-6 pl-0 pb-2 pr-2" src="img/infoForParticulars/placeholder_3.png" alt="">
+                  <img class="col-lg-3 col-6 pl-0 pb-2 pr-lg-2 pr-0" src="img/infoForParticulars/placeholder_3.png"
+                    alt="">
+                  <img class="col-lg-3 col-6 pl-0 pb-2 pr-2" src="img/infoForParticulars/placeholder_3.png" alt="">
+                  <img class="col-lg-3 col-6 pl-0 pb-2 pr-0" src="img/infoForParticulars/placeholder_3.png" alt="">
+                </gallery>
+                </iv>
+              </div>
+            </div>
+
       </section>
-
 </body>
 
 
@@ -361,6 +387,11 @@
   integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src="script/initial-header-hav-mobile.js"></script>
 <script src="script/initial-header-hav.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper');
+</script>
 </body>
 
 </html>
