@@ -1,0 +1,64 @@
+/* .con{
+    width: 1086px;
+} */
+
+.H{
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 44px;
+
+    /* Кобальтовый/100 */
+    color: #294985;
+}
+
+.equipment__text{
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    /* or 157% */
+    color: #3B3B3B;
+}
+
+.equipment{
+    display: flex;
+    flex-direction: column;
+    max-width: 1086px;
+    gap: 25px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.row-2{
+    display: flex;
+    gap: 7px;
+}
+
+.row-3{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.big-box{
+    width: 539px;
+    height: 297px;
+}
+
+.litle-box{
+    width: 266px;
+    height: 146px;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
