@@ -1,0 +1,178 @@
+
+// Классы страницы под контекстом класса .pageWrapper чтобы другим не мешать
+.pageWrapper {
+    // Общие классы
+    .reset {
+        box-sizing: border-box;
+        margin: 0;
+    }
+    .allDefault {
+        all: unset;
+        @extend .reset;
+    }
+    .pageElement {
+        width: clamp(400px, 100%, 1920px);
+        padding: 0 144px 0 144px;
+        @media (max-width: 900px) {
+            padding: 0 16px 0 16px;
+        }
+    }
+    .rowWrap {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .row {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .center {
+        display: grid;
+        place-items: center;
+    }
+    .hScroll {
+        @extend .pageElement;
+        @extend .center;
+        width: 100%;
+        height: fit-content;
+        overflow: auto;
+    }
+    .gridTable {
+        display: grid;
+
+        &>.tr:nth-child(odd){
+            background: #E9ECF2;
+        }
+        &>.tr:nth-child(even){
+            background: #BEC8DA;
+        }
+    }
+    .th {
+        padding: 16px 24px;
+        background: #294985;
+        font: 400 24px Forum;
+        color: #E9ECF2;
+    }
+    .tr {
+        display: grid;
+        grid-template: auto / subgrid;
+        grid-column: 1 / grid-end;
+    }
+    .td {
+        padding: 24px;
+        //background: #E9ECF2;
+        font: 300 16px 'Museo Sans';
+        color: #282828;
+        line-height: 144%;
+    }
+    .linkText {
+        @extend .allDefault;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .linkFun {
+        @extend .allDefault;
+        display: contents;
+        cursor: pointer;
+        &:hover {
+            &>* {
+                text-decoration: underline;
+            }
+        }
+    }
+    .ul {
+        padding-left: 20px;
+    }
+    .ol {
+        padding-left: 20px;
+    }
+
+    // Некий сброс параметров к удобным мне
+    * { @extend .reset }
+    display: contents;
+
+    // Классы, отражающие блоки страницы
+    .mainTitle {
+        @extend .pageElement;
+        font: 400 40px Forum;
+        color: #21385F;
+    }
+    .subtitle {
+        @extend .pageElement;
+        font: 400 24px Forum;
+        color: #64748F;
+    }
+    .text {
+        @extend .pageElement;
+        font: 300 16px 'Museo Sans';
+        color: #3B3B3B;
+
+        b {
+            font-weight: 600;
+        }
+    }
+    .addressAndPhone {
+        @extend .gridTable;
+        grid-template-columns: 256px 346px [grid-end];
+    }
+    .servicesOnObject {
+        @extend .gridTable;
+        width: max(600px, 100%);
+        grid-template-columns: 1fr 2fr [grid-end];
+    }
+    .responsiblePeople {
+        @extend .gridTable;
+        width: max(800px, 100%);
+        grid-template-columns: 1fr 1fr 0.5fr [grid-end];
+    }
+    .fullWidthBtn{
+        width: 100%;
+        min-height: 74px;
+        @extend .center;
+        background: #21385F;
+
+        .content {
+            @extend .row;
+            align-items: center;
+            gap: 16px;
+            padding: 16px;
+
+            .plus {
+                width: 24px;
+                height: 24px;
+                --main-color: #E8EAEE;
+            }
+            .text2 {
+                font: 400 24px Forum;
+                color: #E8EAEE;
+            }
+        }
+    }
+    .mapImg {
+        width: min(100%, 600px);
+        height: auto;
+    }
+
+    .download {
+        @extend .pageElement;
+        @extend .row;
+        justify-content: start;
+        gap: 12px;
+
+        img {
+            height: 24px;
+            width: 24px;
+            color: #21385f;
+        }
+        span {
+            font: 300 16px 'Museo Sans';
+            color: #282828;
+            line-height: 144%;
+        }
+    }
+
+
+}
+
+

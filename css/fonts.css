@@ -6,7 +6,7 @@
     url('../fonts/MuseoSansCyrl-100.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
-    }
+}
 
 @font-face {
     font-family: 'Museo Sans 300 Light';
@@ -16,21 +16,29 @@
     url('../fonts/MuseoSansCyrl-300.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
-    }
+}
  
  
- @font-face {
-    font-family: 'Museo Sans';  
+@font-face {
+    font-family: 'Museo Sans';
     src: url('../fonts/MuseoSans-100.otf') format('opentype'); 
     font-style: normal; 
     font-weight: 100;
 }
 
+/*
+ для работы в коде css
+ font-family: 'Museo Sans';
+ font-weight: 300;
+ */
 @font-face {
-    font-family: 'Museo Sans';  
-    src: url('../fonts/MuseoSans-300.otf') format('opentype'); 
-    font-style: normal; 
+    font-family: 'Museo Sans';
+    src: url('../fonts/MuseoSansCyrl-300.eot');
+    src: url('../fonts/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MuseoSansCyrl-300.woff') format('woff'),
+    url('../fonts/MuseoSansCyrl-300.ttf') format('truetype');
     font-weight: 300;
+    font-style: normal;
 }
 
 @font-face {

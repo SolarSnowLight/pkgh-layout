@@ -58,7 +58,7 @@
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
-  line-height: 144%;
+  line-height: 23px;
 }
 
 .body_bold {
@@ -226,7 +226,7 @@
 
 .font_size-16_height-144 {
   font-size: 16px;
-  line-height: 144%;
+  line-height: 23px;
 }
 
 .button {
