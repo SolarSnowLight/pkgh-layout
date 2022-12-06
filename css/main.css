@@ -1,6 +1,18 @@
 /* TODO: комментарии в коде */
 /* NOTE:  */
 
+:root {
+
+}
+
+/* Общий стиль для всех заголовков страницы между NavBar и Footer*/
+.header-text__body {
+  color: #21385F;
+  font-family: 'Forum';
+  margin-bottom: 32px;
+  font-size: 40px;
+}
+
 .wrapper {
   display: flex;
   min-height: 100%;
