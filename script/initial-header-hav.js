@@ -143,8 +143,8 @@ const NavbarLink = [
         items: [
             { "title": "Расписание занятий ЦДО", "href": "#" },
             { "title": "Центр компетенции", "href": "#" },
-            { "title": "Worldskills", "href": "#" },
-            { "title": "Абилимпикс", "href": "#" },
+            { "title": "Worldskills", "href": "/cdo-wordskills.html" },
+            { "title": "Абилимпикс", "href": "/cdo-abilimpix.html" },
             { "title": "Демонстрационный экзамен", "href": "#" },
             { "title": "Мероприятия", "href": "#" },
             { "title": "Контакты", "href": "/index-contact.html" }
