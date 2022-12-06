@@ -2,7 +2,8 @@
 /* NOTE:  */
 
 :root {
-
+  --saphire-100: #21385f;
+  --graphite-100: #282828;
 }
 
 /* Общий стиль для всех заголовков страницы между NavBar и Footer*/
@@ -181,6 +182,10 @@
   color: #686868;
 }
 
+.color_graphite_100 {
+  color: var(--graphite-100);
+}
+
 .color_graphite_30 {
   color: #bebebe;
 }
@@ -198,7 +203,7 @@
 }
 
 .color-sapphire_100 {
-  color: #21385f;
+  color: var(--saphire-100);
 }
 
 .text_span span {
@@ -282,11 +287,17 @@
   width: 87% !important;
 }
 
+.list-decoration__none {
+  padding: 0;
+  list-style-type: none;
+}
+
 @media (max-width: 576px) {
   .container-fluid {
     width: 100% !important;
     padding: 0 !important;
   }
+
   .row {
     padding: 0 !important;
   }
