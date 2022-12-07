@@ -1,10 +1,10 @@
-.demo{
+.studying{
     display: flex;
     flex-direction: column;
 }
 
 
-.demo__box{
+.studying__box{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,8 +12,9 @@
     padding: 31px;
     gap: 32px;
     align-self: center;
-    width: 936.29px;
-    height: 456.41px;
+
+    width: 642px;
+    height: 233px;
 
     /* Кобальтовый/70 */
     background: #697FA9;
@@ -25,18 +26,18 @@
 
 }
 
-.demo__text
+.studying__text
   {
     margin: 20px auto;
   }
 
-.demo__title{
+.studying__title{
     color: #21385F;
     width: 1688px;
     margin: 20px auto;
 }
 
-.demo__text-1{
+.studying__text-1{
     color: #E9ECF2;
     text-align: center;
     max-width: 530px;
@@ -45,7 +46,7 @@
     flex-direction: column;
 }
 
-.demo__text-2{
+.studying__text-2{
     color: #BEC8DA;}
 
 
