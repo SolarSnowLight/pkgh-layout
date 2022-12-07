@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* Стили таблицы (есть возможность переиспользовать) */
+.main-table, .main-table-speciality {
+  overflow-x: auto;
+  width: 100%;
+  display: grid;
+}
+.main-table .th, .main-table-speciality .th {
+  height: 136px;
+  background: var(--cobalt-100);
+  font: 400 24px Forum;
+  color: var(--cobalt-10);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-table .th--text-on-centre, .main-table-speciality .th--text-on-centre {
+  padding: 0 130px;
+}
+.main-table .tr, .main-table-speciality .tr {
+  display: grid;
+  grid-template: inherit;
+  grid-column: 1/grid-end;
+  height: fit-content;
+}
+.main-table .td, .main-table-speciality .td {
+  min-height: 78px;
+  max-height: 150px;
+  background: var(--cobalt-10);
+  font: 300 16px "Museo Sans";
+  color: var(--graphite-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main-table .td--double-cell, .main-table-speciality .td--double-cell {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.main-table-speciality {
+  grid-template-columns: minmax(230px, 1fr) minmax(200px, 1fr) minmax(173px, 1fr) minmax(189px, 1fr) minmax(180px, 1fr) minmax(350px, 1fr) minmax(400px, 1fr) [grid-end];
+}
+
+.width_87_percent {
+  width: 87%;
+}
+
+.main-table-speciality {
+  grid-template-columns: minmax(230px, 1fr) minmax(200px, 1fr) minmax(173px, 1fr) minmax(189px, 1fr) minmax(180px, 1fr) minmax(350px, 1fr) minmax(400px, 1fr) [grid-end];
+}
+
+/*# sourceMappingURL=infoForParticulars.css.map */

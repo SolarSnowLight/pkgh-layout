@@ -3,8 +3,10 @@
 
 :root {
   --saphire-100: #21385f;
+  --saphire-70: #64748F;
   --graphite-100: #282828;
   --cobalt-100: #294985;
+  --cobalt-10: #E9ECF2;
 }
 
 /* Общий стиль для всех заголовков страницы между NavBar и Footer*/
@@ -195,12 +197,20 @@
   color: #697fa9;
 }
 
+.color_cobalt_10 {
+  color: var(--cobalt-10);
+}
+
 .color-sapphire_10 {
   color: #e8eaee;
 }
 
 .color-sapphire_30 {
   color: #bbc2ce;
+}
+
+.color-sapphire_70 {
+  color: var(--saphire-70);
 }
 
 .color-sapphire_100 {
