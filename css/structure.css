@@ -52,6 +52,7 @@
 .structure-table-mobile__block td {
     font-size: 14px;
     border: 1px solid #64748F;
+    width: 50%;
 }
 
 .structure-table-mobile__block:nth-of-type(odd) {
@@ -62,9 +63,9 @@
     background-color: #BEC8DA;
 }
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 768px) {
     .structure-table__main {
-        display: none;
+        display: none !important;
     }
 
     .structure-table-mobile {

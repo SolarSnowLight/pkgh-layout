@@ -233,6 +233,11 @@
   .header-info-box-additional {
     display: none;
   }
+
+  .header-menu {
+    display: none;
+    flex-direction: column;
+  }
 }
 
 /* Для мобильной версии сайта конец */
