@@ -7,6 +7,8 @@
   --graphite-100: #282828;
   --cobalt-100: #294985;
   --cobalt-10: #E9ECF2;
+  --cobalt-30: #BEC8DA;
+
 }
 
 /* Общий стиль для всех заголовков страницы между NavBar и Footer*/
@@ -301,6 +303,22 @@
 .list-decoration__none {
   padding: 0;
   list-style-type: none;
+}
+
+.list-decoration__dash {
+  list-style-type: '-';
+}
+
+.list-decoration__dash li {
+  padding-left: 10px;
+}
+
+.list-decoration__numeric {
+  list-style-type: decimal;
+}
+
+.list-decoration__numeric li {
+  padding-left: 10px;
 }
 
 @media (max-width: 576px) {

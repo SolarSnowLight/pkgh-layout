@@ -1,12 +1,17 @@
 @charset "UTF-8";
 /* Стили таблицы (есть возможность переиспользовать) */
-.main-table, .main-table-speciality {
+.main-table {
   overflow-x: auto;
   width: 100%;
   display: grid;
+  /*
+  Кастомные размеры столбцов
+  ft - infoForOarticulars
+  */
+  /*Раскрашенные строки таблицы*/
 }
-.main-table .th, .main-table-speciality .th {
-  height: 136px;
+.main-table .th {
+  padding: 0 24px;
   background: var(--cobalt-100);
   font: 400 24px Forum;
   color: var(--cobalt-10);
@@ -15,16 +20,16 @@
   align-items: center;
   justify-content: center;
 }
-.main-table .tr, .main-table-speciality .tr {
+.main-table .tr {
   display: grid;
   grid-template: inherit;
   grid-column: 1/grid-end;
+  background: var(--cobalt-10);
   height: fit-content;
 }
-.main-table .td, .main-table-speciality .td {
+.main-table .td {
+  padding: 0 24px;
   min-height: 78px;
-  max-height: 150px;
-  background: var(--cobalt-10);
   font: 300 16px "Museo Sans";
   color: var(--graphite-100);
   display: flex;
@@ -32,21 +37,47 @@
   align-items: center;
   text-align: center;
 }
-.main-table .td--double-cell, .main-table-speciality .td--double-cell {
+.main-table .td--double-cell {
   display: grid;
   grid-template-columns: 50% 50%;
 }
-
+.main-table .td--left {
+  justify-content: flex-start;
+  text-align: left;
+}
+.main-table .td--no-padding {
+  padding: 0;
+}
+.main-table .td--gap-1 {
+  gap: 5px;
+}
+.main-table--ft-finally-accept-company {
+  grid-template-columns: minmax(230px, 1fr) minmax(200px, 1fr) minmax(173px, 1fr) minmax(189px, 1fr) minmax(180px, 1fr) minmax(180px, 1fr) minmax(180px, 1fr) [grid-end];
+}
+.main-table--speciality-ft-education {
+  grid-template-columns: minmax(230px, 1fr) minmax(200px, 1fr) minmax(173px, 1fr) minmax(189px, 1fr) minmax(180px, 1fr) minmax(200px, 1fr) minmax(250px, 1fr) minmax(180px, 1fr) [grid-end];
+}
+.main-table--ifp-services {
+  grid-template-columns: minmax(539px, 1fr) minmax(539px, 1fr) [grid-end];
+}
+.main-table--ifp-services .th {
+  height: 58px;
+}
 .main-table-speciality {
   grid-template-columns: minmax(230px, 1fr) minmax(200px, 1fr) minmax(173px, 1fr) minmax(189px, 1fr) minmax(180px, 1fr) minmax(350px, 1fr) minmax(400px, 1fr) [grid-end];
+}
+.main-table-speciality .th {
+  height: 136px;
+}
+.main-table--colored .tr:nth-child(odd) {
+  background: var(--cobalt-10);
+}
+.main-table--colored .tr:nth-child(even) {
+  background: var(--cobalt-30);
 }
 
 .width_87_percent {
   width: 87%;
-}
-
-.main-table-speciality {
-  grid-template-columns: minmax(230px, 1fr) minmax(200px, 1fr) minmax(173px, 1fr) minmax(189px, 1fr) minmax(180px, 1fr) minmax(350px, 1fr) minmax(185px, 1fr) [grid-end];
 }
 
 .scope-style .accordion-box {
@@ -61,11 +92,13 @@
   width: 100vw;
 }
 .scope-style .accordion-box__details {
+  text-align: left;
+}
+.scope-style .accordion-box__title {
   text-align: center;
 }
 .scope-style .accordion-box__content {
   display: flex;
-  align-items: center;
   padding: 32px 0px;
 }
 .scope-style .accordion-box__text {
