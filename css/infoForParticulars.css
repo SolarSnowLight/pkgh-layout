@@ -15,9 +15,6 @@
   align-items: center;
   justify-content: center;
 }
-.main-table .th--text-on-centre, .main-table-speciality .th--text-on-centre {
-  padding: 0 130px;
-}
 .main-table .tr, .main-table-speciality .tr {
   display: grid;
   grid-template: inherit;
@@ -49,7 +46,7 @@
 }
 
 .main-table-speciality {
-  grid-template-columns: minmax(230px, 1fr) minmax(200px, 1fr) minmax(173px, 1fr) minmax(189px, 1fr) minmax(180px, 1fr) minmax(350px, 1fr) minmax(400px, 1fr) [grid-end];
+  grid-template-columns: minmax(230px, 1fr) minmax(200px, 1fr) minmax(173px, 1fr) minmax(189px, 1fr) minmax(180px, 1fr) minmax(350px, 1fr) minmax(185px, 1fr) [grid-end];
 }
 
 .scope-style .accordion-box {
