@@ -36,10 +36,10 @@
 }
 .pageWrapper .gridTable, .pageWrapper .responsiblePeople, .pageWrapper .servicesOnObject, .pageWrapper .addressAndPhone {
   display: grid;
-  /*.tr:nth-of-type(odd){
-      &>*{
-          background: #E9ECF2;
-      }
+  /*>.tr:nth-child(2n+1){
+      background: #BEC8DA;
+      //&>*{
+      //}
   }*/
 }
 .pageWrapper .gridTable .th, .pageWrapper .responsiblePeople .th, .pageWrapper .servicesOnObject .th, .pageWrapper .addressAndPhone .th {
@@ -60,10 +60,10 @@
   color: #282828;
   line-height: 144%;
 }
-.pageWrapper .gridTable > div.tr:nth-child(odd) > *, .pageWrapper .responsiblePeople > div.tr:nth-child(odd) > *, .pageWrapper .servicesOnObject > div.tr:nth-child(odd) > *, .pageWrapper .addressAndPhone > div.tr:nth-child(odd) > * {
+.pageWrapper .gridTable > .tr:nth-of-type(odd) > *, .pageWrapper .responsiblePeople > .tr:nth-of-type(odd) > *, .pageWrapper .servicesOnObject > .tr:nth-of-type(odd) > *, .pageWrapper .addressAndPhone > .tr:nth-of-type(odd) > * {
   background: #E9ECF2;
 }
-.pageWrapper .gridTable > div.tr:nth-child(even) > *, .pageWrapper .responsiblePeople > div.tr:nth-child(even) > *, .pageWrapper .servicesOnObject > div.tr:nth-child(even) > *, .pageWrapper .addressAndPhone > div.tr:nth-child(even) > * {
+.pageWrapper .gridTable > .tr:nth-of-type(even) > *, .pageWrapper .responsiblePeople > .tr:nth-of-type(even) > *, .pageWrapper .servicesOnObject > .tr:nth-of-type(even) > *, .pageWrapper .addressAndPhone > .tr:nth-of-type(even) > * {
   background: #BEC8DA;
 }
 .pageWrapper .linkText {
