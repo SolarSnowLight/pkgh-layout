@@ -1,0 +1,100 @@
+.trainingCoursesPageWrapper {
+  display: contents;
+}
+.trainingCoursesPageWrapper .reset, .trainingCoursesPageWrapper *, .trainingCoursesPageWrapper .allDefault, .trainingCoursesPageWrapper .linkText {
+  box-sizing: border-box;
+  margin: 0;
+}
+.trainingCoursesPageWrapper .allDefault, .trainingCoursesPageWrapper .linkText {
+  all: unset;
+}
+.trainingCoursesPageWrapper .pageElement, .trainingCoursesPageWrapper .pageElementCol {
+  width: clamp(400px, 100%, 1920px);
+  padding: 0 144px 0 144px;
+}
+@media (max-width: 900px) {
+  .trainingCoursesPageWrapper .pageElement, .trainingCoursesPageWrapper .pageElementCol {
+    padding: 0 16px 0 16px;
+  }
+}
+.trainingCoursesPageWrapper .rowWrap {
+  display: flex;
+  flex-flow: row wrap;
+}
+.trainingCoursesPageWrapper .row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.trainingCoursesPageWrapper .col, .trainingCoursesPageWrapper .blueCard, .trainingCoursesPageWrapper .pageElementCol {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.trainingCoursesPageWrapper .center {
+  display: grid;
+  place-items: center;
+}
+.trainingCoursesPageWrapper .pageElementCol {
+  align-items: start;
+}
+.trainingCoursesPageWrapper .pageElementCard {
+  width: clamp(400px, 100%, 1920px);
+  padding: 0 155.5px 0 155.5px;
+}
+@media (max-width: 900px) {
+  .trainingCoursesPageWrapper .pageElementCard {
+    padding: 0 16px 0 16px;
+  }
+}
+.trainingCoursesPageWrapper .blueCard {
+  align-items: center;
+  gap: 32px;
+  border-radius: 2px;
+  background: #697FA9;
+  padding: 31px;
+}
+.trainingCoursesPageWrapper .blueCard .h3Card {
+  font: 400 32px Forum;
+  color: #E9ECF2;
+  line-height: 35px;
+  text-align: center;
+}
+.trainingCoursesPageWrapper .blueCard .textCard {
+  font: 300 16px "Museo Sans";
+  color: #E9ECF2;
+  line-height: 19px;
+}
+.trainingCoursesPageWrapper .blueCard .textCard b {
+  font-weight: 600;
+}
+.trainingCoursesPageWrapper .linkText {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.trainingCoursesPageWrapper ul {
+  padding-left: 20px;
+}
+.trainingCoursesPageWrapper h2 {
+  font: 400 40px Forum;
+  color: #21385F;
+  line-height: 44px;
+}
+.trainingCoursesPageWrapper h3 {
+  font: 400 32px Forum;
+  color: #64748F;
+  line-height: 35px;
+}
+.trainingCoursesPageWrapper h4 {
+  font: 400 24px Forum;
+  color: #697FA9;
+  line-height: 26px;
+}
+.trainingCoursesPageWrapper .text {
+  font: 300 16px "Museo Sans";
+  color: #3B3B3B;
+  line-height: 19px;
+}
+.trainingCoursesPageWrapper .text b {
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=training-courses.css.map */
