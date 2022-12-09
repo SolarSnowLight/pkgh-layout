@@ -36,29 +36,35 @@
 }
 .pageWrapper .gridTable, .pageWrapper .responsiblePeople, .pageWrapper .servicesOnObject, .pageWrapper .addressAndPhone {
   display: grid;
+  /*.tr:nth-of-type(odd){
+      &>*{
+          background: #E9ECF2;
+      }
+  }*/
 }
-.pageWrapper .gridTable > .tr:nth-child(odd), .pageWrapper .responsiblePeople > .tr:nth-child(odd), .pageWrapper .servicesOnObject > .tr:nth-child(odd), .pageWrapper .addressAndPhone > .tr:nth-child(odd) {
-  background: #E9ECF2;
-}
-.pageWrapper .gridTable > .tr:nth-child(even), .pageWrapper .responsiblePeople > .tr:nth-child(even), .pageWrapper .servicesOnObject > .tr:nth-child(even), .pageWrapper .addressAndPhone > .tr:nth-child(even) {
-  background: #BEC8DA;
-}
-.pageWrapper .th {
+.pageWrapper .gridTable .th, .pageWrapper .responsiblePeople .th, .pageWrapper .servicesOnObject .th, .pageWrapper .addressAndPhone .th {
   padding: 16px 24px;
   background: #294985;
   font: 400 24px Forum;
   color: #E9ECF2;
 }
-.pageWrapper .tr {
-  display: grid;
-  grid-template: auto/subgrid;
-  grid-column: 1/grid-end;
+.pageWrapper .gridTable .tr, .pageWrapper .responsiblePeople .tr, .pageWrapper .servicesOnObject .tr, .pageWrapper .addressAndPhone .tr {
+  /*display: grid;
+  grid-template: auto / subgrid;
+  grid-column: 1 / grid-end;*/
+  display: contents;
 }
-.pageWrapper .td {
+.pageWrapper .gridTable .td, .pageWrapper .responsiblePeople .td, .pageWrapper .servicesOnObject .td, .pageWrapper .addressAndPhone .td {
   padding: 24px;
   font: 300 16px "Museo Sans";
   color: #282828;
   line-height: 144%;
+}
+.pageWrapper .gridTable > div.tr:nth-child(odd) > *, .pageWrapper .responsiblePeople > div.tr:nth-child(odd) > *, .pageWrapper .servicesOnObject > div.tr:nth-child(odd) > *, .pageWrapper .addressAndPhone > div.tr:nth-child(odd) > * {
+  background: #E9ECF2;
+}
+.pageWrapper .gridTable > div.tr:nth-child(even) > *, .pageWrapper .responsiblePeople > div.tr:nth-child(even) > *, .pageWrapper .servicesOnObject > div.tr:nth-child(even) > *, .pageWrapper .addressAndPhone > div.tr:nth-child(even) > * {
+  background: #BEC8DA;
 }
 .pageWrapper .linkText {
   cursor: pointer;
@@ -98,11 +104,14 @@
   grid-template-columns: 256px 346px [grid-end];
 }
 .pageWrapper .servicesOnObject {
-  width: max(600px, 100%);
+  width: 100%;
+  min-width: 660px;
+  overflow-x: auto;
   grid-template-columns: 1fr 2fr [grid-end];
 }
 .pageWrapper .responsiblePeople {
-  width: max(800px, 100%);
+  width: 100%;
+  min-width: 800px;
   grid-template-columns: 1fr 1fr 0.5fr [grid-end];
 }
 .pageWrapper .fullWidthBtn {

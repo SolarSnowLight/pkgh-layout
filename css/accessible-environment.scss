@@ -39,30 +39,40 @@
     .gridTable {
         display: grid;
 
-        &>.tr:nth-child(odd){
-            background: #E9ECF2;
+        .th {
+            padding: 16px 24px;
+            background: #294985;
+            font: 400 24px Forum;
+            color: #E9ECF2;
         }
-        &>.tr:nth-child(even){
-            background: #BEC8DA;
+        .tr {
+            /*display: grid;
+            grid-template: auto / subgrid;
+            grid-column: 1 / grid-end;*/
+            display: contents;
         }
-    }
-    .th {
-        padding: 16px 24px;
-        background: #294985;
-        font: 400 24px Forum;
-        color: #E9ECF2;
-    }
-    .tr {
-        display: grid;
-        grid-template: auto / subgrid;
-        grid-column: 1 / grid-end;
-    }
-    .td {
-        padding: 24px;
-        //background: #E9ECF2;
-        font: 300 16px 'Museo Sans';
-        color: #282828;
-        line-height: 144%;
+        .td {
+            padding: 24px;
+            //background: #E9ECF2;
+            font: 300 16px 'Museo Sans';
+            color: #282828;
+            line-height: 144%;
+        }
+        /*.tr:nth-of-type(odd){
+            &>*{
+                background: #E9ECF2;
+            }
+        }*/
+        &>div.tr:nth-child(odd){
+            &>*{
+                background: #E9ECF2;
+            }
+        }
+        &>div.tr:nth-child(even){
+            &>*{
+                background: #BEC8DA;
+            }
+        }
     }
     .linkText {
         @extend .allDefault;
@@ -118,12 +128,15 @@
     }
     .servicesOnObject {
         @extend .gridTable;
-        width: max(600px, 100%);
+        width: 100%;
+        min-width: 660px;
+        overflow-x: auto;
         grid-template-columns: 1fr 2fr [grid-end];
     }
     .responsiblePeople {
         @extend .gridTable;
-        width: max(800px, 100%);
+        width: 100%;
+        min-width: 800px;
         grid-template-columns: 1fr 1fr 0.5fr [grid-end];
     }
     .fullWidthBtn{
