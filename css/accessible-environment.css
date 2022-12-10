@@ -1,152 +1,152 @@
-.pageWrapper {
+.accessibleEnvironmentPageWrapper {
   display: contents;
 }
-.pageWrapper .reset, .pageWrapper *, .pageWrapper .allDefault, .pageWrapper .linkFun, .pageWrapper .linkText {
+.accessibleEnvironmentPageWrapper .reset, .accessibleEnvironmentPageWrapper *, .accessibleEnvironmentPageWrapper .allDefault, .accessibleEnvironmentPageWrapper .linkFun, .accessibleEnvironmentPageWrapper .linkText {
   box-sizing: border-box;
   margin: 0;
 }
-.pageWrapper .allDefault, .pageWrapper .linkFun, .pageWrapper .linkText {
+.accessibleEnvironmentPageWrapper .allDefault, .accessibleEnvironmentPageWrapper .linkFun, .accessibleEnvironmentPageWrapper .linkText {
   all: unset;
 }
-.pageWrapper .pageElement, .pageWrapper .download, .pageWrapper .text, .pageWrapper .subtitle, .pageWrapper .mainTitle, .pageWrapper .hScroll {
+.accessibleEnvironmentPageWrapper .pageElement, .accessibleEnvironmentPageWrapper .download, .accessibleEnvironmentPageWrapper .text, .accessibleEnvironmentPageWrapper .subtitle, .accessibleEnvironmentPageWrapper .mainTitle, .accessibleEnvironmentPageWrapper .hScroll {
   width: clamp(400px, 100%, 1920px);
   padding: 0 144px 0 144px;
 }
 @media (max-width: 900px) {
-  .pageWrapper .pageElement, .pageWrapper .download, .pageWrapper .text, .pageWrapper .subtitle, .pageWrapper .mainTitle, .pageWrapper .hScroll {
+  .accessibleEnvironmentPageWrapper .pageElement, .accessibleEnvironmentPageWrapper .download, .accessibleEnvironmentPageWrapper .text, .accessibleEnvironmentPageWrapper .subtitle, .accessibleEnvironmentPageWrapper .mainTitle, .accessibleEnvironmentPageWrapper .hScroll {
     padding: 0 16px 0 16px;
   }
 }
-.pageWrapper .rowWrap {
+.accessibleEnvironmentPageWrapper .rowWrap {
   display: flex;
   flex-flow: row wrap;
 }
-.pageWrapper .row, .pageWrapper .download, .pageWrapper .fullWidthBtn .content {
+.accessibleEnvironmentPageWrapper .row, .accessibleEnvironmentPageWrapper .download, .accessibleEnvironmentPageWrapper .fullWidthBtn .content {
   display: flex;
   flex-flow: row nowrap;
 }
-.pageWrapper .center, .pageWrapper .fullWidthBtn, .pageWrapper .hScroll {
+.accessibleEnvironmentPageWrapper .center, .accessibleEnvironmentPageWrapper .fullWidthBtn, .accessibleEnvironmentPageWrapper .hScroll {
   display: grid;
   place-items: center;
 }
-.pageWrapper .hScroll {
+.accessibleEnvironmentPageWrapper .hScroll {
   width: 100%;
   height: fit-content;
   overflow: auto;
 }
-.pageWrapper .gridTable, .pageWrapper .responsiblePeople, .pageWrapper .servicesOnObject, .pageWrapper .addressAndPhone {
+.accessibleEnvironmentPageWrapper .gridTable, .accessibleEnvironmentPageWrapper .responsiblePeople, .accessibleEnvironmentPageWrapper .servicesOnObject, .accessibleEnvironmentPageWrapper .addressAndPhone {
   display: grid;
-  /*.tr:nth-of-type(odd){
-      &>*{
-          background: #E9ECF2;
-      }
+  /*>.tr:nth-child(2n+1){
+      background: #BEC8DA;
+      //&>*{
+      //}
   }*/
 }
-.pageWrapper .gridTable .th, .pageWrapper .responsiblePeople .th, .pageWrapper .servicesOnObject .th, .pageWrapper .addressAndPhone .th {
+.accessibleEnvironmentPageWrapper .gridTable .th, .accessibleEnvironmentPageWrapper .responsiblePeople .th, .accessibleEnvironmentPageWrapper .servicesOnObject .th, .accessibleEnvironmentPageWrapper .addressAndPhone .th {
   padding: 16px 24px;
   background: #294985;
   font: 400 24px Forum;
   color: #E9ECF2;
 }
-.pageWrapper .gridTable .tr, .pageWrapper .responsiblePeople .tr, .pageWrapper .servicesOnObject .tr, .pageWrapper .addressAndPhone .tr {
+.accessibleEnvironmentPageWrapper .gridTable .tr, .accessibleEnvironmentPageWrapper .responsiblePeople .tr, .accessibleEnvironmentPageWrapper .servicesOnObject .tr, .accessibleEnvironmentPageWrapper .addressAndPhone .tr {
   /*display: grid;
   grid-template: auto / subgrid;
   grid-column: 1 / grid-end;*/
   display: contents;
 }
-.pageWrapper .gridTable .td, .pageWrapper .responsiblePeople .td, .pageWrapper .servicesOnObject .td, .pageWrapper .addressAndPhone .td {
+.accessibleEnvironmentPageWrapper .gridTable .td, .accessibleEnvironmentPageWrapper .responsiblePeople .td, .accessibleEnvironmentPageWrapper .servicesOnObject .td, .accessibleEnvironmentPageWrapper .addressAndPhone .td {
   padding: 24px;
   font: 300 16px "Museo Sans";
   color: #282828;
   line-height: 144%;
 }
-.pageWrapper .gridTable > div.tr:nth-child(odd) > *, .pageWrapper .responsiblePeople > div.tr:nth-child(odd) > *, .pageWrapper .servicesOnObject > div.tr:nth-child(odd) > *, .pageWrapper .addressAndPhone > div.tr:nth-child(odd) > * {
+.accessibleEnvironmentPageWrapper .gridTable > .tr:nth-of-type(odd) > *, .accessibleEnvironmentPageWrapper .responsiblePeople > .tr:nth-of-type(odd) > *, .accessibleEnvironmentPageWrapper .servicesOnObject > .tr:nth-of-type(odd) > *, .accessibleEnvironmentPageWrapper .addressAndPhone > .tr:nth-of-type(odd) > * {
   background: #E9ECF2;
 }
-.pageWrapper .gridTable > div.tr:nth-child(even) > *, .pageWrapper .responsiblePeople > div.tr:nth-child(even) > *, .pageWrapper .servicesOnObject > div.tr:nth-child(even) > *, .pageWrapper .addressAndPhone > div.tr:nth-child(even) > * {
+.accessibleEnvironmentPageWrapper .gridTable > .tr:nth-of-type(even) > *, .accessibleEnvironmentPageWrapper .responsiblePeople > .tr:nth-of-type(even) > *, .accessibleEnvironmentPageWrapper .servicesOnObject > .tr:nth-of-type(even) > *, .accessibleEnvironmentPageWrapper .addressAndPhone > .tr:nth-of-type(even) > * {
   background: #BEC8DA;
 }
-.pageWrapper .linkText {
+.accessibleEnvironmentPageWrapper .linkText {
   cursor: pointer;
 }
-.pageWrapper .linkText:hover {
+.accessibleEnvironmentPageWrapper .linkText:hover {
   text-decoration: underline;
 }
-.pageWrapper .linkFun {
+.accessibleEnvironmentPageWrapper .linkFun {
   display: contents;
   cursor: pointer;
 }
-.pageWrapper .linkFun:hover > * {
+.accessibleEnvironmentPageWrapper .linkFun:hover > * {
   text-decoration: underline;
 }
-.pageWrapper .ul {
+.accessibleEnvironmentPageWrapper .ul {
   padding-left: 20px;
 }
-.pageWrapper .ol {
+.accessibleEnvironmentPageWrapper .ol {
   padding-left: 20px;
 }
-.pageWrapper .mainTitle {
+.accessibleEnvironmentPageWrapper .mainTitle {
   font: 400 40px Forum;
   color: #21385F;
 }
-.pageWrapper .subtitle {
+.accessibleEnvironmentPageWrapper .subtitle {
   font: 400 24px Forum;
   color: #64748F;
 }
-.pageWrapper .text {
+.accessibleEnvironmentPageWrapper .text {
   font: 300 16px "Museo Sans";
   color: #3B3B3B;
 }
-.pageWrapper .text b {
+.accessibleEnvironmentPageWrapper .text b {
   font-weight: 600;
 }
-.pageWrapper .addressAndPhone {
+.accessibleEnvironmentPageWrapper .addressAndPhone {
   grid-template-columns: 256px 346px [grid-end];
 }
-.pageWrapper .servicesOnObject {
+.accessibleEnvironmentPageWrapper .servicesOnObject {
   width: 100%;
   min-width: 660px;
   overflow-x: auto;
   grid-template-columns: 1fr 2fr [grid-end];
 }
-.pageWrapper .responsiblePeople {
+.accessibleEnvironmentPageWrapper .responsiblePeople {
   width: 100%;
   min-width: 800px;
   grid-template-columns: 1fr 1fr 0.5fr [grid-end];
 }
-.pageWrapper .fullWidthBtn {
+.accessibleEnvironmentPageWrapper .fullWidthBtn {
   width: 100%;
   min-height: 74px;
   background: #21385F;
 }
-.pageWrapper .fullWidthBtn .content {
+.accessibleEnvironmentPageWrapper .fullWidthBtn .content {
   align-items: center;
   gap: 16px;
   padding: 16px;
 }
-.pageWrapper .fullWidthBtn .content .plus {
+.accessibleEnvironmentPageWrapper .fullWidthBtn .content .plus {
   width: 24px;
   height: 24px;
   --main-color: #E8EAEE;
 }
-.pageWrapper .fullWidthBtn .content .text2 {
+.accessibleEnvironmentPageWrapper .fullWidthBtn .content .text2 {
   font: 400 24px Forum;
   color: #E8EAEE;
 }
-.pageWrapper .mapImg {
+.accessibleEnvironmentPageWrapper .mapImg {
   width: min(100%, 600px);
   height: auto;
 }
-.pageWrapper .download {
+.accessibleEnvironmentPageWrapper .download {
   justify-content: start;
   gap: 12px;
 }
-.pageWrapper .download img {
+.accessibleEnvironmentPageWrapper .download img {
   height: 24px;
   width: 24px;
   color: #21385f;
 }
-.pageWrapper .download span {
+.accessibleEnvironmentPageWrapper .download span {
   font: 300 16px "Museo Sans";
   color: #282828;
   line-height: 144%;

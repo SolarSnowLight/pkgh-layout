@@ -1,6 +1,6 @@
 
 // Классы страницы под контекстом класса .pageWrapper чтобы другим не мешать
-.pageWrapper {
+.accessibleEnvironmentPageWrapper {
     // Общие классы
     .reset {
         box-sizing: border-box;
@@ -58,17 +58,17 @@
             color: #282828;
             line-height: 144%;
         }
-        /*.tr:nth-of-type(odd){
-            &>*{
-                background: #E9ECF2;
-            }
+        /*>.tr:nth-child(2n+1){
+            background: #BEC8DA;
+            //&>*{
+            //}
         }*/
-        &>div.tr:nth-child(odd){
+        >.tr:nth-of-type(odd){
             &>*{
                 background: #E9ECF2;
             }
         }
-        &>div.tr:nth-child(even){
+        >.tr:nth-of-type(even){
             &>*{
                 background: #BEC8DA;
             }

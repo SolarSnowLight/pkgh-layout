@@ -1,0 +1,55 @@
+.careerGuidancePageWrapper {
+  display: contents;
+}
+.careerGuidancePageWrapper .reset, .careerGuidancePageWrapper *, .careerGuidancePageWrapper .allDefault {
+  box-sizing: border-box;
+  margin: 0;
+}
+.careerGuidancePageWrapper .allDefault {
+  all: unset;
+}
+.careerGuidancePageWrapper .pageElement, .careerGuidancePageWrapper .pageElementCol {
+  width: clamp(400px, 100%, 1920px);
+  padding: 0 144px 0 144px;
+}
+@media (max-width: 900px) {
+  .careerGuidancePageWrapper .pageElement, .careerGuidancePageWrapper .pageElementCol {
+    padding: 0 16px 0 16px;
+  }
+}
+.careerGuidancePageWrapper .rowWrap {
+  display: flex;
+  flex-flow: row wrap;
+}
+.careerGuidancePageWrapper .row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.careerGuidancePageWrapper .col, .careerGuidancePageWrapper .pageElementCol {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.careerGuidancePageWrapper .center {
+  display: grid;
+  place-items: center;
+}
+.careerGuidancePageWrapper .pageElementCol {
+  align-items: start;
+}
+.careerGuidancePageWrapper h2 {
+  font: 400 40px Forum;
+  color: #21385F;
+  line-height: 44px;
+}
+.careerGuidancePageWrapper h3 {
+  font: 400 32px Forum;
+  color: #64748F;
+  line-height: 35px;
+}
+.careerGuidancePageWrapper h4 {
+  font: 400 24px Forum;
+  color: #697FA9;
+  line-height: 26px;
+}
+
+/*# sourceMappingURL=career-guidance.css.map */

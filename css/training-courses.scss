@@ -1,0 +1,115 @@
+
+// Классы страницы под контекстом класса .pageWrapper чтобы другим не мешать
+.trainingCoursesPageWrapper {
+
+    // Общие классы 1
+    .reset {
+        box-sizing: border-box;
+        margin: 0;
+    }
+    .allDefault {
+        all: unset;
+        @extend .reset;
+    }
+
+    // Сброс параметров элементов
+    * { @extend .reset }
+    display: contents;
+
+    // Общие классы 2
+    .pageElement {
+        width: clamp(400px, 100%, 1920px);
+        padding: 0 144px 0 144px;
+        @media (max-width: 900px) {
+            padding: 0 16px 0 16px;
+        }
+    }
+    .rowWrap {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .row {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .col {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .center {
+        display: grid;
+        place-items: center;
+    }
+
+    // Общие классы 3
+    .pageElementCol {
+        @extend .pageElement;
+        @extend .col;
+        align-items: start;
+    }
+    .pageElementCard {
+        width: clamp(400px, 100%, 1920px);
+        padding: 0 155.5px 0 155.5px;
+        @media (max-width: 900px) {
+            padding: 0 16px 0 16px;
+        }
+    }
+    .blueCard {
+        @extend .col;
+        align-items: center;
+        gap: 32px;
+        border-radius: 2px;
+        background: #697FA9;
+        padding: 31px;
+
+        .h3Card {
+            font: 400 32px Forum;
+            color: #E9ECF2;
+            line-height: 35px;
+            text-align: center;
+        }
+        .textCard {
+            font: 300 16px 'Museo Sans';
+            color: #E9ECF2;
+            line-height: 19px;
+
+            b {
+                font-weight: 600;
+            }
+        }
+    }
+    .linkText {
+        @extend .allDefault;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    ul {
+        padding-left: 20px;
+    }
+    h2 {
+        font: 400 40px Forum;
+        color: #21385F;
+        line-height: 44px;
+    }
+    h3 {
+        font: 400 32px Forum;
+        color: #64748F;
+        line-height: 35px;
+    }
+    h4 {
+        font: 400 24px Forum;
+        color: #697FA9;
+        line-height: 26px;
+    }
+    .text {
+        font: 300 16px 'Museo Sans';
+        color: #3B3B3B;
+        line-height: 19px;
+
+        b {
+            font-weight: 600;
+        }
+    }
+}
+
+
