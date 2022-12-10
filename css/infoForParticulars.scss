@@ -142,8 +142,6 @@
     justify-content: center;
     align-items: center;
     padding: 24px 0px;
-    gap: 16px;
-    margin-bottom: 20px;
 
     &__title {
       background: var(--saphire-100);
@@ -162,13 +160,12 @@
       }
     }
 
-    &__title-text{
+    &__title-text {
       position: relative;
 
       width: fit-content;
       margin: 0 auto;
     }
-
 
     &__details {
       width: 100vw;
@@ -180,21 +177,31 @@
     }
 
     &__details[open] {
-      .accordion-box__title-text::before{
+      .accordion-box__title-text::before {
         background: url(../img/icons/Collapse.svg) no-repeat center;
       }
     }
 
-
-
-
     &__content {
       display: flex;
-      padding: 32px 0px;
+      padding-top: 32px;
     }
 
     &__text {
       text-align: left;
+    }
+  }
+
+  .card {
+    border-radius: 2px;
+    background: var(--gold-70);
+    padding: 31px;
+    width: 632px;
+    margin: 0 auto;
+    text-align: center;
+
+    @media(max-width: 663px) {
+      width: auto;
     }
   }
 }

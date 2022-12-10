@@ -86,8 +86,6 @@
   justify-content: center;
   align-items: center;
   padding: 24px 0px;
-  gap: 16px;
-  margin-bottom: 20px;
 }
 .scope-style .accordion-box__title {
   background: var(--saphire-100);
@@ -120,10 +118,23 @@
 }
 .scope-style .accordion-box__content {
   display: flex;
-  padding: 32px 0px;
+  padding-top: 32px;
 }
 .scope-style .accordion-box__text {
   text-align: left;
+}
+.scope-style .card {
+  border-radius: 2px;
+  background: var(--gold-70);
+  padding: 31px;
+  width: 632px;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (max-width: 663px) {
+  .scope-style .card {
+    width: auto;
+  }
 }
 
 /*# sourceMappingURL=infoForParticulars.css.map */

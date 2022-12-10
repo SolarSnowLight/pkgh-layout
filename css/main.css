@@ -9,7 +9,7 @@
   --cobalt-100: #294985;
   --cobalt-10: #E9ECF2;
   --cobalt-30: #BEC8DA;
-
+  --gold-70: #697fa9;
 }
 
 /* Общий стиль для всех заголовков страницы между NavBar и Footer*/
@@ -218,6 +218,10 @@
 
 .color-sapphire_100 {
   color: var(--saphire-100);
+}
+
+.color-cobalt_30 {
+  color: var(--cobalt-30);
 }
 
 .text_span span {
