@@ -87,15 +87,36 @@
   align-items: center;
   padding: 24px 0px;
   gap: 16px;
-  background: var(--saphire-100);
   margin-bottom: 20px;
-  width: 100vw;
-}
-.scope-style .accordion-box__details {
-  text-align: left;
 }
 .scope-style .accordion-box__title {
+  background: var(--saphire-100);
+  padding: 20px 0;
+  display: block;
   text-align: center;
+}
+.scope-style .accordion-box__title .accordion-box__title-text::before {
+  content: "";
+  left: -30px;
+  position: absolute;
+  color: var(--saphire-10);
+  width: 24px;
+  height: 24px;
+}
+.scope-style .accordion-box__title-text {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+.scope-style .accordion-box__details {
+  width: 100vw;
+  text-align: left;
+}
+.scope-style .accordion-box__details .accordion-box__title-text::before {
+  background: url(../img/icons/Addition.svg);
+}
+.scope-style .accordion-box__details[open] .accordion-box__title-text::before {
+  background: url(../img/icons/Collapse.svg) no-repeat center;
 }
 .scope-style .accordion-box__content {
   display: flex;
