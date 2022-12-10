@@ -1,0 +1,83 @@
+.studentSupportPage {
+  display: contents;
+}
+.studentSupportPage .reset, .studentSupportPage .allDefault, .studentSupportPage .linkElement, .studentSupportPage * {
+  box-sizing: border-box;
+  margin: 0;
+}
+.studentSupportPage .allDefault, .studentSupportPage .linkElement {
+  all: unset;
+}
+.studentSupportPage .pageElement {
+  width: clamp(400px, 100%, 1920px);
+  padding: 0 144px 0 144px;
+}
+@media (max-width: 900px) {
+  .studentSupportPage .pageElement {
+    padding: 0 16px 0 16px;
+  }
+}
+.studentSupportPage .rowWrap {
+  display: flex;
+  flex-flow: row wrap;
+}
+.studentSupportPage .row, .studentSupportPage .downloadWidget {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.studentSupportPage .col, .studentSupportPage .downloadWidgetList {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+}
+.studentSupportPage .center {
+  display: grid;
+  place-items: center;
+}
+.studentSupportPage h2 {
+  font: 400 40px Forum;
+  color: #21385F;
+  line-height: 44px;
+}
+.studentSupportPage .text {
+  font: 300 16px "Museo Sans";
+  color: #3B3B3B;
+  line-height: 19px;
+}
+.studentSupportPage .text b {
+  font-weight: 600;
+}
+.studentSupportPage .text2 {
+  font: 300 16px "Museo Sans";
+  color: black;
+  line-height: 144%;
+}
+.studentSupportPage .text2 b {
+  font-weight: 600;
+}
+.studentSupportPage .linkElement {
+  display: contents;
+  cursor: pointer;
+}
+.studentSupportPage .linkElement:hover > * {
+  text-decoration: underline;
+}
+.studentSupportPage .downloadWidgetList {
+  gap: 32px;
+}
+.studentSupportPage .downloadWidget {
+  justify-content: start;
+  gap: 16px;
+}
+.studentSupportPage .downloadWidget img {
+  height: 24px;
+  width: 24px;
+  color: #21385f;
+}
+.studentSupportPage .downloadWidget span {
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+
+/*# sourceMappingURL=student-support.css.map */

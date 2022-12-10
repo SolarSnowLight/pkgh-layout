@@ -1,0 +1,76 @@
+@charset "UTF-8";
+.antiСorruptionPage {
+  display: contents;
+}
+.antiСorruptionPage .reset, .antiСorruptionPage .allDefault, .antiСorruptionPage .linkElement, .antiСorruptionPage * {
+  box-sizing: border-box;
+  margin: 0;
+}
+.antiСorruptionPage .allDefault, .antiСorruptionPage .linkElement {
+  all: unset;
+}
+.antiСorruptionPage .pageElement {
+  width: clamp(400px, 100%, 1920px);
+  padding: 0 144px 0 144px;
+}
+@media (max-width: 900px) {
+  .antiСorruptionPage .pageElement {
+    padding: 0 16px 0 16px;
+  }
+}
+.antiСorruptionPage .rowWrap {
+  display: flex;
+  flex-flow: row wrap;
+}
+.antiСorruptionPage .row, .antiСorruptionPage .downloadWidget {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.antiСorruptionPage .col, .antiСorruptionPage .downloadWidgetList {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+}
+.antiСorruptionPage .center {
+  display: grid;
+  place-items: center;
+}
+.antiСorruptionPage h2 {
+  font: 400 40px Forum;
+  color: #21385F;
+  line-height: 44px;
+}
+.antiСorruptionPage .text {
+  font: 300 16px "Museo Sans";
+  color: #3B3B3B;
+  line-height: 19px;
+}
+.antiСorruptionPage .text b {
+  font-weight: 600;
+}
+.antiСorruptionPage .linkElement {
+  display: contents;
+  cursor: pointer;
+}
+.antiСorruptionPage .linkElement:hover > * {
+  text-decoration: underline;
+}
+.antiСorruptionPage .downloadWidgetList {
+  gap: 18px;
+}
+.antiСorruptionPage .downloadWidget {
+  justify-content: start;
+  gap: 16px;
+}
+.antiСorruptionPage .downloadWidget img {
+  height: 24px;
+  width: 24px;
+  color: #21385f;
+}
+.antiСorruptionPage .downloadWidget span {
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+
+/*# sourceMappingURL=anti-corruption.css.map */
