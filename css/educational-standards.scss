@@ -1,0 +1,91 @@
+
+// Классы страницы помещаются под общий класс ....pageWrapper, чтобы не выходить за пределы страницы
+.educationalStandardsPage {
+    display: contents;
+    // Сброс параметров элементов
+    * { @extend .reset }
+
+    // Общие классы 1
+    .reset {
+        box-sizing: border-box;
+        margin: 0;
+    }
+    .allDefault {
+        all: unset;
+        @extend .reset;
+    }
+
+    // Общие классы 2
+    .pageElement {
+        width: clamp(400px, 100%, 1920px);
+        padding: 0 144px 0 144px;
+        @media (max-width: 900px) {
+            padding: 0 16px 0 16px;
+        }
+    }
+    .rowWrap {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .row {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .col {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: start;
+    }
+    .center {
+        display: grid;
+        place-items: center;
+    }
+
+    // Общие классы 3
+    h2 {
+        font: 400 40px Forum;
+        color: #21385F;
+        line-height: 44px;
+    }
+    .text {
+        font: 300 16px 'Museo Sans';
+        color: #3B3B3B;
+        line-height: 19px;
+
+        b {
+            font-weight: 600;
+        }
+    }
+    .linkElement {
+        @extend .allDefault;
+        display: contents;
+        cursor: pointer;
+        &:hover {
+            &>* {
+                text-decoration: underline;
+            }
+        }
+    }
+    .downloadWidgetList {
+        @extend .col;
+        gap: 16px;
+    }
+    .downloadWidget {
+        @extend .row;
+        justify-content: start;
+        gap: 16px;
+
+        img {
+            height: 24px;
+            width: 24px;
+            color: #21385f;
+        }
+        span {
+            font: 300 16px 'Museo Sans';
+            color: #282828;
+            line-height: 144%;
+        }
+    }
+}
+
+
