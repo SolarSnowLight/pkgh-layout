@@ -1,0 +1,94 @@
+.paidEducationalServicesPage {
+  display: contents;
+}
+.paidEducationalServicesPage .reset, .paidEducationalServicesPage .allDefault, .paidEducationalServicesPage .linkElement, .paidEducationalServicesPage * {
+  box-sizing: border-box;
+  margin: 0;
+}
+.paidEducationalServicesPage .allDefault, .paidEducationalServicesPage .linkElement {
+  all: unset;
+}
+.paidEducationalServicesPage .pageElement {
+  width: clamp(400px, 100%, 1920px);
+  padding: 0 144px 0 144px;
+}
+@media (max-width: 900px) {
+  .paidEducationalServicesPage .pageElement {
+    padding: 0 16px 0 16px;
+  }
+}
+.paidEducationalServicesPage .rowWrap {
+  display: flex;
+  flex-flow: row wrap;
+}
+.paidEducationalServicesPage .row, .paidEducationalServicesPage .fullWidthBtn .content, .paidEducationalServicesPage .downloadWidget {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.paidEducationalServicesPage .col, .paidEducationalServicesPage .downloadWidgetList {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+}
+.paidEducationalServicesPage .center, .paidEducationalServicesPage .fullWidthBtn {
+  display: grid;
+  place-items: center;
+}
+.paidEducationalServicesPage h2 {
+  font: 400 40px Forum;
+  color: #21385F;
+  line-height: 44px;
+}
+.paidEducationalServicesPage .text {
+  font: 300 16px "Museo Sans";
+  color: #3B3B3B;
+  line-height: 19px;
+}
+.paidEducationalServicesPage .text b {
+  font-weight: 600;
+}
+.paidEducationalServicesPage .linkElement {
+  display: contents;
+  cursor: pointer;
+}
+.paidEducationalServicesPage .linkElement:hover > * {
+  text-decoration: underline;
+}
+.paidEducationalServicesPage .downloadWidgetList {
+  gap: 18px;
+}
+.paidEducationalServicesPage .downloadWidget {
+  justify-content: start;
+  gap: 16px;
+}
+.paidEducationalServicesPage .downloadWidget img {
+  height: 24px;
+  width: 24px;
+  color: #21385f;
+}
+.paidEducationalServicesPage .downloadWidget span {
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+.paidEducationalServicesPage .fullWidthBtn {
+  width: 100%;
+  min-height: 74px;
+  background: #21385F;
+}
+.paidEducationalServicesPage .fullWidthBtn .content {
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+}
+.paidEducationalServicesPage .fullWidthBtn .content .plus {
+  width: 24px;
+  height: 24px;
+}
+.paidEducationalServicesPage .fullWidthBtn .content .title {
+  font: 400 24px Forum;
+  color: #E8EAEE;
+  line-height: 26px;
+}
+
+/*# sourceMappingURL=paid-educational-services.css.map */
