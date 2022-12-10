@@ -123,6 +123,12 @@
 .scope-style .accordion-box__text {
   text-align: left;
 }
+.scope-style .accordion-box--colored-all {
+  background: var(--saphire-100);
+}
+.scope-style .accordion-box--colored-all .accordion-box__title {
+  background: none;
+}
 .scope-style .card {
   border-radius: 2px;
   background: var(--gold-70);

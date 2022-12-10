@@ -190,6 +190,13 @@
     &__text {
       text-align: left;
     }
+
+    &--colored-all {
+      .accordion-box__title {
+        background: none;
+      }
+      background: var(--saphire-100);
+    }
   }
 
   .card {
@@ -205,3 +212,4 @@
     }
   }
 }
+
