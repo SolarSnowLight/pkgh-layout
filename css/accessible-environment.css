@@ -1,155 +1,174 @@
-.accessibleEnvironmentPageWrapper {
+.accessibleEnvironmentPage {
   display: contents;
 }
-.accessibleEnvironmentPageWrapper .reset, .accessibleEnvironmentPageWrapper *, .accessibleEnvironmentPageWrapper .allDefault, .accessibleEnvironmentPageWrapper .linkFun, .accessibleEnvironmentPageWrapper .linkText {
+.accessibleEnvironmentPage .reset, .accessibleEnvironmentPage .allDefault, .accessibleEnvironmentPage .linkElement, .accessibleEnvironmentPage .linkText, .accessibleEnvironmentPage * {
   box-sizing: border-box;
   margin: 0;
 }
-.accessibleEnvironmentPageWrapper .allDefault, .accessibleEnvironmentPageWrapper .linkFun, .accessibleEnvironmentPageWrapper .linkText {
+.accessibleEnvironmentPage .allDefault, .accessibleEnvironmentPage .linkElement, .accessibleEnvironmentPage .linkText {
   all: unset;
 }
-.accessibleEnvironmentPageWrapper .pageElement, .accessibleEnvironmentPageWrapper .download, .accessibleEnvironmentPageWrapper .text, .accessibleEnvironmentPageWrapper .subtitle, .accessibleEnvironmentPageWrapper .mainTitle, .accessibleEnvironmentPageWrapper .hScroll {
+.accessibleEnvironmentPage .pageElement, .accessibleEnvironmentPage .hScroll {
   width: clamp(400px, 100%, 1920px);
   padding: 0 144px 0 144px;
 }
 @media (max-width: 900px) {
-  .accessibleEnvironmentPageWrapper .pageElement, .accessibleEnvironmentPageWrapper .download, .accessibleEnvironmentPageWrapper .text, .accessibleEnvironmentPageWrapper .subtitle, .accessibleEnvironmentPageWrapper .mainTitle, .accessibleEnvironmentPageWrapper .hScroll {
+  .accessibleEnvironmentPage .pageElement, .accessibleEnvironmentPage .hScroll {
     padding: 0 16px 0 16px;
   }
 }
-.accessibleEnvironmentPageWrapper .rowWrap {
+.accessibleEnvironmentPage .rowWrap {
   display: flex;
   flex-flow: row wrap;
 }
-.accessibleEnvironmentPageWrapper .row, .accessibleEnvironmentPageWrapper .download, .accessibleEnvironmentPageWrapper .fullWidthBtn .content {
+.accessibleEnvironmentPage .row, .accessibleEnvironmentPage .downloadWidget, .accessibleEnvironmentPage .fullWidthBtn .content {
   display: flex;
   flex-flow: row nowrap;
 }
-.accessibleEnvironmentPageWrapper .center, .accessibleEnvironmentPageWrapper .fullWidthBtn, .accessibleEnvironmentPageWrapper .hScroll {
+.accessibleEnvironmentPage .col, .accessibleEnvironmentPage .downloadWidgetList {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+}
+.accessibleEnvironmentPage .center, .accessibleEnvironmentPage .fullWidthBtn, .accessibleEnvironmentPage .hScroll {
   display: grid;
   place-items: center;
 }
-.accessibleEnvironmentPageWrapper .hScroll {
+.accessibleEnvironmentPage h2 {
+  font: 400 40px Forum;
+  color: #21385F;
+  line-height: 44px;
+}
+.accessibleEnvironmentPage h3 {
+  font: 400 32px Forum;
+  color: #64748F;
+  line-height: 35px;
+}
+.accessibleEnvironmentPage h4 {
+  font: 400 24px Forum;
+  color: #64748F;
+  line-height: 26px;
+}
+.accessibleEnvironmentPage .text {
+  font: 300 16px "Museo Sans";
+  color: #3B3B3B;
+}
+.accessibleEnvironmentPage .text b {
+  font-weight: 600;
+}
+.accessibleEnvironmentPage .linkText {
+  cursor: pointer;
+}
+.accessibleEnvironmentPage .linkText:hover {
+  text-decoration: underline;
+}
+.accessibleEnvironmentPage .linkElement {
+  display: contents;
+  cursor: pointer;
+}
+.accessibleEnvironmentPage .linkElement:hover > * {
+  text-decoration: underline;
+}
+.accessibleEnvironmentPage .ul {
+  padding-left: 20px;
+}
+.accessibleEnvironmentPage .ol {
+  padding-left: 20px;
+}
+.accessibleEnvironmentPage .hScroll {
   width: 100%;
   height: fit-content;
   overflow: auto;
 }
-.accessibleEnvironmentPageWrapper .gridTable, .accessibleEnvironmentPageWrapper .responsiblePeople, .accessibleEnvironmentPageWrapper .servicesOnObject, .accessibleEnvironmentPageWrapper .addressAndPhone {
+.accessibleEnvironmentPage .gridTable, .accessibleEnvironmentPage .responsiblePeople, .accessibleEnvironmentPage .servicesOnObject, .accessibleEnvironmentPage .addressAndPhone {
   display: grid;
-  /*>.tr:nth-child(2n+1){
-      background: #BEC8DA;
-      //&>*{
-      //}
-  }*/
 }
-.accessibleEnvironmentPageWrapper .gridTable .th, .accessibleEnvironmentPageWrapper .responsiblePeople .th, .accessibleEnvironmentPageWrapper .servicesOnObject .th, .accessibleEnvironmentPageWrapper .addressAndPhone .th {
+.accessibleEnvironmentPage .gridTable .th, .accessibleEnvironmentPage .responsiblePeople .th, .accessibleEnvironmentPage .servicesOnObject .th, .accessibleEnvironmentPage .addressAndPhone .th {
   padding: 16px 24px;
   background: #294985;
   font: 400 24px Forum;
   color: #E9ECF2;
 }
-.accessibleEnvironmentPageWrapper .gridTable .tr, .accessibleEnvironmentPageWrapper .responsiblePeople .tr, .accessibleEnvironmentPageWrapper .servicesOnObject .tr, .accessibleEnvironmentPageWrapper .addressAndPhone .tr {
+.accessibleEnvironmentPage .gridTable .tb, .accessibleEnvironmentPage .responsiblePeople .tb, .accessibleEnvironmentPage .servicesOnObject .tb, .accessibleEnvironmentPage .addressAndPhone .tb {
+  display: contents;
+}
+.accessibleEnvironmentPage .gridTable .tb .tr *, .accessibleEnvironmentPage .responsiblePeople .tb .tr *, .accessibleEnvironmentPage .servicesOnObject .tb .tr *, .accessibleEnvironmentPage .addressAndPhone .tb .tr * {
+  background: #E9ECF2;
+}
+.accessibleEnvironmentPage .gridTable .tbStriped, .accessibleEnvironmentPage .responsiblePeople .tbStriped, .accessibleEnvironmentPage .servicesOnObject .tbStriped, .accessibleEnvironmentPage .addressAndPhone .tbStriped {
+  display: contents;
+}
+.accessibleEnvironmentPage .gridTable .tbStriped > .tr:nth-of-type(odd) > *, .accessibleEnvironmentPage .responsiblePeople .tbStriped > .tr:nth-of-type(odd) > *, .accessibleEnvironmentPage .servicesOnObject .tbStriped > .tr:nth-of-type(odd) > *, .accessibleEnvironmentPage .addressAndPhone .tbStriped > .tr:nth-of-type(odd) > * {
+  background: #E9ECF2;
+}
+.accessibleEnvironmentPage .gridTable .tbStriped > .tr:nth-of-type(even) > *, .accessibleEnvironmentPage .responsiblePeople .tbStriped > .tr:nth-of-type(even) > *, .accessibleEnvironmentPage .servicesOnObject .tbStriped > .tr:nth-of-type(even) > *, .accessibleEnvironmentPage .addressAndPhone .tbStriped > .tr:nth-of-type(even) > * {
+  background: #BEC8DA;
+}
+.accessibleEnvironmentPage .gridTable .tr, .accessibleEnvironmentPage .responsiblePeople .tr, .accessibleEnvironmentPage .servicesOnObject .tr, .accessibleEnvironmentPage .addressAndPhone .tr {
   /*display: grid;
   grid-template: auto / subgrid;
   grid-column: 1 / grid-end;*/
   display: contents;
 }
-.accessibleEnvironmentPageWrapper .gridTable .td, .accessibleEnvironmentPageWrapper .responsiblePeople .td, .accessibleEnvironmentPageWrapper .servicesOnObject .td, .accessibleEnvironmentPageWrapper .addressAndPhone .td {
+.accessibleEnvironmentPage .gridTable .td, .accessibleEnvironmentPage .responsiblePeople .td, .accessibleEnvironmentPage .servicesOnObject .td, .accessibleEnvironmentPage .addressAndPhone .td {
   padding: 24px;
   font: 300 16px "Museo Sans";
   color: #282828;
   line-height: 144%;
 }
-.accessibleEnvironmentPageWrapper .gridTable > .tr:nth-of-type(odd) > *, .accessibleEnvironmentPageWrapper .responsiblePeople > .tr:nth-of-type(odd) > *, .accessibleEnvironmentPageWrapper .servicesOnObject > .tr:nth-of-type(odd) > *, .accessibleEnvironmentPageWrapper .addressAndPhone > .tr:nth-of-type(odd) > * {
-  background: #E9ECF2;
+.accessibleEnvironmentPage .fullWidthBtn {
+  width: 100%;
+  min-height: 74px;
+  background: #21385F;
 }
-.accessibleEnvironmentPageWrapper .gridTable > .tr:nth-of-type(even) > *, .accessibleEnvironmentPageWrapper .responsiblePeople > .tr:nth-of-type(even) > *, .accessibleEnvironmentPageWrapper .servicesOnObject > .tr:nth-of-type(even) > *, .accessibleEnvironmentPageWrapper .addressAndPhone > .tr:nth-of-type(even) > * {
-  background: #BEC8DA;
+.accessibleEnvironmentPage .fullWidthBtn .content {
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
 }
-.accessibleEnvironmentPageWrapper .linkText {
-  cursor: pointer;
+.accessibleEnvironmentPage .fullWidthBtn .content .plus {
+  width: 24px;
+  height: 24px;
 }
-.accessibleEnvironmentPageWrapper .linkText:hover {
-  text-decoration: underline;
-}
-.accessibleEnvironmentPageWrapper .linkFun {
-  display: contents;
-  cursor: pointer;
-}
-.accessibleEnvironmentPageWrapper .linkFun:hover > * {
-  text-decoration: underline;
-}
-.accessibleEnvironmentPageWrapper .ul {
-  padding-left: 20px;
-}
-.accessibleEnvironmentPageWrapper .ol {
-  padding-left: 20px;
-}
-.accessibleEnvironmentPageWrapper .mainTitle {
-  font: 400 40px Forum;
-  color: #21385F;
-}
-.accessibleEnvironmentPageWrapper .subtitle {
+.accessibleEnvironmentPage .fullWidthBtn .content .title {
   font: 400 24px Forum;
-  color: #64748F;
+  color: #E8EAEE;
+  line-height: 26px;
 }
-.accessibleEnvironmentPageWrapper .text {
+.accessibleEnvironmentPage .downloadWidgetList {
+  gap: 32px;
+}
+.accessibleEnvironmentPage .downloadWidget {
+  justify-content: start;
+  gap: 16px;
+}
+.accessibleEnvironmentPage .downloadWidget img {
+  height: 24px;
+  width: 24px;
+  color: #21385f;
+}
+.accessibleEnvironmentPage .downloadWidget span {
   font: 300 16px "Museo Sans";
-  color: #3B3B3B;
+  color: #282828;
+  line-height: 144%;
 }
-.accessibleEnvironmentPageWrapper .text b {
-  font-weight: 600;
+.accessibleEnvironmentPage .mapImg {
+  width: min(100%, 600px);
+  height: auto;
 }
-.accessibleEnvironmentPageWrapper .addressAndPhone {
+.accessibleEnvironmentPage .addressAndPhone {
   grid-template-columns: 256px 346px [grid-end];
 }
-.accessibleEnvironmentPageWrapper .servicesOnObject {
+.accessibleEnvironmentPage .servicesOnObject {
   width: 100%;
   min-width: 660px;
   overflow-x: auto;
   grid-template-columns: 1fr 2fr [grid-end];
 }
-.accessibleEnvironmentPageWrapper .responsiblePeople {
+.accessibleEnvironmentPage .responsiblePeople {
   width: 100%;
   min-width: 800px;
   grid-template-columns: 1fr 1fr 0.5fr [grid-end];
-}
-.accessibleEnvironmentPageWrapper .fullWidthBtn {
-  width: 100%;
-  min-height: 74px;
-  background: #21385F;
-}
-.accessibleEnvironmentPageWrapper .fullWidthBtn .content {
-  align-items: center;
-  gap: 16px;
-  padding: 16px;
-}
-.accessibleEnvironmentPageWrapper .fullWidthBtn .content .plus {
-  width: 24px;
-  height: 24px;
-  --main-color: #E8EAEE;
-}
-.accessibleEnvironmentPageWrapper .fullWidthBtn .content .text2 {
-  font: 400 24px Forum;
-  color: #E8EAEE;
-}
-.accessibleEnvironmentPageWrapper .mapImg {
-  width: min(100%, 600px);
-  height: auto;
-}
-.accessibleEnvironmentPageWrapper .download {
-  justify-content: start;
-  gap: 12px;
-}
-.accessibleEnvironmentPageWrapper .download img {
-  height: 24px;
-  width: 24px;
-  color: #21385f;
-}
-.accessibleEnvironmentPageWrapper .download span {
-  font: 300 16px "Museo Sans";
-  color: #282828;
-  line-height: 144%;
 }
 
 /*# sourceMappingURL=accessible-environment.css.map */
