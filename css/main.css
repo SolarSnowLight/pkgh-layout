@@ -2,7 +2,14 @@
 /* NOTE:  */
 
 :root {
-
+  --saphire-100: #21385f;
+  --saphire-70: #64748F;
+  --saphire-10: #E8EAEE;
+  --graphite-100: #282828;
+  --cobalt-100: #294985;
+  --cobalt-10: #E9ECF2;
+  --cobalt-30: #BEC8DA;
+  --gold-70: #697fa9;
 }
 
 /* Общий стиль для всех заголовков страницы между NavBar и Footer*/
@@ -181,12 +188,20 @@
   color: #686868;
 }
 
+.color_graphite_100 {
+  color: var(--graphite-100);
+}
+
 .color_graphite_30 {
   color: #bebebe;
 }
 
 .color_gold_70 {
   color: #697fa9;
+}
+
+.color_cobalt_10 {
+  color: var(--cobalt-10);
 }
 
 .color-sapphire_10 {
@@ -197,8 +212,16 @@
   color: #bbc2ce;
 }
 
+.color-sapphire_70 {
+  color: var(--saphire-70);
+}
+
 .color-sapphire_100 {
-  color: #21385f;
+  color: var(--saphire-100);
+}
+
+.color-cobalt_30 {
+  color: var(--cobalt-30);
 }
 
 .text_span span {
@@ -282,12 +305,47 @@
   width: 87% !important;
 }
 
+.list-decoration__none {
+  padding: 0;
+  list-style-type: none;
+}
+
+.list-decoration__dash {
+  list-style-type: '-';
+}
+
+.list-decoration__dash li {
+  padding-left: 10px;
+}
+
+.list-decoration__numeric {
+  list-style-type: decimal;
+}
+
+.list-decoration__numeric li {
+  padding-left: 10px;
+}
+
 @media (max-width: 576px) {
   .container-fluid {
     width: 100% !important;
     padding: 0 !important;
   }
+
   .row {
     padding: 0 !important;
   }
+}
+
+
+/* slider swiper.js pagination style */
+
+.swiper-pagination-bullets>.swiper-pagination-bullet {
+  border-radius: 2px;
+  background-color: #fff;
+  border: 1px solid var(--cobalt-100)
+}
+
+.swiper-pagination-bullets>.swiper-pagination-bullet-active {
+  background-color: var(--cobalt-100);
 }
