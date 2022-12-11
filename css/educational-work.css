@@ -1,0 +1,127 @@
+.educationalWorkPage {
+  display: contents;
+}
+.educationalWorkPage .reset, .educationalWorkPage .allDefault, .educationalWorkPage .linkElement, .educationalWorkPage * {
+  box-sizing: border-box;
+  margin: 0;
+}
+.educationalWorkPage .allDefault, .educationalWorkPage .linkElement {
+  all: unset;
+}
+.educationalWorkPage .pageElement, .educationalWorkPage .hScroll {
+  width: clamp(400px, 100%, 1920px);
+  padding: 0 144px 0 144px;
+}
+@media (max-width: 900px) {
+  .educationalWorkPage .pageElement, .educationalWorkPage .hScroll {
+    padding: 0 16px 0 16px;
+  }
+}
+.educationalWorkPage .rowWrap {
+  display: flex;
+  flex-flow: row wrap;
+}
+.educationalWorkPage .row, .educationalWorkPage .downloadWidget {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.educationalWorkPage .col, .educationalWorkPage .downloadWidgetList {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+}
+.educationalWorkPage .center, .educationalWorkPage .hScroll {
+  display: grid;
+  place-items: center;
+}
+.educationalWorkPage h2 {
+  font: 400 40px Forum;
+  color: #21385F;
+  line-height: 44px;
+}
+.educationalWorkPage ul {
+  padding-left: 20px;
+}
+.educationalWorkPage .text {
+  font: 300 16px "Museo Sans";
+  color: #3B3B3B;
+  line-height: 19px;
+}
+.educationalWorkPage .text b {
+  font-weight: 600;
+}
+.educationalWorkPage .linkElement {
+  display: contents;
+  cursor: pointer;
+}
+.educationalWorkPage .linkElement:hover > * {
+  text-decoration: underline;
+}
+.educationalWorkPage .hScroll {
+  width: 100%;
+  height: fit-content;
+  overflow: auto;
+}
+.educationalWorkPage .gridTable, .educationalWorkPage .specialistsTable {
+  display: grid;
+}
+.educationalWorkPage .gridTable .th, .educationalWorkPage .specialistsTable .th {
+  padding: 16px 24px;
+  background: #294985;
+  font: 400 24px Forum;
+  color: #E9ECF2;
+}
+.educationalWorkPage .gridTable .tb, .educationalWorkPage .specialistsTable .tb {
+  display: contents;
+}
+.educationalWorkPage .gridTable .tb .tr *, .educationalWorkPage .specialistsTable .tb .tr * {
+  background: #E9ECF2;
+}
+.educationalWorkPage .gridTable .tbStriped, .educationalWorkPage .specialistsTable .tbStriped {
+  display: contents;
+}
+.educationalWorkPage .gridTable .tbStriped > .tr:nth-of-type(odd) > *, .educationalWorkPage .specialistsTable .tbStriped > .tr:nth-of-type(odd) > * {
+  background: #E9ECF2;
+}
+.educationalWorkPage .gridTable .tbStriped > .tr:nth-of-type(even) > *, .educationalWorkPage .specialistsTable .tbStriped > .tr:nth-of-type(even) > * {
+  background: #BEC8DA;
+}
+.educationalWorkPage .gridTable .tr, .educationalWorkPage .specialistsTable .tr {
+  /*display: grid;
+  grid-template: auto / subgrid;
+  grid-column: 1 / grid-end;*/
+  display: contents;
+}
+.educationalWorkPage .gridTable .td, .educationalWorkPage .specialistsTable .td {
+  padding: 24px;
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+.educationalWorkPage .downloadWidgetList {
+  gap: 32px;
+}
+.educationalWorkPage .downloadWidget {
+  justify-content: start;
+  gap: 16px;
+}
+.educationalWorkPage .downloadWidget img {
+  height: 24px;
+  width: 24px;
+  color: #21385f;
+}
+.educationalWorkPage .downloadWidget span {
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+.educationalWorkPage .specialistsTable {
+  width: 100%;
+  min-width: 600px;
+  grid-template-columns: 1fr 1fr 1fr 1fr [grid-end];
+}
+.educationalWorkPage .specialistsTable .th, .educationalWorkPage .specialistsTable .tb .tr .td {
+  text-align: center;
+}
+
+/*# sourceMappingURL=educational-work.css.map */
