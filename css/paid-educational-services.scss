@@ -86,28 +86,81 @@
             line-height: 144%;
         }
     }
-    .fullWidthBtn {
+    .linkElementLight {
+        @extend .allDefault;
+        display: contents;
+        cursor: pointer;
+        &:hover {
+            &>* {
+                color: #BBC2CE;
+                text-decoration: underline;
+            }
+        }
+    }
+    .downloadWidgetLight {
+        @extend .row;
+        justify-content: start;
+        gap: 16px;
+
+        .iconBox {
+            width: 24px;
+            height: 24px;
+            @extend .center;
+
+            img {
+                height: auto;
+                width: 14px;
+                color: #E8EAEE;
+            }
+        }
+        span {
+            font: 300 16px 'Museo Sans';
+            color: #BBC2CE;
+            line-height: 144%;
+        }
+    }
+
+    .expandableListElement {
         width: 100%;
-        min-height: 74px;
         @extend .center;
         background: #21385F;
 
-        .content {
-            @extend .row;
-            align-items: center;
-            gap: 16px;
-            padding: 16px;
+        .contentContainer {
+            @extend .col;
 
-            .plus {
-                width: 24px;
-                height: 24px;
+            .titleContainer {
+                @extend .row;
+                align-items: center;
+                gap: 16px;
+                padding: 24px 16px 24px 16px;
+                cursor: pointer;
+
+                .plus {
+                    width: 24px;
+                    height: 24px;
+                }
+                .title {
+                    font: 400 24px Forum;
+                    color: #E8EAEE;
+                    line-height: 26px;
+                }
             }
-            .title {
-                font: 400 24px Forum;
-                color: #E8EAEE;
-                line-height: 26px;
+            .childrenContainer {
+                @extend .col;
+                gap: 24px;
+                padding: 0px 16px 32px 16px;
+
+                //max-height: 0;
+                //transition: max-height 0.5s linear;
+
+                display: none;
+            }
+            .childrenContainerVisible {
+                display: flex;
             }
         }
     }
 }
+
+
 

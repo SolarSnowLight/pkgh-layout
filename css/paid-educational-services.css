@@ -1,11 +1,11 @@
 .paidEducationalServicesPage {
   display: contents;
 }
-.paidEducationalServicesPage .reset, .paidEducationalServicesPage .allDefault, .paidEducationalServicesPage .linkElement, .paidEducationalServicesPage * {
+.paidEducationalServicesPage .reset, .paidEducationalServicesPage .allDefault, .paidEducationalServicesPage .linkElementLight, .paidEducationalServicesPage .linkElement, .paidEducationalServicesPage * {
   box-sizing: border-box;
   margin: 0;
 }
-.paidEducationalServicesPage .allDefault, .paidEducationalServicesPage .linkElement {
+.paidEducationalServicesPage .allDefault, .paidEducationalServicesPage .linkElementLight, .paidEducationalServicesPage .linkElement {
   all: unset;
 }
 .paidEducationalServicesPage .pageElement {
@@ -21,16 +21,16 @@
   display: flex;
   flex-flow: row wrap;
 }
-.paidEducationalServicesPage .row, .paidEducationalServicesPage .fullWidthBtn .content, .paidEducationalServicesPage .downloadWidget {
+.paidEducationalServicesPage .row, .paidEducationalServicesPage .expandableListElement .contentContainer .titleContainer, .paidEducationalServicesPage .downloadWidgetLight, .paidEducationalServicesPage .downloadWidget {
   display: flex;
   flex-flow: row nowrap;
 }
-.paidEducationalServicesPage .col, .paidEducationalServicesPage .downloadWidgetList {
+.paidEducationalServicesPage .col, .paidEducationalServicesPage .expandableListElement .contentContainer .childrenContainer, .paidEducationalServicesPage .expandableListElement .contentContainer, .paidEducationalServicesPage .downloadWidgetList {
   display: flex;
   flex-flow: column nowrap;
   align-items: start;
 }
-.paidEducationalServicesPage .center, .paidEducationalServicesPage .fullWidthBtn {
+.paidEducationalServicesPage .center, .paidEducationalServicesPage .expandableListElement, .paidEducationalServicesPage .downloadWidgetLight .iconBox {
   display: grid;
   place-items: center;
 }
@@ -71,24 +71,58 @@
   color: #282828;
   line-height: 144%;
 }
-.paidEducationalServicesPage .fullWidthBtn {
-  width: 100%;
-  min-height: 74px;
-  background: #21385F;
+.paidEducationalServicesPage .linkElementLight {
+  display: contents;
+  cursor: pointer;
 }
-.paidEducationalServicesPage .fullWidthBtn .content {
-  align-items: center;
+.paidEducationalServicesPage .linkElementLight:hover > * {
+  color: #BBC2CE;
+  text-decoration: underline;
+}
+.paidEducationalServicesPage .downloadWidgetLight {
+  justify-content: start;
   gap: 16px;
-  padding: 16px;
 }
-.paidEducationalServicesPage .fullWidthBtn .content .plus {
+.paidEducationalServicesPage .downloadWidgetLight .iconBox {
   width: 24px;
   height: 24px;
 }
-.paidEducationalServicesPage .fullWidthBtn .content .title {
+.paidEducationalServicesPage .downloadWidgetLight .iconBox img {
+  height: auto;
+  width: 14px;
+  color: #E8EAEE;
+}
+.paidEducationalServicesPage .downloadWidgetLight span {
+  font: 300 16px "Museo Sans";
+  color: #BBC2CE;
+  line-height: 144%;
+}
+.paidEducationalServicesPage .expandableListElement {
+  width: 100%;
+  background: #21385F;
+}
+.paidEducationalServicesPage .expandableListElement .contentContainer .titleContainer {
+  align-items: center;
+  gap: 16px;
+  padding: 24px 16px 24px 16px;
+  cursor: pointer;
+}
+.paidEducationalServicesPage .expandableListElement .contentContainer .titleContainer .plus {
+  width: 24px;
+  height: 24px;
+}
+.paidEducationalServicesPage .expandableListElement .contentContainer .titleContainer .title {
   font: 400 24px Forum;
   color: #E8EAEE;
   line-height: 26px;
+}
+.paidEducationalServicesPage .expandableListElement .contentContainer .childrenContainer {
+  gap: 24px;
+  padding: 0px 16px 32px 16px;
+  display: none;
+}
+.paidEducationalServicesPage .expandableListElement .contentContainer .childrenContainerVisible {
+  display: flex;
 }
 
 /*# sourceMappingURL=paid-educational-services.css.map */

@@ -1,0 +1,15 @@
+<svg 
+	viewBox="0 0 14 17.7083" 
+	xmlns="http://www.w3.org/2000/svg"
+	fill="#E8EAEE"
+>
+	<style>
+		:root {
+		max-width: 100%;
+		max-height: 100%;
+		}
+	</style>
+	<path d="M14 6.25 H10 V0 H4 V6.25 H0 L7 13.5417 Z M0 15.625 V17.7083 H14 V15.625 Z"
+		stroke="none"
+	/>
+</svg>

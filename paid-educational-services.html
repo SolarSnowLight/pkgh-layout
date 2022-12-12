@@ -13,6 +13,20 @@
 </head>
 <body>
 
+<script>
+  function expandOrCollapse(){
+    const ic = document.getElementById('pes-ic-1')
+    const list = document.getElementById('pes-list-1')
+    if (!list.classList.contains('childrenContainerVisible')){
+      ic.src = 'img/icons/minus-light.svg'
+      list.classList.add('childrenContainerVisible')
+    } else {
+      ic.src = 'img/icons/plus-light.svg'
+      list.classList.remove('childrenContainerVisible')
+    }
+  }
+</script>
+
 <div class="wrapper">
   <div class="content">
     <div class="paidEducationalServicesPage">
@@ -61,13 +75,77 @@
   
       <div style="height: 32px"></div>
       
-      <div class="fullWidthBtn">
-        <div class="content">
-          <object type="image/svg+xml" class="plus" data="img/icons/plus-light.svg"></object>
-          <span class="title">Доступ категорий инвалидов на объекте по зонам с сопровождением</span>
+      <div class="expandableListElement">
+        <div class="contentContainer">
+          <div class="titleContainer"onclick="expandOrCollapse()">
+            <img id="pes-ic-1" class="plus" src="img/icons/plus-light.svg"></img>
+            <span class="title">Доступ категорий инвалидов на объекте по зонам с сопровождением</span>
+          </div>
+          <div id="pes-list-1" class="childrenContainer">
+            
+            <a class="linkElementLight" href="#">
+              <div class="downloadWidgetLight">
+                <div class="iconBox">
+                  <img src="img/icons/download-light.svg" alt="Загрузить"/>
+                </div>
+                <span>
+                  Типовая форма договора №1
+                </span>
+              </div>
+            </a>
+            
+            <a class="linkElementLight" href="#">
+              <div class="downloadWidgetLight">
+                <div class="iconBox">
+                  <img src="img/icons/download-light.svg" alt="Загрузить"/>
+                </div>
+                <span>
+                  Типовая форма договора №2
+                </span>
+              </div>
+            </a>
+            
+            <a class="linkElementLight" href="#">
+              <div class="downloadWidgetLight">
+                <div class="iconBox">
+                  <img src="img/icons/download-light.svg" alt="Загрузить"/>
+                </div>
+                <span>
+                  Типовая форма договора №3
+                </span>
+              </div>
+            </a>
+            
+            <a class="linkElementLight" href="#">
+              <div class="downloadWidgetLight">
+                <div class="iconBox">
+                  <img src="img/icons/download-light.svg" alt="Загрузить"/>
+                </div>
+                <span>
+                  Типовая форма договора №4
+                </span>
+              </div>
+            </a>
+            
+            <a class="linkElementLight" href="#">
+              <div class="downloadWidgetLight">
+                <div class="iconBox">
+                  <img src="img/icons/download-light.svg" alt="Загрузить"/>
+                </div>
+                <span>
+                  Типовые формы договора на оказание образовательных услуг по<br>
+                  дополнительным общеобразовательным программам (бассейн,<br>
+                  спортивные и иные залы)<br>
+                </span>
+              </div>
+            </a>
+            
+          </div>
         </div>
       </div>
   
+      
+      
       <div style="height: 32px"></div>
       
     </div>
