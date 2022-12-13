@@ -10,6 +10,27 @@
   */
   /*Раскрашенные строки таблицы*/
 }
+.main-table .custom-border {
+  border: 1px solid;
+}
+.main-table .custom-border-top {
+  border-top: 1px solid;
+}
+.main-table .custom-border-bottom {
+  border-bottom: 1px solid;
+}
+.main-table .custom-border-left {
+  border-left: 1px solid;
+}
+.main-table .custom-border-right {
+  border-right: 1px solid;
+}
+.main-table .column-test {
+  width: 100%;
+  height: 208px;
+  align-items: center;
+  display: flex;
+}
 .main-table .th {
   padding: 0 24px;
   background: var(--cobalt-100);
@@ -69,11 +90,29 @@
 .main-table-speciality .th {
   height: 136px;
 }
+.main-table--vft-speciality {
+  grid-template-columns: minmax(230px, 1fr) minmax(530px, 1fr) minmax(127px, 1fr) minmax(370px, 1fr) minmax(333px, 1fr) [grid-end];
+}
+.main-table--vft-speciality .th {
+  height: 136px;
+}
 .main-table--colored .tr:nth-child(odd) {
   background: var(--cobalt-10);
 }
 .main-table--colored .tr:nth-child(even) {
   background: var(--cobalt-30);
+}
+.main-table--colored-reverse .tr:nth-child(even) {
+  background: var(--cobalt-10);
+}
+.main-table--colored-reverse .tr:nth-child(even) .cell-border-color {
+  border-color: var(--cobalt-30);
+}
+.main-table--colored-reverse .tr:nth-child(odd) {
+  background: var(--cobalt-30);
+}
+.main-table--colored-reverse .tr:nth-child(odd) .cell-border-color {
+  border-color: var(--saphire-100);
 }
 
 .width_87_percent {
@@ -85,7 +124,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 24px 0px;
+  padding: 24px 0;
 }
 .scope-style .accordion-box__title {
   background: var(--saphire-100);
