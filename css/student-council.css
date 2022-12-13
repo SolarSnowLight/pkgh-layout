@@ -1,0 +1,51 @@
+.student-council{
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+
+.student-council__title{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.student-council__text{
+    /* display: flex; */
+    /* max-width: fit-content; */
+    /* flex-direction: column; */
+}
+
+.none_marker{
+    list-style-type:none;
+}
+
+.student-council__list li {
+    margin-left: -20px;
+    margin-top: 10px;
+
+}
+
+.student-council__doc li {
+    margin-left: -40px;
+    margin-top: 20px;
+}
+
+.student-council__doc a {
+    color: #282828;
+}
+
+.student-council__doc img{
+    margin-right: 10px;
+}
+
+@media (max-width:768px) {
+    .photo{
+        width: 600px;
+    }
+}
+
+@media (max-width:650px) {
+    .photo{
+        width: 375px;
+    }
+}
