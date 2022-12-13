@@ -1,0 +1,164 @@
+.timetableOfClassesPage {
+  display: contents;
+}
+.timetableOfClassesPage .reset, .timetableOfClassesPage .allDefault, .timetableOfClassesPage .linkElement, .timetableOfClassesPage .linkText, .timetableOfClassesPage * {
+  box-sizing: border-box;
+  margin: 0;
+}
+.timetableOfClassesPage .allDefault, .timetableOfClassesPage .linkElement, .timetableOfClassesPage .linkText {
+  all: unset;
+}
+.timetableOfClassesPage .pageElement, .timetableOfClassesPage .hScroll {
+  width: clamp(400px, 100%, 1920px);
+  padding: 0 144px 0 144px;
+}
+@media (max-width: 900px) {
+  .timetableOfClassesPage .pageElement, .timetableOfClassesPage .hScroll {
+    padding: 0 16px 0 16px;
+  }
+}
+.timetableOfClassesPage .rowWrap {
+  display: flex;
+  flex-flow: row wrap;
+}
+.timetableOfClassesPage .row, .timetableOfClassesPage .expandableListElement .contentContainer .titleContainer, .timetableOfClassesPage .downloadWidget {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.timetableOfClassesPage .col, .timetableOfClassesPage .expandableListElement .contentContainer .childrenContainer, .timetableOfClassesPage .expandableListElement .contentContainer, .timetableOfClassesPage .downloadWidgetList {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+}
+.timetableOfClassesPage .center, .timetableOfClassesPage .expandableListElement, .timetableOfClassesPage .hScroll {
+  display: grid;
+  place-items: center;
+}
+.timetableOfClassesPage h2 {
+  font: 400 40px Forum;
+  color: #21385F;
+  line-height: 44px;
+}
+.timetableOfClassesPage h3 {
+  font: 400 32px Forum;
+  color: #64748F;
+  line-height: 35px;
+}
+.timetableOfClassesPage h4 {
+  font: 400 24px Forum;
+  color: #64748F;
+  line-height: 26px;
+}
+.timetableOfClassesPage .text {
+  font: 300 16px "Museo Sans";
+  color: #3B3B3B;
+}
+.timetableOfClassesPage .text b {
+  font-weight: 600;
+}
+.timetableOfClassesPage .linkText {
+  cursor: pointer;
+}
+.timetableOfClassesPage .linkText:hover {
+  text-decoration: underline;
+}
+.timetableOfClassesPage .linkElement {
+  display: contents;
+  cursor: pointer;
+}
+.timetableOfClassesPage .linkElement:hover > * {
+  text-decoration: underline;
+}
+.timetableOfClassesPage .ul {
+  padding-left: 20px;
+}
+.timetableOfClassesPage .ol {
+  padding-left: 20px;
+}
+.timetableOfClassesPage .hScroll {
+  width: 100%;
+  height: fit-content;
+  overflow: auto;
+}
+.timetableOfClassesPage .gridTable {
+  display: grid;
+}
+.timetableOfClassesPage .gridTable .th {
+  padding: 16px 24px;
+  background: #294985;
+  font: 400 24px Forum;
+  color: #E9ECF2;
+}
+.timetableOfClassesPage .gridTable .tb {
+  display: contents;
+}
+.timetableOfClassesPage .gridTable .tb .tr * {
+  background: #E9ECF2;
+}
+.timetableOfClassesPage .gridTable .tbStriped {
+  display: contents;
+}
+.timetableOfClassesPage .gridTable .tbStriped > .tr:nth-of-type(odd) > * {
+  background: #E9ECF2;
+}
+.timetableOfClassesPage .gridTable .tbStriped > .tr:nth-of-type(even) > * {
+  background: #BEC8DA;
+}
+.timetableOfClassesPage .gridTable .tr {
+  /*display: grid;
+  grid-template: auto / subgrid;
+  grid-column: 1 / grid-end;*/
+  display: contents;
+}
+.timetableOfClassesPage .gridTable .td {
+  padding: 24px;
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+.timetableOfClassesPage .downloadWidgetList {
+  gap: 16px;
+}
+.timetableOfClassesPage .downloadWidget {
+  justify-content: start;
+  gap: 16px;
+}
+.timetableOfClassesPage .downloadWidget img {
+  height: 24px;
+  width: 24px;
+  color: #21385f;
+}
+.timetableOfClassesPage .downloadWidget span {
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+.timetableOfClassesPage .expandableListElement {
+  width: 100%;
+  background: #21385F;
+}
+.timetableOfClassesPage .expandableListElement .contentContainer .titleContainer {
+  align-items: center;
+  gap: 16px;
+  padding: 24px 16px 24px 16px;
+  cursor: pointer;
+}
+.timetableOfClassesPage .expandableListElement .contentContainer .titleContainer .plus {
+  width: 24px;
+  height: 24px;
+}
+.timetableOfClassesPage .expandableListElement .contentContainer .titleContainer .title {
+  font: 400 24px Forum;
+  color: #E8EAEE;
+  line-height: 26px;
+}
+.timetableOfClassesPage .expandableListElement .contentContainer .childrenContainer {
+  gap: 24px;
+  padding: 0px 16px 32px 16px;
+  display: none;
+}
+.timetableOfClassesPage .expandableListElement .contentContainer .childrenContainerVisible {
+  display: flex;
+}
+
+/*# sourceMappingURL=timetable-of-classes.css.map */
