@@ -1,0 +1,180 @@
+.admissionRulesPage {
+  display: contents;
+}
+.admissionRulesPage .reset, .admissionRulesPage .allDefault, .admissionRulesPage .aText, .admissionRulesPage .aElement, .admissionRulesPage * {
+  box-sizing: border-box;
+  margin: 0;
+}
+.admissionRulesPage .allDefault, .admissionRulesPage .aText, .admissionRulesPage .aElement {
+  all: unset;
+}
+.admissionRulesPage .pageElement, .admissionRulesPage .hScroll {
+  width: clamp(400px, 100%, 1920px);
+  padding: 0 144px 0 144px;
+}
+@media (max-width: 900px) {
+  .admissionRulesPage .pageElement, .admissionRulesPage .hScroll {
+    padding: 0 16px 0 16px;
+  }
+}
+.admissionRulesPage .rowWrap {
+  display: flex;
+  flex-flow: row wrap;
+}
+.admissionRulesPage .row, .admissionRulesPage .downloadWidgetLight, .admissionRulesPage .downloadWidget, .admissionRulesPage .expandableListElement .contentContainer .titleContainer {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.admissionRulesPage .col, .admissionRulesPage .downloadWidgetList, .admissionRulesPage .expandableListElement .contentContainer .childrenContainer, .admissionRulesPage .expandableListElement .contentContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+}
+.admissionRulesPage .center, .admissionRulesPage .downloadWidgetLight .iconBox, .admissionRulesPage .expandableListElement, .admissionRulesPage .hScroll {
+  display: grid;
+  place-items: center;
+}
+.admissionRulesPage h2 {
+  font: 400 40px Forum;
+  color: #21385F;
+  line-height: 44px;
+}
+.admissionRulesPage h3 {
+  font: 400 32px Forum;
+  color: #64748F;
+  line-height: 35px;
+}
+.admissionRulesPage h4 {
+  font: 400 24px Forum;
+  color: #64748F;
+  line-height: 26px;
+}
+.admissionRulesPage .text {
+  font: 300 16px "Museo Sans";
+  color: #3B3B3B;
+}
+.admissionRulesPage .text b {
+  font-weight: 600;
+}
+.admissionRulesPage .aElement {
+  display: contents;
+}
+.admissionRulesPage .linkText:hover, .admissionRulesPage .downloadWidgetLight span:hover, .admissionRulesPage .downloadWidget span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.admissionRulesPage .aText:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.admissionRulesPage .ul {
+  padding-left: 20px;
+}
+.admissionRulesPage .ol {
+  padding-left: 20px;
+}
+.admissionRulesPage .hScroll {
+  width: 100%;
+  height: fit-content;
+  overflow: auto;
+}
+.admissionRulesPage .gridTable {
+  display: grid;
+}
+.admissionRulesPage .gridTable .th {
+  padding: 16px 24px;
+  background: #294985;
+  font: 400 24px Forum;
+  color: #E9ECF2;
+}
+.admissionRulesPage .gridTable .tb {
+  display: contents;
+}
+.admissionRulesPage .gridTable .tb .tr * {
+  background: #E9ECF2;
+}
+.admissionRulesPage .gridTable .tbStriped {
+  display: contents;
+}
+.admissionRulesPage .gridTable .tbStriped > .tr:nth-of-type(odd) > * {
+  background: #E9ECF2;
+}
+.admissionRulesPage .gridTable .tbStriped > .tr:nth-of-type(even) > * {
+  background: #BEC8DA;
+}
+.admissionRulesPage .gridTable .tr {
+  /*display: grid;
+  grid-template: auto / subgrid;
+  grid-column: 1 / grid-end;*/
+  display: contents;
+}
+.admissionRulesPage .gridTable .td {
+  padding: 24px;
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+.admissionRulesPage .expandableListElement {
+  width: 100%;
+  background: #21385F;
+}
+.admissionRulesPage .expandableListElement .contentContainer .titleContainer {
+  align-items: center;
+  gap: 16px;
+  padding: 24px 16px 24px 16px;
+  cursor: pointer;
+}
+.admissionRulesPage .expandableListElement .contentContainer .titleContainer .plus {
+  width: 24px;
+  height: 24px;
+}
+.admissionRulesPage .expandableListElement .contentContainer .titleContainer .title {
+  font: 400 24px Forum;
+  color: #E8EAEE;
+  line-height: 26px;
+}
+.admissionRulesPage .expandableListElement .contentContainer .childrenContainer {
+  gap: 24px;
+  padding: 0px 16px 32px 16px;
+  display: none;
+}
+.admissionRulesPage .expandableListElement .contentContainer .childrenContainerVisible {
+  display: flex;
+}
+.admissionRulesPage .downloadWidgetList {
+  gap: 32px;
+}
+.admissionRulesPage .downloadWidget {
+  justify-content: start;
+  gap: 16px;
+}
+.admissionRulesPage .downloadWidget img {
+  height: 24px;
+  width: 24px;
+  color: #21385f;
+}
+.admissionRulesPage .downloadWidget span {
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+.admissionRulesPage .downloadWidgetLight {
+  justify-content: start;
+  gap: 16px;
+}
+.admissionRulesPage .downloadWidgetLight .iconBox {
+  width: 24px;
+  height: 24px;
+}
+.admissionRulesPage .downloadWidgetLight .iconBox img {
+  height: auto;
+  width: 14px;
+  color: #E8EAEE;
+}
+.admissionRulesPage .downloadWidgetLight span {
+  font: 300 16px "Museo Sans";
+  color: #BBC2CE;
+  line-height: 144%;
+}
+
+/*# sourceMappingURL=admission-rules.css.map */

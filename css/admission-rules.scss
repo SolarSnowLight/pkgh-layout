@@ -1,7 +1,7 @@
 
 // Классы страницы помещаются под общий класс ....page,
 // чтобы применяться в пределах страницы
-.accessibleEnvironmentPage {
+.admissionRulesPage {
     display: contents;
     // Сброс параметров элементов
     * { @extend .reset }
@@ -227,28 +227,5 @@
         }
     }
 
-    // Элементы страницы
-    .mapImg {
-        width: min(100%, 600px);
-        height: auto;
-    }
-    .addressAndPhone {
-        @extend .gridTable;
-        grid-template-columns: 256px 346px [grid-end];
-    }
-    .servicesOnObject {
-        @extend .gridTable;
-        width: 100%;
-        min-width: 660px;
-        overflow-x: auto;
-        grid-template-columns: 1fr 2fr [grid-end];
-    }
-    .responsiblePeople {
-        @extend .gridTable;
-        width: 100%;
-        min-width: 800px;
-        grid-template-columns: 1fr 1fr 0.5fr [grid-end];
-    }
 }
-
 
