@@ -1,0 +1,180 @@
+.preventionOfExtremismPage {
+  display: contents;
+}
+.preventionOfExtremismPage .reset, .preventionOfExtremismPage .allDefault, .preventionOfExtremismPage .aText, .preventionOfExtremismPage .aElement, .preventionOfExtremismPage * {
+  box-sizing: border-box;
+  margin: 0;
+}
+.preventionOfExtremismPage .allDefault, .preventionOfExtremismPage .aText, .preventionOfExtremismPage .aElement {
+  all: unset;
+}
+.preventionOfExtremismPage .pageElement, .preventionOfExtremismPage .hScroll {
+  width: clamp(400px, 100%, 1920px);
+  padding: 0 144px 0 144px;
+}
+@media (max-width: 900px) {
+  .preventionOfExtremismPage .pageElement, .preventionOfExtremismPage .hScroll {
+    padding: 0 16px 0 16px;
+  }
+}
+.preventionOfExtremismPage .rowWrap {
+  display: flex;
+  flex-flow: row wrap;
+}
+.preventionOfExtremismPage .row, .preventionOfExtremismPage .downloadWidgetLight, .preventionOfExtremismPage .downloadWidget, .preventionOfExtremismPage .expandableListElement .contentContainer .titleContainer {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.preventionOfExtremismPage .col, .preventionOfExtremismPage .downloadWidgetList, .preventionOfExtremismPage .expandableListElement .contentContainer .childrenContainer, .preventionOfExtremismPage .expandableListElement .contentContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+}
+.preventionOfExtremismPage .center, .preventionOfExtremismPage .downloadWidgetLight .iconBox, .preventionOfExtremismPage .expandableListElement, .preventionOfExtremismPage .hScroll {
+  display: grid;
+  place-items: center;
+}
+.preventionOfExtremismPage h2 {
+  font: 400 40px Forum;
+  color: #21385F;
+  line-height: 44px;
+}
+.preventionOfExtremismPage h3 {
+  font: 400 32px Forum;
+  color: #64748F;
+  line-height: 35px;
+}
+.preventionOfExtremismPage h4 {
+  font: 400 24px Forum;
+  color: #64748F;
+  line-height: 26px;
+}
+.preventionOfExtremismPage .text {
+  font: 300 16px "Museo Sans";
+  color: #3B3B3B;
+}
+.preventionOfExtremismPage .text b {
+  font-weight: 600;
+}
+.preventionOfExtremismPage .aElement {
+  display: contents;
+}
+.preventionOfExtremismPage .linkText:hover, .preventionOfExtremismPage .downloadWidgetLight span:hover, .preventionOfExtremismPage .downloadWidget span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.preventionOfExtremismPage .aText:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.preventionOfExtremismPage .ul {
+  padding-left: 20px;
+}
+.preventionOfExtremismPage .ol {
+  padding-left: 20px;
+}
+.preventionOfExtremismPage .hScroll {
+  width: 100%;
+  height: fit-content;
+  overflow: auto;
+}
+.preventionOfExtremismPage .gridTable {
+  display: grid;
+}
+.preventionOfExtremismPage .gridTable .th {
+  padding: 16px 24px;
+  background: #294985;
+  font: 400 24px Forum;
+  color: #E9ECF2;
+}
+.preventionOfExtremismPage .gridTable .tb {
+  display: contents;
+}
+.preventionOfExtremismPage .gridTable .tb .tr * {
+  background: #E9ECF2;
+}
+.preventionOfExtremismPage .gridTable .tbStriped {
+  display: contents;
+}
+.preventionOfExtremismPage .gridTable .tbStriped > .tr:nth-of-type(odd) > * {
+  background: #E9ECF2;
+}
+.preventionOfExtremismPage .gridTable .tbStriped > .tr:nth-of-type(even) > * {
+  background: #BEC8DA;
+}
+.preventionOfExtremismPage .gridTable .tr {
+  /*display: grid;
+  grid-template: auto / subgrid;
+  grid-column: 1 / grid-end;*/
+  display: contents;
+}
+.preventionOfExtremismPage .gridTable .td {
+  padding: 24px;
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+.preventionOfExtremismPage .expandableListElement {
+  width: 100%;
+  background: #21385F;
+}
+.preventionOfExtremismPage .expandableListElement .contentContainer .titleContainer {
+  align-items: center;
+  gap: 16px;
+  padding: 24px 16px 24px 16px;
+  cursor: pointer;
+}
+.preventionOfExtremismPage .expandableListElement .contentContainer .titleContainer .plus {
+  width: 24px;
+  height: 24px;
+}
+.preventionOfExtremismPage .expandableListElement .contentContainer .titleContainer .title {
+  font: 400 24px Forum;
+  color: #E8EAEE;
+  line-height: 26px;
+}
+.preventionOfExtremismPage .expandableListElement .contentContainer .childrenContainer {
+  gap: 24px;
+  padding: 0px 16px 32px 16px;
+  display: none;
+}
+.preventionOfExtremismPage .expandableListElement .contentContainer .childrenContainerVisible {
+  display: flex;
+}
+.preventionOfExtremismPage .downloadWidgetList {
+  gap: 16px;
+}
+.preventionOfExtremismPage .downloadWidget {
+  justify-content: start;
+  gap: 16px;
+}
+.preventionOfExtremismPage .downloadWidget img {
+  height: 24px;
+  width: 24px;
+  color: #21385f;
+}
+.preventionOfExtremismPage .downloadWidget span {
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+.preventionOfExtremismPage .downloadWidgetLight {
+  justify-content: start;
+  gap: 16px;
+}
+.preventionOfExtremismPage .downloadWidgetLight .iconBox {
+  width: 24px;
+  height: 24px;
+}
+.preventionOfExtremismPage .downloadWidgetLight .iconBox img {
+  height: auto;
+  width: 14px;
+  color: #E8EAEE;
+}
+.preventionOfExtremismPage .downloadWidgetLight span {
+  font: 300 16px "Museo Sans";
+  color: #BBC2CE;
+  line-height: 144%;
+}
+
+/*# sourceMappingURL=prevention-of-extremism.css.map */
