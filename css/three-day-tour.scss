@@ -1,0 +1,211 @@
+
+// Классы страницы помещаются под общий класс ....page,
+// чтобы применяться в пределах страницы
+.threeDayTourPage {
+    display: contents;
+    // Сброс параметров элементов
+    * { @extend .reset }
+
+    // Общие классы 1
+    .reset {
+        box-sizing: border-box;
+        margin: 0;
+    }
+    .allDefault {
+        all: unset;
+        @extend .reset;
+    }
+
+    // Общие классы 2
+    .pageElement {
+        width: clamp(400px, 100%, 1920px);
+        padding: 0 144px 0 144px;
+        @media (max-width: 900px) {
+            padding: 0 16px 0 16px;
+        }
+    }
+    .rowWrap {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .row {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .col {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: start;
+    }
+    .center {
+        display: grid;
+        place-items: center;
+    }
+
+
+    // Общие классы 3
+    h2 {
+        font: 400 40px Forum;
+        color: #21385F;
+        line-height: 44px;
+    }
+    h3 {
+        font: 400 32px Forum;
+        color: #64748F;
+        line-height: 35px;
+    }
+    h4 {
+        font: 400 24px Forum;
+        color: #64748F;
+        line-height: 26px;
+    }
+    .text {
+        font: 300 16px 'Museo Sans';
+        color: #3B3B3B;
+
+        b {
+            font-weight: 600;
+        }
+    }
+    .linkText {
+        @extend .allDefault;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .linkElement {
+        @extend .allDefault;
+        display: contents;
+        cursor: pointer;
+        &:hover {
+            &>* {
+                text-decoration: underline;
+            }
+        }
+    }
+    .ul {
+        padding-left: 20px;
+    }
+    .ol {
+        padding-left: 20px;
+    }
+    .hScroll {
+        @extend .pageElement;
+        @extend .center;
+        width: 100%;
+        height: fit-content;
+        overflow: auto;
+    }
+    .gridTable {
+        display: grid;
+
+        .th {
+            padding: 16px 24px;
+            background: #294985;
+            font: 400 24px Forum;
+            color: #E9ECF2;
+        }
+        .tb {
+            display: contents;
+            .tr * {
+                background: #E9ECF2;
+            }
+        }
+        .tbStriped {
+            display: contents;
+
+            >.tr:nth-of-type(odd){
+                &>*{
+                    background: #E9ECF2;
+                }
+            }
+            >.tr:nth-of-type(even){
+                &>*{
+                    background: #BEC8DA;
+                }
+            }
+        }
+        .tr {
+            /*display: grid;
+            grid-template: auto / subgrid;
+            grid-column: 1 / grid-end;*/
+            display: contents;
+        }
+        .td {
+            padding: 24px;
+            //background: #E9ECF2;
+            font: 300 16px 'Museo Sans';
+            color: #282828;
+            line-height: 144%;
+        }
+    }
+    .fullWidthBtn {
+        width: 100%;
+        min-height: 74px;
+        @extend .center;
+        background: #21385F;
+
+        .content {
+            @extend .row;
+            align-items: center;
+            gap: 16px;
+            padding: 16px;
+
+            .plus {
+                width: 24px;
+                height: 24px;
+            }
+            .title {
+                font: 400 24px Forum;
+                color: #E8EAEE;
+                line-height: 26px;
+            }
+        }
+    }
+    .downloadWidgetList {
+         @extend .col;
+         gap: 32px;
+     }
+    .downloadWidget {
+        @extend .row;
+        justify-content: start;
+        gap: 16px;
+
+        img {
+            height: 24px;
+            width: 24px;
+            color: #21385f;
+        }
+        span {
+            font: 300 16px 'Museo Sans';
+            color: #282828;
+            line-height: 144%;
+        }
+    }
+    .mapImg {
+        width: min(100%, 600px);
+        height: auto;
+    }
+
+    // Единичные элементы страницы
+    .addressAndPhone {
+        @extend .gridTable;
+        grid-template-columns: 256px 346px [grid-end];
+    }
+    .servicesOnObject {
+        @extend .gridTable;
+        width: 100%;
+        min-width: 660px;
+        overflow-x: auto;
+        grid-template-columns: 1fr 2fr [grid-end];
+    }
+    .responsiblePeople {
+        @extend .gridTable;
+        width: 100%;
+        min-width: 800px;
+        grid-template-columns: 1fr 1fr 0.5fr [grid-end];
+    }
+}
+
+
