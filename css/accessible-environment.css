@@ -1,11 +1,11 @@
 .accessibleEnvironmentPage {
   display: contents;
 }
-.accessibleEnvironmentPage .reset, .accessibleEnvironmentPage .allDefault, .accessibleEnvironmentPage .linkElement, .accessibleEnvironmentPage .linkText, .accessibleEnvironmentPage * {
+.accessibleEnvironmentPage .reset, .accessibleEnvironmentPage .allDefault, .accessibleEnvironmentPage .aText, .accessibleEnvironmentPage .aElement, .accessibleEnvironmentPage * {
   box-sizing: border-box;
   margin: 0;
 }
-.accessibleEnvironmentPage .allDefault, .accessibleEnvironmentPage .linkElement, .accessibleEnvironmentPage .linkText {
+.accessibleEnvironmentPage .allDefault, .accessibleEnvironmentPage .aText, .accessibleEnvironmentPage .aElement {
   all: unset;
 }
 .accessibleEnvironmentPage .pageElement, .accessibleEnvironmentPage .hScroll {
@@ -21,16 +21,16 @@
   display: flex;
   flex-flow: row wrap;
 }
-.accessibleEnvironmentPage .row, .accessibleEnvironmentPage .downloadWidget, .accessibleEnvironmentPage .fullWidthBtn .content {
+.accessibleEnvironmentPage .row, .accessibleEnvironmentPage .downloadWidgetLight, .accessibleEnvironmentPage .downloadWidget, .accessibleEnvironmentPage .expandableListElement .contentContainer .titleContainer {
   display: flex;
   flex-flow: row nowrap;
 }
-.accessibleEnvironmentPage .col, .accessibleEnvironmentPage .downloadWidgetList {
+.accessibleEnvironmentPage .col, .accessibleEnvironmentPage .downloadWidgetList, .accessibleEnvironmentPage .expandableListElement .contentContainer .childrenContainer, .accessibleEnvironmentPage .expandableListElement .contentContainer {
   display: flex;
   flex-flow: column nowrap;
   align-items: start;
 }
-.accessibleEnvironmentPage .center, .accessibleEnvironmentPage .fullWidthBtn, .accessibleEnvironmentPage .hScroll {
+.accessibleEnvironmentPage .center, .accessibleEnvironmentPage .downloadWidgetLight .iconBox, .accessibleEnvironmentPage .expandableListElement, .accessibleEnvironmentPage .hScroll {
   display: grid;
   place-items: center;
 }
@@ -56,17 +56,15 @@
 .accessibleEnvironmentPage .text b {
   font-weight: 600;
 }
-.accessibleEnvironmentPage .linkText {
-  cursor: pointer;
-}
-.accessibleEnvironmentPage .linkText:hover {
-  text-decoration: underline;
-}
-.accessibleEnvironmentPage .linkElement {
+.accessibleEnvironmentPage .aElement {
   display: contents;
+}
+.accessibleEnvironmentPage .linkText:hover, .accessibleEnvironmentPage .downloadWidgetLight span:hover, .accessibleEnvironmentPage .downloadWidget span:hover {
+  text-decoration: underline;
   cursor: pointer;
 }
-.accessibleEnvironmentPage .linkElement:hover > * {
+.accessibleEnvironmentPage .aText:hover {
+  cursor: pointer;
   text-decoration: underline;
 }
 .accessibleEnvironmentPage .ul {
@@ -116,24 +114,32 @@
   color: #282828;
   line-height: 144%;
 }
-.accessibleEnvironmentPage .fullWidthBtn {
+.accessibleEnvironmentPage .expandableListElement {
   width: 100%;
-  min-height: 74px;
   background: #21385F;
 }
-.accessibleEnvironmentPage .fullWidthBtn .content {
+.accessibleEnvironmentPage .expandableListElement .contentContainer .titleContainer {
   align-items: center;
   gap: 16px;
-  padding: 16px;
+  padding: 24px 16px 24px 16px;
+  cursor: pointer;
 }
-.accessibleEnvironmentPage .fullWidthBtn .content .plus {
+.accessibleEnvironmentPage .expandableListElement .contentContainer .titleContainer .plus {
   width: 24px;
   height: 24px;
 }
-.accessibleEnvironmentPage .fullWidthBtn .content .title {
+.accessibleEnvironmentPage .expandableListElement .contentContainer .titleContainer .title {
   font: 400 24px Forum;
   color: #E8EAEE;
   line-height: 26px;
+}
+.accessibleEnvironmentPage .expandableListElement .contentContainer .childrenContainer {
+  gap: 24px;
+  padding: 0px 16px 32px 16px;
+  display: none;
+}
+.accessibleEnvironmentPage .expandableListElement .contentContainer .childrenContainerVisible {
+  display: flex;
 }
 .accessibleEnvironmentPage .downloadWidgetList {
   gap: 32px;
@@ -150,6 +156,24 @@
 .accessibleEnvironmentPage .downloadWidget span {
   font: 300 16px "Museo Sans";
   color: #282828;
+  line-height: 144%;
+}
+.accessibleEnvironmentPage .downloadWidgetLight {
+  justify-content: start;
+  gap: 16px;
+}
+.accessibleEnvironmentPage .downloadWidgetLight .iconBox {
+  width: 24px;
+  height: 24px;
+}
+.accessibleEnvironmentPage .downloadWidgetLight .iconBox img {
+  height: auto;
+  width: 14px;
+  color: #E8EAEE;
+}
+.accessibleEnvironmentPage .downloadWidgetLight span {
+  font: 300 16px "Museo Sans";
+  color: #BBC2CE;
   line-height: 144%;
 }
 .accessibleEnvironmentPage .mapImg {

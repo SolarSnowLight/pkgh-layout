@@ -1,7 +1,6 @@
 
-// Классы страницы помещаются под общий класс ....page,
-// чтобы применяться в пределах страницы
-.accessibleEnvironmentPage {
+// Классы страницы помещаются под общий класс ....pageWrapper, чтобы не выходить за пределы страницы
+.preventionOfExtremismPage {
     display: contents;
     // Сброс параметров элементов
     * { @extend .reset }
@@ -183,9 +182,9 @@
         }
     }
     .downloadWidgetList {
-         @extend .col;
-         gap: 32px;
-     }
+        @extend .col;
+        gap: 16px;
+    }
     .downloadWidget {
         @extend .row;
         justify-content: start;
@@ -226,28 +225,6 @@
             @extend .linkText;
         }
     }
-    .mapImg {
-        width: min(100%, 600px);
-        height: auto;
-    }
-
-    // Единичные элементы страницы
-    .addressAndPhone {
-        @extend .gridTable;
-        grid-template-columns: 256px 346px [grid-end];
-    }
-    .servicesOnObject {
-        @extend .gridTable;
-        width: 100%;
-        min-width: 660px;
-        overflow-x: auto;
-        grid-template-columns: 1fr 2fr [grid-end];
-    }
-    .responsiblePeople {
-        @extend .gridTable;
-        width: 100%;
-        min-width: 800px;
-        grid-template-columns: 1fr 1fr 0.5fr [grid-end];
-    }
 }
+
 
