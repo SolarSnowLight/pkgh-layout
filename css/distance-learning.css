@@ -1,250 +1,273 @@
-.DistanceLearningPage {
+.distanceLearningPage {
   display: contents;
 }
-.DistanceLearningPage .reset, .DistanceLearningPage .allDefault, .DistanceLearningPage .aTextU, .DistanceLearningPage .aText, .DistanceLearningPage .aElement, .DistanceLearningPage * {
+.distanceLearningPage .reset, .distanceLearningPage .allDefault, .distanceLearningPage .aTextU, .distanceLearningPage .aText, .distanceLearningPage .aElement, .distanceLearningPage * {
   box-sizing: border-box;
   margin: 0;
 }
-.DistanceLearningPage .allDefault, .DistanceLearningPage .aTextU, .DistanceLearningPage .aText, .DistanceLearningPage .aElement {
+.distanceLearningPage .allDefault, .distanceLearningPage .aTextU, .distanceLearningPage .aText, .distanceLearningPage .aElement {
   all: unset;
 }
-.DistanceLearningPage .pageElement, .DistanceLearningPage .hScroll {
+.distanceLearningPage .pageElement, .distanceLearningPage .hScroll {
   width: clamp(400px, 100%, 1920px);
   padding: 0 144px 0 144px;
 }
 @media (max-width: 900px) {
-  .DistanceLearningPage .pageElement, .DistanceLearningPage .hScroll {
+  .distanceLearningPage .pageElement, .distanceLearningPage .hScroll {
     padding: 0 16px 0 16px;
   }
 }
-.DistanceLearningPage .rowWrap, .DistanceLearningPage .photos {
+.distanceLearningPage .rowWrap, .distanceLearningPage .photos, .distanceLearningPage .timetableOfClasses {
   display: flex;
   flex-flow: row wrap;
 }
-.DistanceLearningPage .row, .DistanceLearningPage .downloadWidgetLight, .DistanceLearningPage .downloadWidget, .DistanceLearningPage .expandableListElement .contentContainer .titleContainer {
+.distanceLearningPage .row, .distanceLearningPage .downloadWidgetLight, .distanceLearningPage .downloadWidget, .distanceLearningPage .expandableListElement .contentContainer .titleContainer, .distanceLearningPage .expandableListElement .sessionDates .titleContainer {
   display: flex;
   flex-flow: row nowrap;
 }
-.DistanceLearningPage .col, .DistanceLearningPage .sessionDatesUl, .DistanceLearningPage .downloadWidgetList, .DistanceLearningPage .expandableListElement .contentContainer .childrenContainer, .DistanceLearningPage .expandableListElement .contentContainer, .DistanceLearningPage .adCard, .DistanceLearningPage .forAllQuestionsCard, .DistanceLearningPage .recruitmentForSpecialitiesCard, .DistanceLearningPage .freshmanMeetingCard {
+.distanceLearningPage .col, .distanceLearningPage .downloadWidgetList, .distanceLearningPage .expandableListElement .contentContainer .childrenContainer, .distanceLearningPage .expandableListElement .sessionDates .childrenContainer, .distanceLearningPage .expandableListElement .contentContainer, .distanceLearningPage .expandableListElement .sessionDates, .distanceLearningPage .adCard, .distanceLearningPage .forAllQuestionsCard, .distanceLearningPage .debtorCard, .distanceLearningPage .freshmanMeetingCard {
   display: flex;
   flex-flow: column nowrap;
   align-items: start;
 }
-.DistanceLearningPage .center, .DistanceLearningPage .specialitiesList .td, .DistanceLearningPage .freshmanMeetingTable .tr > :nth-child(n+3), .DistanceLearningPage .freshmanMeetingTable .ths > :nth-child(n+3), .DistanceLearningPage .downloadWidgetLight .iconBox, .DistanceLearningPage .expandableListElement, .DistanceLearningPage .hScroll {
+.distanceLearningPage .center, .distanceLearningPage .groupNumbers .td, .distanceLearningPage .timetableOfClasses .item, .distanceLearningPage .specialitiesList .td, .distanceLearningPage .freshmanMeetingTable .tr > :nth-child(n+3), .distanceLearningPage .freshmanMeetingTable .ths > :nth-child(n+3), .distanceLearningPage .downloadWidgetLight .iconBox, .distanceLearningPage .expandableListElement, .distanceLearningPage .hScroll {
   display: grid;
   place-items: center;
 }
-.DistanceLearningPage .none {
+.distanceLearningPage .none {
   display: none;
 }
-.DistanceLearningPage .contents {
+.distanceLearningPage .contents {
   display: contents;
 }
-.DistanceLearningPage h2 {
+.distanceLearningPage h2 {
   font: 400 40px Forum;
   color: #21385F;
   line-height: 44px;
 }
-.DistanceLearningPage h3 {
+.distanceLearningPage h3 {
   font: 400 32px Forum;
   color: #64748F;
   line-height: 35px;
 }
-.DistanceLearningPage h4 {
+.distanceLearningPage h4 {
   font: 400 24px Forum;
   color: #64748F;
   line-height: 26px;
 }
-.DistanceLearningPage .text {
+.distanceLearningPage .text, .distanceLearningPage .timetableOfClasses .item {
   font: 300 16px "Museo Sans";
   color: #3B3B3B;
 }
-.DistanceLearningPage .text b {
+.distanceLearningPage .text b, .distanceLearningPage .timetableOfClasses .item b {
   font-weight: 600;
 }
-.DistanceLearningPage .aElement {
+.distanceLearningPage .aElement {
   display: contents;
 }
-.DistanceLearningPage .linkText:hover, .DistanceLearningPage .downloadWidgetLight span:hover, .DistanceLearningPage .downloadWidget span:hover {
+.distanceLearningPage .linkText:hover, .distanceLearningPage .downloadWidgetLight span:hover, .distanceLearningPage .downloadWidget span:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-.DistanceLearningPage .aText:hover {
+.distanceLearningPage .aText:hover {
   cursor: pointer;
   text-decoration: underline;
 }
-.DistanceLearningPage .aTextU {
+.distanceLearningPage .aTextU {
   cursor: pointer;
   text-decoration: underline;
 }
-.DistanceLearningPage .ul {
+.distanceLearningPage .ul {
   padding-left: 20px;
 }
-.DistanceLearningPage .ol {
+.distanceLearningPage .ol {
   padding-left: 20px;
 }
-.DistanceLearningPage .adCard, .DistanceLearningPage .forAllQuestionsCard, .DistanceLearningPage .recruitmentForSpecialitiesCard, .DistanceLearningPage .freshmanMeetingCard {
+.distanceLearningPage .adCard, .distanceLearningPage .forAllQuestionsCard, .distanceLearningPage .debtorCard, .distanceLearningPage .freshmanMeetingCard {
   background: #697FA9;
   backdrop-filter: blur(32px);
   border-radius: 2px;
   padding: 31px;
   gap: 32px;
 }
-.DistanceLearningPage .adCard h3, .DistanceLearningPage .forAllQuestionsCard h3, .DistanceLearningPage .recruitmentForSpecialitiesCard h3, .DistanceLearningPage .freshmanMeetingCard h3 {
+.distanceLearningPage .adCard h3, .distanceLearningPage .forAllQuestionsCard h3, .distanceLearningPage .debtorCard h3, .distanceLearningPage .freshmanMeetingCard h3 {
   color: #E9ECF2;
   align-self: center;
   text-align: center;
 }
-.DistanceLearningPage .adCard .text, .DistanceLearningPage .forAllQuestionsCard .text, .DistanceLearningPage .recruitmentForSpecialitiesCard .text, .DistanceLearningPage .freshmanMeetingCard .text {
+.distanceLearningPage .adCard .text, .distanceLearningPage .forAllQuestionsCard .text, .distanceLearningPage .adCard .timetableOfClasses .item, .distanceLearningPage .forAllQuestionsCard .timetableOfClasses .item, .distanceLearningPage .timetableOfClasses .adCard .item, .distanceLearningPage .timetableOfClasses .forAllQuestionsCard .item, .distanceLearningPage .debtorCard .text, .distanceLearningPage .debtorCard .timetableOfClasses .item, .distanceLearningPage .timetableOfClasses .debtorCard .item, .distanceLearningPage .freshmanMeetingCard .text, .distanceLearningPage .freshmanMeetingCard .timetableOfClasses .item, .distanceLearningPage .timetableOfClasses .freshmanMeetingCard .item {
   color: #BEC8DA;
 }
-.DistanceLearningPage .hScroll {
+.distanceLearningPage .hScroll {
   width: 100%;
   height: fit-content;
   overflow: auto;
 }
-.DistanceLearningPage .gridTable, .DistanceLearningPage .specialitiesList, .DistanceLearningPage .freshmanMeetingTable {
+.distanceLearningPage .gridTable, .distanceLearningPage .groupNumbers, .distanceLearningPage .specialitiesList, .distanceLearningPage .freshmanMeetingTable {
   display: grid;
 }
-.DistanceLearningPage .gridTable .ths, .DistanceLearningPage .specialitiesList .ths, .DistanceLearningPage .freshmanMeetingTable .ths {
+.distanceLearningPage .gridTable .ths, .distanceLearningPage .groupNumbers .ths, .distanceLearningPage .specialitiesList .ths, .distanceLearningPage .freshmanMeetingTable .ths {
   display: contents;
 }
-.DistanceLearningPage .gridTable .th, .DistanceLearningPage .specialitiesList .th, .DistanceLearningPage .freshmanMeetingTable .th {
+.distanceLearningPage .gridTable .th, .distanceLearningPage .groupNumbers .th, .distanceLearningPage .specialitiesList .th, .distanceLearningPage .freshmanMeetingTable .th {
   padding: 16px 22px;
   background: #294985;
   font: 400 24px Forum;
   color: #E9ECF2;
 }
-.DistanceLearningPage .gridTable .tb, .DistanceLearningPage .specialitiesList .tb, .DistanceLearningPage .freshmanMeetingTable .tb {
+.distanceLearningPage .gridTable .tb, .distanceLearningPage .groupNumbers .tb, .distanceLearningPage .specialitiesList .tb, .distanceLearningPage .freshmanMeetingTable .tb {
   display: contents;
 }
-.DistanceLearningPage .gridTable .tb .tr *, .DistanceLearningPage .specialitiesList .tb .tr *, .DistanceLearningPage .freshmanMeetingTable .tb .tr * {
+.distanceLearningPage .gridTable .tb .tr *, .distanceLearningPage .groupNumbers .tb .tr *, .distanceLearningPage .specialitiesList .tb .tr *, .distanceLearningPage .freshmanMeetingTable .tb .tr * {
   background: #E9ECF2;
 }
-.DistanceLearningPage .gridTable .tbStriped, .DistanceLearningPage .specialitiesList .tbStriped, .DistanceLearningPage .freshmanMeetingTable .tbStriped {
+.distanceLearningPage .gridTable .tbStriped, .distanceLearningPage .groupNumbers .tbStriped, .distanceLearningPage .specialitiesList .tbStriped, .distanceLearningPage .freshmanMeetingTable .tbStriped {
   display: contents;
 }
-.DistanceLearningPage .gridTable .tbStriped > .tr:nth-of-type(odd) > *, .DistanceLearningPage .specialitiesList .tbStriped > .tr:nth-of-type(odd) > *, .DistanceLearningPage .freshmanMeetingTable .tbStriped > .tr:nth-of-type(odd) > * {
+.distanceLearningPage .gridTable .tbStriped > .tr:nth-of-type(odd) > *, .distanceLearningPage .groupNumbers .tbStriped > .tr:nth-of-type(odd) > *, .distanceLearningPage .specialitiesList .tbStriped > .tr:nth-of-type(odd) > *, .distanceLearningPage .freshmanMeetingTable .tbStriped > .tr:nth-of-type(odd) > * {
   background: #E9ECF2;
 }
-.DistanceLearningPage .gridTable .tbStriped > .tr:nth-of-type(even) > *, .DistanceLearningPage .specialitiesList .tbStriped > .tr:nth-of-type(even) > *, .DistanceLearningPage .freshmanMeetingTable .tbStriped > .tr:nth-of-type(even) > * {
+.distanceLearningPage .gridTable .tbStriped > .tr:nth-of-type(even) > *, .distanceLearningPage .groupNumbers .tbStriped > .tr:nth-of-type(even) > *, .distanceLearningPage .specialitiesList .tbStriped > .tr:nth-of-type(even) > *, .distanceLearningPage .freshmanMeetingTable .tbStriped > .tr:nth-of-type(even) > * {
   background: #BEC8DA;
 }
-.DistanceLearningPage .gridTable .tr, .DistanceLearningPage .specialitiesList .tr, .DistanceLearningPage .freshmanMeetingTable .tr {
+.distanceLearningPage .gridTable .tr, .distanceLearningPage .groupNumbers .tr, .distanceLearningPage .specialitiesList .tr, .distanceLearningPage .freshmanMeetingTable .tr {
   /*display: grid;
   grid-template: auto / subgrid;
   grid-column: 1 / grid-end;*/
   display: contents;
 }
-.DistanceLearningPage .gridTable .td, .DistanceLearningPage .specialitiesList .td, .DistanceLearningPage .freshmanMeetingTable .td {
+.distanceLearningPage .gridTable .td, .distanceLearningPage .groupNumbers .td, .distanceLearningPage .specialitiesList .td, .distanceLearningPage .freshmanMeetingTable .td {
   padding: 16px 22px;
   font: 300 16px "Museo Sans";
   color: #282828;
   line-height: 144%;
 }
-.DistanceLearningPage .expandableListElement {
+.distanceLearningPage .expandableListElement {
   width: 100%;
   background: #21385F;
 }
-.DistanceLearningPage .expandableListElement .contentContainer .titleContainer {
+.distanceLearningPage .expandableListElement .contentContainer .titleContainer, .distanceLearningPage .expandableListElement .sessionDates .titleContainer {
   align-items: center;
   gap: 16px;
   padding: 24px 16px 24px 16px;
   cursor: pointer;
 }
-.DistanceLearningPage .expandableListElement .contentContainer .titleContainer .plus {
+.distanceLearningPage .expandableListElement .contentContainer .titleContainer .plus, .distanceLearningPage .expandableListElement .sessionDates .titleContainer .plus {
   width: 24px;
   height: 24px;
 }
-.DistanceLearningPage .expandableListElement .contentContainer .titleContainer .title {
+.distanceLearningPage .expandableListElement .contentContainer .titleContainer .title, .distanceLearningPage .expandableListElement .sessionDates .titleContainer .title {
   font: 400 24px Forum;
   color: #E8EAEE;
   line-height: 26px;
 }
-.DistanceLearningPage .expandableListElement .contentContainer .childrenContainer {
+.distanceLearningPage .expandableListElement .contentContainer .childrenContainer, .distanceLearningPage .expandableListElement .sessionDates .childrenContainer {
   gap: 24px;
   padding: 0px 16px 32px 16px;
-  display: none;
 }
-.DistanceLearningPage .expandableListElement .contentContainer .childrenContainerVisible {
-  display: flex;
+.distanceLearningPage .expandableListElement .contentContainer .childrenContainer .text, .distanceLearningPage .expandableListElement .sessionDates .childrenContainer .text, .distanceLearningPage .expandableListElement .contentContainer .childrenContainer .timetableOfClasses .item, .distanceLearningPage .expandableListElement .sessionDates .childrenContainer .timetableOfClasses .item, .distanceLearningPage .timetableOfClasses .expandableListElement .contentContainer .childrenContainer .item, .distanceLearningPage .timetableOfClasses .expandableListElement .sessionDates .childrenContainer .item {
+  color: #BBC2CE;
 }
-.DistanceLearningPage .downloadWidgetList {
+.distanceLearningPage .downloadWidgetList {
   gap: 32px;
 }
-.DistanceLearningPage .downloadWidget {
+.distanceLearningPage .downloadWidget {
   justify-content: start;
   gap: 16px;
 }
-.DistanceLearningPage .downloadWidget img {
+.distanceLearningPage .downloadWidget img {
   height: 24px;
   width: 24px;
   color: #21385f;
 }
-.DistanceLearningPage .downloadWidget span {
+.distanceLearningPage .downloadWidget span {
   font: 300 16px "Museo Sans";
   color: #282828;
   line-height: 144%;
 }
-.DistanceLearningPage .downloadWidgetLight {
+.distanceLearningPage .downloadWidgetLight {
   justify-content: start;
   gap: 16px;
 }
-.DistanceLearningPage .downloadWidgetLight .iconBox {
+.distanceLearningPage .downloadWidgetLight .iconBox {
   width: 24px;
   height: 24px;
 }
-.DistanceLearningPage .downloadWidgetLight .iconBox img {
+.distanceLearningPage .downloadWidgetLight .iconBox img {
   height: auto;
   width: 14px;
   color: #E8EAEE;
 }
-.DistanceLearningPage .downloadWidgetLight span {
+.distanceLearningPage .downloadWidgetLight span {
   font: 300 16px "Museo Sans";
   color: #BBC2CE;
   line-height: 144%;
 }
-.DistanceLearningPage .mapImg {
+.distanceLearningPage .mapImg {
   width: min(100%, 600px);
   height: auto;
 }
-.DistanceLearningPage .freshmanMeetingCard {
+.distanceLearningPage .freshmanMeetingCard {
   max-width: 1154px;
 }
-.DistanceLearningPage .freshmanMeetingTable {
+.distanceLearningPage .freshmanMeetingTable {
   width: 100%;
   min-width: 650px;
   grid-template-columns: 1fr 1.5fr 1fr 1fr [grid-end];
 }
-.DistanceLearningPage .freshmanMeetingTable .ths > :nth-child(n+3) {
+.distanceLearningPage .freshmanMeetingTable .ths > :nth-child(n+3) {
   text-align: center;
 }
-.DistanceLearningPage .freshmanMeetingTable .tr > :nth-child(n+3) {
+.distanceLearningPage .freshmanMeetingTable .tr > :nth-child(n+3) {
   text-align: center;
 }
-.DistanceLearningPage .specialitiesList {
+.distanceLearningPage .specialitiesList {
   width: 100%;
   min-width: 900px;
   grid-template-columns: 1.5fr 1.5fr 1fr 1.5fr 1fr 1.5fr 1.5fr 1fr [grid-end];
 }
-.DistanceLearningPage .specialitiesList .td {
+.distanceLearningPage .specialitiesList .td {
   text-align: center;
 }
-.DistanceLearningPage .recruitmentForSpecialitiesCard {
-  max-width: 642px;
+.distanceLearningPage .debtorCard {
+  max-width: 882px;
 }
-.DistanceLearningPage .forAllQuestionsCard {
+.distanceLearningPage .timetableOfClasses {
+  width: 100%;
+  max-width: calc(138px * 4 + 32px * 3);
+  gap: 32px;
+}
+.distanceLearningPage .timetableOfClasses .item {
+  width: 138px;
+  height: 39px;
+  border: 1px solid #294985;
+  border-radius: 2px;
+  color: #294985;
+}
+.distanceLearningPage .sessionDates {
+  max-width: 730px;
+  width: 100%;
+}
+.distanceLearningPage .groupNumbers {
+  width: 100%;
+  min-width: 900px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr [grid-end];
+}
+.distanceLearningPage .groupNumbers .th {
+  text-align: center;
+}
+.distanceLearningPage .groupNumbers .td {
+  text-align: center;
+}
+.distanceLearningPage .forAllQuestionsCard {
   max-width: 878px;
 }
-.DistanceLearningPage .sessionDatesUl {
-  gap: 1em;
-}
-.DistanceLearningPage .photos {
+.distanceLearningPage .photos {
   gap: 32px;
   max-width: calc(300px * 4 + 32px * 3);
   justify-content: center;
 }
-.DistanceLearningPage .photos img {
+.distanceLearningPage .photos img {
   width: 300px;
   height: 150px;
   object-position: center;

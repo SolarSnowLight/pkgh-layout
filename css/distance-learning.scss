@@ -206,10 +206,9 @@
                 //max-height: 0;
                 //transition: max-height 0.5s linear;
 
-                display: none;
-            }
-            .childrenContainerVisible {
-                display: flex;
+                .text {
+                    color: #BBC2CE;
+                }
             }
         }
     }
@@ -297,17 +296,48 @@
             text-align: center;
         }
     }
-    .recruitmentForSpecialitiesCard {
+    .debtorCard {
         @extend .adCard;
-        max-width: 642px;
+        max-width: 882px;
+    }
+    .timetableOfClasses {
+        @extend .rowWrap;
+        width: 100%;
+        max-width: calc(138px * 4  +  32px * 3);
+        gap: 32px;
+
+        .item {
+            width: 138px;
+            height: 39px;
+            @extend .center;
+            border: 1px solid #294985;
+            border-radius: 2px;
+            @extend .text;
+            color: #294985;
+        }
+    }
+    .sessionDates {
+        @extend .contentContainer;
+        max-width: 730px;
+        width: 100%;
+    }
+    .groupNumbers {
+        @extend .gridTable;
+        width: 100%;
+        min-width: 900px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr [grid-end];
+
+        .th {
+            text-align: center;
+        }
+        .td {
+            @extend .center;
+            text-align: center;
+        }
     }
     .forAllQuestionsCard {
         @extend .adCard;
         max-width: 878px;
-    }
-    .sessionDatesUl {
-        @extend .col;
-        gap: 1em;
     }
     .photos {
         @extend .rowWrap;
@@ -323,6 +353,7 @@
         }
     }
 }
+
 
 
 
