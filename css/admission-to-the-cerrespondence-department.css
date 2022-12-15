@@ -1,0 +1,247 @@
+.admissionToTheCorrespondenceDepartmentPage {
+  display: contents;
+}
+.admissionToTheCorrespondenceDepartmentPage .reset, .admissionToTheCorrespondenceDepartmentPage .allDefault, .admissionToTheCorrespondenceDepartmentPage .aTextU, .admissionToTheCorrespondenceDepartmentPage .aText, .admissionToTheCorrespondenceDepartmentPage .aElement, .admissionToTheCorrespondenceDepartmentPage * {
+  box-sizing: border-box;
+  margin: 0;
+}
+.admissionToTheCorrespondenceDepartmentPage .allDefault, .admissionToTheCorrespondenceDepartmentPage .aTextU, .admissionToTheCorrespondenceDepartmentPage .aText, .admissionToTheCorrespondenceDepartmentPage .aElement {
+  all: unset;
+}
+.admissionToTheCorrespondenceDepartmentPage .pageElement, .admissionToTheCorrespondenceDepartmentPage .hScroll {
+  width: clamp(400px, 100%, 1920px);
+  padding: 0 144px 0 144px;
+}
+@media (max-width: 900px) {
+  .admissionToTheCorrespondenceDepartmentPage .pageElement, .admissionToTheCorrespondenceDepartmentPage .hScroll {
+    padding: 0 16px 0 16px;
+  }
+}
+.admissionToTheCorrespondenceDepartmentPage .rowWrap, .admissionToTheCorrespondenceDepartmentPage .photos {
+  display: flex;
+  flex-flow: row wrap;
+}
+.admissionToTheCorrespondenceDepartmentPage .row, .admissionToTheCorrespondenceDepartmentPage .downloadWidgetLight, .admissionToTheCorrespondenceDepartmentPage .downloadWidget, .admissionToTheCorrespondenceDepartmentPage .expandableListElement .contentContainer .titleContainer {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.admissionToTheCorrespondenceDepartmentPage .col, .admissionToTheCorrespondenceDepartmentPage .sessionDatesUl, .admissionToTheCorrespondenceDepartmentPage .downloadWidgetList, .admissionToTheCorrespondenceDepartmentPage .expandableListElement .contentContainer .childrenContainer, .admissionToTheCorrespondenceDepartmentPage .expandableListElement .contentContainer, .admissionToTheCorrespondenceDepartmentPage .adCard, .admissionToTheCorrespondenceDepartmentPage .forAllQuestionsCard, .admissionToTheCorrespondenceDepartmentPage .recruitmentForSpecialitiesCard {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+}
+.admissionToTheCorrespondenceDepartmentPage .center, .admissionToTheCorrespondenceDepartmentPage .specialitiesList .td, .admissionToTheCorrespondenceDepartmentPage .downloadWidgetLight .iconBox, .admissionToTheCorrespondenceDepartmentPage .expandableListElement, .admissionToTheCorrespondenceDepartmentPage .hScroll {
+  display: grid;
+  place-items: center;
+}
+.admissionToTheCorrespondenceDepartmentPage .none {
+  display: none;
+}
+.admissionToTheCorrespondenceDepartmentPage .contents {
+  display: contents;
+}
+.admissionToTheCorrespondenceDepartmentPage h2 {
+  font: 400 40px Forum;
+  color: #21385F;
+  line-height: 44px;
+}
+.admissionToTheCorrespondenceDepartmentPage h3 {
+  font: 400 32px Forum;
+  color: #64748F;
+  line-height: 35px;
+}
+.admissionToTheCorrespondenceDepartmentPage h4 {
+  font: 400 24px Forum;
+  color: #64748F;
+  line-height: 26px;
+}
+.admissionToTheCorrespondenceDepartmentPage .text {
+  font: 300 16px "Museo Sans";
+  color: #3B3B3B;
+}
+.admissionToTheCorrespondenceDepartmentPage .text b {
+  font-weight: 600;
+}
+.admissionToTheCorrespondenceDepartmentPage .aElement {
+  display: contents;
+}
+.admissionToTheCorrespondenceDepartmentPage .linkText:hover, .admissionToTheCorrespondenceDepartmentPage .downloadWidgetLight span:hover, .admissionToTheCorrespondenceDepartmentPage .downloadWidget span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.admissionToTheCorrespondenceDepartmentPage .aText:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.admissionToTheCorrespondenceDepartmentPage .aTextU {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.admissionToTheCorrespondenceDepartmentPage .ul {
+  padding-left: 20px;
+}
+.admissionToTheCorrespondenceDepartmentPage .ol {
+  padding-left: 20px;
+}
+.admissionToTheCorrespondenceDepartmentPage .adCard, .admissionToTheCorrespondenceDepartmentPage .forAllQuestionsCard, .admissionToTheCorrespondenceDepartmentPage .recruitmentForSpecialitiesCard {
+  background: #697FA9;
+  backdrop-filter: blur(32px);
+  border-radius: 2px;
+  padding: 31px;
+  gap: 32px;
+}
+.admissionToTheCorrespondenceDepartmentPage .adCard h3, .admissionToTheCorrespondenceDepartmentPage .forAllQuestionsCard h3, .admissionToTheCorrespondenceDepartmentPage .recruitmentForSpecialitiesCard h3 {
+  color: #E9ECF2;
+  align-self: center;
+  text-align: center;
+}
+.admissionToTheCorrespondenceDepartmentPage .adCard .text, .admissionToTheCorrespondenceDepartmentPage .forAllQuestionsCard .text, .admissionToTheCorrespondenceDepartmentPage .recruitmentForSpecialitiesCard .text {
+  color: #BEC8DA;
+}
+.admissionToTheCorrespondenceDepartmentPage .hScroll {
+  width: 100%;
+  height: fit-content;
+  overflow: auto;
+}
+.admissionToTheCorrespondenceDepartmentPage .gridTable, .admissionToTheCorrespondenceDepartmentPage .specialitiesList {
+  display: grid;
+}
+.admissionToTheCorrespondenceDepartmentPage .gridTable .th, .admissionToTheCorrespondenceDepartmentPage .specialitiesList .th {
+  padding: 16px 24px;
+  background: #294985;
+  font: 400 24px Forum;
+  color: #E9ECF2;
+}
+.admissionToTheCorrespondenceDepartmentPage .gridTable .tb, .admissionToTheCorrespondenceDepartmentPage .specialitiesList .tb {
+  display: contents;
+}
+.admissionToTheCorrespondenceDepartmentPage .gridTable .tb .tr *, .admissionToTheCorrespondenceDepartmentPage .specialitiesList .tb .tr * {
+  background: #E9ECF2;
+}
+.admissionToTheCorrespondenceDepartmentPage .gridTable .tbStriped, .admissionToTheCorrespondenceDepartmentPage .specialitiesList .tbStriped {
+  display: contents;
+}
+.admissionToTheCorrespondenceDepartmentPage .gridTable .tbStriped > .tr:nth-of-type(odd) > *, .admissionToTheCorrespondenceDepartmentPage .specialitiesList .tbStriped > .tr:nth-of-type(odd) > * {
+  background: #E9ECF2;
+}
+.admissionToTheCorrespondenceDepartmentPage .gridTable .tbStriped > .tr:nth-of-type(even) > *, .admissionToTheCorrespondenceDepartmentPage .specialitiesList .tbStriped > .tr:nth-of-type(even) > * {
+  background: #BEC8DA;
+}
+.admissionToTheCorrespondenceDepartmentPage .gridTable .tr, .admissionToTheCorrespondenceDepartmentPage .specialitiesList .tr {
+  /*display: grid;
+  grid-template: auto / subgrid;
+  grid-column: 1 / grid-end;*/
+  display: contents;
+}
+.admissionToTheCorrespondenceDepartmentPage .gridTable .td, .admissionToTheCorrespondenceDepartmentPage .specialitiesList .td {
+  padding: 24px;
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+.admissionToTheCorrespondenceDepartmentPage .expandableListElement {
+  width: 100%;
+  background: #21385F;
+}
+.admissionToTheCorrespondenceDepartmentPage .expandableListElement .contentContainer .titleContainer {
+  align-items: center;
+  gap: 16px;
+  padding: 24px 16px 24px 16px;
+  cursor: pointer;
+}
+.admissionToTheCorrespondenceDepartmentPage .expandableListElement .contentContainer .titleContainer .plus {
+  width: 24px;
+  height: 24px;
+}
+.admissionToTheCorrespondenceDepartmentPage .expandableListElement .contentContainer .titleContainer .title {
+  font: 400 24px Forum;
+  color: #E8EAEE;
+  line-height: 26px;
+}
+.admissionToTheCorrespondenceDepartmentPage .expandableListElement .contentContainer .childrenContainer {
+  gap: 24px;
+  padding: 0px 16px 32px 16px;
+  display: none;
+}
+.admissionToTheCorrespondenceDepartmentPage .expandableListElement .contentContainer .childrenContainerVisible {
+  display: flex;
+}
+.admissionToTheCorrespondenceDepartmentPage .downloadWidgetList {
+  gap: 32px;
+}
+.admissionToTheCorrespondenceDepartmentPage .downloadWidget {
+  justify-content: start;
+  gap: 16px;
+}
+.admissionToTheCorrespondenceDepartmentPage .downloadWidget img {
+  height: 24px;
+  width: 24px;
+  color: #21385f;
+}
+.admissionToTheCorrespondenceDepartmentPage .downloadWidget span {
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+.admissionToTheCorrespondenceDepartmentPage .downloadWidgetLight {
+  justify-content: start;
+  gap: 16px;
+}
+.admissionToTheCorrespondenceDepartmentPage .downloadWidgetLight .iconBox {
+  width: 24px;
+  height: 24px;
+}
+.admissionToTheCorrespondenceDepartmentPage .downloadWidgetLight .iconBox img {
+  height: auto;
+  width: 14px;
+  color: #E8EAEE;
+}
+.admissionToTheCorrespondenceDepartmentPage .downloadWidgetLight span {
+  font: 300 16px "Museo Sans";
+  color: #BBC2CE;
+  line-height: 144%;
+}
+.admissionToTheCorrespondenceDepartmentPage .mapImg {
+  width: min(100%, 600px);
+  height: auto;
+}
+.admissionToTheCorrespondenceDepartmentPage .recruitmentForSpecialitiesCard {
+  max-width: 642px;
+}
+.admissionToTheCorrespondenceDepartmentPage .specialitiesList {
+  width: 100%;
+  min-width: 800px;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1.5fr 1fr 1.5fr 1.5fr 1fr [grid-end];
+}
+.admissionToTheCorrespondenceDepartmentPage .specialitiesList .th {
+  padding: 16px 10px;
+  background: #294985;
+  font: 400 24px Forum;
+  color: #E9ECF2;
+}
+.admissionToTheCorrespondenceDepartmentPage .specialitiesList .td {
+  padding: 24px;
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+  text-align: center;
+}
+.admissionToTheCorrespondenceDepartmentPage .forAllQuestionsCard {
+  max-width: 878px;
+}
+.admissionToTheCorrespondenceDepartmentPage .sessionDatesUl {
+  gap: 1em;
+}
+.admissionToTheCorrespondenceDepartmentPage .photos {
+  gap: 32px;
+  max-width: calc(300px * 4 + 32px * 3);
+  justify-content: center;
+}
+.admissionToTheCorrespondenceDepartmentPage .photos img {
+  width: 300px;
+  height: 150px;
+  object-position: center;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=admission-to-the-cerrespondence-department.css.map */
