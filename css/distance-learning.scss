@@ -1,7 +1,7 @@
 
 // Классы страницы помещаются под общий класс ....page,
 // чтобы применяться в пределах страницы
-.admissionToTheCorrespondenceDepartmentPage {
+.distanceLearningPage {
     display: contents;
     // Сброс параметров элементов
     * { @extend .reset }
@@ -130,8 +130,11 @@
     .gridTable {
         display: grid;
 
+        .ths {
+            display: contents;
+        }
         .th {
-            padding: 16px 24px;
+            padding: 16px 22px;
             background: #294985;
             font: 400 24px Forum;
             color: #E9ECF2;
@@ -163,7 +166,7 @@
             display: contents;
         }
         .td {
-            padding: 24px;
+            padding: 16px 22px;
             //background: #E9ECF2;
             font: 300 16px 'Museo Sans';
             color: #282828;
@@ -260,30 +263,43 @@
         width: min(100%, 600px);
         height: auto;
     }
-    .recruitmentForSpecialitiesCard {
+    .freshmanMeetingCard {
         @extend .adCard;
-        max-width: 642px;
+        max-width: 1154px;
+    }
+    .freshmanMeetingTable {
+        @extend .gridTable;
+        width: 100%;
+        min-width: 650px;
+        grid-template-columns: 1fr 1.5fr 1fr 1fr [grid-end];
+
+        .ths {
+            &>:nth-child(n+3){
+                @extend .center;
+                text-align: center;
+            }
+        }
+        .tr {
+            &>:nth-child(n+3){
+                @extend .center;
+                text-align: center;
+            }
+        }
     }
     .specialitiesList {
         @extend .gridTable;
         width: 100%;
-        min-width: 800px;
+        min-width: 900px;
         grid-template-columns: 1.5fr 1.5fr 1fr 1.5fr 1fr 1.5fr 1.5fr 1fr [grid-end];
 
-        .th {
-            padding: 16px 10px;
-            background: #294985;
-            font: 400 24px Forum;
-            color: #E9ECF2;
-        }
         .td {
-            padding: 24px;
-            font: 300 16px 'Museo Sans';
-            color: #282828;
-            line-height: 144%;
             @extend .center;
             text-align: center;
         }
+    }
+    .recruitmentForSpecialitiesCard {
+        @extend .adCard;
+        max-width: 642px;
     }
     .forAllQuestionsCard {
         @extend .adCard;
@@ -307,5 +323,6 @@
         }
     }
 }
+
 
 

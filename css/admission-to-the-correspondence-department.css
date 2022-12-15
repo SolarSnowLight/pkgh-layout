@@ -107,7 +107,7 @@
   display: grid;
 }
 .admissionToTheCorrespondenceDepartmentPage .gridTable .th, .admissionToTheCorrespondenceDepartmentPage .specialitiesList .th {
-  padding: 16px 24px;
+  padding: 16px 22px;
   background: #294985;
   font: 400 24px Forum;
   color: #E9ECF2;
@@ -134,7 +134,7 @@
   display: contents;
 }
 .admissionToTheCorrespondenceDepartmentPage .gridTable .td, .admissionToTheCorrespondenceDepartmentPage .specialitiesList .td {
-  padding: 24px;
+  padding: 16px 22px;
   font: 300 16px "Museo Sans";
   color: #282828;
   line-height: 144%;
@@ -210,20 +210,10 @@
 }
 .admissionToTheCorrespondenceDepartmentPage .specialitiesList {
   width: 100%;
-  min-width: 800px;
+  min-width: 900px;
   grid-template-columns: 1.5fr 1.5fr 1fr 1.5fr 1fr 1.5fr 1.5fr 1fr [grid-end];
 }
-.admissionToTheCorrespondenceDepartmentPage .specialitiesList .th {
-  padding: 16px 10px;
-  background: #294985;
-  font: 400 24px Forum;
-  color: #E9ECF2;
-}
 .admissionToTheCorrespondenceDepartmentPage .specialitiesList .td {
-  padding: 24px;
-  font: 300 16px "Museo Sans";
-  color: #282828;
-  line-height: 144%;
   text-align: center;
 }
 .admissionToTheCorrespondenceDepartmentPage .forAllQuestionsCard {
@@ -244,4 +234,4 @@
   object-fit: cover;
 }
 
-/*# sourceMappingURL=admission-to-the-cerrespondence-department.css.map */
+/*# sourceMappingURL=admission-to-the-correspondence-department.css.map */

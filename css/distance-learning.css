@@ -1,0 +1,254 @@
+.DistanceLearningPage {
+  display: contents;
+}
+.DistanceLearningPage .reset, .DistanceLearningPage .allDefault, .DistanceLearningPage .aTextU, .DistanceLearningPage .aText, .DistanceLearningPage .aElement, .DistanceLearningPage * {
+  box-sizing: border-box;
+  margin: 0;
+}
+.DistanceLearningPage .allDefault, .DistanceLearningPage .aTextU, .DistanceLearningPage .aText, .DistanceLearningPage .aElement {
+  all: unset;
+}
+.DistanceLearningPage .pageElement, .DistanceLearningPage .hScroll {
+  width: clamp(400px, 100%, 1920px);
+  padding: 0 144px 0 144px;
+}
+@media (max-width: 900px) {
+  .DistanceLearningPage .pageElement, .DistanceLearningPage .hScroll {
+    padding: 0 16px 0 16px;
+  }
+}
+.DistanceLearningPage .rowWrap, .DistanceLearningPage .photos {
+  display: flex;
+  flex-flow: row wrap;
+}
+.DistanceLearningPage .row, .DistanceLearningPage .downloadWidgetLight, .DistanceLearningPage .downloadWidget, .DistanceLearningPage .expandableListElement .contentContainer .titleContainer {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.DistanceLearningPage .col, .DistanceLearningPage .sessionDatesUl, .DistanceLearningPage .downloadWidgetList, .DistanceLearningPage .expandableListElement .contentContainer .childrenContainer, .DistanceLearningPage .expandableListElement .contentContainer, .DistanceLearningPage .adCard, .DistanceLearningPage .forAllQuestionsCard, .DistanceLearningPage .recruitmentForSpecialitiesCard, .DistanceLearningPage .freshmanMeetingCard {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+}
+.DistanceLearningPage .center, .DistanceLearningPage .specialitiesList .td, .DistanceLearningPage .freshmanMeetingTable .tr > :nth-child(n+3), .DistanceLearningPage .freshmanMeetingTable .ths > :nth-child(n+3), .DistanceLearningPage .downloadWidgetLight .iconBox, .DistanceLearningPage .expandableListElement, .DistanceLearningPage .hScroll {
+  display: grid;
+  place-items: center;
+}
+.DistanceLearningPage .none {
+  display: none;
+}
+.DistanceLearningPage .contents {
+  display: contents;
+}
+.DistanceLearningPage h2 {
+  font: 400 40px Forum;
+  color: #21385F;
+  line-height: 44px;
+}
+.DistanceLearningPage h3 {
+  font: 400 32px Forum;
+  color: #64748F;
+  line-height: 35px;
+}
+.DistanceLearningPage h4 {
+  font: 400 24px Forum;
+  color: #64748F;
+  line-height: 26px;
+}
+.DistanceLearningPage .text {
+  font: 300 16px "Museo Sans";
+  color: #3B3B3B;
+}
+.DistanceLearningPage .text b {
+  font-weight: 600;
+}
+.DistanceLearningPage .aElement {
+  display: contents;
+}
+.DistanceLearningPage .linkText:hover, .DistanceLearningPage .downloadWidgetLight span:hover, .DistanceLearningPage .downloadWidget span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.DistanceLearningPage .aText:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.DistanceLearningPage .aTextU {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.DistanceLearningPage .ul {
+  padding-left: 20px;
+}
+.DistanceLearningPage .ol {
+  padding-left: 20px;
+}
+.DistanceLearningPage .adCard, .DistanceLearningPage .forAllQuestionsCard, .DistanceLearningPage .recruitmentForSpecialitiesCard, .DistanceLearningPage .freshmanMeetingCard {
+  background: #697FA9;
+  backdrop-filter: blur(32px);
+  border-radius: 2px;
+  padding: 31px;
+  gap: 32px;
+}
+.DistanceLearningPage .adCard h3, .DistanceLearningPage .forAllQuestionsCard h3, .DistanceLearningPage .recruitmentForSpecialitiesCard h3, .DistanceLearningPage .freshmanMeetingCard h3 {
+  color: #E9ECF2;
+  align-self: center;
+  text-align: center;
+}
+.DistanceLearningPage .adCard .text, .DistanceLearningPage .forAllQuestionsCard .text, .DistanceLearningPage .recruitmentForSpecialitiesCard .text, .DistanceLearningPage .freshmanMeetingCard .text {
+  color: #BEC8DA;
+}
+.DistanceLearningPage .hScroll {
+  width: 100%;
+  height: fit-content;
+  overflow: auto;
+}
+.DistanceLearningPage .gridTable, .DistanceLearningPage .specialitiesList, .DistanceLearningPage .freshmanMeetingTable {
+  display: grid;
+}
+.DistanceLearningPage .gridTable .ths, .DistanceLearningPage .specialitiesList .ths, .DistanceLearningPage .freshmanMeetingTable .ths {
+  display: contents;
+}
+.DistanceLearningPage .gridTable .th, .DistanceLearningPage .specialitiesList .th, .DistanceLearningPage .freshmanMeetingTable .th {
+  padding: 16px 22px;
+  background: #294985;
+  font: 400 24px Forum;
+  color: #E9ECF2;
+}
+.DistanceLearningPage .gridTable .tb, .DistanceLearningPage .specialitiesList .tb, .DistanceLearningPage .freshmanMeetingTable .tb {
+  display: contents;
+}
+.DistanceLearningPage .gridTable .tb .tr *, .DistanceLearningPage .specialitiesList .tb .tr *, .DistanceLearningPage .freshmanMeetingTable .tb .tr * {
+  background: #E9ECF2;
+}
+.DistanceLearningPage .gridTable .tbStriped, .DistanceLearningPage .specialitiesList .tbStriped, .DistanceLearningPage .freshmanMeetingTable .tbStriped {
+  display: contents;
+}
+.DistanceLearningPage .gridTable .tbStriped > .tr:nth-of-type(odd) > *, .DistanceLearningPage .specialitiesList .tbStriped > .tr:nth-of-type(odd) > *, .DistanceLearningPage .freshmanMeetingTable .tbStriped > .tr:nth-of-type(odd) > * {
+  background: #E9ECF2;
+}
+.DistanceLearningPage .gridTable .tbStriped > .tr:nth-of-type(even) > *, .DistanceLearningPage .specialitiesList .tbStriped > .tr:nth-of-type(even) > *, .DistanceLearningPage .freshmanMeetingTable .tbStriped > .tr:nth-of-type(even) > * {
+  background: #BEC8DA;
+}
+.DistanceLearningPage .gridTable .tr, .DistanceLearningPage .specialitiesList .tr, .DistanceLearningPage .freshmanMeetingTable .tr {
+  /*display: grid;
+  grid-template: auto / subgrid;
+  grid-column: 1 / grid-end;*/
+  display: contents;
+}
+.DistanceLearningPage .gridTable .td, .DistanceLearningPage .specialitiesList .td, .DistanceLearningPage .freshmanMeetingTable .td {
+  padding: 16px 22px;
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+.DistanceLearningPage .expandableListElement {
+  width: 100%;
+  background: #21385F;
+}
+.DistanceLearningPage .expandableListElement .contentContainer .titleContainer {
+  align-items: center;
+  gap: 16px;
+  padding: 24px 16px 24px 16px;
+  cursor: pointer;
+}
+.DistanceLearningPage .expandableListElement .contentContainer .titleContainer .plus {
+  width: 24px;
+  height: 24px;
+}
+.DistanceLearningPage .expandableListElement .contentContainer .titleContainer .title {
+  font: 400 24px Forum;
+  color: #E8EAEE;
+  line-height: 26px;
+}
+.DistanceLearningPage .expandableListElement .contentContainer .childrenContainer {
+  gap: 24px;
+  padding: 0px 16px 32px 16px;
+  display: none;
+}
+.DistanceLearningPage .expandableListElement .contentContainer .childrenContainerVisible {
+  display: flex;
+}
+.DistanceLearningPage .downloadWidgetList {
+  gap: 32px;
+}
+.DistanceLearningPage .downloadWidget {
+  justify-content: start;
+  gap: 16px;
+}
+.DistanceLearningPage .downloadWidget img {
+  height: 24px;
+  width: 24px;
+  color: #21385f;
+}
+.DistanceLearningPage .downloadWidget span {
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+.DistanceLearningPage .downloadWidgetLight {
+  justify-content: start;
+  gap: 16px;
+}
+.DistanceLearningPage .downloadWidgetLight .iconBox {
+  width: 24px;
+  height: 24px;
+}
+.DistanceLearningPage .downloadWidgetLight .iconBox img {
+  height: auto;
+  width: 14px;
+  color: #E8EAEE;
+}
+.DistanceLearningPage .downloadWidgetLight span {
+  font: 300 16px "Museo Sans";
+  color: #BBC2CE;
+  line-height: 144%;
+}
+.DistanceLearningPage .mapImg {
+  width: min(100%, 600px);
+  height: auto;
+}
+.DistanceLearningPage .freshmanMeetingCard {
+  max-width: 1154px;
+}
+.DistanceLearningPage .freshmanMeetingTable {
+  width: 100%;
+  min-width: 650px;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr [grid-end];
+}
+.DistanceLearningPage .freshmanMeetingTable .ths > :nth-child(n+3) {
+  text-align: center;
+}
+.DistanceLearningPage .freshmanMeetingTable .tr > :nth-child(n+3) {
+  text-align: center;
+}
+.DistanceLearningPage .specialitiesList {
+  width: 100%;
+  min-width: 900px;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1.5fr 1fr 1.5fr 1.5fr 1fr [grid-end];
+}
+.DistanceLearningPage .specialitiesList .td {
+  text-align: center;
+}
+.DistanceLearningPage .recruitmentForSpecialitiesCard {
+  max-width: 642px;
+}
+.DistanceLearningPage .forAllQuestionsCard {
+  max-width: 878px;
+}
+.DistanceLearningPage .sessionDatesUl {
+  gap: 1em;
+}
+.DistanceLearningPage .photos {
+  gap: 32px;
+  max-width: calc(300px * 4 + 32px * 3);
+  justify-content: center;
+}
+.DistanceLearningPage .photos img {
+  width: 300px;
+  height: 150px;
+  object-position: center;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=distance-learning.css.map */
