@@ -141,6 +141,7 @@
             background: #294985;
             font: 400 24px Forum;
             color: #E9ECF2;
+            line-height: 26px;
         }
         .tb {
             display: contents;
@@ -183,6 +184,7 @@
 
         .contentContainer {
             @extend .col;
+            align-items: center;
 
             .titleContainer {
                 @extend .row;
@@ -261,102 +263,35 @@
     }
 
     // Элементы страницы
-    .mapImg {
-        width: min(100%, 600px);
-        height: auto;
-    }
-    .freshmanMeetingCard {
-        @extend .adCard;
-        max-width: 1154px;
-    }
-    .freshmanMeetingTable {
+    .eventsTable {
         @extend .gridTable;
         width: 100%;
-        min-width: 650px;
-        grid-template-columns: 1fr 1.5fr 1fr 1fr [grid-end];
+        min-width: 800px;
+        grid-template-columns: 1fr 1.5fr 1fr [grid-end];
 
-        .ths {
-            &>:nth-child(n+3){
-                @extend .center;
-                text-align: center;
-            }
-        }
-        .tr {
-            &>:nth-child(n+3){
-                @extend .center;
-                text-align: center;
-            }
-        }
-    }
-    .specialitiesList {
-        @extend .gridTable;
-        width: 100%;
-        min-width: 900px;
-        grid-template-columns: 1.5fr 1.5fr 1fr 1.5fr 1fr 1.5fr 1.5fr 1fr [grid-end];
-
-        .td {
+        .th, .td {
             @extend .center;
-            text-align: center;
-        }
-    }
-    .debtorCard {
-        @extend .adCard;
-        max-width: 882px;
-    }
-    .timetableOfClasses {
-        @extend .rowWrap;
-        width: 100%;
-        max-width: calc(138px * 4  +  32px * 3);
-        gap: 32px;
-
-        .item {
-            width: 138px;
-            height: 39px;
-            @extend .center;
-            border: 1px solid #294985;
-            border-radius: 2px;
-            @extend .text;
-            color: #294985;
-        }
-    }
-    .sessionDates {
-        @extend .contentContainer;
-        max-width: 730px;
-        width: 100%;
-    }
-    .groupNumbers {
-        @extend .gridTable;
-        width: 100%;
-        min-width: 900px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr [grid-end];
-
-        .th {
             text-align: center;
         }
         .td {
-            @extend .center;
-            text-align: center;
+            font: 400 24px Forum;
+            line-height: 26px;
         }
     }
-    .forAllQuestionsCard {
-        @extend .adCard;
-        max-width: 878px;
-    }
-    .photos {
+    .partners {
         @extend .rowWrap;
         gap: 32px;
-        max-width: calc(300px * 4  +  32px * 3);
+        max-width: calc((100px + 32px) * 6 - 32px);
         justify-content: center;
 
         img {
-            width: 300px;
-            height: 150px;
+            width: 100px;
+            height: 100px;
             object-position: center;
             object-fit: cover;
         }
     }
 }
-
 
 
 
