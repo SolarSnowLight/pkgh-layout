@@ -1,0 +1,280 @@
+.employmentPage {
+  display: contents;
+}
+.employmentPage .reset, .employmentPage .allDefault, .employmentPage .aTextU, .employmentPage .aText, .employmentPage .aElement, .employmentPage * {
+  box-sizing: border-box;
+  margin: 0;
+}
+.employmentPage .allDefault, .employmentPage .aTextU, .employmentPage .aText, .employmentPage .aElement {
+  all: unset;
+}
+.employmentPage .pageElement, .employmentPage .hScroll {
+  width: clamp(400px, 100%, 1920px);
+  padding: 0 144px 0 144px;
+}
+@media (max-width: 900px) {
+  .employmentPage .pageElement, .employmentPage .hScroll {
+    padding: 0 16px 0 16px;
+  }
+}
+.employmentPage .rowWrap, .employmentPage .photos, .employmentPage .timetableOfClasses {
+  display: flex;
+  flex-flow: row wrap;
+}
+.employmentPage .row, .employmentPage .downloadWidgetLight, .employmentPage .downloadWidget, .employmentPage .expandableListElement .contentContainer .titleContainer, .employmentPage .expandableListElement .sessionDates .titleContainer {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.employmentPage .col, .employmentPage .downloadWidgetList, .employmentPage .expandableListElement .contentContainer .childrenContainer, .employmentPage .expandableListElement .sessionDates .childrenContainer, .employmentPage .expandableListElement .contentContainer, .employmentPage .expandableListElement .sessionDates, .employmentPage .adCard, .employmentPage .forAllQuestionsCard, .employmentPage .debtorCard, .employmentPage .freshmanMeetingCard {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+}
+.employmentPage .center, .employmentPage .groupNumbers .td, .employmentPage .timetableOfClasses .item, .employmentPage .specialitiesList .td, .employmentPage .freshmanMeetingTable .tr > :nth-child(n+3), .employmentPage .freshmanMeetingTable .ths > :nth-child(n+3), .employmentPage .downloadWidgetLight .iconBox, .employmentPage .expandableListElement, .employmentPage .hScroll {
+  display: grid;
+  place-items: center;
+}
+.employmentPage .none {
+  display: none;
+}
+.employmentPage .contents {
+  display: contents;
+}
+.employmentPage h2 {
+  font: 400 40px Forum;
+  color: #21385F;
+  line-height: 44px;
+}
+.employmentPage h3 {
+  font: 400 32px Forum;
+  color: #64748F;
+  line-height: 35px;
+}
+.employmentPage h4 {
+  font: 400 24px Forum;
+  color: #64748F;
+  line-height: 26px;
+}
+.employmentPage .text, .employmentPage .timetableOfClasses .item {
+  font: 300 16px "Museo Sans";
+  color: #3B3B3B;
+}
+.employmentPage .text b, .employmentPage .timetableOfClasses .item b {
+  font-weight: 600;
+}
+.employmentPage .aElement {
+  display: contents;
+}
+.employmentPage .linkText:hover, .employmentPage .downloadWidgetLight span:hover, .employmentPage .downloadWidget span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.employmentPage .aText:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.employmentPage .aTextU {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.employmentPage ul {
+  padding-left: 22px;
+}
+.employmentPage .ul44 {
+  padding-left: 44px;
+}
+.employmentPage ol {
+  padding-left: 20px;
+}
+.employmentPage .adCard, .employmentPage .forAllQuestionsCard, .employmentPage .debtorCard, .employmentPage .freshmanMeetingCard {
+  background: #697FA9;
+  backdrop-filter: blur(32px);
+  border-radius: 2px;
+  padding: 31px;
+  gap: 32px;
+}
+.employmentPage .adCard h3, .employmentPage .forAllQuestionsCard h3, .employmentPage .debtorCard h3, .employmentPage .freshmanMeetingCard h3 {
+  color: #E9ECF2;
+  align-self: center;
+  text-align: center;
+}
+.employmentPage .adCard .text, .employmentPage .forAllQuestionsCard .text, .employmentPage .adCard .timetableOfClasses .item, .employmentPage .forAllQuestionsCard .timetableOfClasses .item, .employmentPage .timetableOfClasses .adCard .item, .employmentPage .timetableOfClasses .forAllQuestionsCard .item, .employmentPage .debtorCard .text, .employmentPage .debtorCard .timetableOfClasses .item, .employmentPage .timetableOfClasses .debtorCard .item, .employmentPage .freshmanMeetingCard .text, .employmentPage .freshmanMeetingCard .timetableOfClasses .item, .employmentPage .timetableOfClasses .freshmanMeetingCard .item {
+  color: #BEC8DA;
+}
+.employmentPage .hScroll {
+  width: 100%;
+  height: fit-content;
+  overflow: auto;
+}
+.employmentPage .gridTable, .employmentPage .groupNumbers, .employmentPage .specialitiesList, .employmentPage .freshmanMeetingTable {
+  display: grid;
+}
+.employmentPage .gridTable .ths, .employmentPage .groupNumbers .ths, .employmentPage .specialitiesList .ths, .employmentPage .freshmanMeetingTable .ths {
+  display: contents;
+}
+.employmentPage .gridTable .th, .employmentPage .groupNumbers .th, .employmentPage .specialitiesList .th, .employmentPage .freshmanMeetingTable .th {
+  padding: 16px 22px;
+  background: #294985;
+  font: 400 24px Forum;
+  color: #E9ECF2;
+}
+.employmentPage .gridTable .tb, .employmentPage .groupNumbers .tb, .employmentPage .specialitiesList .tb, .employmentPage .freshmanMeetingTable .tb {
+  display: contents;
+}
+.employmentPage .gridTable .tb .tr *, .employmentPage .groupNumbers .tb .tr *, .employmentPage .specialitiesList .tb .tr *, .employmentPage .freshmanMeetingTable .tb .tr * {
+  background: #E9ECF2;
+}
+.employmentPage .gridTable .tbStriped, .employmentPage .groupNumbers .tbStriped, .employmentPage .specialitiesList .tbStriped, .employmentPage .freshmanMeetingTable .tbStriped {
+  display: contents;
+}
+.employmentPage .gridTable .tbStriped > .tr:nth-of-type(odd) > *, .employmentPage .groupNumbers .tbStriped > .tr:nth-of-type(odd) > *, .employmentPage .specialitiesList .tbStriped > .tr:nth-of-type(odd) > *, .employmentPage .freshmanMeetingTable .tbStriped > .tr:nth-of-type(odd) > * {
+  background: #E9ECF2;
+}
+.employmentPage .gridTable .tbStriped > .tr:nth-of-type(even) > *, .employmentPage .groupNumbers .tbStriped > .tr:nth-of-type(even) > *, .employmentPage .specialitiesList .tbStriped > .tr:nth-of-type(even) > *, .employmentPage .freshmanMeetingTable .tbStriped > .tr:nth-of-type(even) > * {
+  background: #BEC8DA;
+}
+.employmentPage .gridTable .tr, .employmentPage .groupNumbers .tr, .employmentPage .specialitiesList .tr, .employmentPage .freshmanMeetingTable .tr {
+  /*display: grid;
+  grid-template: auto / subgrid;
+  grid-column: 1 / grid-end;*/
+  display: contents;
+}
+.employmentPage .gridTable .td, .employmentPage .groupNumbers .td, .employmentPage .specialitiesList .td, .employmentPage .freshmanMeetingTable .td {
+  padding: 16px 22px;
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+.employmentPage .expandableListElement {
+  width: 100%;
+  background: #21385F;
+}
+.employmentPage .expandableListElement .contentContainer .titleContainer, .employmentPage .expandableListElement .sessionDates .titleContainer {
+  align-items: center;
+  gap: 16px;
+  padding: 24px 16px 24px 16px;
+  cursor: pointer;
+}
+.employmentPage .expandableListElement .contentContainer .titleContainer .plus, .employmentPage .expandableListElement .sessionDates .titleContainer .plus {
+  width: 24px;
+  height: 24px;
+}
+.employmentPage .expandableListElement .contentContainer .titleContainer .title, .employmentPage .expandableListElement .sessionDates .titleContainer .title {
+  font: 400 24px Forum;
+  color: #E8EAEE;
+  line-height: 26px;
+}
+.employmentPage .expandableListElement .contentContainer .childrenContainer, .employmentPage .expandableListElement .sessionDates .childrenContainer {
+  gap: 24px;
+  padding: 0px 16px 32px 16px;
+}
+.employmentPage .expandableListElement .contentContainer .childrenContainer .text, .employmentPage .expandableListElement .sessionDates .childrenContainer .text, .employmentPage .expandableListElement .contentContainer .childrenContainer .timetableOfClasses .item, .employmentPage .expandableListElement .sessionDates .childrenContainer .timetableOfClasses .item, .employmentPage .timetableOfClasses .expandableListElement .contentContainer .childrenContainer .item, .employmentPage .timetableOfClasses .expandableListElement .sessionDates .childrenContainer .item {
+  color: #BBC2CE;
+}
+.employmentPage .downloadWidgetList {
+  gap: 32px;
+}
+.employmentPage .downloadWidget {
+  justify-content: start;
+  gap: 16px;
+}
+.employmentPage .downloadWidget img {
+  height: 24px;
+  width: 24px;
+  color: #21385f;
+}
+.employmentPage .downloadWidget span {
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+.employmentPage .downloadWidgetLight {
+  justify-content: start;
+  gap: 16px;
+}
+.employmentPage .downloadWidgetLight .iconBox {
+  width: 24px;
+  height: 24px;
+}
+.employmentPage .downloadWidgetLight .iconBox img {
+  height: auto;
+  width: 14px;
+  color: #E8EAEE;
+}
+.employmentPage .downloadWidgetLight span {
+  font: 300 16px "Museo Sans";
+  color: #BBC2CE;
+  line-height: 144%;
+}
+.employmentPage .mapImg {
+  width: min(100%, 600px);
+  height: auto;
+}
+.employmentPage .freshmanMeetingCard {
+  max-width: 1154px;
+}
+.employmentPage .freshmanMeetingTable {
+  width: 100%;
+  min-width: 650px;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr [grid-end];
+}
+.employmentPage .freshmanMeetingTable .ths > :nth-child(n+3) {
+  text-align: center;
+}
+.employmentPage .freshmanMeetingTable .tr > :nth-child(n+3) {
+  text-align: center;
+}
+.employmentPage .specialitiesList {
+  width: 100%;
+  min-width: 900px;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1.5fr 1fr 1.5fr 1.5fr 1fr [grid-end];
+}
+.employmentPage .specialitiesList .td {
+  text-align: center;
+}
+.employmentPage .debtorCard {
+  max-width: 882px;
+}
+.employmentPage .timetableOfClasses {
+  width: 100%;
+  max-width: calc(138px * 4 + 32px * 3);
+  gap: 32px;
+}
+.employmentPage .timetableOfClasses .item {
+  width: 138px;
+  height: 39px;
+  border: 1px solid #294985;
+  border-radius: 2px;
+  color: #294985;
+}
+.employmentPage .sessionDates {
+  max-width: 730px;
+  width: 100%;
+}
+.employmentPage .groupNumbers {
+  width: 100%;
+  min-width: 900px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr [grid-end];
+}
+.employmentPage .groupNumbers .th {
+  text-align: center;
+}
+.employmentPage .groupNumbers .td {
+  text-align: center;
+}
+.employmentPage .forAllQuestionsCard {
+  max-width: 878px;
+}
+.employmentPage .photos {
+  gap: 32px;
+  max-width: calc(300px * 4 + 32px * 3);
+  justify-content: center;
+}
+.employmentPage .photos img {
+  width: 300px;
+  height: 150px;
+  object-position: center;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=employment.css.map */

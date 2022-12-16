@@ -1,7 +1,7 @@
 
 // Классы страницы помещаются под общий класс ....page,
 // чтобы применяться в пределах страницы
-.admissionToTheCorrespondenceDepartmentPage {
+.employmentPage {
     display: contents;
     // Сброс параметров элементов
     * { @extend .reset }
@@ -98,7 +98,7 @@
         text-decoration: underline;
     }
     ul {
-        padding-left: 20px;
+        padding-left: 22px;
     }
     .ul44 {
         padding-left: 44px;
@@ -133,6 +133,9 @@
     .gridTable {
         display: grid;
 
+        .ths {
+            display: contents;
+        }
         .th {
             padding: 16px 22px;
             background: #294985;
@@ -206,10 +209,9 @@
                 //max-height: 0;
                 //transition: max-height 0.5s linear;
 
-                display: none;
-            }
-            .childrenContainerVisible {
-                display: flex;
+                .text {
+                    color: #BBC2CE;
+                }
             }
         }
     }
@@ -263,9 +265,28 @@
         width: min(100%, 600px);
         height: auto;
     }
-    .recruitmentForSpecialitiesCard {
+    .freshmanMeetingCard {
         @extend .adCard;
-        max-width: 642px;
+        max-width: 1154px;
+    }
+    .freshmanMeetingTable {
+        @extend .gridTable;
+        width: 100%;
+        min-width: 650px;
+        grid-template-columns: 1fr 1.5fr 1fr 1fr [grid-end];
+
+        .ths {
+            &>:nth-child(n+3){
+                @extend .center;
+                text-align: center;
+            }
+        }
+        .tr {
+            &>:nth-child(n+3){
+                @extend .center;
+                text-align: center;
+            }
+        }
     }
     .specialitiesList {
         @extend .gridTable;
@@ -278,13 +299,48 @@
             text-align: center;
         }
     }
+    .debtorCard {
+        @extend .adCard;
+        max-width: 882px;
+    }
+    .timetableOfClasses {
+        @extend .rowWrap;
+        width: 100%;
+        max-width: calc(138px * 4  +  32px * 3);
+        gap: 32px;
+
+        .item {
+            width: 138px;
+            height: 39px;
+            @extend .center;
+            border: 1px solid #294985;
+            border-radius: 2px;
+            @extend .text;
+            color: #294985;
+        }
+    }
+    .sessionDates {
+        @extend .contentContainer;
+        max-width: 730px;
+        width: 100%;
+    }
+    .groupNumbers {
+        @extend .gridTable;
+        width: 100%;
+        min-width: 900px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr [grid-end];
+
+        .th {
+            text-align: center;
+        }
+        .td {
+            @extend .center;
+            text-align: center;
+        }
+    }
     .forAllQuestionsCard {
         @extend .adCard;
         max-width: 878px;
-    }
-    .sessionDatesUl {
-        @extend .col;
-        gap: 1em;
     }
     .photos {
         @extend .rowWrap;
@@ -300,5 +356,7 @@
         }
     }
 }
+
+
 
 

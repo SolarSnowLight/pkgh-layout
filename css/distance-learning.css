@@ -77,10 +77,10 @@
   cursor: pointer;
   text-decoration: underline;
 }
-.distanceLearningPage .ul {
+.distanceLearningPage ul {
   padding-left: 20px;
 }
-.distanceLearningPage .ol {
+.distanceLearningPage ol {
   padding-left: 20px;
 }
 .distanceLearningPage .adCard, .distanceLearningPage .forAllQuestionsCard, .distanceLearningPage .debtorCard, .distanceLearningPage .freshmanMeetingCard {

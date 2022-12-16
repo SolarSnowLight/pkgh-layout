@@ -77,10 +77,13 @@
   cursor: pointer;
   text-decoration: underline;
 }
-.admissionToTheCorrespondenceDepartmentPage .ul {
+.admissionToTheCorrespondenceDepartmentPage ul {
   padding-left: 20px;
 }
-.admissionToTheCorrespondenceDepartmentPage .ol {
+.admissionToTheCorrespondenceDepartmentPage .ul44 {
+  padding-left: 44px;
+}
+.admissionToTheCorrespondenceDepartmentPage ol {
   padding-left: 20px;
 }
 .admissionToTheCorrespondenceDepartmentPage .adCard, .admissionToTheCorrespondenceDepartmentPage .forAllQuestionsCard, .admissionToTheCorrespondenceDepartmentPage .recruitmentForSpecialitiesCard {
