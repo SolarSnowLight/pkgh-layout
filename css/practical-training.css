@@ -1,0 +1,228 @@
+.practicalTrainingPage {
+  display: contents;
+}
+.practicalTrainingPage .reset, .practicalTrainingPage .allDefault, .practicalTrainingPage .aTextU, .practicalTrainingPage .aText, .practicalTrainingPage .aElement, .practicalTrainingPage * {
+  box-sizing: border-box;
+  margin: 0;
+}
+.practicalTrainingPage .allDefault, .practicalTrainingPage .aTextU, .practicalTrainingPage .aText, .practicalTrainingPage .aElement {
+  all: unset;
+}
+.practicalTrainingPage .pageElement, .practicalTrainingPage .hScroll {
+  width: clamp(400px, 100%, 1920px);
+  padding: 0 144px 0 144px;
+}
+@media (max-width: 900px) {
+  .practicalTrainingPage .pageElement, .practicalTrainingPage .hScroll {
+    padding: 0 16px 0 16px;
+  }
+}
+.practicalTrainingPage .rowWrap, .practicalTrainingPage .partners {
+  display: flex;
+  flex-flow: row wrap;
+}
+.practicalTrainingPage .row, .practicalTrainingPage .downloadWidgetLight, .practicalTrainingPage .downloadWidget, .practicalTrainingPage .expandableListElement .contentContainer .titleContainer {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.practicalTrainingPage .col, .practicalTrainingPage .downloadWidgetList, .practicalTrainingPage .formsOfDocs, .practicalTrainingPage .expandableListElement .contentContainer .childrenContainer, .practicalTrainingPage .expandableListElement .contentContainer, .practicalTrainingPage .adCard {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+}
+.practicalTrainingPage .center, .practicalTrainingPage .downloadWidgetLight .iconBox, .practicalTrainingPage .expandableListElement, .practicalTrainingPage .hScroll {
+  display: grid;
+  place-items: center;
+}
+.practicalTrainingPage .none {
+  display: none;
+}
+.practicalTrainingPage .contents {
+  display: contents;
+}
+.practicalTrainingPage h2 {
+  font: 400 40px Forum;
+  color: #21385F;
+  line-height: 44px;
+}
+.practicalTrainingPage h3 {
+  font: 400 32px Forum;
+  color: #64748F;
+  line-height: 35px;
+}
+.practicalTrainingPage h4 {
+  font: 400 24px Forum;
+  color: #64748F;
+  line-height: 26px;
+}
+.practicalTrainingPage .text {
+  font: 300 16px "Museo Sans";
+  color: #3B3B3B;
+}
+.practicalTrainingPage .text b {
+  font-weight: 600;
+}
+.practicalTrainingPage .aElement {
+  display: contents;
+}
+.practicalTrainingPage .linkText:hover, .practicalTrainingPage .downloadWidgetLight span:hover, .practicalTrainingPage .downloadWidget span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.practicalTrainingPage .aText:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.practicalTrainingPage .aTextU {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.practicalTrainingPage ul {
+  padding-left: 22px;
+}
+.practicalTrainingPage .ul44 {
+  padding-left: 44px;
+}
+.practicalTrainingPage ol {
+  padding-left: 20px;
+}
+.practicalTrainingPage .adCard {
+  background: #697FA9;
+  backdrop-filter: blur(32px);
+  border-radius: 2px;
+  padding: 31px;
+  gap: 32px;
+}
+.practicalTrainingPage .adCard h3 {
+  color: #E9ECF2;
+  align-self: center;
+  text-align: center;
+}
+.practicalTrainingPage .adCard .text {
+  color: #BEC8DA;
+}
+.practicalTrainingPage .hScroll {
+  width: 100%;
+  height: fit-content;
+  overflow: auto;
+}
+.practicalTrainingPage .gridTable {
+  display: grid;
+}
+.practicalTrainingPage .gridTable .ths {
+  display: contents;
+}
+.practicalTrainingPage .gridTable .th {
+  padding: 16px 22px;
+  background: #294985;
+  font: 400 24px Forum;
+  color: #E9ECF2;
+  line-height: 26px;
+}
+.practicalTrainingPage .gridTable .tb {
+  display: contents;
+}
+.practicalTrainingPage .gridTable .tb .tr * {
+  background: #E9ECF2;
+}
+.practicalTrainingPage .gridTable .tbStriped {
+  display: contents;
+}
+.practicalTrainingPage .gridTable .tbStriped > .tr:nth-of-type(odd) > * {
+  background: #E9ECF2;
+}
+.practicalTrainingPage .gridTable .tbStriped > .tr:nth-of-type(even) > * {
+  background: #BEC8DA;
+}
+.practicalTrainingPage .gridTable .tr {
+  /*display: grid;
+  grid-template: auto / subgrid;
+  grid-column: 1 / grid-end;*/
+  display: contents;
+}
+.practicalTrainingPage .gridTable .td {
+  padding: 16px 22px;
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+.practicalTrainingPage .expandableListElement {
+  width: 100%;
+  background: #21385F;
+}
+.practicalTrainingPage .expandableListElement .contentContainer {
+  align-items: center;
+}
+.practicalTrainingPage .expandableListElement .contentContainer .titleContainer {
+  align-items: center;
+  gap: 16px;
+  padding: 24px 16px 24px 16px;
+  cursor: pointer;
+}
+.practicalTrainingPage .expandableListElement .contentContainer .titleContainer .plus {
+  width: 24px;
+  height: 24px;
+}
+.practicalTrainingPage .expandableListElement .contentContainer .titleContainer .title {
+  font: 400 24px Forum;
+  color: #E8EAEE;
+  line-height: 26px;
+}
+.practicalTrainingPage .expandableListElement .contentContainer .childrenContainer {
+  gap: 24px;
+  padding: 0px 16px 32px 16px;
+}
+.practicalTrainingPage .expandableListElement .contentContainer .childrenContainer .text {
+  color: #BBC2CE;
+}
+.practicalTrainingPage .downloadWidgetList, .practicalTrainingPage .formsOfDocs {
+  gap: 32px;
+}
+.practicalTrainingPage .downloadWidget {
+  justify-content: start;
+  gap: 16px;
+}
+.practicalTrainingPage .downloadWidget img {
+  height: 24px;
+  width: 24px;
+  color: #21385f;
+}
+.practicalTrainingPage .downloadWidget span {
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+.practicalTrainingPage .downloadWidgetLight {
+  justify-content: start;
+  gap: 16px;
+}
+.practicalTrainingPage .downloadWidgetLight .iconBox {
+  width: 24px;
+  height: 24px;
+}
+.practicalTrainingPage .downloadWidgetLight .iconBox img {
+  height: auto;
+  width: 14px;
+  color: #E8EAEE;
+}
+.practicalTrainingPage .downloadWidgetLight span {
+  font: 300 16px "Museo Sans";
+  color: #BBC2CE;
+  line-height: 144%;
+}
+.practicalTrainingPage .formsOfDocs {
+  gap: 8px;
+}
+.practicalTrainingPage .partners {
+  gap: 32px;
+  max-width: calc((100px + 32px) * 6 - 32px);
+  justify-content: center;
+}
+.practicalTrainingPage .partners img {
+  width: 100px;
+  height: 100px;
+  object-position: center;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=practical-training.css.map */

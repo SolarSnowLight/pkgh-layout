@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Практическая подготовка</title>
+  <link rel="stylesheet" href="css/fonts.css"/>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/practical-training.css"/>
+  <link rel="stylesheet" href="css/slider-equipment.css">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+</head>
+<body>
+
+
+<script>
+  function expandOrCollapse(pageId,number){
+    const ic = document.getElementById(`${pageId}-expcard-ic-${number}`) // например 'e-expcard-ic-1' (Employment-ExpandableCard-ICon-<number on page>)
+    const list = document.getElementById(`${pageId}-expcard-list-${number}`) // например 'e-expcard-list-1'
+    if (!list.classList.contains('contents')){
+      ic.src = 'img/icons/minus-light.svg'
+      list.classList.add('contents')
+    } else {
+      ic.src = 'img/icons/plus-light.svg'
+      list.classList.remove('contents')
+    }
+  }
+</script>
+
+
+<div class="wrapper">
+  <div class="content">
+    <div class="practicalTrainingPage">
+      
+      <div style="height: 32px"></div>
+  
+      <div class="pageElement">
+        <h2>Практическая подготовка</h2>
+      </div>
+  
+      <div style="height: 32px"></div>
+      
+      <div class="pageElement">
+        <div class="text">
+          <b>Производственная практика – важный этап в учебном процессе, направленный:</b><br>
+          <br>
+          <ul>
+            <li>на приобретение практического опыта;</li>
+            <li>на формирование у студента общих, профессиональных компетенций и их развитие;</li>
+            <li>на проверку готовности студента к самостоятельной трудовой деятельности</li>
+            <li>на подготовку к выполнению выпускной квалификационной работы</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div style="height: 32px"></div>
+  
+      <div class="pageElement">
+        <div class="downloadWidgetList">
+          <a class="aElement" target="_blank"
+             href="https://pkgh.edu.ru/forstud/praktica-docs/O-pract-podg.pdf"
+          >
+            <div class="downloadWidget">
+              <img src="img/contacts/ic_file_download.png" alt="Загрузить"/>
+              <span>
+                Приказ Министерства просвещения РФ №390 от 5 августа 2020 года "О практической подготовке обучающихся"
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+  
+      <div style="height: 32px"></div>
+      
+      <div class="expandableListElement">
+        <div class="contentContainer">
+          <div class="titleContainer"onclick="expandOrCollapse('pt','1')">
+            <img id="pt-expcard-ic-1" class="plus" src="img/icons/plus-light.svg">
+            <span class="title">
+              Производственная практика по профилю специальности (памятка студенту)
+            </span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="none" id="pt-expcard-list-1">
+        <div style="height: 32px"></div>
+        <div class="pageElement">
+          <div class="text">
+            Студент направляется на производственную практику (по профилю специальности и преддипломную) согласно
+            учебному плану и графику учебного процесса.<br>
+            <br>
+            Перед началом практики студенту выдается пакет отчетных документов:<br>
+            <br>
+            1. Титульный лист отчетаТитульный лист отчета практики должен быть подписан руководителями от
+            предприятия (организации) и Колледжа.<br>
+            <br>
+            2. Задание на практику В задании на практику перечислен перечень работ, которые студент
+            должен выполнять в процессе прохождения практики;<br>
+            Индивидуальное задание на преддипломную практику выдает руководитель практики от Колледжа.<br>
+            <br>
+            3. Дневник прохождения производственной практикиВ период прохождения практики студент
+            ежедневно ведет дневник, в котором описывается выполненная за день работа.
+            Записи в дневнике проверяются и подписываются непосредственным руководителем практики
+            от предприятия (организации). Дневник прохождения практики должен быть подписан
+            руководителями от предприятия (организации) и Колледжа.<br>
+            <br>
+            4. Отчет о прохождении производственной практикиВо введении отчета необходимо указать,
+            что студент освоил и отработал во время производственной практики. В содержании отчета
+            необходимо раскрыть ежедневную работу, которая обозначена в дневнике прохождения практики.
+            Отчет должен содержать не менее 15-20 страниц печатного текста, размер шрифта 14, межстрочный
+            интервал 1,5, выравнивание по ширине, а также должны присутствовать рисунки, схемы, таблицы и т.д.<br>
+            <br>
+            5. Характеристика. Руководитель практики от предприятия (организации) заполняет характеристику,
+            в которой прописываются освоения общих компетенций.<br>
+            <br>
+            6. Аттестационный лист<br>
+            <br>
+            В аттестационном листе руководитель практики от предприятия (организации) оценивает уровень
+            освоения профессиональных компетенций и совместно<br>
+            с руководителем практики от Колледжа принимают решение о допуске студента к зачету.<br>
+            <br>
+            При наличии допуска в аттестационном листе и положительной характеристики, а также полноты и
+            своевременности представления дневника практики<br>
+            и отчета по практике в соответствии с заданием на практику, студент допускается к
+            дифференцированному зачету.<br>
+            <br>
+            Оценка за пройденную практику в дальнейшем будет влиять на прохождение
+            государственной итоговой аттестации.<br>
+            <br>
+            Студент, не сдавший отчетные документы в указанный срок руководителю практики
+            от Колледжа, не допускается<br>
+            к прохождению дифференцированного зачета по производственной практике.
+          </div>
+        </div>
+      </div>
+      
+      <div style="height: 32px"></div>
+  
+      <div class="pageElement">
+        <h2>Бланки отчетных документов</h2>
+      </div>
+  
+      <div style="height: 8px"></div>
+  
+      <div class="pageElement">
+        <div class="formsOfDocs">
+          <a class="aElement" target="_blank"
+             href="https://docs.google.com/viewer?url=https://pkgh.edu.ru/forstud/praktica-docs/napravlenie.docx"
+          >
+            <div class="downloadWidget">
+              <img src="img/contacts/ic_file_download.png" alt="Загрузить"/>
+              <span>
+                Направление
+              </span>
+            </div>
+          </a>
+          <a class="aElement" target="_blank"
+             href="https://docs.google.com/viewer?url=https://pkgh.edu.ru/forstud/praktica-docs/zadanie.docx"
+          >
+            <div class="downloadWidget">
+              <img src="img/contacts/ic_file_download.png" alt="Загрузить"/>
+              <span>
+                Задание
+              </span>
+            </div>
+          </a>
+          <a class="aElement" target="_blank"
+             href="https://docs.google.com/viewer?url=https://pkgh.edu.ru/forstud/praktica-docs/dnevnik.doc"
+          >
+            <div class="downloadWidget">
+              <img src="img/contacts/ic_file_download.png" alt="Загрузить"/>
+              <span>
+                Дневник
+              </span>
+            </div>
+          </a>
+          <a class="aElement" target="_blank"
+             href="https://docs.google.com/viewer?url=https://pkgh.edu.ru/forstud/praktica-docs/otchet.doc"
+          >
+            <div class="downloadWidget">
+              <img src="img/contacts/ic_file_download.png" alt="Загрузить"/>
+              <span>
+                Титульный лист отчета
+              </span>
+            </div>
+          </a>
+          <a class="aElement" target="_blank"
+             href="https://docs.google.com/viewer?url=https://pkgh.edu.ru/forstud/praktica-docs/at-list.docx"
+          >
+            <div class="downloadWidget">
+              <img src="img/contacts/ic_file_download.png" alt="Загрузить"/>
+              <span>
+                Аттестационный лист
+              </span>
+            </div>
+          </a>
+          <a class="aElement" target="_blank"
+             href="https://docs.google.com/viewer?url=https://pkgh.edu.ru/forstud/praktica-docs/harakteristika.docx"
+          >
+            <div class="downloadWidget">
+              <img src="img/contacts/ic_file_download.png" alt="Загрузить"/>
+              <span>
+                Характеристика
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+  
+      <div style="height: 32px"></div>
+  
+      <div class="expandableListElement">
+        <div class="contentContainer">
+          <div class="titleContainer"onclick="expandOrCollapse('pt','2')">
+            <img id="pt-expcard-ic-2" class="plus" src="img/icons/plus-light.svg">
+            <span class="title">
+              Наши партнёры
+            </span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="none" id="pt-expcard-list-2">
+        <div style="height: 32px"></div>
+        <div class="pageElement">
+          <div class="center">
+            <div class="partners">
+              <img src="img/employment/partner-1.png" alt="Логотип">
+              <img src="img/employment/partner-2.png" alt="Логотип">
+              <img src="img/employment/partner-3.png" alt="Логотип">
+              <img src="img/employment/partner-4.png" alt="Логотип">
+              <img src="img/employment/partner-5.png" alt="Логотип">
+              <img src="img/employment/partner-6.png" alt="Логотип">
+              <img src="img/employment/partner-7.png" alt="Логотип">
+              <img src="img/employment/partner-8.png" alt="Логотип">
+              <img src="img/employment/partner-9.png" alt="Логотип">
+              <img src="img/employment/partner-10.png" alt="Логотип">
+              <img src="img/employment/partner-11.png" alt="Логотип">
+              <img src="img/employment/partner-12.png" alt="Логотип">
+              <img src="img/employment/partner-13.png" alt="Логотип">
+              <img src="img/employment/partner-14.png" alt="Логотип">
+              <img src="img/employment/partner-15.png" alt="Логотип">
+              <img src="img/employment/partner-16.png" alt="Логотип">
+              <img src="img/employment/partner-17.png" alt="Логотип">
+              <img src="img/employment/partner-18.png" alt="Логотип">
+              <img src="img/employment/partner-19.png" alt="Логотип">
+              <img src="img/employment/partner-20.png" alt="Логотип">
+              <img src="img/employment/partner-21.png" alt="Логотип">
+              <img src="img/employment/partner-22.png" alt="Логотип">
+              <img src="img/employment/partner-23.png" alt="Логотип">
+              <img src="img/employment/partner-24.png" alt="Логотип">
+              <img src="img/employment/partner-25.png" alt="Логотип">
+              <img src="img/employment/partner-26.png" alt="Логотип">
+              <img src="img/employment/partner-27.png" alt="Логотип">
+              <img src="img/employment/partner-28.png" alt="Логотип">
+              <img src="img/employment/partner-29.png" alt="Логотип">
+              <img src="img/employment/partner-30.png" alt="Логотип">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div style="height: 32px"></div>
+  
+      <div class="pageElement">
+        <h2>Календарный учебный график на 2022 / 2023 учебный год</h2>
+      </div>
+  
+      <div style="height: 32px"></div>
+  
+      <div class="pageElement">
+        <div class="downloadWidgetList">
+          <a class="aElement" target="_blank"
+             href="https://normdocs/Uchebn-otdel/2022/KUG-22-23v2.pdf"
+          >
+            <div class="downloadWidget">
+              <img src="img/contacts/ic_file_download.png" alt="Загрузить"/>
+              <span>
+                Скачать оригинал
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+  
+      <div style="height: 32px"></div>
+      
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

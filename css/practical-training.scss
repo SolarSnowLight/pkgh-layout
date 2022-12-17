@@ -1,0 +1,324 @@
+// Классы страницы помещаются под общий класс ....page,
+// чтобы применяться в пределах страницы
+.practicalTrainingPage {
+  display: contents;
+  // Сброс параметров элементов
+  * {
+    @extend .reset
+  }
+  
+  // Общие классы 1
+  .reset {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  .allDefault {
+    all: unset;
+    @extend .reset;
+  }
+  
+  // Общие классы 2
+  .pageElement {
+    width: clamp(400px, 100%, 1920px);
+    padding: 0 144px 0 144px;
+    @media (max-width: 900px) {
+      padding: 0 16px 0 16px;
+    }
+  }
+  
+  .rowWrap {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .row {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  
+  .col {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+  }
+  
+  .center {
+    display: grid;
+    place-items: center;
+  }
+  
+  .none {
+    display: none;
+  }
+  
+  .contents {
+    display: contents;
+  }
+  
+  
+  // Общие классы 3
+  h2 {
+    font: 400 40px Forum;
+    color: #21385F;
+    line-height: 44px;
+  }
+  
+  h3 {
+    font: 400 32px Forum;
+    color: #64748F;
+    line-height: 35px;
+  }
+  
+  h4 {
+    font: 400 24px Forum;
+    color: #64748F;
+    line-height: 26px;
+  }
+  
+  .text {
+    font: 300 16px 'Museo Sans';
+    color: #3B3B3B;
+    
+    b {
+      font-weight: 600;
+    }
+  }
+  
+  // <a class="linkElement><div class="linkText"></div></a>
+  .aElement {
+    @extend .allDefault;
+    display: contents;
+  }
+  
+  .linkText {
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  
+  // <a class="aText">someText</a>
+  .aText {
+    @extend .allDefault;
+    
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+  
+  .aTextU {
+    @extend .allDefault;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  ul {
+    padding-left: 22px;
+  }
+  
+  .ul44 {
+    padding-left: 44px;
+  }
+  
+  ol {
+    padding-left: 20px;
+  }
+  
+  .adCard {
+    background: #697FA9;
+    backdrop-filter: blur(32px);
+    border-radius: 2px;
+    padding: 31px;
+    gap: 32px;
+    @extend .col;
+    
+    h3 {
+      color: #E9ECF2;
+      align-self: center;
+      text-align: center;
+    }
+    
+    .text {
+      color: #BEC8DA;
+    }
+  }
+  
+  .hScroll {
+    @extend .pageElement;
+    @extend .center;
+    width: 100%;
+    height: fit-content;
+    overflow: auto;
+  }
+  
+  .gridTable {
+    display: grid;
+    
+    .ths {
+      display: contents;
+    }
+    
+    .th {
+      padding: 16px 22px;
+      background: #294985;
+      font: 400 24px Forum;
+      color: #E9ECF2;
+      line-height: 26px;
+    }
+    
+    .tb {
+      display: contents;
+      
+      .tr * {
+        background: #E9ECF2;
+      }
+    }
+    
+    .tbStriped {
+      display: contents;
+      
+      > .tr:nth-of-type(odd) {
+        & > * {
+          background: #E9ECF2;
+        }
+      }
+      
+      > .tr:nth-of-type(even) {
+        & > * {
+          background: #BEC8DA;
+        }
+      }
+    }
+    
+    .tr {
+      /*display: grid;
+      grid-template: auto / subgrid;
+      grid-column: 1 / grid-end;*/
+      display: contents;
+    }
+    
+    .td {
+      padding: 16px 22px;
+      //background: #E9ECF2;
+      font: 300 16px 'Museo Sans';
+      color: #282828;
+      line-height: 144%;
+    }
+  }
+  
+  .expandableListElement {
+    width: 100%;
+    @extend .center;
+    background: #21385F;
+    
+    .contentContainer {
+      @extend .col;
+      align-items: center;
+      
+      .titleContainer {
+        @extend .row;
+        align-items: center;
+        gap: 16px;
+        padding: 24px 16px 24px 16px;
+        cursor: pointer;
+        
+        .plus {
+          width: 24px;
+          height: 24px;
+        }
+        
+        .title {
+          font: 400 24px Forum;
+          color: #E8EAEE;
+          line-height: 26px;
+        }
+      }
+      
+      .childrenContainer {
+        @extend .col;
+        gap: 24px;
+        padding: 0px 16px 32px 16px;
+        
+        //max-height: 0;
+        //transition: max-height 0.5s linear;
+        
+        .text {
+          color: #BBC2CE;
+        }
+      }
+    }
+  }
+  
+  .downloadWidgetList {
+    @extend .col;
+    gap: 32px;
+  }
+  
+  .downloadWidget {
+    @extend .row;
+    justify-content: start;
+    gap: 16px;
+    
+    img {
+      height: 24px;
+      width: 24px;
+      color: #21385f;
+    }
+    
+    span {
+      font: 300 16px 'Museo Sans';
+      color: #282828;
+      line-height: 144%;
+      @extend .linkText;
+    }
+  }
+  
+  .downloadWidgetLight {
+    @extend .row;
+    justify-content: start;
+    gap: 16px;
+    
+    .iconBox {
+      width: 24px;
+      height: 24px;
+      @extend .center;
+      
+      img {
+        height: auto;
+        width: 14px;
+        color: #E8EAEE;
+      }
+    }
+    
+    span {
+      font: 300 16px 'Museo Sans';
+      color: #BBC2CE;
+      line-height: 144%;
+      @extend .linkText;
+    }
+  }
+  
+  // Элементы страницы
+  .formsOfDocs {
+    @extend .downloadWidgetList;
+    gap: 8px;
+  }
+  .partners {
+    @extend .rowWrap;
+    gap: 32px;
+    max-width: calc((100px + 32px) * 6 - 32px);
+    justify-content: center;
+    
+    img {
+      width: 100px;
+      height: 100px;
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+}
+
+
+
