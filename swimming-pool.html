@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Бассейн</title>
+  <link rel="stylesheet" href="css/fonts.css"/>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/swimming-pool.css">
+  <link rel="stylesheet" href="css/slider-equipment.css">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+</head>
+<body>
+
+
+<script>
+  function expandOrCollapse(pageId,number){
+    const ic = document.getElementById(`${pageId}-expcard-ic-${number}`) // например 'e-expcard-ic-1' (Employment-ExpandableCard-ICon-<number on page>)
+    const list = document.getElementById(`${pageId}-expcard-list-${number}`) // например 'e-expcard-list-1'
+    if (!list.classList.contains('contents')){
+      ic.src = 'img/icons/minus-light.svg'
+      list.classList.add('contents')
+    } else {
+      ic.src = 'img/icons/plus-light.svg'
+      list.classList.remove('contents')
+    }
+  }
+</script>
+
+
+<div class="wrapper">
+  <div class="content">
+    <div class="swimmingPoolPage">
+      
+      <div style="height: 32px"></div>
+  
+      <div class="pageElement">
+        <h2>Бассейн</h2>
+      </div>
+  
+      <div style="height: 32px"></div>
+  
+      <div class="expandableListElement">
+        <div class="contentContainer">
+          <div class="titleContainer"onclick="expandOrCollapse('sp','1')">
+            <img id="sp-expcard-ic-1" class="plus" src="img/icons/plus-light.svg">
+            <span class="title">
+              Абонементы
+            </span>
+          </div>
+          <div class="none" id="sp-expcard-list-1">
+            <div class="activitiesFrame">
+              <div class="activitiesContainer">
+                
+                <div class="activityCard">
+                  <div class="titleImageFrame">
+                    <img class="titleImage"
+                         src="img/swimming-pool-page/water-aerobics.png"
+                         alt="Аквааэробика"/>
+                  </div>
+                  <div class="cardTitleFrame">
+                    <div class="cardTitleContainer">
+                      <div class="cardTitle">Аквааэробика</div>
+                    </div>
+                  </div>
+                  <div class="priceFrame">
+                    <div class="priceText">
+                      1 занятие - 750 руб.<br>
+                      4 занятия - 2 400 руб.<br>
+                      8 занятий - 4 400 руб.<br>
+                    </div>
+                    <div class="priceFootnote">
+                      *Абонемент действует в течение 1 месяца.
+                    </div>
+                  </div>
+                  <img
+                    class="fokPkghImage"
+                    src="img/swimming-pool-page/fok-pkgh.png"
+                    alt="ФОК-ПКГХ"
+                  />
+                </div>
+                <div class="activityCard">
+                  <div class="titleImageFrame">
+                    <img class="titleImage"
+                         src="img/swimming-pool-page/free-swimming.png"
+                         alt="Свободное плавание (безлимитное посещение*)"/>
+                  </div>
+                  <div class="cardTitleFrame">
+                    <div class="cardTitleContainer">
+                      <div class="cardTitle">Свободное плавание</div>
+                      <div class="cardTitleSmall">(безлимитное посещение*)</div>
+                    </div>
+                  </div>
+                  <div class="priceFrame">
+                    <div class="priceTextSmaller">
+                      Абонемент на 1 месяц - 5 500 руб.<br>
+                      Абонемент на 3 месяца - 11 000 руб.<br>
+                    </div>
+                    <div class="priceFootnote">
+                      *По расписанию свободного плавания, но не более 1 посещения в день.
+                    </div>
+                  </div>
+                  <img
+                    class="fokPkghImage"
+                    src="img/swimming-pool-page/fok-pkgh.png"
+                    alt="ФОК-ПКГХ"
+                  />
+                </div>
+                <div class="activityCard">
+                  <div class="titleImageFrame">
+                    <img class="titleImage"
+                         src="img/swimming-pool-page/water-aerobics-for-pregnants.png"
+                         alt="Аквааэробика для беременных"/>
+                  </div>
+                  <div class="cardTitleFrame">
+                    <div class="cardTitleContainer">
+                      <div class="cardTitle">Аквааэробика для беременных</div>
+                    </div>
+                  </div>
+                  <div class="priceFrame">
+                    <div class="priceText">
+                      1 занятие - 1 200 руб.<br>
+                      4 занятия - 3 600 руб.<br>
+                      8 занятий - 6 600 руб.<br>
+                    </div>
+                    <div class="priceFootnote">
+                      *Абонемент действует в течение 2 месяцев.
+                    </div>
+                  </div>
+                  <img
+                    class="fokPkghImage"
+                    src="img/swimming-pool-page/fok-pkgh.png"
+                    alt="ФОК-ПКГХ"
+                  />
+                </div>
+  
+  
+                <div class="activityCard">
+                  <div class="titleImageFrame">
+                    <img class="titleImage"
+                         src="img/swimming-pool-page/free-swimming-2.png"
+                         alt="Свободное плавание"/>
+                  </div>
+                  <div class="cardTitleFrame">
+                    <div class="cardTitleContainer">
+                      <div class="cardTitle">Свободное плавание</div>
+                    </div>
+                  </div>
+                  <div class="priceFrame">
+                    <div class="priceText">
+                      Разовое посещение - 550 руб.<br>
+                      <br>
+                      Пакет услуг*:<br>
+                      от 2 до 9 - 500 руб.;<br>
+                      от 10 до 22 - 450 руб.<br>
+                    </div>
+                    <div class="priceFootnote">
+                      *Абонемент на 1 цикл
+                    </div>
+                  </div>
+                  <img
+                    class="fokPkghImage"
+                    src="img/swimming-pool-page/fok-pkgh.png"
+                    alt="ФОК-ПКГХ"
+                  />
+                </div>
+                <div class="activityCard">
+                  <div class="titleImageFrame">
+                    <img class="titleImage"
+                         src="img/swimming-pool-page/group-lessons-kids.png"
+                         alt="Групповые занятия (Детские группы)"/>
+                  </div>
+                  <div class="cardTitleFrame">
+                    <div class="cardTitleContainer">
+                      <div class="cardTitle">Групповые занятия</div>
+                      <div class="cardTitleSmall">(Детские группы)</div>
+                    </div>
+                  </div>
+                  <div class="priceFrame">
+                    <div class="priceTextSmaller">
+                      Разовое посещение - 850 руб.<br>
+                      <br>
+                      Пакет услуг*:<br>
+                      от 2 до 4 - 800 руб.;<br>
+                      от 5 до 8 - 750 руб.<br>
+                      от 9 до 12 - 700 руб.<br>
+                    </div>
+                    <div class="priceFootnote">
+                      *Абонемент на 1 месяц
+                    </div>
+                  </div>
+                  <img
+                    class="fokPkghImage"
+                    src="img/swimming-pool-page/fok-pkgh.png"
+                    alt="ФОК-ПКГХ"
+                  />
+                </div>
+                <div class="activityCard">
+                  <div class="titleImageFrame">
+                    <img class="titleImage"
+                         src="img/swimming-pool-page/group-lessons-adults.png"
+                         alt="Групповые занятия (Взрослая группа)"/>
+                  </div>
+                  <div class="cardTitleFrame">
+                    <div class="cardTitleContainer">
+                      <div class="cardTitle">Групповые занятия</div>
+                      <div class="cardTitleSmall">(Взрослая группа)</div>
+                    </div>
+                  </div>
+                  <div class="priceFrame">
+                    <div class="priceTextSmaller">
+                      Разовое посещение - 900 руб.<br>
+                      от 2 до 4 занятий - 850 руб.;<br>
+                      от 5 до 8 занятий - 800 руб;<br>
+                      от 9 до 12 занятий - 700 руб.<br>
+                    </div>
+                    <div class="priceFootnote">
+                      *Абонемент на 1 месяц
+                    </div>
+                    <div class="priceTextSmaller"><br></div>
+                    <div class="priceTextSmaller">
+                      24 занятия - 16 560 руб.<br>
+                    </div>
+                    <div class="priceFootnote">
+                      *Абонемент на 3 месяца
+                    </div>
+                  </div>
+                  <img
+                    class="fokPkghImage"
+                    src="img/swimming-pool-page/fok-pkgh.png"
+                    alt="ФОК-ПКГХ"
+                  />
+                </div>
+  
+                <div class="activityCard">
+                  <div class="titleImageFrame">
+                    <img class="titleImage"
+                         src="img/swimming-pool-page/water-polo.png"
+                         alt="Водное поло (Детская группа)"/>
+                  </div>
+                  <div class="cardTitleFrame">
+                    <div class="cardTitleContainer">
+                      <div class="cardTitle">Водное поло</div>
+                      <div class="cardTitleSmall">(Детская группа)</div>
+                    </div>
+                  </div>
+                  <div class="priceFrame">
+                    <div class="priceText">
+                      Пробное занятие - 800 руб.<br>
+                      <br>
+                      Пакет услуг*:<br>
+                      4 занятия - 4 000 руб.;<br>
+                      8 занятий - 6 400 руб.<br>
+                    </div>
+                    <div class="priceFootnote">
+                      *Абонемент на 1 месяц
+                    </div>
+                  </div>
+                  <img
+                    class="fokPkghImage"
+                    src="img/swimming-pool-page/fok-pkgh.png"
+                    alt="ФОК-ПКГХ"
+                  />
+                </div>
+                <div class="activityCard">
+                  <div class="titleImageFrame">
+                    <img class="titleImage"
+                         src="img/swimming-pool-page/free-swimming-families.png"
+                         alt="Свободное плавание (Семейный абонемент*)"/>
+                  </div>
+                  <div class="cardTitleFrame">
+                    <div class="cardTitleContainer">
+                      <div class="cardTitle">Свободное плавание</div>
+                      <div class="cardTitleSmall">(Семейный абонемент*)</div>
+                    </div>
+                  </div>
+                  <div class="priceFrame">
+                    <div class="priceTextSmaller">
+                      Разовое посещение - 1 000 руб.<br>
+                      <br>
+                      Пакет услуг*:<br>
+                      от 2 до 9 - 850 руб.;<br>
+                      от 10 до 22 - 750 руб<br>
+                    </div>
+                    <div class="priceFootnote">
+                      *Абонемент на 2-х человек на 1 цикл. Каждый дополнительный человек +400 руб.
+                    </div>
+                  </div>
+                  <img
+                    class="fokPkghImage"
+                    src="img/swimming-pool-page/fok-pkgh.png"
+                    alt="ФОК-ПКГХ"
+                  />
+                </div>
+                <div class="activityCard">
+                  <div class="titleImageFrame">
+                    <img class="titleImage"
+                         src="img/swimming-pool-page/individual-sessions.png"
+                         alt="Индивидуальные занятия"/>
+                  </div>
+                  <div class="cardTitleFrame">
+                    <div class="cardTitleContainer">
+                      <div class="cardTitle">Индивидуальные занятия</div>
+                    </div>
+                  </div>
+                  <div class="priceFrame">
+                    <div class="priceText">
+                      1 занятие (45 мин.) - 1 800 руб.;<br>
+                      8 занятий (30 мин.)* - 10 400 руб<br>
+                    </div>
+                    <div class="priceFootnote">
+                      *Абонемент действует в течение 6 месяцев.
+                    </div>
+                  </div>
+                  <img
+                    class="fokPkghImage"
+                    src="img/swimming-pool-page/fok-pkgh.png"
+                    alt="ФОК-ПКГХ"
+                  />
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div style="height: 32px"></div>
+  
+      <div class="expandableListElement">
+        <div class="contentContainer">
+          <div class="titleContainer"onclick="expandOrCollapse('sp','2')">
+            <img id="sp-expcard-ic-2" class="plus" src="img/icons/plus-light.svg">
+            <span class="title">
+              Расписание групповых занятий
+            </span>
+          </div>
+          <div class="none" id="sp-expcard-list-2">
+            <!--<div class="childrenContainer">
+              place for content in expandable card
+            </div>-->
+          </div>
+        </div>
+      </div>
+  
+      <div style="height: 32px"></div>
+  
+      <div class="expandableListElement">
+        <div class="contentContainer">
+          <div class="titleContainer"onclick="expandOrCollapse('sp','3')">
+            <img id="sp-expcard-ic-3" class="plus" src="img/icons/plus-light.svg">
+            <span class="title">
+              Расписание Аквааэробики
+            </span>
+          </div>
+          <div class="none" id="sp-expcard-list-3">
+            <!--<div class="childrenContainer">
+              place for content in expandable card
+            </div>-->
+          </div>
+        </div>
+      </div>
+  
+      <div style="height: 32px"></div>
+  
+      <div class="expandableListElement">
+        <div class="contentContainer">
+          <div class="titleContainer"onclick="expandOrCollapse('sp','4')">
+            <img id="sp-expcard-ic-4" class="plus" src="img/icons/plus-light.svg">
+            <span class="title">
+              Расписание свободного плавания
+            </span>
+          </div>
+          <div class="none" id="sp-expcard-list-4">
+            <!--<div class="childrenContainer">
+              place for content in expandable card
+            </div>-->
+          </div>
+        </div>
+      </div>
+  
+      <div style="height: 32px"></div>
+  
+      <div class="expandableListElement">
+        <div class="contentContainer">
+          <div class="titleContainer"onclick="expandOrCollapse('sp','5')">
+            <img id="sp-expcard-ic-5" class="plus" src="img/icons/plus-light.svg">
+            <span class="title">
+              Прейскурант
+            </span>
+          </div>
+          <div class="none" id="sp-expcard-list-5">
+            <!--<div class="childrenContainer">
+              place for content in expandable card
+            </div>-->
+          </div>
+        </div>
+      </div>
+  
+      <div style="height: 32px"></div>
+  
+      <div class="expandableListElement">
+        <div class="contentContainer">
+          <div class="titleContainer"onclick="expandOrCollapse('sp','6')">
+            <img id="sp-expcard-ic-6" class="plus" src="img/icons/plus-light.svg">
+            <span class="title">
+              Правила посещения ФОК-ПБ
+            </span>
+          </div>
+          <div class="none" id="sp-expcard-list-6">
+            <!--<div class="childrenContainer">
+              place for content in expandable card
+            </div>-->
+          </div>
+        </div>
+      </div>
+  
+      <div style="height: 32px"></div>
+  
+      <div class="expandableListElement">
+        <div class="contentContainer">
+          <div class="titleContainer"onclick="expandOrCollapse('sp','7')">
+            <img id="sp-expcard-ic-7" class="plus" src="img/icons/plus-light.svg">
+            <span class="title">
+              Положение об оказании платных услуг
+            </span>
+          </div>
+          <div class="none" id="sp-expcard-list-7">
+            <!--<div class="childrenContainer">
+              place for content in expandable card
+            </div>-->
+          </div>
+        </div>
+      </div>
+  
+      <div style="height: 32px"></div>
+  
+      <div class="expandableListElement">
+        <div class="contentContainer">
+          <div class="titleContainer"onclick="expandOrCollapse('sp','8')">
+            <img id="sp-expcard-ic-8" class="plus" src="img/icons/plus-light.svg">
+            <span class="title">
+              Скидки
+            </span>
+          </div>
+          <div class="none" id="sp-expcard-list-8">
+            <!--<div class="childrenContainer">
+              place for content in expandable card
+            </div>-->
+          </div>
+        </div>
+      </div>
+  
+      <div style="height: 32px"></div>
+      
+      <div class="pageElement">
+        <div class="center">
+          <img class="bottomPicture"
+               src="img/swimming-pool-page/enrollment-into-water-aerobics-groups-is-open.png"
+               alt="Открыта запись в группы аквааэробики"/>
+        </div>
+      </div>
+  
+      <div style="height: 32px"></div>
+      
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

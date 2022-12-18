@@ -1,0 +1,304 @@
+.swimmingPoolPage {
+  display: contents;
+}
+.swimmingPoolPage .reset, .swimmingPoolPage .allDefault, .swimmingPoolPage .aTextU, .swimmingPoolPage .aText, .swimmingPoolPage .aElement, .swimmingPoolPage * {
+  box-sizing: border-box;
+  margin: 0;
+}
+.swimmingPoolPage .allDefault, .swimmingPoolPage .aTextU, .swimmingPoolPage .aText, .swimmingPoolPage .aElement {
+  all: unset;
+}
+.swimmingPoolPage .pageElement, .swimmingPoolPage .expandableListElement, .swimmingPoolPage .hScroll {
+  width: clamp(400px, 100%, 1920px);
+  padding: 0 144px 0 144px;
+}
+@media (max-width: 900px) {
+  .swimmingPoolPage .pageElement, .swimmingPoolPage .expandableListElement, .swimmingPoolPage .hScroll {
+    padding: 0 16px 0 16px;
+  }
+}
+.swimmingPoolPage .rowWrap, .swimmingPoolPage .activitiesContainer {
+  display: flex;
+  flex-flow: row wrap;
+}
+.swimmingPoolPage .row, .swimmingPoolPage .downloadWidgetLight, .swimmingPoolPage .downloadWidget, .swimmingPoolPage .expandableListElement .contentContainer .titleContainer {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.swimmingPoolPage .col, .swimmingPoolPage .activityCard .priceFrame, .swimmingPoolPage .activityCard .cardTitleFrame .cardTitleContainer, .swimmingPoolPage .downloadWidgetList, .swimmingPoolPage .expandableListElement .contentContainer .childrenContainer, .swimmingPoolPage .expandableListElement .contentContainer, .swimmingPoolPage .adCard {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+}
+.swimmingPoolPage .center, .swimmingPoolPage .downloadWidgetLight .iconBox, .swimmingPoolPage .expandableListElement, .swimmingPoolPage .hScroll {
+  display: grid;
+  place-items: center;
+}
+.swimmingPoolPage .none {
+  display: none;
+}
+.swimmingPoolPage .contents {
+  display: contents;
+}
+.swimmingPoolPage h2 {
+  font: 400 40px Forum;
+  color: #21385F;
+  line-height: 44px;
+}
+.swimmingPoolPage h3 {
+  font: 400 32px Forum;
+  color: #64748F;
+  line-height: 35px;
+}
+.swimmingPoolPage h4 {
+  font: 400 24px Forum;
+  color: #64748F;
+  line-height: 26px;
+}
+.swimmingPoolPage .text {
+  font: 300 16px "Museo Sans";
+  color: #3B3B3B;
+}
+.swimmingPoolPage .text b {
+  font-weight: 600;
+}
+.swimmingPoolPage .aElement {
+  display: contents;
+}
+.swimmingPoolPage .linkText:hover, .swimmingPoolPage .downloadWidgetLight span:hover, .swimmingPoolPage .downloadWidget span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.swimmingPoolPage .aText:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.swimmingPoolPage .aTextU {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.swimmingPoolPage ul {
+  padding-left: 22px;
+}
+.swimmingPoolPage .ul44 {
+  padding-left: 44px;
+}
+.swimmingPoolPage ol {
+  padding-left: 20px;
+}
+.swimmingPoolPage .adCard {
+  background: #697FA9;
+  backdrop-filter: blur(32px);
+  border-radius: 2px;
+  padding: 31px;
+  gap: 32px;
+}
+.swimmingPoolPage .adCard h3 {
+  color: #E9ECF2;
+  align-self: center;
+  text-align: center;
+}
+.swimmingPoolPage .adCard .text {
+  color: #BEC8DA;
+}
+.swimmingPoolPage .hScroll {
+  width: 100%;
+  height: fit-content;
+  overflow: auto;
+}
+.swimmingPoolPage .gridTable {
+  display: grid;
+}
+.swimmingPoolPage .gridTable .ths {
+  display: contents;
+}
+.swimmingPoolPage .gridTable .th {
+  padding: 16px 22px;
+  background: #294985;
+  font: 400 24px Forum;
+  color: #E9ECF2;
+  line-height: 26px;
+}
+.swimmingPoolPage .gridTable .tb {
+  display: contents;
+}
+.swimmingPoolPage .gridTable .tb .tr * {
+  background: #E9ECF2;
+}
+.swimmingPoolPage .gridTable .tbStriped {
+  display: contents;
+}
+.swimmingPoolPage .gridTable .tbStriped > .tr:nth-of-type(odd) > * {
+  background: #E9ECF2;
+}
+.swimmingPoolPage .gridTable .tbStriped > .tr:nth-of-type(even) > * {
+  background: #BEC8DA;
+}
+.swimmingPoolPage .gridTable .tr {
+  /*display: grid;
+  grid-template: auto / subgrid;
+  grid-column: 1 / grid-end;*/
+  display: contents;
+}
+.swimmingPoolPage .gridTable .td {
+  padding: 16px 22px;
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+.swimmingPoolPage .expandableListElement {
+  background: #21385F;
+}
+.swimmingPoolPage .expandableListElement .contentContainer {
+  align-items: center;
+}
+.swimmingPoolPage .expandableListElement .contentContainer .titleContainer {
+  align-items: center;
+  gap: 16px;
+  padding: 24px 16px 24px 16px;
+  cursor: pointer;
+}
+.swimmingPoolPage .expandableListElement .contentContainer .titleContainer .plus {
+  width: 24px;
+  height: 24px;
+}
+.swimmingPoolPage .expandableListElement .contentContainer .titleContainer .title {
+  font: 400 24px Forum;
+  color: #E8EAEE;
+  line-height: 26px;
+}
+.swimmingPoolPage .expandableListElement .contentContainer .childrenContainer {
+  gap: 24px;
+  padding: 0px 16px 32px 16px;
+}
+.swimmingPoolPage .expandableListElement .contentContainer .childrenContainer .text {
+  color: #BBC2CE;
+}
+.swimmingPoolPage .downloadWidgetList {
+  gap: 32px;
+}
+.swimmingPoolPage .downloadWidget {
+  justify-content: start;
+  gap: 16px;
+}
+.swimmingPoolPage .downloadWidget img {
+  height: 24px;
+  width: 24px;
+  color: #21385f;
+}
+.swimmingPoolPage .downloadWidget span {
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+.swimmingPoolPage .downloadWidgetLight {
+  justify-content: start;
+  gap: 16px;
+}
+.swimmingPoolPage .downloadWidgetLight .iconBox {
+  width: 24px;
+  height: 24px;
+}
+.swimmingPoolPage .downloadWidgetLight .iconBox img {
+  height: auto;
+  width: 14px;
+  color: #E8EAEE;
+}
+.swimmingPoolPage .downloadWidgetLight span {
+  font: 300 16px "Museo Sans";
+  color: #BBC2CE;
+  line-height: 144%;
+}
+.swimmingPoolPage .bottomPicture {
+  width: 100%;
+  max-width: 645px;
+  aspect-ratio: 1;
+  object-position: center;
+  object-fit: contain;
+}
+.swimmingPoolPage .activitiesFrame {
+  padding-top: 40px;
+  padding-bottom: 32px;
+}
+.swimmingPoolPage .activitiesContainer {
+  gap: 32px;
+  width: 100%;
+  max-width: calc((336px + 32px) * 3 - 32px);
+  justify-content: center;
+}
+.swimmingPoolPage .activityCard {
+  display: grid;
+  background: #3f4c91;
+  border: #6458df solid 2px;
+  width: 336px;
+  height: 336px;
+  grid: "titleImage title" min-content "price      price" 1fr/1fr 1fr;
+}
+.swimmingPoolPage .activityCard .titleImageFrame {
+  grid-area: titleImage;
+  padding-top: 4px;
+  padding-left: 4px;
+  width: 100%;
+}
+.swimmingPoolPage .activityCard .titleImageFrame .titleImage {
+  width: 100%;
+  height: 120px;
+  object-position: center;
+  object-fit: cover;
+}
+.swimmingPoolPage .activityCard .cardTitleFrame {
+  grid-area: title;
+  place-self: stretch;
+  padding: 4px 12px 20px 12px;
+}
+.swimmingPoolPage .activityCard .cardTitleFrame .cardTitleContainer {
+  width: 100%;
+  height: 100%;
+  border-bottom: #c7d8eb solid 2px;
+  padding-bottom: 4px;
+  place-content: center;
+  place-items: center;
+}
+.swimmingPoolPage .activityCard .cardTitleFrame .cardTitleContainer .cardTitle, .swimmingPoolPage .activityCard .cardTitleFrame .cardTitleContainer .cardTitleSmall {
+  text-align: center;
+  font: 600 20px "Museo Sans";
+  color: #f68a07;
+}
+.swimmingPoolPage .activityCard .cardTitleFrame .cardTitleContainer .cardTitleSmall {
+  font-weight: 300;
+  font-size: 0.7em;
+  letter-spacing: 0.02em;
+}
+.swimmingPoolPage .activityCard .priceFrame {
+  grid-area: price;
+  width: 100%;
+  padding: 8px 4px 4px 4px;
+  align-self: stretch;
+  align-items: stretch;
+}
+.swimmingPoolPage .activityCard .priceFrame .priceText, .swimmingPoolPage .activityCard .priceFrame .priceTextSmaller {
+  font: 300 20px "Museo Sans";
+  color: #c7d7ee;
+}
+.swimmingPoolPage .activityCard .priceFrame .priceTextSmaller {
+  font-size: 16px;
+  line-height: 1.2;
+}
+.swimmingPoolPage .activityCard .priceFrame .priceFootnote {
+  margin: 12px 16px 0 0;
+  border-top: #f68a07 solid 2px;
+  padding-top: 4px;
+  font: 300 14px "Museo Sans";
+  color: #f68a07;
+}
+.swimmingPoolPage .activityCard .fokPkghImage {
+  grid-area: price;
+  place-self: end;
+  padding: 4px;
+  width: 50px;
+  height: 50px;
+  object-position: center;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=swimming-pool.css.map */
