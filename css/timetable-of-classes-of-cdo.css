@@ -1,0 +1,225 @@
+.timetableOfClassesOfCdoPage {
+  display: contents;
+}
+.timetableOfClassesOfCdoPage .reset, .timetableOfClassesOfCdoPage .allDefault, .timetableOfClassesOfCdoPage .aTextU, .timetableOfClassesOfCdoPage .aText, .timetableOfClassesOfCdoPage .aElement, .timetableOfClassesOfCdoPage * {
+  box-sizing: border-box;
+  margin: 0;
+}
+.timetableOfClassesOfCdoPage .allDefault, .timetableOfClassesOfCdoPage .aTextU, .timetableOfClassesOfCdoPage .aText, .timetableOfClassesOfCdoPage .aElement {
+  all: unset;
+}
+.timetableOfClassesOfCdoPage .pageElement, .timetableOfClassesOfCdoPage .hScroll {
+  width: clamp(400px, 100%, 1920px);
+  padding: 0 144px 0 144px;
+}
+@media (max-width: 900px) {
+  .timetableOfClassesOfCdoPage .pageElement, .timetableOfClassesOfCdoPage .hScroll {
+    padding: 0 16px 0 16px;
+  }
+}
+.timetableOfClassesOfCdoPage .rowWrap {
+  display: flex;
+  flex-flow: row wrap;
+}
+.timetableOfClassesOfCdoPage .row, .timetableOfClassesOfCdoPage .downloadWidgetLight, .timetableOfClassesOfCdoPage .downloadWidget, .timetableOfClassesOfCdoPage .expandableListElement .contentContainer .titleContainer, .timetableOfClassesOfCdoPage .expandableListElement2 .contentContainer .titleContainer {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.timetableOfClassesOfCdoPage .col, .timetableOfClassesOfCdoPage .downloadWidgetList, .timetableOfClassesOfCdoPage .expandableListElement .contentContainer .childrenContainer, .timetableOfClassesOfCdoPage .expandableListElement2 .contentContainer .childrenContainer, .timetableOfClassesOfCdoPage .expandableListElement .contentContainer, .timetableOfClassesOfCdoPage .expandableListElement2 .contentContainer, .timetableOfClassesOfCdoPage .adCard {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+}
+.timetableOfClassesOfCdoPage .center, .timetableOfClassesOfCdoPage .downloadWidgetLight .iconBox, .timetableOfClassesOfCdoPage .expandableListElement, .timetableOfClassesOfCdoPage .expandableListElement2, .timetableOfClassesOfCdoPage .hScroll {
+  display: grid;
+  place-items: center;
+}
+.timetableOfClassesOfCdoPage .none {
+  display: none;
+}
+.timetableOfClassesOfCdoPage .contents {
+  display: contents;
+}
+.timetableOfClassesOfCdoPage h2 {
+  font: 400 40px Forum;
+  color: #21385F;
+  line-height: 44px;
+}
+.timetableOfClassesOfCdoPage h3 {
+  font: 400 32px Forum;
+  color: #64748F;
+  line-height: 35px;
+}
+.timetableOfClassesOfCdoPage h4 {
+  font: 400 24px Forum;
+  color: #64748F;
+  line-height: 26px;
+}
+.timetableOfClassesOfCdoPage .text {
+  font: 300 16px "Museo Sans";
+  color: #3B3B3B;
+}
+.timetableOfClassesOfCdoPage .text b {
+  font-weight: 600;
+}
+.timetableOfClassesOfCdoPage .aElement {
+  display: contents;
+}
+.timetableOfClassesOfCdoPage .linkText:hover, .timetableOfClassesOfCdoPage .downloadWidgetLight span:hover, .timetableOfClassesOfCdoPage .downloadWidget span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.timetableOfClassesOfCdoPage .aText:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.timetableOfClassesOfCdoPage .aTextU {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.timetableOfClassesOfCdoPage ul {
+  padding-left: 22px;
+}
+.timetableOfClassesOfCdoPage .ul44 {
+  padding-left: 44px;
+}
+.timetableOfClassesOfCdoPage ol {
+  padding-left: 20px;
+}
+.timetableOfClassesOfCdoPage .adCard {
+  background: #697FA9;
+  backdrop-filter: blur(32px);
+  border-radius: 2px;
+  padding: 31px;
+  gap: 32px;
+}
+.timetableOfClassesOfCdoPage .adCard h3 {
+  color: #E9ECF2;
+  align-self: center;
+  text-align: center;
+}
+.timetableOfClassesOfCdoPage .adCard .text {
+  color: #BEC8DA;
+}
+.timetableOfClassesOfCdoPage .hScroll {
+  width: 100%;
+  height: fit-content;
+  overflow: auto;
+}
+.timetableOfClassesOfCdoPage .gridTable {
+  display: grid;
+}
+.timetableOfClassesOfCdoPage .gridTable .ths {
+  display: contents;
+}
+.timetableOfClassesOfCdoPage .gridTable .th {
+  padding: 16px 22px;
+  background: #294985;
+  font: 400 24px Forum;
+  color: #E9ECF2;
+  line-height: 26px;
+}
+.timetableOfClassesOfCdoPage .gridTable .tb {
+  display: contents;
+}
+.timetableOfClassesOfCdoPage .gridTable .tb .tr * {
+  background: #E9ECF2;
+}
+.timetableOfClassesOfCdoPage .gridTable .tbStriped {
+  display: contents;
+}
+.timetableOfClassesOfCdoPage .gridTable .tbStriped > .tr:nth-of-type(odd) > * {
+  background: #E9ECF2;
+}
+.timetableOfClassesOfCdoPage .gridTable .tbStriped > .tr:nth-of-type(even) > * {
+  background: #BEC8DA;
+}
+.timetableOfClassesOfCdoPage .gridTable .tr {
+  /*display: grid;
+  grid-template: auto / subgrid;
+  grid-column: 1 / grid-end;*/
+  display: contents;
+}
+.timetableOfClassesOfCdoPage .gridTable .td {
+  padding: 16px 22px;
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+.timetableOfClassesOfCdoPage .expandableListElement, .timetableOfClassesOfCdoPage .expandableListElement2 {
+  width: 100%;
+  background: #21385F;
+}
+.timetableOfClassesOfCdoPage .expandableListElement .contentContainer, .timetableOfClassesOfCdoPage .expandableListElement2 .contentContainer {
+  align-items: center;
+}
+.timetableOfClassesOfCdoPage .expandableListElement .contentContainer .titleContainer, .timetableOfClassesOfCdoPage .expandableListElement2 .contentContainer .titleContainer {
+  align-items: center;
+  gap: 16px;
+  padding: 24px 16px 24px 16px;
+  cursor: pointer;
+}
+.timetableOfClassesOfCdoPage .expandableListElement .contentContainer .titleContainer .plus, .timetableOfClassesOfCdoPage .expandableListElement2 .contentContainer .titleContainer .plus {
+  width: 24px;
+  height: 24px;
+}
+.timetableOfClassesOfCdoPage .expandableListElement .contentContainer .titleContainer .title, .timetableOfClassesOfCdoPage .expandableListElement2 .contentContainer .titleContainer .title {
+  font: 400 24px Forum;
+  color: #E8EAEE;
+  line-height: 26px;
+}
+.timetableOfClassesOfCdoPage .expandableListElement .contentContainer .childrenContainer, .timetableOfClassesOfCdoPage .expandableListElement2 .contentContainer .childrenContainer {
+  gap: 24px;
+  padding: 0px 16px 32px 16px;
+}
+.timetableOfClassesOfCdoPage .expandableListElement .contentContainer .childrenContainer .text, .timetableOfClassesOfCdoPage .expandableListElement2 .contentContainer .childrenContainer .text {
+  color: #BBC2CE;
+}
+.timetableOfClassesOfCdoPage .downloadWidgetList {
+  gap: 32px;
+}
+.timetableOfClassesOfCdoPage .downloadWidget {
+  justify-content: start;
+  gap: 16px;
+}
+.timetableOfClassesOfCdoPage .downloadWidget img {
+  height: 24px;
+  width: 24px;
+  color: #21385f;
+}
+.timetableOfClassesOfCdoPage .downloadWidget span {
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+.timetableOfClassesOfCdoPage .downloadWidgetLight {
+  justify-content: start;
+  gap: 16px;
+}
+.timetableOfClassesOfCdoPage .downloadWidgetLight .iconBox {
+  width: 24px;
+  height: 24px;
+}
+.timetableOfClassesOfCdoPage .downloadWidgetLight .iconBox img {
+  height: auto;
+  width: 14px;
+  color: #E8EAEE;
+}
+.timetableOfClassesOfCdoPage .downloadWidgetLight span {
+  font: 300 16px "Museo Sans";
+  color: #BBC2CE;
+  line-height: 144%;
+}
+.timetableOfClassesOfCdoPage .expandableListElement2 .contentContainer .childrenContainer {
+  padding: 0px 16px 24px 16px;
+  margin-top: -8px;
+}
+.timetableOfClassesOfCdoPage .expandableListElement2 .contentContainer .childrenContainer .imageInExpandable {
+  width: 100%;
+  max-width: 809px;
+  height: auto;
+  object-position: center;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=timetable-of-classes-of-cdo.css.map */
