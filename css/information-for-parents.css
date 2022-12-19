@@ -1,0 +1,230 @@
+.information-for-parents_title {
+	margin-left: auto;
+	margin-right: auto;
+
+	margin-top:30px ;
+	margin-bottom:30px ;
+
+	color: #21385F;
+	max-width: 1086px;
+}
+
+.information-for-parents__card {
+	margin-left: auto;
+	margin-right: auto;
+
+	max-width: 1086px;
+	display: flex;
+	flex-wrap: wrap;
+	background: #697FA9;
+	backdrop-filter: blur(32px);
+
+	gap: 142px;
+	padding: 32px;
+	border-radius: 2px;
+}
+
+.information-for-parents__info {
+	max-width: 514px;
+	color: #E9ECF2;
+}
+
+.information-for-parents__form {
+}
+
+.information-for-parents__radio{
+	color: #E9ECF2;
+}
+
+.information-for-parents__col {
+	display: flex;
+	flex-direction: column;
+
+	align-items: flex-start;
+	padding: 0px;
+	gap: 32px;
+}
+
+.information-for-parents__col button{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 16px 24px;
+	gap: 10px;
+
+	width: 265px;
+	height: 55px;
+
+	/* Кобальтовый/10 */
+	background-color: #E9ECF2;
+	border-radius: 2px;
+
+	border: none;
+	cursor: pointer;
+	color: #294985;
+}
+
+.information-for-parents__col button:hover{
+	background-color: ;
+}
+
+
+.information-for-parents__input {
+	border-bottom: 1px solid #E9E9E9;
+
+	box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 265px;
+height: 32px;
+
+}
+
+.information-for-parents__input input{
+	background: #697FA9;
+	border: none;
+	outline: none;
+	color:  #E9ECF2;
+}
+
+.information-for-parents__text{
+	max-width: 1086px;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.information-for-parents__text h5{
+	margin-top: 40px;
+	margin-bottom: 40px;
+
+}
+
+.information-for-parents__text h6{
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+
+.information-for-parents__text img{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.img_centr{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.img_centr img{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.margin_list{
+	margin-left: -20px;
+	margin-bottom: 0;
+}
+
+.minus_marker li{
+	margin-left: -40px;
+}
+
+
+.minus_marker li:before{
+	content: "− ";
+	margin-bottom: 0;
+}
+
+.none_marker li{
+	list-style-type:none;
+}
+
+
+.information-for-parents__doc li {
+	margin-left: -40px;
+	margin-top: 20px;
+}
+
+.information-for-parents__doc a {
+	color: #282828;
+}
+
+.information-for-parents img{
+	margin-right: 10px;
+}
+
+details > summary {
+	list-style: none;
+}
+
+details[open] > summary {
+
+}
+summary:before {
+	content: url(../img/information-for-parents/Addition.png) ;
+	font-size: 20px;
+	font-weight: bold;
+	padding-right: 10px;
+	margin: -5px 5px 0 0;
+}
+
+details[open] summary:before {
+	content: url(../img/information-for-parents/minus.png) ;
+}
+
+.accordion-box{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 24px 0px;
+	gap: 16px;
+	width: 1920px;
+	background: #21385F;
+	margin-bottom: 20px;
+}
+
+.accordion-box__details{
+	text-align: center; 
+}
+
+.accordion-box__content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 32px 0px;
+	gap: 24px;
+
+	width: 1920px;
+/* height: 160px; */
+
+/* Сапфировый/100 */
+background: #21385F;
+}
+
+.accordion-box__text{
+	width: 1086px;
+	text-align: left;
+
+}
+
+@media (max-width:768px) {
+	.photo{
+		width: 600px;
+	}
+}
+
+@media (max-width:650px) {
+	.photo{
+		width: 375px;
+	}
+}
