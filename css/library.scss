@@ -1,7 +1,7 @@
 
 // Классы страницы помещаются под общий класс ....page,
 // чтобы применяться в пределах страницы
-.educationalProcessPage {
+.libraryPage {
     display: contents;
     // Сброс параметров элементов
     * { @extend .reset }
@@ -263,22 +263,35 @@
     }
 
     // Элементы страницы
-    .recruitmentForSpecialityCard {
-        @extend .adCard;
-        max-width: 642px;
+    .text2 {
+        @extend .text;
+        line-height: 144%;
+        color: #000000;
     }
-    .expandableListElementAligned {
-        @extend .expandableListElement;
-        
-        .contentContainer {
-            width: 100%;
+    .photos {
+        @extend .rowWrap;
+        $itemW: 539px;
+        $itemH: 319px;
+        $gap: 8px;
+        $maxCols: 2;
+        gap: $gap;
+        width: 100%;
+        max-width: calc((#{$itemW} + #{$gap}) * #{$maxCols}  -  #{$gap});
+        justify-content: center;
+
+        img {
+            width: $itemW;
+            aspect-ratio: $itemW / $itemH;
+            object-position: center;
+            object-fit: cover;
+            border-radius: 2px;
             
-            .titleContainer {
+            @media (max-width: 624px) {
                 width: 100%;
-                max-width: 540px;
             }
         }
     }
 }
+
 
 

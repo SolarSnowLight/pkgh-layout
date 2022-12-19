@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Библиотека</title>
+  <link rel="stylesheet" href="css/fonts.css"/>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/library.css"/>
+  <link rel="stylesheet" href="css/slider-equipment.css">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+</head>
+<body>
+
+
+<script>
+  function expandOrCollapse(pageId,number){
+    const ic = document.getElementById(`${pageId}-expcard-ic-${number}`) // например 'e-expcard-ic-1' (Employment-ExpandableCard-ICon-<number on page>)
+    const list = document.getElementById(`${pageId}-expcard-list-${number}`) // например 'e-expcard-list-1'
+    if (!list.classList.contains('contents')){
+      ic.src = 'img/icons/minus-light.svg'
+      list.classList.add('contents')
+    } else {
+      ic.src = 'img/icons/plus-light.svg'
+      list.classList.remove('contents')
+    }
+  }
+</script>
+
+
+<div class="wrapper">
+  <div class="content">
+    <div class="libraryPage">
+      
+      <div style="height: 32px"></div>
+  
+      <div class="pageElement">
+        <h2>Библиотека</h2>
+      </div>
+  
+      <div style="height: 32px"></div>
+  
+      <div class="pageElement">
+        <h4>Поиск книг в каталоге библиотеки колледжа</h4>
+      </div>
+  
+      <div style="height: 32px"></div>
+      
+      <div class="pageElement">
+        <!-- todo form --> todo form
+      </div>
+  
+      <div style="height: 32px"></div>
+      
+      <div class="pageElement">
+        <div class="text2">
+          В читальном зале библиотеки вы всегда можете в спокойной обстановке насладиться чтением
+          интересных книг и журналов. Читальный зал оборудован компьютерами с выходом в Интернет,
+          которые доступны для пользования студентов и преподавателей. В читальном зале организован
+          доступ к информационным системам:- АИС "Руслан" - электронный каталог- "Консультант Плюс" - правовая
+          поисковая система<br>
+          <br>
+          Перечень электронных ресурсов, к которым обеспечивается доступ обучающихся:<br>
+          <br>
+          Министерство образования и науки Российской Федерации
+          (<a class="aText" target="_blank" href="http://минобрнауки.рф/">http://минобрнауки.рф/</a>).
+          Федеральный портал "Российское образование"
+          (<a class="aText" target="_blank" href="http://www.edu.ru/">http://www.edu.ru/</a>).
+          Информационная система "Единое окно доступа к образовательным ресурсам"
+          (<a class="aText" target="_blank" href="window.edu.ru">http://window.edu.ru/</a>).
+          Единая коллекция цифровых образовательных ресурсов
+          (<a class="aText" target="_blank" href="http://school-collection.edu.ru/">
+            http://school-collection.edu.ru/
+          </a>).
+          Федеральный центр информационно-образовательных ресурсов
+          (<a class="aText" target="_blank" href="fcior.edu.ru">http://fcior.edu.ru/</a>).;
+          Электронные библиотечные системы и ресурсы
+          (<a class="aText" target="_blank"
+              href="http://www.tih.kubsu.ru/informatsionnie-resursi/elektronnie-resursi-nb.html">
+             http://www.tih.kubsu.ru/informatsionnie-resursi/elektronnie-resursi-nb.html
+          </a>).<br>
+          <br>
+          Библиотека колледжа обладает доступом к электронно-библиотечным системам (ЭБС) Znanium.com и "Лань".
+          Электронно-библиотечная система (ЭБС) Znanium.com — это коллекция электронных версий изданий
+          (книг, журналов, статей и пр.), сгруппированных по тематическим и целевым признакам.
+          В ЭБС реализована система поиска и отбора документов с удобной навигацией,
+          созданием закладок, формированием виртуальных «книжных полок», сервисом постраничного копирования,
+          сбором и отображением стастистики использования ЭБС, а также другими сервисами,
+          способствующими успешной научной и учебной деятельности.<br>
+        </div>
+      </div>
+  
+      <div style="height: 32px"></div>
+      
+      <div class="pageElement">
+        <div class="center">
+          <div class="photos">
+            <img src="img/library-page/library-1.png" alt="Библиотека">
+            <img src="img/library-page/library-2.png" alt="Библиотека">
+            <img src="img/library-page/library-3.png" alt="Библиотека">
+            <img src="img/library-page/library-4.png" alt="Библиотека">
+          </div>
+        </div>
+      </div>
+  
+      <div style="height: 32px"></div>
+      
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

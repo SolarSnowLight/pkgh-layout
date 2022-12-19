@@ -1,0 +1,236 @@
+.libraryPage {
+  display: contents;
+}
+.libraryPage .reset, .libraryPage .allDefault, .libraryPage .aTextU, .libraryPage .aText, .libraryPage .aElement, .libraryPage * {
+  box-sizing: border-box;
+  margin: 0;
+}
+.libraryPage .allDefault, .libraryPage .aTextU, .libraryPage .aText, .libraryPage .aElement {
+  all: unset;
+}
+.libraryPage .pageElement, .libraryPage .hScroll {
+  width: clamp(400px, 100%, 1920px);
+  padding: 0 144px 0 144px;
+}
+@media (max-width: 900px) {
+  .libraryPage .pageElement, .libraryPage .hScroll {
+    padding: 0 16px 0 16px;
+  }
+}
+.libraryPage .rowWrap, .libraryPage .photos {
+  display: flex;
+  flex-flow: row wrap;
+}
+.libraryPage .row, .libraryPage .downloadWidgetLight, .libraryPage .downloadWidget, .libraryPage .expandableListElement .contentContainer .titleContainer {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.libraryPage .col, .libraryPage .downloadWidgetList, .libraryPage .expandableListElement .contentContainer .childrenContainer, .libraryPage .expandableListElement .contentContainer, .libraryPage .adCard {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+}
+.libraryPage .center, .libraryPage .downloadWidgetLight .iconBox, .libraryPage .expandableListElement, .libraryPage .hScroll {
+  display: grid;
+  place-items: center;
+}
+.libraryPage .none {
+  display: none;
+}
+.libraryPage .contents {
+  display: contents;
+}
+.libraryPage h2 {
+  font: 400 40px Forum;
+  color: #21385F;
+  line-height: 44px;
+}
+.libraryPage h3 {
+  font: 400 32px Forum;
+  color: #64748F;
+  line-height: 35px;
+}
+.libraryPage h4 {
+  font: 400 24px Forum;
+  color: #64748F;
+  line-height: 26px;
+}
+.libraryPage .text, .libraryPage .text2 {
+  font: 300 16px "Museo Sans";
+  color: #3B3B3B;
+}
+.libraryPage .text b, .libraryPage .text2 b {
+  font-weight: 600;
+}
+.libraryPage .aElement {
+  display: contents;
+}
+.libraryPage .linkText:hover, .libraryPage .downloadWidgetLight span:hover, .libraryPage .downloadWidget span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.libraryPage .aText:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.libraryPage .aTextU {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.libraryPage ul {
+  padding-left: 22px;
+}
+.libraryPage .ul44 {
+  padding-left: 44px;
+}
+.libraryPage ol {
+  padding-left: 20px;
+}
+.libraryPage .adCard {
+  background: #697FA9;
+  backdrop-filter: blur(32px);
+  border-radius: 2px;
+  padding: 31px;
+  gap: 32px;
+}
+.libraryPage .adCard h3 {
+  color: #E9ECF2;
+  align-self: center;
+  text-align: center;
+}
+.libraryPage .adCard .text, .libraryPage .adCard .text2 {
+  color: #BEC8DA;
+}
+.libraryPage .hScroll {
+  width: 100%;
+  height: fit-content;
+  overflow: auto;
+}
+.libraryPage .gridTable {
+  display: grid;
+}
+.libraryPage .gridTable .ths {
+  display: contents;
+}
+.libraryPage .gridTable .th {
+  padding: 16px 22px;
+  background: #294985;
+  font: 400 24px Forum;
+  color: #E9ECF2;
+  line-height: 26px;
+}
+.libraryPage .gridTable .tb {
+  display: contents;
+}
+.libraryPage .gridTable .tb .tr * {
+  background: #E9ECF2;
+}
+.libraryPage .gridTable .tbStriped {
+  display: contents;
+}
+.libraryPage .gridTable .tbStriped > .tr:nth-of-type(odd) > * {
+  background: #E9ECF2;
+}
+.libraryPage .gridTable .tbStriped > .tr:nth-of-type(even) > * {
+  background: #BEC8DA;
+}
+.libraryPage .gridTable .tr {
+  /*display: grid;
+  grid-template: auto / subgrid;
+  grid-column: 1 / grid-end;*/
+  display: contents;
+}
+.libraryPage .gridTable .td {
+  padding: 16px 22px;
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+.libraryPage .expandableListElement {
+  width: 100%;
+  background: #21385F;
+}
+.libraryPage .expandableListElement .contentContainer {
+  align-items: center;
+}
+.libraryPage .expandableListElement .contentContainer .titleContainer {
+  align-items: center;
+  gap: 16px;
+  padding: 24px 16px 24px 16px;
+  cursor: pointer;
+}
+.libraryPage .expandableListElement .contentContainer .titleContainer .plus {
+  width: 24px;
+  height: 24px;
+}
+.libraryPage .expandableListElement .contentContainer .titleContainer .title {
+  font: 400 24px Forum;
+  color: #E8EAEE;
+  line-height: 26px;
+}
+.libraryPage .expandableListElement .contentContainer .childrenContainer {
+  gap: 24px;
+  padding: 0px 16px 32px 16px;
+}
+.libraryPage .expandableListElement .contentContainer .childrenContainer .text, .libraryPage .expandableListElement .contentContainer .childrenContainer .text2 {
+  color: #BBC2CE;
+}
+.libraryPage .downloadWidgetList {
+  gap: 32px;
+}
+.libraryPage .downloadWidget {
+  justify-content: start;
+  gap: 16px;
+}
+.libraryPage .downloadWidget img {
+  height: 24px;
+  width: 24px;
+  color: #21385f;
+}
+.libraryPage .downloadWidget span {
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+.libraryPage .downloadWidgetLight {
+  justify-content: start;
+  gap: 16px;
+}
+.libraryPage .downloadWidgetLight .iconBox {
+  width: 24px;
+  height: 24px;
+}
+.libraryPage .downloadWidgetLight .iconBox img {
+  height: auto;
+  width: 14px;
+  color: #E8EAEE;
+}
+.libraryPage .downloadWidgetLight span {
+  font: 300 16px "Museo Sans";
+  color: #BBC2CE;
+  line-height: 144%;
+}
+.libraryPage .text2 {
+  line-height: 144%;
+  color: #000000;
+}
+.libraryPage .photos {
+  gap: 8px;
+  width: 100%;
+  max-width: calc((539px + 8px) * 2 - 8px);
+  justify-content: center;
+}
+.libraryPage .photos img {
+  width: 539px;
+  aspect-ratio: 1.6896551724;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 2px;
+}
+@media (max-width: 624px) {
+  .libraryPage .photos img {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=library.css.map */

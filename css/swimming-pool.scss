@@ -263,13 +263,18 @@
     }
 
     // Элементы страницы
-    .bottomPicture {
-        width: 100%; max-width: 645px;
-        aspect-ratio: 1;
-        object-position: center;
-        object-fit: contain;
+    .expandableListElementAligned {
+        @extend .expandableListElement;
+        
+        .contentContainer {
+            width: 100%;
+            
+            .titleContainer {
+                width: 100%;
+                max-width: 680px;
+            }
+        }
     }
-    
     .activitiesFrame {
         padding-top: 40px;
         padding-bottom: 32px;
@@ -369,6 +374,14 @@
             object-fit: cover;
         }
     }
+    .bottomPicture {
+        width: 100%; max-width: 645px;
+        aspect-ratio: 1;
+        object-position: center;
+        object-fit: contain;
+    }
+    
 }
+
 
 

@@ -8,12 +8,12 @@
 .swimmingPoolPage .allDefault, .swimmingPoolPage .aTextU, .swimmingPoolPage .aText, .swimmingPoolPage .aElement {
   all: unset;
 }
-.swimmingPoolPage .pageElement, .swimmingPoolPage .expandableListElement, .swimmingPoolPage .hScroll {
+.swimmingPoolPage .pageElement, .swimmingPoolPage .expandableListElement, .swimmingPoolPage .expandableListElementAligned, .swimmingPoolPage .hScroll {
   width: clamp(400px, 100%, 1920px);
   padding: 0 144px 0 144px;
 }
 @media (max-width: 900px) {
-  .swimmingPoolPage .pageElement, .swimmingPoolPage .expandableListElement, .swimmingPoolPage .hScroll {
+  .swimmingPoolPage .pageElement, .swimmingPoolPage .expandableListElement, .swimmingPoolPage .expandableListElementAligned, .swimmingPoolPage .hScroll {
     padding: 0 16px 0 16px;
   }
 }
@@ -21,16 +21,16 @@
   display: flex;
   flex-flow: row wrap;
 }
-.swimmingPoolPage .row, .swimmingPoolPage .downloadWidgetLight, .swimmingPoolPage .downloadWidget, .swimmingPoolPage .expandableListElement .contentContainer .titleContainer {
+.swimmingPoolPage .row, .swimmingPoolPage .downloadWidgetLight, .swimmingPoolPage .downloadWidget, .swimmingPoolPage .expandableListElement .contentContainer .titleContainer, .swimmingPoolPage .expandableListElementAligned .contentContainer .titleContainer {
   display: flex;
   flex-flow: row nowrap;
 }
-.swimmingPoolPage .col, .swimmingPoolPage .activityCard .priceFrame, .swimmingPoolPage .activityCard .cardTitleFrame .cardTitleContainer, .swimmingPoolPage .downloadWidgetList, .swimmingPoolPage .expandableListElement .contentContainer .childrenContainer, .swimmingPoolPage .expandableListElement .contentContainer, .swimmingPoolPage .adCard {
+.swimmingPoolPage .col, .swimmingPoolPage .activityCard .priceFrame, .swimmingPoolPage .activityCard .cardTitleFrame .cardTitleContainer, .swimmingPoolPage .downloadWidgetList, .swimmingPoolPage .expandableListElement .contentContainer .childrenContainer, .swimmingPoolPage .expandableListElementAligned .contentContainer .childrenContainer, .swimmingPoolPage .expandableListElement .contentContainer, .swimmingPoolPage .expandableListElementAligned .contentContainer, .swimmingPoolPage .adCard {
   display: flex;
   flex-flow: column nowrap;
   align-items: start;
 }
-.swimmingPoolPage .center, .swimmingPoolPage .downloadWidgetLight .iconBox, .swimmingPoolPage .expandableListElement, .swimmingPoolPage .hScroll {
+.swimmingPoolPage .center, .swimmingPoolPage .downloadWidgetLight .iconBox, .swimmingPoolPage .expandableListElement, .swimmingPoolPage .expandableListElementAligned, .swimmingPoolPage .hScroll {
   display: grid;
   place-items: center;
 }
@@ -146,32 +146,32 @@
   color: #282828;
   line-height: 144%;
 }
-.swimmingPoolPage .expandableListElement {
+.swimmingPoolPage .expandableListElement, .swimmingPoolPage .expandableListElementAligned {
   background: #21385F;
 }
-.swimmingPoolPage .expandableListElement .contentContainer {
+.swimmingPoolPage .expandableListElement .contentContainer, .swimmingPoolPage .expandableListElementAligned .contentContainer {
   align-items: center;
 }
-.swimmingPoolPage .expandableListElement .contentContainer .titleContainer {
+.swimmingPoolPage .expandableListElement .contentContainer .titleContainer, .swimmingPoolPage .expandableListElementAligned .contentContainer .titleContainer {
   align-items: center;
   gap: 16px;
   padding: 24px 16px 24px 16px;
   cursor: pointer;
 }
-.swimmingPoolPage .expandableListElement .contentContainer .titleContainer .plus {
+.swimmingPoolPage .expandableListElement .contentContainer .titleContainer .plus, .swimmingPoolPage .expandableListElementAligned .contentContainer .titleContainer .plus {
   width: 24px;
   height: 24px;
 }
-.swimmingPoolPage .expandableListElement .contentContainer .titleContainer .title {
+.swimmingPoolPage .expandableListElement .contentContainer .titleContainer .title, .swimmingPoolPage .expandableListElementAligned .contentContainer .titleContainer .title {
   font: 400 24px Forum;
   color: #E8EAEE;
   line-height: 26px;
 }
-.swimmingPoolPage .expandableListElement .contentContainer .childrenContainer {
+.swimmingPoolPage .expandableListElement .contentContainer .childrenContainer, .swimmingPoolPage .expandableListElementAligned .contentContainer .childrenContainer {
   gap: 24px;
   padding: 0px 16px 32px 16px;
 }
-.swimmingPoolPage .expandableListElement .contentContainer .childrenContainer .text {
+.swimmingPoolPage .expandableListElement .contentContainer .childrenContainer .text, .swimmingPoolPage .expandableListElementAligned .contentContainer .childrenContainer .text {
   color: #BBC2CE;
 }
 .swimmingPoolPage .downloadWidgetList {
@@ -209,12 +209,12 @@
   color: #BBC2CE;
   line-height: 144%;
 }
-.swimmingPoolPage .bottomPicture {
+.swimmingPoolPage .expandableListElementAligned .contentContainer {
   width: 100%;
-  max-width: 645px;
-  aspect-ratio: 1;
-  object-position: center;
-  object-fit: contain;
+}
+.swimmingPoolPage .expandableListElementAligned .contentContainer .titleContainer {
+  width: 100%;
+  max-width: 680px;
 }
 .swimmingPoolPage .activitiesFrame {
   padding-top: 40px;
@@ -299,6 +299,13 @@
   height: 50px;
   object-position: center;
   object-fit: cover;
+}
+.swimmingPoolPage .bottomPicture {
+  width: 100%;
+  max-width: 645px;
+  aspect-ratio: 1;
+  object-position: center;
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=swimming-pool.css.map */

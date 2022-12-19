@@ -215,10 +215,10 @@
 }
 .educationalProcessPage .expandableListElementAligned .contentContainer {
   width: 100%;
-  max-width: 540px;
 }
 .educationalProcessPage .expandableListElementAligned .contentContainer .titleContainer {
   width: 100%;
+  max-width: 540px;
 }
 
 /*# sourceMappingURL=educational-process.css.map */
