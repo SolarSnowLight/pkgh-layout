@@ -1,0 +1,224 @@
+.educationalProcessPage {
+  display: contents;
+}
+.educationalProcessPage .reset, .educationalProcessPage .allDefault, .educationalProcessPage .aTextU, .educationalProcessPage .aText, .educationalProcessPage .aElement, .educationalProcessPage * {
+  box-sizing: border-box;
+  margin: 0;
+}
+.educationalProcessPage .allDefault, .educationalProcessPage .aTextU, .educationalProcessPage .aText, .educationalProcessPage .aElement {
+  all: unset;
+}
+.educationalProcessPage .pageElement, .educationalProcessPage .hScroll {
+  width: clamp(400px, 100%, 1920px);
+  padding: 0 144px 0 144px;
+}
+@media (max-width: 900px) {
+  .educationalProcessPage .pageElement, .educationalProcessPage .hScroll {
+    padding: 0 16px 0 16px;
+  }
+}
+.educationalProcessPage .rowWrap {
+  display: flex;
+  flex-flow: row wrap;
+}
+.educationalProcessPage .row, .educationalProcessPage .downloadWidgetLight, .educationalProcessPage .downloadWidget, .educationalProcessPage .expandableListElement .contentContainer .titleContainer, .educationalProcessPage .expandableListElementAligned .contentContainer .titleContainer {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.educationalProcessPage .col, .educationalProcessPage .downloadWidgetList, .educationalProcessPage .expandableListElement .contentContainer .childrenContainer, .educationalProcessPage .expandableListElementAligned .contentContainer .childrenContainer, .educationalProcessPage .expandableListElement .contentContainer, .educationalProcessPage .expandableListElementAligned .contentContainer, .educationalProcessPage .adCard, .educationalProcessPage .recruitmentForSpecialityCard {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+}
+.educationalProcessPage .center, .educationalProcessPage .downloadWidgetLight .iconBox, .educationalProcessPage .expandableListElement, .educationalProcessPage .expandableListElementAligned, .educationalProcessPage .hScroll {
+  display: grid;
+  place-items: center;
+}
+.educationalProcessPage .none {
+  display: none;
+}
+.educationalProcessPage .contents {
+  display: contents;
+}
+.educationalProcessPage h2 {
+  font: 400 40px Forum;
+  color: #21385F;
+  line-height: 44px;
+}
+.educationalProcessPage h3 {
+  font: 400 32px Forum;
+  color: #64748F;
+  line-height: 35px;
+}
+.educationalProcessPage h4 {
+  font: 400 24px Forum;
+  color: #64748F;
+  line-height: 26px;
+}
+.educationalProcessPage .text {
+  font: 300 16px "Museo Sans";
+  color: #3B3B3B;
+}
+.educationalProcessPage .text b {
+  font-weight: 600;
+}
+.educationalProcessPage .aElement {
+  display: contents;
+}
+.educationalProcessPage .linkText:hover, .educationalProcessPage .downloadWidgetLight span:hover, .educationalProcessPage .downloadWidget span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.educationalProcessPage .aText:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.educationalProcessPage .aTextU {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.educationalProcessPage ul {
+  padding-left: 22px;
+}
+.educationalProcessPage .ul44 {
+  padding-left: 44px;
+}
+.educationalProcessPage ol {
+  padding-left: 20px;
+}
+.educationalProcessPage .adCard, .educationalProcessPage .recruitmentForSpecialityCard {
+  background: #697FA9;
+  backdrop-filter: blur(32px);
+  border-radius: 2px;
+  padding: 31px;
+  gap: 32px;
+}
+.educationalProcessPage .adCard h3, .educationalProcessPage .recruitmentForSpecialityCard h3 {
+  color: #E9ECF2;
+  align-self: center;
+  text-align: center;
+}
+.educationalProcessPage .adCard .text, .educationalProcessPage .recruitmentForSpecialityCard .text {
+  color: #BEC8DA;
+}
+.educationalProcessPage .hScroll {
+  width: 100%;
+  height: fit-content;
+  overflow: auto;
+}
+.educationalProcessPage .gridTable {
+  display: grid;
+}
+.educationalProcessPage .gridTable .ths {
+  display: contents;
+}
+.educationalProcessPage .gridTable .th {
+  padding: 16px 22px;
+  background: #294985;
+  font: 400 24px Forum;
+  color: #E9ECF2;
+  line-height: 26px;
+}
+.educationalProcessPage .gridTable .tb {
+  display: contents;
+}
+.educationalProcessPage .gridTable .tb .tr * {
+  background: #E9ECF2;
+}
+.educationalProcessPage .gridTable .tbStriped {
+  display: contents;
+}
+.educationalProcessPage .gridTable .tbStriped > .tr:nth-of-type(odd) > * {
+  background: #E9ECF2;
+}
+.educationalProcessPage .gridTable .tbStriped > .tr:nth-of-type(even) > * {
+  background: #BEC8DA;
+}
+.educationalProcessPage .gridTable .tr {
+  /*display: grid;
+  grid-template: auto / subgrid;
+  grid-column: 1 / grid-end;*/
+  display: contents;
+}
+.educationalProcessPage .gridTable .td {
+  padding: 16px 22px;
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+.educationalProcessPage .expandableListElement, .educationalProcessPage .expandableListElementAligned {
+  width: 100%;
+  background: #21385F;
+}
+.educationalProcessPage .expandableListElement .contentContainer, .educationalProcessPage .expandableListElementAligned .contentContainer {
+  align-items: center;
+}
+.educationalProcessPage .expandableListElement .contentContainer .titleContainer, .educationalProcessPage .expandableListElementAligned .contentContainer .titleContainer {
+  align-items: center;
+  gap: 16px;
+  padding: 24px 16px 24px 16px;
+  cursor: pointer;
+}
+.educationalProcessPage .expandableListElement .contentContainer .titleContainer .plus, .educationalProcessPage .expandableListElementAligned .contentContainer .titleContainer .plus {
+  width: 24px;
+  height: 24px;
+}
+.educationalProcessPage .expandableListElement .contentContainer .titleContainer .title, .educationalProcessPage .expandableListElementAligned .contentContainer .titleContainer .title {
+  font: 400 24px Forum;
+  color: #E8EAEE;
+  line-height: 26px;
+}
+.educationalProcessPage .expandableListElement .contentContainer .childrenContainer, .educationalProcessPage .expandableListElementAligned .contentContainer .childrenContainer {
+  gap: 24px;
+  padding: 0px 16px 32px 16px;
+}
+.educationalProcessPage .expandableListElement .contentContainer .childrenContainer .text, .educationalProcessPage .expandableListElementAligned .contentContainer .childrenContainer .text {
+  color: #BBC2CE;
+}
+.educationalProcessPage .downloadWidgetList {
+  gap: 32px;
+}
+.educationalProcessPage .downloadWidget {
+  justify-content: start;
+  gap: 16px;
+}
+.educationalProcessPage .downloadWidget img {
+  height: 24px;
+  width: 24px;
+  color: #21385f;
+}
+.educationalProcessPage .downloadWidget span {
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+.educationalProcessPage .downloadWidgetLight {
+  justify-content: start;
+  gap: 16px;
+}
+.educationalProcessPage .downloadWidgetLight .iconBox {
+  width: 24px;
+  height: 24px;
+}
+.educationalProcessPage .downloadWidgetLight .iconBox img {
+  height: auto;
+  width: 14px;
+  color: #E8EAEE;
+}
+.educationalProcessPage .downloadWidgetLight span {
+  font: 300 16px "Museo Sans";
+  color: #BBC2CE;
+  line-height: 144%;
+}
+.educationalProcessPage .recruitmentForSpecialityCard {
+  max-width: 642px;
+}
+.educationalProcessPage .expandableListElementAligned .contentContainer {
+  width: 100%;
+  max-width: 540px;
+}
+.educationalProcessPage .expandableListElementAligned .contentContainer .titleContainer {
+  width: 100%;
+}
+
+/*# sourceMappingURL=educational-process.css.map */

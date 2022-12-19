@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Учебный процесс</title>
+  <link rel="stylesheet" href="css/fonts.css"/>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/educational-process.css"/>
+  <link rel="stylesheet" href="css/slider-equipment.css">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+</head>
+<body>
+
+
+<script>
+  function expandOrCollapse(pageId,number){
+    const ic = document.getElementById(`${pageId}-expcard-ic-${number}`) // например 'e-expcard-ic-1' (Employment-ExpandableCard-ICon-<number on page>)
+    const list = document.getElementById(`${pageId}-expcard-list-${number}`) // например 'e-expcard-list-1'
+    if (!list.classList.contains('contents')){
+      ic.src = 'img/icons/minus-light.svg'
+      list.classList.add('contents')
+    } else {
+      ic.src = 'img/icons/plus-light.svg'
+      list.classList.remove('contents')
+    }
+  }
+</script>
+
+
+<div class="wrapper">
+  <div class="content">
+    <div class="educationalProcessPage">
+      
+      <div style="height: 32px"></div>
+  
+      <div class="pageElement">
+        <h2>Учебный процесс</h2>
+      </div>
+  
+      <div style="height: 32px"></div>
+  
+      <div class="pageElement">
+        <div class="center">
+          <div class="recruitmentForSpecialityCard">
+            <h3>Продолжается набор на специальности заочной формы обучения:</h3>
+            <div class="text">
+              - Теплоснабжение и теплотехническое оборудование–на базе 11 классов<br>
+              * группа открывается при наличии в ней не менее 15 человек.
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div style="height: 32px"></div>
+  
+      <div class="expandableListElementAligned">
+        <div class="contentContainer">
+          <div class="titleContainer"onclick="expandOrCollapse('ep','1')">
+            <img id="ep-expcard-ic-1" class="plus" src="img/icons/plus-light.svg">
+            <span class="title">
+              ДЭ Бухгалтерский учет
+            </span>
+          </div>
+          <div class="none" id="ep-expcard-list-1">
+            <!--<div class="childrenContainer">
+              place for content in expandable card
+            </div>-->
+          </div>
+        </div>
+      </div>
+  
+      <div style="height: 32px"></div>
+  
+      <div class="expandableListElementAligned">
+        <div class="contentContainer">
+          <div class="titleContainer"onclick="expandOrCollapse('ep','2')">
+            <img id="ep-expcard-ic-2" class="plus" src="img/icons/plus-light.svg">
+            <span class="title">
+              ДЭ Метрология и КИП
+            </span>
+          </div>
+          <div class="none" id="ep-expcard-list-2">
+            <!--<div class="childrenContainer">
+              place for content in expandable card
+            </div>-->
+          </div>
+        </div>
+      </div>
+  
+      <div style="height: 32px"></div>
+  
+      <div class="expandableListElementAligned">
+        <div class="contentContainer">
+          <div class="titleContainer"onclick="expandOrCollapse('ep','3')">
+            <img id="ep-expcard-ic-3" class="plus" src="img/icons/plus-light.svg">
+            <span class="title">
+              ДЭ упр. жизненным циклом, упр. программой
+            </span>
+          </div>
+          <div class="none" id="ep-expcard-list-3">
+            <!--<div class="childrenContainer">
+              place for content in expandable card
+            </div>-->
+          </div>
+        </div>
+      </div>
+  
+      <div style="height: 32px"></div>
+      
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
