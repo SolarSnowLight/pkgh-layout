@@ -34,6 +34,7 @@
 
 .information-for-parents__radio{
 	color: #E9ECF2;
+
 }
 
 .information-for-parents__col {
@@ -214,7 +215,7 @@ background: #21385F;
 .accordion-box__text{
 	width: 1086px;
 	text-align: left;
-
+	color: #E8EAEE;	
 }
 
 @media (max-width:768px) {
