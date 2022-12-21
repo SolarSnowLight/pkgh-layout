@@ -1,19 +1,24 @@
 
-// Классы страницы помещаются под общий класс ....page,
+body {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+// Классы страницы помещаются под общий класс <pageName>page,
 // чтобы применяться в пределах страницы
 .libraryPage {
     display: contents;
     // Сброс параметров элементов
     * { @extend .reset }
-
+    
     // Общие классы 1
-    .reset {
-        box-sizing: border-box;
-        margin: 0;
-    }
     .allDefault {
         all: unset;
         @extend .reset;
+    }
+    .reset {
+        box-sizing: border-box;
+        margin: 0;
     }
 
     // Общие классы 2
@@ -23,6 +28,17 @@
         @media (max-width: 900px) {
             padding: 0 16px 0 16px;
         }
+    }
+    .pageElement2 {
+        width: clamp(400px, 100%, 1920px);
+        display: grid;
+        padding: 0 16px 0 16px;
+        grid-template-columns: min(100%,1086px);
+        place-content: center;
+    }
+    .abs {
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
     }
     .rowWrap {
         display: flex;
@@ -87,6 +103,8 @@
     // <a class="aText">someText</a>
     .aText {
         @extend .allDefault;
+        // убирает пробел сразу перед началом и после конца у тега <a>
+        display: inline-flex;
         &:hover {
             cursor: pointer;
             text-decoration: underline;
@@ -94,6 +112,8 @@
     }
     .aTextU {
         @extend .allDefault;
+        // убирает пробел сразу перед началом и после конца у тега <a>
+        display: inline-flex;
         cursor: pointer;
         text-decoration: underline;
     }
@@ -267,6 +287,201 @@
         @extend .text;
         line-height: 144%;
         color: #000000;
+    }
+    .bookSearchForm {
+        @extend .adCard;
+        align-items: start;
+        
+        h3 {
+            color: #E9ECF2;
+            align-self: unset;
+            text-align: unset;
+        }
+        .textInputFrame {
+            width: 100%; height: 100%;
+            display: grid;
+            grid: 'c';
+            
+            input {
+                @extend .allDefault;
+                grid-area: c;
+                width: 100%; height: 100%;
+                background: none;
+                padding: 8px;
+                @extend .text;
+                color: #E9E9E9;
+                
+                &::placeholder {
+                    color: #BEC8DA;
+                }
+            }
+            .border {
+                grid-area: c;
+                width: 100%; height: 100%;
+                pointer-events: none;
+                border-bottom: 1px solid #E9E9E9;
+            }
+            :where(input:active, input:focus)~.border {
+                border-width: 2px;
+            }
+        }
+        .selectFrame {
+            width: 100%; height: 100%;
+            display: grid;
+            grid: 'c';
+            
+            select {
+                @extend .allDefault;
+                grid-area: c;
+                appearance: none;
+                background: none;
+                width: 100%; height: 100%;
+                padding: 8px 40px 8px 12px;
+                @extend .text;
+                color: #E9E9E9;
+                cursor: pointer;
+        
+                option {
+                    all: initial;
+                    @extend .text;
+                    color: #3B3B3B;
+                }
+            }
+            .arrow {
+                grid-area: c;
+                place-self: center end;
+                width: 20px;
+                height: 100%;
+                margin-right: 10px;
+                pointer-events: none;
+                background-image: url('../img/icons/arrow-1-down-2-light.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .border {
+                grid-area: c;
+                width: 100%; height: 100%;
+                pointer-events: none;
+                border: 1px solid #E9E9E9;
+                border-radius: 2px;
+            }
+            :where(select:active, select:focus)~.border {
+                border-width: 2px;
+            }
+        }
+        .button1 {
+            @extend .allDefault;
+            width: 100%; height: 100%;
+            background: none;
+            border: 1px solid #BEC8DA;
+            border-radius: 2px;
+            @extend .center;
+            grid-auto-flow: column;
+            place-content: center;
+            @extend .text;
+            cursor: pointer;
+            
+            &:active, &:focus {
+                border-width: 2px;
+            }
+        }
+        .button2 {
+            @extend .button1;
+            gap: 11.22px;
+            border: none;
+            background: #E9ECF2;
+            color: #294985;
+            &:active, &:focus {
+                border: 2px solid #294985;
+            }
+        }
+        .inlineIcon {
+            display: inline-flex;
+            height: 1.2em;
+        }
+        .checkbox {
+            @extend .row;
+            gap: 12px;
+            align-items: center;
+            cursor: pointer;
+            
+            input {
+                position: absolute;
+                opacity: 0;
+                pointer-events: none;
+                width: 0; height: 0;
+            }
+            input:checked ~ .checkmark {
+                width: 24px;
+                height: 24px;
+                background-color: #E9ECF2;
+                border-radius: 2px;
+                background-image: url('../img/icons/checkmark.svg');
+            }
+            :not(input:checked) ~ .checkmark {
+                width: 24px;
+                height: 24px;
+                border: 2px solid #E9ECF2;
+                border-radius: 2px;
+            }
+            input:active~.checkmark,input:focus-visible~.checkmark {
+                box-shadow: 0 0 0 0.2rem #E9ECF277;
+            }
+            .title {
+                @extend .text;
+            }
+        }
+        .widgetRow {
+            @extend .rowWrap;
+            gap: 32px 113.5px;
+            justify-content: center;
+        }
+        .widgetRowSpaceBetween {
+            @extend .rowWrap;
+            width: 100%;
+            gap: 32px 113.5px;
+            justify-content: space-between;
+        }
+        .widgetWithTitle {
+            width: 265px;
+            @extend .col;
+            justify-content: end;
+            gap: 4px;
+    
+            @media (max-width: 624px) {
+                width: 100%;
+            }
+            
+            .title {
+                @extend .text;
+                color: #E9E9E9;
+                line-height: 144%;
+            }
+            .widgetBox {
+                width: 100%;
+                height: 39px;
+            }
+        }
+        .buttonBox {
+            width: 265px;
+            height: 55px;
+    
+            @media (max-width: 624px) {
+                width: 100%;
+            }
+        }
+        .expandableContent {
+            display: none;
+        }
+        .collapsableContent {
+            display: contents;
+        }
+        &[data-expanded=true] .expandableContent {
+            display: contents;
+        }
+        &[data-expanded=true] .collapsableContent {
+            display: none;
+        }
     }
     .photos {
         @extend .rowWrap;

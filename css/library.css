@@ -1,12 +1,17 @@
+body {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .libraryPage {
   display: contents;
 }
-.libraryPage .reset, .libraryPage .allDefault, .libraryPage .aTextU, .libraryPage .aText, .libraryPage .aElement, .libraryPage * {
+.libraryPage .allDefault, .libraryPage .bookSearchForm .button1, .libraryPage .bookSearchForm .button2, .libraryPage .bookSearchForm .selectFrame select, .libraryPage .bookSearchForm .textInputFrame input, .libraryPage .aTextU, .libraryPage .aText, .libraryPage .aElement {
+  all: unset;
+}
+.libraryPage .reset, .libraryPage *, .libraryPage .allDefault, .libraryPage .bookSearchForm .button1, .libraryPage .bookSearchForm .button2, .libraryPage .bookSearchForm .selectFrame select, .libraryPage .bookSearchForm .textInputFrame input, .libraryPage .aTextU, .libraryPage .aText, .libraryPage .aElement {
   box-sizing: border-box;
   margin: 0;
-}
-.libraryPage .allDefault, .libraryPage .aTextU, .libraryPage .aText, .libraryPage .aElement {
-  all: unset;
 }
 .libraryPage .pageElement, .libraryPage .hScroll {
   width: clamp(400px, 100%, 1920px);
@@ -17,20 +22,34 @@
     padding: 0 16px 0 16px;
   }
 }
-.libraryPage .rowWrap, .libraryPage .photos {
+.libraryPage .pageElement2 {
+  width: clamp(400px, 100%, 1920px);
+  display: grid;
+  padding: 0 16px 0 16px;
+  grid-template-columns: min(100%, 1086px);
+  place-content: center;
+}
+.libraryPage .abs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.libraryPage .rowWrap, .libraryPage .photos, .libraryPage .bookSearchForm .widgetRowSpaceBetween, .libraryPage .bookSearchForm .widgetRow {
   display: flex;
   flex-flow: row wrap;
 }
-.libraryPage .row, .libraryPage .downloadWidgetLight, .libraryPage .downloadWidget, .libraryPage .expandableListElement .contentContainer .titleContainer {
+.libraryPage .row, .libraryPage .bookSearchForm .checkbox, .libraryPage .downloadWidgetLight, .libraryPage .downloadWidget, .libraryPage .expandableListElement .contentContainer .titleContainer {
   display: flex;
   flex-flow: row nowrap;
 }
-.libraryPage .col, .libraryPage .downloadWidgetList, .libraryPage .expandableListElement .contentContainer .childrenContainer, .libraryPage .expandableListElement .contentContainer, .libraryPage .adCard {
+.libraryPage .col, .libraryPage .bookSearchForm .widgetWithTitle, .libraryPage .downloadWidgetList, .libraryPage .expandableListElement .contentContainer .childrenContainer, .libraryPage .expandableListElement .contentContainer, .libraryPage .adCard, .libraryPage .bookSearchForm {
   display: flex;
   flex-flow: column nowrap;
   align-items: start;
 }
-.libraryPage .center, .libraryPage .downloadWidgetLight .iconBox, .libraryPage .expandableListElement, .libraryPage .hScroll {
+.libraryPage .center, .libraryPage .bookSearchForm .button1, .libraryPage .bookSearchForm .button2, .libraryPage .downloadWidgetLight .iconBox, .libraryPage .expandableListElement, .libraryPage .hScroll {
   display: grid;
   place-items: center;
 }
@@ -55,11 +74,11 @@
   color: #64748F;
   line-height: 26px;
 }
-.libraryPage .text, .libraryPage .text2 {
+.libraryPage .text, .libraryPage .bookSearchForm .widgetWithTitle .title, .libraryPage .bookSearchForm .checkbox .title, .libraryPage .bookSearchForm .button1, .libraryPage .bookSearchForm .button2, .libraryPage .bookSearchForm .selectFrame select option, .libraryPage .bookSearchForm .selectFrame select, .libraryPage .bookSearchForm .textInputFrame input, .libraryPage .text2 {
   font: 300 16px "Museo Sans";
   color: #3B3B3B;
 }
-.libraryPage .text b, .libraryPage .text2 b {
+.libraryPage .text b, .libraryPage .bookSearchForm .widgetWithTitle .title b, .libraryPage .bookSearchForm .checkbox .title b, .libraryPage .bookSearchForm .button1 b, .libraryPage .bookSearchForm .button2 b, .libraryPage .bookSearchForm .selectFrame select b, .libraryPage .bookSearchForm .textInputFrame input b, .libraryPage .text2 b {
   font-weight: 600;
 }
 .libraryPage .aElement {
@@ -69,11 +88,15 @@
   text-decoration: underline;
   cursor: pointer;
 }
+.libraryPage .aText {
+  display: inline-flex;
+}
 .libraryPage .aText:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 .libraryPage .aTextU {
+  display: inline-flex;
   cursor: pointer;
   text-decoration: underline;
 }
@@ -86,19 +109,19 @@
 .libraryPage ol {
   padding-left: 20px;
 }
-.libraryPage .adCard {
+.libraryPage .adCard, .libraryPage .bookSearchForm {
   background: #697FA9;
   backdrop-filter: blur(32px);
   border-radius: 2px;
   padding: 31px;
   gap: 32px;
 }
-.libraryPage .adCard h3 {
+.libraryPage .adCard h3, .libraryPage .bookSearchForm h3 {
   color: #E9ECF2;
   align-self: center;
   text-align: center;
 }
-.libraryPage .adCard .text, .libraryPage .adCard .text2 {
+.libraryPage .adCard .text, .libraryPage .bookSearchForm .text, .libraryPage .bookSearchForm .widgetWithTitle .title, .libraryPage .bookSearchForm .checkbox .title, .libraryPage .bookSearchForm .button1, .libraryPage .bookSearchForm .button2, .libraryPage .bookSearchForm .selectFrame select option, .libraryPage .bookSearchForm .selectFrame select, .libraryPage .bookSearchForm .textInputFrame input, .libraryPage .adCard .text2, .libraryPage .bookSearchForm .text2 {
   color: #BEC8DA;
 }
 .libraryPage .hScroll {
@@ -172,7 +195,7 @@
   gap: 24px;
   padding: 0px 16px 32px 16px;
 }
-.libraryPage .expandableListElement .contentContainer .childrenContainer .text, .libraryPage .expandableListElement .contentContainer .childrenContainer .text2 {
+.libraryPage .expandableListElement .contentContainer .childrenContainer .text, .libraryPage .expandableListElement .contentContainer .childrenContainer .bookSearchForm .widgetWithTitle .title, .libraryPage .bookSearchForm .widgetWithTitle .expandableListElement .contentContainer .childrenContainer .title, .libraryPage .expandableListElement .contentContainer .childrenContainer .bookSearchForm .checkbox .title, .libraryPage .bookSearchForm .checkbox .expandableListElement .contentContainer .childrenContainer .title, .libraryPage .expandableListElement .contentContainer .childrenContainer .bookSearchForm .button1, .libraryPage .expandableListElement .contentContainer .childrenContainer .bookSearchForm .button2, .libraryPage .bookSearchForm .expandableListElement .contentContainer .childrenContainer .button1, .libraryPage .bookSearchForm .expandableListElement .contentContainer .childrenContainer .button2, .libraryPage .expandableListElement .contentContainer .childrenContainer .bookSearchForm .selectFrame select option, .libraryPage .bookSearchForm .selectFrame select .expandableListElement .contentContainer .childrenContainer option, .libraryPage .expandableListElement .contentContainer .childrenContainer .bookSearchForm .selectFrame select, .libraryPage .bookSearchForm .selectFrame .expandableListElement .contentContainer .childrenContainer select, .libraryPage .expandableListElement .contentContainer .childrenContainer .bookSearchForm .textInputFrame input, .libraryPage .bookSearchForm .textInputFrame .expandableListElement .contentContainer .childrenContainer input, .libraryPage .expandableListElement .contentContainer .childrenContainer .text2 {
   color: #BBC2CE;
 }
 .libraryPage .downloadWidgetList {
@@ -213,6 +236,185 @@
 .libraryPage .text2 {
   line-height: 144%;
   color: #000000;
+}
+.libraryPage .bookSearchForm {
+  align-items: start;
+}
+.libraryPage .bookSearchForm h3 {
+  color: #E9ECF2;
+  align-self: unset;
+  text-align: unset;
+}
+.libraryPage .bookSearchForm .textInputFrame {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid: "c";
+}
+.libraryPage .bookSearchForm .textInputFrame input {
+  grid-area: c;
+  width: 100%;
+  height: 100%;
+  background: none;
+  padding: 8px;
+  color: #E9E9E9;
+}
+.libraryPage .bookSearchForm .textInputFrame input::placeholder {
+  color: #BEC8DA;
+}
+.libraryPage .bookSearchForm .textInputFrame .border {
+  grid-area: c;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #E9E9E9;
+}
+.libraryPage .bookSearchForm .textInputFrame :where(input:active, input:focus) ~ .border {
+  border-width: 2px;
+}
+.libraryPage .bookSearchForm .selectFrame {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid: "c";
+}
+.libraryPage .bookSearchForm .selectFrame select {
+  grid-area: c;
+  appearance: none;
+  background: none;
+  width: 100%;
+  height: 100%;
+  padding: 8px 40px 8px 12px;
+  color: #E9E9E9;
+  cursor: pointer;
+}
+.libraryPage .bookSearchForm .selectFrame select option {
+  all: initial;
+  color: #3B3B3B;
+}
+.libraryPage .bookSearchForm .selectFrame .arrow {
+  grid-area: c;
+  place-self: center end;
+  width: 20px;
+  height: 100%;
+  margin-right: 10px;
+  pointer-events: none;
+  background-image: url("../img/icons/arrow-1-down-2-light.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.libraryPage .bookSearchForm .selectFrame .border {
+  grid-area: c;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border: 1px solid #E9E9E9;
+  border-radius: 2px;
+}
+.libraryPage .bookSearchForm .selectFrame :where(select:active, select:focus) ~ .border {
+  border-width: 2px;
+}
+.libraryPage .bookSearchForm .button1, .libraryPage .bookSearchForm .button2 {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: 1px solid #BEC8DA;
+  border-radius: 2px;
+  grid-auto-flow: column;
+  place-content: center;
+  cursor: pointer;
+}
+.libraryPage .bookSearchForm .button1:active, .libraryPage .bookSearchForm .button2:active, .libraryPage .bookSearchForm .button1:focus, .libraryPage .bookSearchForm .button2:focus {
+  border-width: 2px;
+}
+.libraryPage .bookSearchForm .button2 {
+  gap: 11.22px;
+  border: none;
+  background: #E9ECF2;
+  color: #294985;
+}
+.libraryPage .bookSearchForm .button2:active, .libraryPage .bookSearchForm .button2:focus {
+  border: 2px solid #294985;
+}
+.libraryPage .bookSearchForm .inlineIcon {
+  display: inline-flex;
+  height: 1.2em;
+}
+.libraryPage .bookSearchForm .checkbox {
+  gap: 12px;
+  align-items: center;
+  cursor: pointer;
+}
+.libraryPage .bookSearchForm .checkbox input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+}
+.libraryPage .bookSearchForm .checkbox input:checked ~ .checkmark {
+  width: 24px;
+  height: 24px;
+  background-color: #E9ECF2;
+  border-radius: 2px;
+  background-image: url("../img/icons/checkmark.svg");
+}
+.libraryPage .bookSearchForm .checkbox :not(input:checked) ~ .checkmark {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #E9ECF2;
+  border-radius: 2px;
+}
+.libraryPage .bookSearchForm .checkbox input:active ~ .checkmark, .libraryPage .bookSearchForm .checkbox input:focus-visible ~ .checkmark {
+  box-shadow: 0 0 0 0.2rem #E9ECF277;
+}
+.libraryPage .bookSearchForm .widgetRow {
+  gap: 32px 113.5px;
+  justify-content: center;
+}
+.libraryPage .bookSearchForm .widgetRowSpaceBetween {
+  width: 100%;
+  gap: 32px 113.5px;
+  justify-content: space-between;
+}
+.libraryPage .bookSearchForm .widgetWithTitle {
+  width: 265px;
+  justify-content: end;
+  gap: 4px;
+}
+@media (max-width: 624px) {
+  .libraryPage .bookSearchForm .widgetWithTitle {
+    width: 100%;
+  }
+}
+.libraryPage .bookSearchForm .widgetWithTitle .title {
+  color: #E9E9E9;
+  line-height: 144%;
+}
+.libraryPage .bookSearchForm .widgetWithTitle .widgetBox {
+  width: 100%;
+  height: 39px;
+}
+.libraryPage .bookSearchForm .buttonBox {
+  width: 265px;
+  height: 55px;
+}
+@media (max-width: 624px) {
+  .libraryPage .bookSearchForm .buttonBox {
+    width: 100%;
+  }
+}
+.libraryPage .bookSearchForm .expandableContent {
+  display: none;
+}
+.libraryPage .bookSearchForm .collapsableContent {
+  display: contents;
+}
+.libraryPage .bookSearchForm[data-expanded=true] .expandableContent {
+  display: contents;
+}
+.libraryPage .bookSearchForm[data-expanded=true] .collapsableContent {
+  display: none;
 }
 .libraryPage .photos {
   gap: 8px;

@@ -29,6 +29,17 @@
   }
 </script>
 
+<script>
+  function toggleFormExpand(){
+    const element = document.getElementById('bsf-form')
+    if (element.dataset.expanded!=='true'){
+      element.dataset.expanded = 'true'
+    } else {
+      element.dataset.expanded = 'false'
+    }
+  }
+</script>
+
 
 <div class="wrapper">
   <div class="content">
@@ -36,25 +47,148 @@
       
       <div style="height: 32px"></div>
   
-      <div class="pageElement">
+      <div class="pageElement2">
         <h2>Библиотека</h2>
       </div>
   
       <div style="height: 32px"></div>
   
-      <div class="pageElement">
+      <div class="pageElement2">
         <h4>Поиск книг в каталоге библиотеки колледжа</h4>
       </div>
   
       <div style="height: 32px"></div>
       
-      <div class="pageElement">
-        <!-- todo form --> todo form
+      <div class="pageElement2">
+        
+        <!-- bsf - book search form -->
+        <form>
+          <div class="bookSearchForm" id="bsf-form" data-expanded="false">
+            <h3>Поиск книг в каталоге библиотеке колледжа</h3>
+            <div class="widgetRow">
+              <div class="widgetWithTitle">
+                <label for="bsf-materials" class="title">Материалы</label>
+                <div class="widgetBox">
+                  <div class="selectFrame">
+                    <select id="bsf-materials">
+                      <option value="all" selected>Все</option>
+                      <option value="monographs">Монографии</option>
+                      <option value="serial">Сериальные</option>
+                      <option value="articles">Статьи, доклады</option>
+                      <option>Просто много букааааааааааааф</option>
+                    </select>
+                    <div class="arrow"></div>
+                    <div class="border"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="expandableContent">
+                <div class="widgetWithTitle">
+                  <label for="bsf-lang" class="title">Язык</label>
+                  <div class="widgetBox">
+                    <div class="selectFrame">
+                      <select id="bsf-lang">
+                        <option value="any" selected>Любой</option>
+                        <option value="az" selected>Азербайджанский</option>
+                        <option value="am" selected>Амхарский</option>
+                        <option value="en" selected>Английский</option>
+                        <option value="ru" selected>Русский</option>
+                      </select>
+                      <div class="arrow"></div>
+                      <div class="border"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="widgetWithTitle">
+                  <label for="bsf-record-form" class="title">Форма записи</label>
+                  <div class="selectFrame">
+                    <select id="bsf-record-form">
+                      <option value="rusmark" selected>RUSMARK</option>
+                    </select>
+                    <div class="arrow"></div>
+                    <div class="border"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="widgetWithTitle">
+                <div class="widgetBox">
+                  <div class="textInputFrame">
+                    <input type="text" placeholder="Автор"/>
+                    <div class="border"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="widgetWithTitle">
+                <div class="widgetBox">
+                  <div class="textInputFrame">
+                  <input class="textInput" type="text" placeholder="Заглавие"/>
+                    <div class="border"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="widgetWithTitle">
+                <div class="widgetBox">
+                  <div class="textInputFrame">
+                  <input class="textInput" type="text" placeholder="Тематика"/>
+                    <div class="border"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="widgetWithTitle">
+                <div class="widgetBox">
+                  <div class="textInputFrame">
+                  <input class="textInput" type="text" placeholder="Год публикации"/>
+                    <div class="border"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="widgetRow">
+              <label class="checkbox">
+                <input type="checkbox"/>
+                <div class="checkmark"></div>
+                <div class="title">Показывать местонахождение</div>
+              </label>
+            </div>
+            <div class="expandableContent">
+              <div class="widgetRow">
+                <label class="checkbox">
+                  <input type="checkbox"/>
+                  <div class="checkmark"></div>
+                  <div class="title">Расширять запрос используя</div>
+                </label>
+                <div class="widgetWithTitle">
+                  <div class="selectFrame">
+                    <select id="bsf-extend-query">
+                      <option value="attent" selected>Тезарус Attent</option>
+                    </select>
+                    <div class="arrow"></div>
+                    <div class="border"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text">Количество извлекаемых записей: 20</div>
+            <div class="widgetRowSpaceBetween">
+              <div class="buttonBox">
+                <button class="button1" onclick="toggleFormExpand()" type="button">
+                  <div class="collapsableContent">Расширенный поиск</div>
+                  <div class="expandableContent">Простой поиск</div>
+                </button>
+              </div>
+              <div class="buttonBox">
+                <button class="button2" type="submit">
+                  <img class="inlineIcon" src="img/icons/search.svg" alt="Поиск"/>Поиск
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
       </div>
   
       <div style="height: 32px"></div>
       
-      <div class="pageElement">
+      <div class="pageElement2">
         <div class="text2">
           В читальном зале библиотеки вы всегда можете в спокойной обстановке насладиться чтением
           интересных книг и журналов. Читальный зал оборудован компьютерами с выходом в Интернет,
@@ -94,7 +228,7 @@
   
       <div style="height: 32px"></div>
       
-      <div class="pageElement">
+      <div class="pageElement2">
         <div class="center">
           <div class="photos">
             <img src="img/library-page/library-1.png" alt="Библиотека">
