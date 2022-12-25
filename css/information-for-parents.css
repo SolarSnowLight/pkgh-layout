@@ -57,7 +57,6 @@
 	width: 265px;
 	height: 55px;
 
-	/* Кобальтовый/10 */
 	background-color: #E9ECF2;
 	border-radius: 2px;
 
@@ -76,15 +75,14 @@
 
 	box-sizing: border-box;
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 8px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px;
+	gap: 8px;
 
-width: 265px;
-height: 32px;
+	width: 265px;
+	height: 32px;
 
 }
 
@@ -92,7 +90,7 @@ height: 32px;
 	background: #697FA9;
 	border: none;
 	outline: none;
-	color:  #E9ECF2;
+	color:  #FFF;
 }
 
 .information-for-parents__text{
@@ -189,9 +187,11 @@ details[open] summary:before {
 	align-items: center;
 	padding: 24px 0px;
 	gap: 16px;
-	width: 1920px;
+/*	width: 1920px;*/
 	background: #21385F;
 	margin-bottom: 20px;
+	margin-left: -120px;
+	margin-right: -120px;
 }
 
 .accordion-box__details{
@@ -205,7 +205,7 @@ details[open] summary:before {
 	padding: 32px 0px;
 	gap: 24px;
 
-	width: 1920px;
+/*	width: 1920px;*/
 /* height: 160px; */
 
 /* Сапфировый/100 */
@@ -213,9 +213,15 @@ background: #21385F;
 }
 
 .accordion-box__text{
+/*	width: 1086px;
+	text-align: left;
+	color: #E8EAEE;	*/
 	width: 1086px;
 	text-align: left;
-	color: #E8EAEE;	
+	color: #E8EAEE;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 @media (max-width:768px) {
