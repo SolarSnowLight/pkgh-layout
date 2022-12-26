@@ -1,0 +1,474 @@
+body {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.forStaffPage {
+  display: contents;
+}
+.forStaffPage .allDefault, .forStaffPage .suggestionsForImprovementForm .button1, .forStaffPage .suggestionsForImprovementForm .button3, .forStaffPage .suggestionsForImprovementForm .button2, .forStaffPage .suggestionsForImprovementForm .selectFrame select, .forStaffPage .suggestionsForImprovementForm .textarea, .forStaffPage .suggestionsForImprovementForm .textInputFrame input, .forStaffPage .aTextU, .forStaffPage .aText, .forStaffPage .aElement {
+  all: unset;
+}
+.forStaffPage .reset, .forStaffPage *, .forStaffPage .allDefault, .forStaffPage .suggestionsForImprovementForm .button1, .forStaffPage .suggestionsForImprovementForm .button3, .forStaffPage .suggestionsForImprovementForm .button2, .forStaffPage .suggestionsForImprovementForm .selectFrame select, .forStaffPage .suggestionsForImprovementForm .textarea, .forStaffPage .suggestionsForImprovementForm .textInputFrame input, .forStaffPage .aTextU, .forStaffPage .aText, .forStaffPage .aElement {
+  box-sizing: border-box;
+  margin: 0;
+}
+.forStaffPage .pageElement, .forStaffPage .hScroll {
+  width: clamp(400px, 100%, 1920px);
+  display: grid;
+  padding: 0 144px 0 144px;
+  grid-template-columns: min(100%, 1632px);
+  place-content: center;
+}
+@media (max-width: 900px) {
+  .forStaffPage .pageElement, .forStaffPage .hScroll {
+    padding: 0 16px 0 16px;
+  }
+}
+.forStaffPage .pageElement2 {
+  width: clamp(400px, 100%, 1920px);
+  display: grid;
+  padding: 0 16px 0 16px;
+  grid-template-columns: min(100%, 1086px);
+  place-content: center;
+}
+.forStaffPage .abs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.forStaffPage .rowWrap, .forStaffPage .suggestionsForImprovementForm .widgetRow, .forStaffPage .suggestionsForImprovementForm .widgetRowSpaceBetween, .forStaffPage .suggestionsForImprovementForm .widgetRowCenterContent, .forStaffPage .suggestionsForImprovementForm .widgetRowTextareas {
+  display: flex;
+  flex-flow: row wrap;
+}
+.forStaffPage .row, .forStaffPage .suggestionsForImprovementForm .checkbox, .forStaffPage .downloadWidgetLight, .forStaffPage .downloadWidget, .forStaffPage .expandableCard .contentFrame .titleContainer {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.forStaffPage .col, .forStaffPage .suggestionsForImprovementForm .textareaWithTitle, .forStaffPage .suggestionsForImprovementForm .widgetWithTitle, .forStaffPage .downloadWidgetList, .forStaffPage .expandableCard .contentFrame .expandedContent, .forStaffPage .expandableCard .contentFrame, .forStaffPage .adCard, .forStaffPage .suggestionsForImprovementForm {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+}
+.forStaffPage .center, .forStaffPage .suggestionsForImprovementForm .button1, .forStaffPage .suggestionsForImprovementForm .button3, .forStaffPage .suggestionsForImprovementForm .button2, .forStaffPage .downloadWidgetLight .iconBox, .forStaffPage .expandableCard, .forStaffPage .hScroll {
+  display: grid;
+  place-items: center;
+}
+.forStaffPage .none {
+  display: none;
+}
+.forStaffPage .contents {
+  display: contents;
+}
+.forStaffPage h2 {
+  font: 400 40px Forum;
+  color: #21385F;
+  line-height: 44px;
+}
+.forStaffPage h3 {
+  font: 400 32px Forum;
+  color: #64748F;
+  line-height: 35px;
+}
+.forStaffPage h4 {
+  font: 400 24px Forum;
+  color: #64748F;
+  line-height: 26px;
+}
+.forStaffPage .text, .forStaffPage .suggestionsForImprovementForm .textareaWithTitle .title, .forStaffPage .suggestionsForImprovementForm .widgetWithTitle .title, .forStaffPage .suggestionsForImprovementForm .checkbox .title, .forStaffPage .suggestionsForImprovementForm .button1, .forStaffPage .suggestionsForImprovementForm .button3, .forStaffPage .suggestionsForImprovementForm .button2, .forStaffPage .suggestionsForImprovementForm .selectFrame select option, .forStaffPage .suggestionsForImprovementForm .selectFrame select, .forStaffPage .suggestionsForImprovementForm .textarea, .forStaffPage .suggestionsForImprovementForm .textInputFrame input, .forStaffPage .text2 {
+  font: 300 16px "Museo Sans";
+  color: #3B3B3B;
+}
+.forStaffPage .text b, .forStaffPage .suggestionsForImprovementForm .textareaWithTitle .title b, .forStaffPage .suggestionsForImprovementForm .widgetWithTitle .title b, .forStaffPage .suggestionsForImprovementForm .checkbox .title b, .forStaffPage .suggestionsForImprovementForm .button1 b, .forStaffPage .suggestionsForImprovementForm .button3 b, .forStaffPage .suggestionsForImprovementForm .button2 b, .forStaffPage .suggestionsForImprovementForm .selectFrame select b, .forStaffPage .suggestionsForImprovementForm .textarea b, .forStaffPage .suggestionsForImprovementForm .textInputFrame input b, .forStaffPage .text2 b {
+  font-weight: 600;
+}
+.forStaffPage .aElement {
+  display: contents;
+}
+.forStaffPage .linkText:hover, .forStaffPage .downloadWidgetLight span:hover, .forStaffPage .downloadWidget span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.forStaffPage .aText {
+  display: inline-flex;
+}
+.forStaffPage .aText:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.forStaffPage .aTextU {
+  display: inline-flex;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.forStaffPage ul {
+  padding-left: 22px;
+}
+.forStaffPage .ul44 {
+  padding-left: 44px;
+}
+.forStaffPage ol {
+  padding-left: 20px;
+}
+.forStaffPage .adCard, .forStaffPage .suggestionsForImprovementForm {
+  background: #697FA9;
+  backdrop-filter: blur(32px);
+  border-radius: 2px;
+  padding: 31px;
+  gap: 32px;
+}
+.forStaffPage .adCard h3, .forStaffPage .suggestionsForImprovementForm h3 {
+  color: #E9ECF2;
+  align-self: center;
+  text-align: center;
+}
+.forStaffPage .adCard .text, .forStaffPage .suggestionsForImprovementForm .text, .forStaffPage .suggestionsForImprovementForm .textareaWithTitle .title, .forStaffPage .suggestionsForImprovementForm .widgetWithTitle .title, .forStaffPage .suggestionsForImprovementForm .checkbox .title, .forStaffPage .suggestionsForImprovementForm .button1, .forStaffPage .suggestionsForImprovementForm .button3, .forStaffPage .suggestionsForImprovementForm .button2, .forStaffPage .suggestionsForImprovementForm .selectFrame select option, .forStaffPage .suggestionsForImprovementForm .selectFrame select, .forStaffPage .suggestionsForImprovementForm .textarea, .forStaffPage .suggestionsForImprovementForm .textInputFrame input, .forStaffPage .adCard .text2, .forStaffPage .suggestionsForImprovementForm .text2 {
+  color: #BEC8DA;
+}
+.forStaffPage .hScroll {
+  width: 100%;
+  height: fit-content;
+  overflow: auto;
+}
+.forStaffPage .gridTable {
+  display: grid;
+}
+.forStaffPage .gridTable .ths {
+  display: contents;
+}
+.forStaffPage .gridTable .th {
+  padding: 16px 22px;
+  background: #294985;
+  font: 400 24px Forum;
+  color: #E9ECF2;
+  line-height: 26px;
+}
+.forStaffPage .gridTable .tb {
+  display: contents;
+}
+.forStaffPage .gridTable .tb .tr * {
+  background: #E9ECF2;
+}
+.forStaffPage .gridTable .tbStriped {
+  display: contents;
+}
+.forStaffPage .gridTable .tbStriped > .tr:nth-of-type(odd) > * {
+  background: #E9ECF2;
+}
+.forStaffPage .gridTable .tbStriped > .tr:nth-of-type(even) > * {
+  background: #BEC8DA;
+}
+.forStaffPage .gridTable .tr {
+  /*display: grid;
+  grid-template: auto / subgrid;
+  grid-column: 1 / grid-end;*/
+  display: contents;
+}
+.forStaffPage .gridTable .td {
+  padding: 16px 22px;
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+.forStaffPage .expandableCard {
+  width: 100%;
+  background: #21385F;
+}
+.forStaffPage .expandableCard .contentFrame {
+  align-items: center;
+}
+.forStaffPage .expandableCard .contentFrame .titleContainer {
+  align-items: center;
+  gap: 16px;
+  padding: 24px 16px 24px 16px;
+  cursor: pointer;
+}
+.forStaffPage .expandableCard .contentFrame .titleContainer .plus {
+  width: 24px;
+  height: 24px;
+}
+.forStaffPage .expandableCard .contentFrame .titleContainer .title {
+  font: 400 24px Forum;
+  color: #E8EAEE;
+  line-height: 26px;
+}
+.forStaffPage .expandableCard .contentFrame .expandedContent {
+  gap: 24px;
+  padding: 0px 16px 32px 16px;
+}
+.forStaffPage .expandableCard .contentFrame .expandedContent .text, .forStaffPage .expandableCard .contentFrame .expandedContent .suggestionsForImprovementForm .textareaWithTitle .title, .forStaffPage .suggestionsForImprovementForm .textareaWithTitle .expandableCard .contentFrame .expandedContent .title, .forStaffPage .expandableCard .contentFrame .expandedContent .suggestionsForImprovementForm .widgetWithTitle .title, .forStaffPage .suggestionsForImprovementForm .widgetWithTitle .expandableCard .contentFrame .expandedContent .title, .forStaffPage .expandableCard .contentFrame .expandedContent .suggestionsForImprovementForm .checkbox .title, .forStaffPage .suggestionsForImprovementForm .checkbox .expandableCard .contentFrame .expandedContent .title, .forStaffPage .expandableCard .contentFrame .expandedContent .suggestionsForImprovementForm .button1, .forStaffPage .expandableCard .contentFrame .expandedContent .suggestionsForImprovementForm .button3, .forStaffPage .expandableCard .contentFrame .expandedContent .suggestionsForImprovementForm .button2, .forStaffPage .suggestionsForImprovementForm .expandableCard .contentFrame .expandedContent .button1, .forStaffPage .suggestionsForImprovementForm .expandableCard .contentFrame .expandedContent .button3, .forStaffPage .suggestionsForImprovementForm .expandableCard .contentFrame .expandedContent .button2, .forStaffPage .expandableCard .contentFrame .expandedContent .suggestionsForImprovementForm .selectFrame select option, .forStaffPage .suggestionsForImprovementForm .selectFrame select .expandableCard .contentFrame .expandedContent option, .forStaffPage .expandableCard .contentFrame .expandedContent .suggestionsForImprovementForm .selectFrame select, .forStaffPage .suggestionsForImprovementForm .selectFrame .expandableCard .contentFrame .expandedContent select, .forStaffPage .expandableCard .contentFrame .expandedContent .suggestionsForImprovementForm .textarea, .forStaffPage .suggestionsForImprovementForm .expandableCard .contentFrame .expandedContent .textarea, .forStaffPage .expandableCard .contentFrame .expandedContent .suggestionsForImprovementForm .textInputFrame input, .forStaffPage .suggestionsForImprovementForm .textInputFrame .expandableCard .contentFrame .expandedContent input, .forStaffPage .expandableCard .contentFrame .expandedContent .text2 {
+  color: #BBC2CE;
+}
+.forStaffPage .downloadWidgetList {
+  gap: 32px;
+}
+.forStaffPage .downloadWidget {
+  justify-content: start;
+  gap: 16px;
+}
+.forStaffPage .downloadWidget img {
+  height: 24px;
+  width: 24px;
+  color: #21385f;
+}
+.forStaffPage .downloadWidget span {
+  font: 300 16px "Museo Sans";
+  color: #282828;
+  line-height: 144%;
+}
+.forStaffPage .downloadWidgetLight {
+  justify-content: start;
+  gap: 16px;
+}
+.forStaffPage .downloadWidgetLight .iconBox {
+  width: 24px;
+  height: 24px;
+}
+.forStaffPage .downloadWidgetLight .iconBox img {
+  height: auto;
+  width: 14px;
+  color: #E8EAEE;
+}
+.forStaffPage .downloadWidgetLight span {
+  font: 300 16px "Museo Sans";
+  color: #BBC2CE;
+  line-height: 144%;
+}
+.forStaffPage .text2 {
+  line-height: 144%;
+  color: #000000;
+}
+.forStaffPage .expandableCard .contentFrame .expandedContent {
+  width: 100%;
+  max-width: 1086px;
+  padding-bottom: 24px;
+}
+.forStaffPage .suggestionsForImprovementForm {
+  align-items: start;
+}
+.forStaffPage .suggestionsForImprovementForm h3 {
+  color: #E9ECF2;
+  align-self: unset;
+  text-align: unset;
+}
+.forStaffPage .suggestionsForImprovementForm .textInputFrame {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid: "c";
+}
+.forStaffPage .suggestionsForImprovementForm .textInputFrame input {
+  grid-area: c;
+  width: 100%;
+  height: 100%;
+  background: none;
+  padding: 8px;
+  color: #E9E9E9;
+}
+.forStaffPage .suggestionsForImprovementForm .textInputFrame input::placeholder {
+  color: #BEC8DA;
+  opacity: 1;
+}
+.forStaffPage .suggestionsForImprovementForm .textInputFrame .border {
+  grid-area: c;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #E9E9E9;
+}
+.forStaffPage .suggestionsForImprovementForm .textInputFrame :where(input:active, input:focus) ~ .border {
+  border-width: 2px;
+}
+.forStaffPage .suggestionsForImprovementForm .textarea {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  border: 1px solid #E9ECF2;
+  border-radius: 2px;
+  color: #E9E9E9;
+}
+.forStaffPage .suggestionsForImprovementForm .selectFrame {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid: "c";
+}
+.forStaffPage .suggestionsForImprovementForm .selectFrame select {
+  grid-area: c;
+  appearance: none;
+  background: none;
+  width: 100%;
+  height: 100%;
+  padding: 8px 40px 8px 12px;
+  color: #E9E9E9;
+  cursor: pointer;
+}
+.forStaffPage .suggestionsForImprovementForm .selectFrame select option {
+  all: initial;
+  color: #3B3B3B;
+}
+.forStaffPage .suggestionsForImprovementForm .selectFrame .arrow {
+  grid-area: c;
+  place-self: center end;
+  width: 20px;
+  height: 100%;
+  margin-right: 10px;
+  pointer-events: none;
+  background-image: url("../img/icons/arrow-1-down-2-light.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.forStaffPage .suggestionsForImprovementForm .selectFrame .border {
+  grid-area: c;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border: 1px solid #E9E9E9;
+  border-radius: 2px;
+}
+.forStaffPage .suggestionsForImprovementForm .selectFrame :where(select:active, select:focus) ~ .border {
+  border-width: 2px;
+}
+.forStaffPage .suggestionsForImprovementForm .button1, .forStaffPage .suggestionsForImprovementForm .button3, .forStaffPage .suggestionsForImprovementForm .button2 {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: 1px solid #BEC8DA;
+  border-radius: 2px;
+  grid-auto-flow: column;
+  place-content: center;
+  cursor: pointer;
+}
+.forStaffPage .suggestionsForImprovementForm .button1:active, .forStaffPage .suggestionsForImprovementForm .button3:active, .forStaffPage .suggestionsForImprovementForm .button2:active, .forStaffPage .suggestionsForImprovementForm .button1:focus-visible, .forStaffPage .suggestionsForImprovementForm .button3:focus-visible, .forStaffPage .suggestionsForImprovementForm .button2:focus-visible {
+  border-width: 2px;
+}
+.forStaffPage .suggestionsForImprovementForm .button2 {
+  gap: 11.22px;
+  border: none;
+  background: #E9ECF2;
+  color: #294985;
+}
+.forStaffPage .suggestionsForImprovementForm .button2:active, .forStaffPage .suggestionsForImprovementForm .button2:focus {
+  border: 2px solid #294985;
+}
+.forStaffPage .suggestionsForImprovementForm .button3 {
+  gap: 11.22px;
+  border: none;
+  background: #294985;
+  color: #E9ECF2;
+}
+.forStaffPage .suggestionsForImprovementForm .button3:active, .forStaffPage .suggestionsForImprovementForm .button3:focus {
+  border: 2px solid #E9ECF2;
+}
+.forStaffPage .suggestionsForImprovementForm .inlineIcon {
+  display: inline-flex;
+  height: 1.2em;
+}
+.forStaffPage .suggestionsForImprovementForm .checkbox {
+  gap: 12px;
+  align-items: center;
+  cursor: pointer;
+}
+.forStaffPage .suggestionsForImprovementForm .checkbox input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+}
+.forStaffPage .suggestionsForImprovementForm .checkbox input:checked ~ .checkmark {
+  width: 24px;
+  height: 24px;
+  background-color: #E9ECF2;
+  border-radius: 2px;
+  background-image: url("../img/icons/checkmark.svg");
+}
+.forStaffPage .suggestionsForImprovementForm .checkbox :not(input:checked) ~ .checkmark {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #E9ECF2;
+  border-radius: 2px;
+}
+.forStaffPage .suggestionsForImprovementForm .checkbox input:active ~ .checkmark, .forStaffPage .suggestionsForImprovementForm .checkbox input:focus-visible ~ .checkmark {
+  box-shadow: 0 0 0 0.2rem #E9ECF277;
+}
+.forStaffPage .suggestionsForImprovementForm .widgetRow, .forStaffPage .suggestionsForImprovementForm .widgetRowSpaceBetween, .forStaffPage .suggestionsForImprovementForm .widgetRowCenterContent, .forStaffPage .suggestionsForImprovementForm .widgetRowTextareas {
+  width: 100%;
+  gap: 32px 113.5px;
+  justify-content: start;
+}
+.forStaffPage .suggestionsForImprovementForm .widgetRowCenterContent, .forStaffPage .suggestionsForImprovementForm .widgetRowTextareas {
+  justify-content: center;
+}
+.forStaffPage .suggestionsForImprovementForm .widgetRowSpaceBetween {
+  justify-content: space-between;
+}
+.forStaffPage .suggestionsForImprovementForm .widgetRowTextareas {
+  column-gap: 32px;
+}
+.forStaffPage .suggestionsForImprovementForm .widgetWithTitle {
+  width: 265px;
+  justify-content: end;
+  gap: 4px;
+}
+@media (max-width: 624px) {
+  .forStaffPage .suggestionsForImprovementForm .widgetWithTitle {
+    width: 100%;
+  }
+}
+.forStaffPage .suggestionsForImprovementForm .widgetWithTitle .title {
+  color: #E9E9E9;
+  line-height: 144%;
+}
+.forStaffPage .suggestionsForImprovementForm .widgetWithTitle .widgetBox {
+  width: 100%;
+  height: 39px;
+}
+.forStaffPage .suggestionsForImprovementForm .textareaWithTitle {
+  width: 494px;
+  justify-content: end;
+  gap: 4px;
+}
+@media (max-width: 624px) {
+  .forStaffPage .suggestionsForImprovementForm .textareaWithTitle {
+    width: 100%;
+  }
+}
+.forStaffPage .suggestionsForImprovementForm .textareaWithTitle .title {
+  color: #E9E9E9;
+  line-height: 144%;
+}
+.forStaffPage .suggestionsForImprovementForm .textareaWithTitle .textareaBox {
+  width: 100%;
+  height: 122px;
+}
+@media (max-width: 624px) {
+  .forStaffPage .suggestionsForImprovementForm .textareaWithTitle .textareaBox {
+    height: 244px;
+  }
+}
+.forStaffPage .suggestionsForImprovementForm .buttonBox {
+  width: 265px;
+  height: 55px;
+}
+@media (max-width: 624px) {
+  .forStaffPage .suggestionsForImprovementForm .buttonBox {
+    width: 100%;
+  }
+}
+.forStaffPage .suggestionsForImprovementForm .expandableContent {
+  display: none;
+}
+.forStaffPage .suggestionsForImprovementForm .collapsableContent {
+  display: contents;
+}
+.forStaffPage .suggestionsForImprovementForm[data-expanded=true] .expandableContent {
+  display: contents;
+}
+.forStaffPage .suggestionsForImprovementForm[data-expanded=true] .collapsableContent {
+  display: none;
+}
+
+/*# sourceMappingURL=for-staff.css.map */

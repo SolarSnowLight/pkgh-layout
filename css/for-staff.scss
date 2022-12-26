@@ -6,7 +6,7 @@ body {
 
 // Классы страницы помещаются под общий класс <pageName>page,
 // чтобы применяться в пределах страницы
-.libraryPage {
+.forStaffPage {
     display: contents;
     // Сброс параметров элементов
     * { @extend .reset }
@@ -24,7 +24,11 @@ body {
     // Общие классы 2
     .pageElement {
         width: clamp(400px, 100%, 1920px);
+        display: grid;
         padding: 0 144px 0 144px;
+        grid-template-columns: min(100%,1632px);
+        place-content: center;
+        
         @media (max-width: 900px) {
             padding: 0 16px 0 16px;
         }
@@ -197,12 +201,12 @@ body {
             line-height: 144%;
         }
     }
-    .expandableListElement {
+    .expandableCard {
         width: 100%;
         @extend .center;
         background: #21385F;
 
-        .contentContainer {
+        .contentFrame {
             @extend .col;
             align-items: center;
 
@@ -223,7 +227,7 @@ body {
                     line-height: 26px;
                 }
             }
-            .childrenContainer {
+            .expandedContent {
                 @extend .col;
                 gap: 24px;
                 padding: 0px 16px 32px 16px;
@@ -288,7 +292,16 @@ body {
         line-height: 144%;
         color: #000000;
     }
-    .bookSearchForm {
+    .expandableCard {
+        .contentFrame {
+            .expandedContent {
+                width: 100%;
+                max-width: 1086px;
+                padding-bottom: 24px;
+            }
+        }
+    }
+    .suggestionsForImprovementForm {
         @extend .adCard;
         align-items: start;
         
@@ -325,6 +338,15 @@ body {
             :where(input:active, input:focus)~.border {
                 border-width: 2px;
             }
+        }
+        .textarea {
+            @extend .allDefault;
+            width: 100%; height: 100%;
+            padding: 8px;
+            border: 1px solid #E9ECF2;
+            border-radius: 2px;
+            @extend .text;
+            color: #E9E9E9;
         }
         .selectFrame {
             width: 100%; height: 100%;
@@ -396,6 +418,16 @@ body {
                 border: 2px solid #294985;
             }
         }
+        .button3 {
+            @extend .button1;
+            gap: 11.22px;
+            border: none;
+            background: #294985;
+            color: #E9ECF2;
+            &:active, &:focus {
+                border: 2px solid #E9ECF2;
+            }
+        }
         .inlineIcon {
             display: inline-flex;
             height: 1.2em;
@@ -432,17 +464,26 @@ body {
                 @extend .text;
             }
         }
+        
         .widgetRow {
-            @extend .rowWrap;
-            gap: 32px 113.5px;
-            justify-content: center;
-        }
-        .widgetRowSpaceBetween {
             @extend .rowWrap;
             width: 100%;
             gap: 32px 113.5px;
+            justify-content: start;
+        }
+        .widgetRowCenterContent {
+            @extend .widgetRow;
+            justify-content: center;
+        }
+        .widgetRowSpaceBetween {
+            @extend .widgetRow;
             justify-content: space-between;
         }
+        .widgetRowTextareas {
+            @extend .widgetRowCenterContent;
+            column-gap: 32px;
+        }
+        
         .widgetWithTitle {
             width: 265px;
             @extend .col;
@@ -463,6 +504,30 @@ body {
                 height: 39px;
             }
         }
+        .textareaWithTitle {
+            width: 494px;
+            @extend .col;
+            justify-content: end;
+            gap: 4px;
+    
+            @media (max-width: 624px) {
+                width: 100%;
+            }
+            
+            .title {
+                @extend .text;
+                color: #E9E9E9;
+                line-height: 144%;
+            }
+            .textareaBox {
+                width: 100%;
+                height: 122px;
+    
+                @media (max-width: 624px) {
+                    height: 244px;
+                }
+            }
+        }
         .buttonBox {
             width: 265px;
             height: 55px;
@@ -471,6 +536,7 @@ body {
                 width: 100%;
             }
         }
+        
         .expandableContent {
             display: none;
         }
@@ -482,29 +548,6 @@ body {
         }
         &[data-expanded=true] .collapsableContent {
             display: none;
-        }
-    }
-    .photos {
-        @extend .rowWrap;
-        $itemW: 539px;
-        $itemH: 319px;
-        $gap: 8px;
-        $maxCols: 2;
-        gap: $gap;
-        width: 100%;
-        max-width: calc((#{$itemW} + #{$gap}) * #{$maxCols}  -  #{$gap});
-        justify-content: center;
-
-        img {
-            width: $itemW;
-            aspect-ratio: $itemW / $itemH;
-            object-position: center;
-            object-fit: cover;
-            border-radius: 2px;
-            
-            @media (max-width: 624px) {
-                width: 100%;
-            }
         }
     }
 }

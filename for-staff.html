@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Сотрудникам</title>
+  <link rel="stylesheet" href="css/fonts.css"/>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/library.css"/>
+  <link rel="stylesheet" href="css/for-staff.css">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+</head>
+<body>
+
+
+<script>
+  function expandOrCollapse(id){
+    const ic = document.getElementById(`expcard-ic-${id}`) // ExpandableCard-ICon-<id>
+    const content = document.getElementById(`expcard-content-${id}`) // ExpandableCard-content-<id>
+    if (!content.classList.contains('contents')){
+      ic.src = 'img/icons/minus-light.svg'
+      content.classList.add('contents')
+    } else {
+      ic.src = 'img/icons/plus-light.svg'
+      content.classList.remove('contents')
+    }
+  }
+</script>
+
+
+<div class="wrapper">
+  <div class="content">
+    <div class="forStaffPage">
+      
+      <div style="height: 32px"></div>
+  
+      <div class="pageElement">
+        <h2>Корпоративный портал</h2>
+      </div>
+  
+      <div style="height: 32px"></div>
+  
+      <div class="pageElement">
+        <div class="text2">
+          Корпоративный портал создан для информационной поддержки преподавателей колледжа.<br>
+          Для входа введите логин и пароль, используемые для работы в колледже (в формате pkgh\ваш_логин).
+        </div>
+      </div>
+  
+      <div style="height: 32px"></div>
+  
+      <div class="expandableCard">
+        <div class="contentFrame">
+          <div class="titleContainer"onclick="expandOrCollapse('1')">
+            <img id="expcard-ic-1" class="plus" src="img/icons/plus-light.svg">
+            <span class="title">
+              Как узнать свой логин
+            </span>
+          </div>
+          <div class="none" id="expcard-content-1">
+            <div class="expandedContent">
+              <div class="text">
+                Если Вы не знаете своего имени пользователя, откройте диспетчер задач (клавиши Ctrl+Shift+Esc)
+                и перейдите на вкладку "Пользователи". Ваш логин будет написан в первой ячейке первой строки.
+                Не забудьте при вводе указать домен (должно получиться pkgh\ваш_логин)<br>
+                <br>
+                При вводе имени пользователя обратите внимание на направление косой черты.
+                Обязательно вводите обратный слеш (\), а не /.<br>
+                Если у Вас нет учётной записи в домене (в случае, если Вы никогда не проводили
+                занятий в компьютерных классах и не работаете за компьютером в корпоративной сети)
+                обратитесь к системному администратору. Учётная запись от сайта на портале не работает.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div style="height: 32px"></div>
+      
+      <div class="pageElement2">
+        <!-- sfif - suggestions for improvement form -->
+        <form>
+          <div class="suggestionsForImprovementForm" id="sfif-form" data-expanded="false">
+            <h3>
+              Предложения по усовершенствованию<br>
+              образовательного и производственного<br>
+              процессов
+            </h3>
+            <div class="widgetRow">
+              <div class="widgetWithTitle">
+                <label for="bsf-materials" class="title">Адресат *</label>
+                <div class="widgetBox">
+                  <div class="selectFrame">
+                    <select id="bsf-materials">
+                      <option value="administration" selected>Администрация</option>
+                      <option>Пункт 2</option>
+                      <option>Пункт 3</option>
+                      <option>Пункт 4</option>
+                      <option>Просто много букааааааааааааф</option>
+                    </select>
+                    <div class="arrow"></div>
+                    <div class="border"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="widgetRowTextareas">
+              <div class="textareaWithTitle">
+                <label for="sfif-job-notes" class="title">Замечания по работе</label>
+                <div class="textareaBox">
+                  <textarea id="sfif-job-notes" class="textarea"></textarea>
+                </div>
+              </div>
+              <div class="textareaWithTitle">
+                <label for="sfif-job-suggestions" class="title">Предложение по улучшению работы *</label>
+                <div class="textareaBox">
+                  <textarea id="sfif-job-suggestions" class="textarea"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="widgetRowCenterContent">
+              <div class="widgetWithTitle">
+                <div class="widgetBox">
+                  <div class="textInputFrame">
+                    <input type="text" placeholder="ФИО отправителя"/>
+                    <div class="border"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="widgetWithTitle">
+                <div class="widgetBox">
+                  <div class="textInputFrame">
+                    <input class="textInput" type="text" placeholder="Телефон"/>
+                    <div class="border"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="widgetWithTitle">
+                <div class="widgetBox">
+                  <div class="textInputFrame">
+                    <input class="textInput" type="text" placeholder="E-Mail"/>
+                    <div class="border"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="widgetRowCenterContent">
+              <img src="img/test/google-recaptcha.png" alt="Капча"
+                style="height: auto; width: 100%; max-width: 376px;"
+              />
+            </div>
+            <div class="widgetRowSpaceBetween">
+              <div class="buttonBox">
+                <button class="button1" type="button">
+                  Сброс
+                </button>
+              </div>
+              <div class="buttonBox">
+                <button class="button3" type="submit">
+                  Отправить
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+  
+      <div style="height: 32px"></div>
+      
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

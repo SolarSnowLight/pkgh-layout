@@ -261,6 +261,7 @@ body {
 }
 .libraryPage .bookSearchForm .textInputFrame input::placeholder {
   color: #BEC8DA;
+  opacity: 1;
 }
 .libraryPage .bookSearchForm .textInputFrame .border {
   grid-area: c;
@@ -324,7 +325,7 @@ body {
   place-content: center;
   cursor: pointer;
 }
-.libraryPage .bookSearchForm .button1:active, .libraryPage .bookSearchForm .button2:active, .libraryPage .bookSearchForm .button1:focus, .libraryPage .bookSearchForm .button2:focus {
+.libraryPage .bookSearchForm .button1:active, .libraryPage .bookSearchForm .button2:active, .libraryPage .bookSearchForm .button1:focus-visible, .libraryPage .bookSearchForm .button2:focus-visible {
   border-width: 2px;
 }
 .libraryPage .bookSearchForm .button2 {
