@@ -90,7 +90,11 @@
 	background: #697FA9;
 	border: none;
 	outline: none;
-	color:  #FFF;
+
+}
+
+.information-for-parents__input input::placeholder{
+	color: #BEC8DA;
 }
 
 .information-for-parents__text{
@@ -188,10 +192,10 @@ details[open] summary:before {
 	padding: 24px 0px;
 	gap: 16px;
 /*	width: 1920px;*/
-	background: #21385F;
-	margin-bottom: 20px;
-	margin-left: -120px;
-	margin-right: -120px;
+background: #21385F;
+margin-bottom: 20px;
+margin-left: -120px;
+margin-right: -120px;
 }
 
 .accordion-box__details{
